@@ -17,14 +17,14 @@ section {
   padding-bottom: 50px; }
 
 .page-header {
-  background-color: #FFE1EC;
+  background-color: #303778;
   padding-left: 30px;
   padding-right: 30px; }
   .page-header h1 {
     margin: 0 auto;
     margin-top: 50px;
     font-size: 2em;
-    color: #303778; }
+    color: white; }
 
 @media only screen and (min-width: 768px) {
   .page-header {
@@ -84,6 +84,9 @@ footer {
             padding-right: 20px; }
             footer .footer-details .footer-left nav ul li:first-child {
               padding-left: 0; }
+            footer .footer-details .footer-left nav ul li a {
+              text-decoration: none;
+              color: white; }
       footer .footer-details .footer-right {
         flex-direction: row;
         align-items: center; }
@@ -96,7 +99,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-left: 30px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  background: #FFE1EC; }
   header nav {
     display: flex;
     flex-direction: row;
@@ -106,10 +110,11 @@ header {
       margin: 0;
       padding: 0;
       display: flex;
-      flex-direction: row;
-      margin-right: 40px; }
+      flex-direction: row; }
       header nav ul li {
         padding: 30px; }
+    header nav .login-button {
+      margin-left: 40px; }
 
 @media only screen and (min-width: 768px) {
   header {
@@ -119,7 +124,7 @@ header {
 .legal-version {
   margin: 0;
   font-size: .8em;
-  color: #303778;
+  color: white;
   margin-bottom: .5em; }
 
 .legal-section {

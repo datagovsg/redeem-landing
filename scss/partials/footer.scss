@@ -77,6 +77,10 @@ footer{
               &:first-child{
                 padding-left: 0;
               }
+              a{
+                text-decoration: none;
+                color: white;
+              }
             }
           }
         }
