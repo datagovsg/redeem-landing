@@ -3,8 +3,8 @@ header{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: $mobile-horizontal-padding;
+  padding-right: $mobile-horizontal-padding;
 
   nav{
     display: flex;
@@ -23,6 +23,14 @@ header{
         padding: 30px;
       }
     }
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  header{
+    padding-left: $desktop-horizontal-padding;
+    padding-right: $desktop-horizontal-padding;
   }
 
 }

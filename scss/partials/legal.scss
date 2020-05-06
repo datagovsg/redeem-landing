@@ -1,5 +1,7 @@
 .legal-section{
-  width: 100%;
+  margin-bottom: 100px;
+  padding-left: $mobile-horizontal-padding;
+  padding-right: $mobile-horizontal-padding;
 }
 
 .legal{
@@ -37,5 +39,14 @@
     }
   }
 
+
+}
+
+
+@media only screen and (min-width: 768px) {
+  .legal-section{
+    padding-left: $desktop-horizontal-padding;
+    padding-right: $desktop-horizontal-padding;
+  }
 
 }

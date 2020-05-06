@@ -2,14 +2,18 @@
 
 $redeem-pink: #FFE1EC;
 $redeem-blue: #303778;
+$mobile-horizontal-padding: 30px;
+$desktop-horizontal-padding: 60px;
+$body-text: #2D3138;
 
 body{
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.4;
   margin: 0;
   padding: 0;
+  color: $body-text;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -25,13 +29,26 @@ section{
 .page-header{
   height: 100px;
   background-color: $redeem-pink;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: $mobile-horizontal-padding;
+  padding-right: $mobile-horizontal-padding;
 
   h1{
     margin: 0 auto;
     margin-top: 50px;
-    font-size: 3em;
+    font-size: 2em;
     color: $redeem-blue;
   }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .page-header{
+    padding-left: $desktop-horizontal-padding;
+    padding-right: $desktop-horizontal-padding;
+
+    h1{
+      font-size: 2.6em;
+    }
+  }
+
 }
