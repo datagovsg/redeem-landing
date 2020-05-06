@@ -17,7 +17,6 @@ section {
   padding-bottom: 50px; }
 
 .page-header {
-  height: 100px;
   background-color: #FFE1EC;
   padding-left: 30px;
   padding-right: 30px; }
@@ -117,6 +116,12 @@ header {
     padding-left: 60px;
     padding-right: 60px; } }
 
+.legal-version {
+  margin: 0;
+  font-size: .8em;
+  color: #303778;
+  margin-bottom: .5em; }
+
 .legal-section {
   margin-bottom: 100px;
   padding-left: 30px;
@@ -140,9 +145,23 @@ header {
         content: counters(clause, ".") ". ";
         margin: 0 0.5em 0 0; }
       .legal ol li p {
-        padding-left: 2.4em; }
+        padding-left: 2.4em;
+        text-indent: 0; }
       .legal ol li ol li {
         margin-top: 1em; }
+  .legal .specialgroup {
+    padding-top: 2em; }
+
+.schedule {
+  max-width: 70ch;
+  margin: 0 auto; }
+  .schedule ol li {
+    margin-bottom: 1em;
+    margin-top: 2em; }
+    .schedule ol li:before {
+      margin: 0 0.5em 0 0; }
+    .schedule ol li ol li {
+      margin-top: 1em; }
 
 @media only screen and (min-width: 768px) {
   .legal-section {
