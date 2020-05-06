@@ -1,6 +1,11 @@
+.legal-section{
+  width: 100%;
+}
+
 .legal{
   counter-reset: section;
   max-width: 70ch;
+  margin: 0 auto;
 
 
   ol{
