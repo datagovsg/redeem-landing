@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 400; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500; }
+
+.legal {
+  counter-reset: section;
+  max-width: 70ch; }
+  .legal ol {
+    counter-reset: clause;
+    list-style: none outside none;
+    text-indent: -2em; }
+    .legal ol li {
+      counter-increment: clause;
+      list-style: none outside none;
+      text-indent: -2.3em;
+      margin-bottom: 1em;
+      margin-top: 2em; }
+      .legal ol li:before {
+        content: counters(clause, ".") ". ";
+        margin: 0 0.5em 0 0; }
+      .legal ol li p {
+        padding-left: 2.4em; }
+      .legal ol li ol li {
+        margin-top: 1em; }

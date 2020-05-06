@@ -1,0 +1,36 @@
+.legal{
+  counter-reset: section;
+  max-width: 70ch;
+
+
+  ol{
+    counter-reset: clause;
+    list-style: none outside none;
+    text-indent: -2em;
+
+    li{
+      counter-increment: clause;
+      list-style: none outside none;
+      text-indent: -2.3em;
+      margin-bottom: 1em;
+      margin-top:  2em;
+
+      &:before{
+        content: counters(clause, ".") ". ";
+        margin: 0 0.5em 0 0;
+      }
+
+      p{
+        padding-left: 2.4em;
+      }
+
+      ol{
+        li{
+          margin-top: 1em;
+        }
+      }
+    }
+  }
+
+
+}
