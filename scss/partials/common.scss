@@ -27,7 +27,7 @@ section{
 }
 
 .page-header{
-  background-color: $redeem-blue;
+  background-color: $redeem-pink;
   padding-left: $mobile-horizontal-padding;
   padding-right: $mobile-horizontal-padding;
 
@@ -35,7 +35,7 @@ section{
     margin: 0 auto;
     margin-top: 50px;
     font-size: 2em;
-    color: white;
+    color: $redeem-blue;
   }
 }
 

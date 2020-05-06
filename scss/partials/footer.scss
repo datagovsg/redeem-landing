@@ -38,10 +38,10 @@ footer{
 
           li{
             padding-top: 5px;
-
-            // &:first-child{
-            //   padding-left: 0;
-            // }
+            a{
+              text-decoration: none;
+              color: white;
+            }
           }
         }
       }
@@ -77,10 +77,6 @@ footer{
               &:first-child{
                 padding-left: 0;
               }
-              a{
-                text-decoration: none;
-                color: white;
-              }
             }
           }
         }
@@ -90,7 +86,7 @@ footer{
         flex-direction: row;
         align-items: center;
         .last-updated-text{
-          margin-left: 10px;
+          margin-left: 20px;
         }
       }
     }
