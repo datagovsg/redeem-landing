@@ -156,7 +156,7 @@ header {
       .legal ol li ol li {
         margin-top: 1em; }
   .legal .specialgroup {
-    padding-top: 2em; }
+    margin-top: 2em; }
 
 .schedule {
   max-width: 70ch;
