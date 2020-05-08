@@ -35,27 +35,28 @@
       }
 
       h1{
-        font-size: 2.2em;
+        font-size: 1.8em;
         color: $redeem-blue;
         text-align: center;
-        padding-bottom: 60px;
         max-width: 700px;
         margin: 0 auto;
+        line-height: 1.2;
+        padding-bottom: 30px;
       }
 
       h2{
-        font-size: 1.2em;
+        font-size: 1em;
         color: $redeem-blue;
         text-align: center;
-        padding-bottom: 20px;
+
       }
 
       h3{
-        font-size: 1.4em;
-        margin-top: 30px;
+        font-size: 1em;
         width: 100%;
         color: $redeem-blue;
         text-align: center;
+        padding-top: 20px;
       }
     }
 
@@ -107,7 +108,7 @@
             width: 100%;
             font-size: 1.8em;
             color: $redeem-blue;
-            margin-top: 80px;
+            margin-top: 50px;
             margin-bottom: 0;
             line-height: 1.2em;
           }
@@ -262,6 +263,23 @@
 
     section{
 
+      &.intro-section{
+        h1{
+          font-size: 2.6em;
+          padding-bottom: 60px;
+        }
+
+        h2{
+          font-size: 1.4em;
+          padding-bottom: 20px;
+        }
+
+        h3{
+          font-size: 1.4em;
+          margin-top: 30px;
+        }
+
+      }
 
       &.feature-section{
 
