@@ -11,7 +11,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   letter-spacing: .3px;
-  line-height: 120%; }
+  line-height: 140%; }
 
 section {
   padding-top: 50px;
@@ -238,16 +238,17 @@ button {
       box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
       border-radius: 20px; }
   .index-page section.intro-section h1 {
-    font-size: 2.4em;
+    font-size: 2.2em;
     color: #303778;
     text-align: center;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
     max-width: 700px;
     margin: 0 auto; }
   .index-page section.intro-section h2 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: #303778;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 20px; }
   .index-page section.intro-section h3 {
     font-size: 1.4em;
     margin-top: 30px;
