@@ -7,6 +7,13 @@ footer{
   padding-bottom: 50px;
   font-size: 14px;
 
+  a{
+    color: white;
+    &:visited, :hover, :active{
+      color: white;
+    }
+  }
+
   .footer-brand{
     h4{
       margin: 0;

@@ -49,6 +49,10 @@ footer {
   padding-top: 50px;
   padding-bottom: 50px;
   font-size: 14px; }
+  footer a {
+    color: white; }
+    footer a:visited, footer a :hover, footer a :active {
+      color: white; }
   footer .footer-brand h4 {
     margin: 0;
     font-size: 1.5em; }
@@ -211,6 +215,8 @@ button {
 .index-page header {
   background: #FFE1EC;
   color: #303778; }
+  .index-page header a {
+    color: #303778; }
 
 .index-page section.intro-section {
   background: #FFE1EC;
