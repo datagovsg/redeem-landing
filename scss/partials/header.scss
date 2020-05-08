@@ -45,7 +45,14 @@ header{
 
       li{
         padding: 30px;
+
+        &:last-child{
+          padding-right: 0;
+        }
+        
       }
+
+
     }
 
     .login-button{

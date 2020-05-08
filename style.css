@@ -141,6 +141,8 @@ header {
       flex-direction: row; }
       header nav ul li {
         padding: 30px; }
+        header nav ul li:last-child {
+          padding-right: 0; }
     header nav .login-button {
       margin-left: 40px; }
 
