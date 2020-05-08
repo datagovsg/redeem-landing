@@ -13,6 +13,10 @@
       background: $redeem-pink;
       padding-left: $mobile-horizontal-padding;
       padding-right: $mobile-horizontal-padding;
+
+      img{
+        width: 100%;
+      }
     }
 
     &.stats-section{
@@ -53,8 +57,8 @@
         .desc-box{
           display: flex;
           flex-direction: column;
-          padding-left: 60px;
-          padding-right: 60px;
+          padding-left: 30px;
+          padding-right: 30px;
 
           justify-content: center;
           align-items: center;

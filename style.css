@@ -227,6 +227,8 @@ button {
   background: #FFE1EC;
   padding-left: 30px;
   padding-right: 30px; }
+  .index-page section.intro-section img {
+    width: 100%; }
 
 .index-page section.stats-section {
   background: #FCFDFF;
@@ -254,8 +256,8 @@ button {
     .index-page section.feature-section .each-feature-row .desc-box {
       display: flex;
       flex-direction: column;
-      padding-left: 60px;
-      padding-right: 60px;
+      padding-left: 30px;
+      padding-right: 30px;
       justify-content: center;
       align-items: center; }
       .index-page section.feature-section .each-feature-row .desc-box h3 {
