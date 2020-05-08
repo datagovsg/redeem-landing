@@ -57,9 +57,15 @@ footer {
     color: white; }
     footer a:visited, footer a :hover, footer a :active {
       color: white; }
-  footer .footer-brand h4 {
-    margin: 0;
-    font-size: 1.5em; }
+  footer .footer-brand .logo a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; }
+    footer .footer-brand .logo a img {
+      margin-right: 10px;
+      margin-bottom: 5px;
+      height: 20px; }
   footer .footer-brand p {
     margin-top: 5px; }
   footer .footer-details {
@@ -124,13 +130,7 @@ header {
       justify-content: center;
       align-items: center; }
       header .header-container .logo a img {
-        margin-right: 10px;
-        width: 20px; }
-      header .header-container .logo a .logo-text {
-        font-weight: 500;
-        color: white;
-        letter-spacing: .2px;
-        font-size: 20px; }
+        height: 24px; }
     header .header-container a {
       text-decoration: none;
       color: white; }
@@ -236,19 +236,21 @@ button {
   color: #303778; }
   .index-page header a {
     color: #303778; }
-  .index-page header .logo a {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-    .index-page header .logo a img {
-      margin-right: 10px;
-      width: 20px; }
-    .index-page header .logo a .logo-text {
-      font-weight: 500;
-      color: #303778;
-      letter-spacing: .2px;
-      font-size: 20px; }
+  .index-page header .logo {
+    height: 40px; }
+    .index-page header .logo a {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .index-page header .logo a img {
+        margin-right: 10px; }
+      .index-page header .logo a .logo-text {
+        font-weight: 500;
+        color: #303778;
+        letter-spacing: .2px;
+        font-size: 20px;
+        vertical-align: baseline; }
 
 .index-page section.intro-section {
   background: #FFE1EC;

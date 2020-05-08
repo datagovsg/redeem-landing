@@ -15,10 +15,20 @@ footer{
   }
 
   .footer-brand{
-    h4{
-      margin: 0;
-      font-size: 1.5em;
-    }
+
+    .logo{
+      a{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        img{
+          margin-right: 10px;
+          margin-bottom: 5px;
+          height: 20px;
+        }
+      }
+    
     p{
       margin-top: 5px;
     }
