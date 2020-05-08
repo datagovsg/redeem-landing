@@ -16,6 +16,14 @@ section {
   padding-top: 50px;
   padding-bottom: 50px; }
 
+a {
+  text-decoration: none;
+  color: #198DF5; }
+  a:visited, a :active {
+    color: #198DF5; }
+  a:hover {
+    color: #62b1f8; }
+
 .page-header {
   background-color: #FFE1EC;
   padding-left: 30px;
@@ -105,6 +113,12 @@ header {
   header a {
     text-decoration: none;
     color: white; }
+    header a:hover {
+      color: white; }
+    header a:visited {
+      color: white; }
+    header a:active {
+      color: white; }
   header nav {
     display: flex;
     flex-direction: row;
@@ -191,12 +205,12 @@ button {
     color: white; }
     button.blue:hover {
       background: #3f489c; }
+    button.blue a {
+      color: white; }
 
 .index-page header {
   background: #FFE1EC;
   color: #303778; }
-  .index-page header a {
-    color: #303778; }
 
 .index-page section.intro-section {
   background: #FFE1EC;

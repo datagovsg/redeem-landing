@@ -3,6 +3,7 @@
 $redeem-pink: #FFE1EC;
 $redeem-blue: #303778;
 $redeem-white: #FCFDFF;
+$redeem-lightblue: #198DF5;
 $mobile-horizontal-padding: 30px;
 $desktop-horizontal-padding: 60px;
 $body-text: #2D3138;
@@ -25,6 +26,19 @@ h1,h2,h3,h4,h5,h6{
 section{
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+a{
+  text-decoration: none;
+  color: $redeem-lightblue;
+
+  &:visited,:active{
+    color: $redeem-lightblue;
+  }
+  
+  &:hover{
+    color: lighten($redeem-lightblue,15%);
+  }
 }
 
 .page-header{

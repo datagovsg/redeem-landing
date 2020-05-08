@@ -17,5 +17,9 @@ button{
     &:hover{
       background: lighten($redeem-blue, 10%);
     }
+
+    a{
+      color: white;
+    }
   }
 }
