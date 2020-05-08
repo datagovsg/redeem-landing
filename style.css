@@ -229,6 +229,10 @@ button {
   padding-right: 30px; }
   .index-page section.intro-section img {
     width: 100%; }
+    .index-page section.intro-section img.admin-dashboard-image {
+      position: relative; }
+    .index-page section.intro-section img.admin-onerow-image {
+      position: relative; }
 
 .index-page section.stats-section {
   background: #FCFDFF;

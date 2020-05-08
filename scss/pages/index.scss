@@ -16,6 +16,13 @@
 
       img{
         width: 100%;
+
+        &.admin-dashboard-image{
+          position: relative;
+        }
+        &.admin-onerow-image{
+          position: relative;
+        }
       }
     }
 
