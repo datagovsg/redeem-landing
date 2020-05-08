@@ -15,6 +15,9 @@ h1, h2, h3, h4, h5, h6 {
 section {
   padding-top: 50px;
   padding-bottom: 50px; }
+  section > div {
+    max-width: 1140px;
+    margin: 0 auto; }
 
 a {
   text-decoration: none;
@@ -81,7 +84,7 @@ footer {
       display: flex;
       flex-direction: column; }
 
-@media only screen and (min-width: 1028px) {
+@media only screen and (min-width: 1080px) {
   footer {
     padding-left: 60px;
     padding-right: 60px; }
@@ -106,14 +109,16 @@ footer {
           margin-left: 20px; } }
 
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   padding-left: 30px;
   padding-right: 30px;
   background: #303778;
   color: white; }
+  header > div {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
   header a {
     text-decoration: none;
     color: white; }
@@ -229,23 +234,21 @@ button {
   padding-right: 30px; }
 
 .index-page section.feature-section {
-  background: #FCFDFF;
-  padding-left: 30px;
-  padding-right: 30px; }
+  background: #FCFDFF; }
   .index-page section.feature-section .each-feature-row {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
-    padding-left: 30px;
-    padding-right: 30px; }
+    margin-bottom: 80px; }
     .index-page section.feature-section .each-feature-row.reverse {
       flex-direction: column; }
     .index-page section.feature-section .each-feature-row .desc-image {
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      padding-left: 30px;
+      padding-right: 30px; }
       .index-page section.feature-section .each-feature-row .desc-image img {
         width: 100%; }
     .index-page section.feature-section .each-feature-row .desc-box {
@@ -257,13 +260,15 @@ button {
       align-items: center; }
       .index-page section.feature-section .each-feature-row .desc-box h3 {
         width: 100%;
-        font-size: 2em;
+        font-size: 1.8em;
         color: #303778;
+        margin-top: 80px;
         margin-bottom: 0;
         line-height: 1.2em; }
       .index-page section.feature-section .each-feature-row .desc-box p {
         width: 100%;
-        color: #303778; }
+        color: #303778;
+        font-size: 1.2em; }
 
 .index-page section.type-section {
   background: #FCFDFF;
@@ -289,6 +294,15 @@ button {
     font-size: 2.2em;
     text-align: center; }
 
+.wave-container {
+  background: #FCFDFF;
+  width: 100vw;
+  padding: 0;
+  margin: 0; }
+  .wave-container img {
+    width: 100%;
+    margin-top: -5px; }
+
 @media only screen and (min-width: 768px) {
   .index-page section.intro-section {
     padding-left: 60px;
@@ -309,6 +323,10 @@ button {
         width: 50%; }
       .index-page section.feature-section .each-feature-row .desc-box {
         width: 50%; }
+        .index-page section.feature-section .each-feature-row .desc-box h3 {
+          font-size: 2em; }
+        .index-page section.feature-section .each-feature-row .desc-box p {
+          font-size: 1.2em; }
   .index-page section.type-section {
     background: #FCFDFF;
     padding-left: 30px;
@@ -330,3 +348,9 @@ button {
     .index-page section.start-campaign-section h3 {
       font-size: 2.2em;
       max-width: 700px; } }
+
+@media only screen and (min-width: 1024px) {
+  .index-page section.feature-section .each-feature-row .desc-box h3 {
+    font-size: 2.2em; }
+  .index-page section.feature-section .each-feature-row .desc-box p {
+    font-size: 1.4em; } }

@@ -23,8 +23,7 @@
 
     &.feature-section{
       background: $redeem-white;
-      padding-left: $mobile-horizontal-padding;
-      padding-right: $mobile-horizontal-padding;
+
 
 
       .each-feature-row{
@@ -34,8 +33,6 @@
         align-items: center;
 
         margin-bottom: 80px;
-        padding-left: $mobile-horizontal-padding;
-        padding-right: $mobile-horizontal-padding;
 
         &.reverse{
           flex-direction: column;
@@ -45,6 +42,9 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          padding-left: $mobile-horizontal-padding;
+          padding-right: $mobile-horizontal-padding;
+
           img{
             width: 100%;
           }
@@ -61,8 +61,9 @@
 
           h3{
             width: 100%;
-            font-size: 2em;
+            font-size: 1.8em;
             color: $redeem-blue;
+            margin-top: 80px;
             margin-bottom: 0;
             line-height: 1.2em;
           }
@@ -70,6 +71,7 @@
           p{
             width: 100%;
             color: $redeem-blue;
+            font-size: 1.2em;
           }
         }
       }
@@ -109,6 +111,18 @@
   }
 
 }
+
+.wave-container{
+  background: $redeem-white;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  img{
+    width: 100%;
+    margin-top: -5px;
+  }
+}
+
 
 @media only screen and (min-width: 768px) {
   .index-page{
@@ -150,10 +164,11 @@
             width: 50%;
 
             h3{
-
+              font-size: 2em;
             }
 
             p{
+              font-size: 1.2em;
             }
           }
         }
@@ -190,6 +205,38 @@
           max-width: 700px;
         }
       }
+    }
+
+  }
+
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+  .index-page{
+
+    section{
+
+
+      &.feature-section{
+
+        .each-feature-row{
+
+
+          .desc-box{
+
+            h3{
+              font-size: 2.2em;
+            }
+
+            p{
+              font-size: 1.4em;
+            }
+          }
+        }
+      }
+
     }
 
   }

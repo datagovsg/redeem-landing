@@ -1,12 +1,17 @@
 header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   padding-left: $mobile-horizontal-padding;
   padding-right: $mobile-horizontal-padding;
   background: $redeem-blue;
   color: white;
+
+  > div{
+    // max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   a{
     text-decoration: none;
