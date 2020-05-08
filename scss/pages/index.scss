@@ -13,6 +13,50 @@
       background: $redeem-pink;
       padding-left: $mobile-horizontal-padding;
       padding-right: $mobile-horizontal-padding;
+
+      .admin-dashboard{
+        margin: 0 auto;
+        // position: relative;
+
+
+          .admin-dashboard-image{
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+          }
+
+          .admin-onerow-image{
+
+          }
+
+      }
+
+      h1{
+        font-size: 2.2em;
+        color: $redeem-blue;
+        text-align: center;
+        padding-bottom: 60px;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      h2{
+        font-size: 1.2em;
+        color: $redeem-blue;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+
+      h3{
+        font-size: 1.4em;
+        margin-top: 30px;
+        width: 100%;
+        color: $redeem-blue;
+        text-align: center;
+      }
     }
 
     &.stats-section{
@@ -53,8 +97,8 @@
         .desc-box{
           display: flex;
           flex-direction: column;
-          padding-left: 60px;
-          padding-right: 60px;
+          padding-left: 30px;
+          padding-right: 30px;
 
           justify-content: center;
           align-items: center;

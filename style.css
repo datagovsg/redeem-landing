@@ -10,7 +10,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
-  letter-spacing: .3px; }
+  letter-spacing: .3px;
+  line-height: 140%; }
 
 section {
   padding-top: 50px;
@@ -140,6 +141,8 @@ header {
       flex-direction: row; }
       header nav ul li {
         padding: 30px; }
+        header nav ul li:last-child {
+          padding-right: 0; }
     header nav .login-button {
       margin-left: 40px; }
 
@@ -227,6 +230,33 @@ button {
   background: #FFE1EC;
   padding-left: 30px;
   padding-right: 30px; }
+  .index-page section.intro-section .admin-dashboard {
+    margin: 0 auto; }
+    .index-page section.intro-section .admin-dashboard .admin-dashboard-image {
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 20px; }
+  .index-page section.intro-section h1 {
+    font-size: 2.2em;
+    color: #303778;
+    text-align: center;
+    padding-bottom: 60px;
+    max-width: 700px;
+    margin: 0 auto; }
+  .index-page section.intro-section h2 {
+    font-size: 1.2em;
+    color: #303778;
+    text-align: center;
+    padding-bottom: 20px; }
+  .index-page section.intro-section h3 {
+    font-size: 1.4em;
+    margin-top: 30px;
+    width: 100%;
+    color: #303778;
+    text-align: center; }
 
 .index-page section.stats-section {
   background: #FCFDFF;
@@ -254,8 +284,8 @@ button {
     .index-page section.feature-section .each-feature-row .desc-box {
       display: flex;
       flex-direction: column;
-      padding-left: 60px;
-      padding-right: 60px;
+      padding-left: 30px;
+      padding-right: 30px;
       justify-content: center;
       align-items: center; }
       .index-page section.feature-section .each-feature-row .desc-box h3 {
