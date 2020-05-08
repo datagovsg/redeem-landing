@@ -1,3 +1,197 @@
 .index-page{
-  
+  header{
+    background: $redeem-pink;
+    color: $redeem-blue;
+
+    a{
+      color: $redeem-blue;
+    }
+  }
+
+  section{
+    &.intro-section{
+      background: $redeem-pink;
+      padding-left: $mobile-horizontal-padding;
+      padding-right: $mobile-horizontal-padding;
+    }
+
+    &.stats-section{
+      background: $redeem-white;
+      padding-left: $mobile-horizontal-padding;
+      padding-right: $mobile-horizontal-padding;
+    }
+
+    &.feature-section{
+      background: $redeem-white;
+      padding-left: $mobile-horizontal-padding;
+      padding-right: $mobile-horizontal-padding;
+
+
+      .each-feature-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 80px;
+        padding-left: $mobile-horizontal-padding;
+        padding-right: $mobile-horizontal-padding;
+
+        &.reverse{
+          flex-direction: column;
+        }
+
+        .desc-image{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img{
+            width: 100%;
+          }
+        }
+
+        .desc-box{
+          display: flex;
+          flex-direction: column;
+          padding-left: 60px;
+          padding-right: 60px;
+
+          justify-content: center;
+          align-items: center;
+
+          h3{
+            width: 100%;
+            font-size: 2em;
+            color: $redeem-blue;
+            margin-bottom: 0;
+            line-height: 1.2em;
+          }
+
+          p{
+            width: 100%;
+            color: $redeem-blue;
+          }
+        }
+      }
+
+
+    }
+
+    &.type-section{
+      background: $redeem-white;
+      padding-left: $mobile-horizontal-padding;
+      padding-right: $mobile-horizontal-padding;
+    }
+
+    &.articles-section{
+      background: $redeem-pink;
+      padding-left: $mobile-horizontal-padding;
+      padding-right: $mobile-horizontal-padding;
+    }
+
+    &.start-campaign-section{
+      background: $redeem-white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      padding-top: 150px;
+      padding-bottom: 200px;
+      padding-left: $mobile-horizontal-padding;
+      padding-right: $mobile-horizontal-padding;
+
+      h3{
+        font-size: 2.2em;
+        text-align: center;
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .index-page{
+    header{
+
+    }
+
+    section{
+      &.intro-section{
+        padding-left: $desktop-horizontal-padding;
+        padding-right: $desktop-horizontal-padding;
+      }
+
+      &.stats-section{
+        padding-left: $desktop-horizontal-padding;
+        padding-right: $desktop-horizontal-padding;
+      }
+
+      &.feature-section{
+        padding-left: $desktop-horizontal-padding;
+        padding-right: $desktop-horizontal-padding;
+
+
+        .each-feature-row{
+          flex-direction: row;
+
+          padding-left: $desktop-horizontal-padding;
+          padding-right: $desktop-horizontal-padding;
+
+          &.reverse{
+            flex-direction: row-reverse;
+          }
+
+          .desc-image{
+            width: 50%;
+          }
+
+          .desc-box{
+            width: 50%;
+
+            h3{
+
+            }
+
+            p{
+            }
+          }
+        }
+
+
+      }
+
+      &.type-section{
+        background: $redeem-white;
+        padding-left: $mobile-horizontal-padding;
+        padding-right: $mobile-horizontal-padding;
+      }
+
+      &.articles-section{
+        background: $redeem-pink;
+        padding-left: $mobile-horizontal-padding;
+        padding-right: $mobile-horizontal-padding;
+      }
+
+      &.start-campaign-section{
+        background: $redeem-white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 150px;
+        padding-bottom: 200px;
+        padding-left: $mobile-horizontal-padding;
+        padding-right: $mobile-horizontal-padding;
+
+        h3{
+          font-size: 2.2em;
+          max-width: 700px;
+        }
+      }
+    }
+
+  }
+
 }

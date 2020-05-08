@@ -102,6 +102,9 @@ header {
   padding-right: 30px;
   background: #303778;
   color: white; }
+  header a {
+    text-decoration: none;
+    color: white; }
   header nav {
     display: flex;
     flex-direction: row;
@@ -173,3 +176,137 @@ header {
   .legal-section {
     padding-left: 60px;
     padding-right: 60px; } }
+
+button {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+  letter-spacing: .5px; }
+  button.large-btn {
+    font-size: 20px;
+    padding: 20px 50px; }
+  button.blue {
+    background: #303778;
+    color: white; }
+    button.blue:hover {
+      background: #3f489c; }
+
+.index-page header {
+  background: #FFE1EC;
+  color: #303778; }
+  .index-page header a {
+    color: #303778; }
+
+.index-page section.intro-section {
+  background: #FFE1EC;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.index-page section.stats-section {
+  background: #FCFDFF;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.index-page section.feature-section {
+  background: #FCFDFF;
+  padding-left: 30px;
+  padding-right: 30px; }
+  .index-page section.feature-section .each-feature-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    padding-left: 30px;
+    padding-right: 30px; }
+    .index-page section.feature-section .each-feature-row.reverse {
+      flex-direction: column; }
+    .index-page section.feature-section .each-feature-row .desc-image {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .index-page section.feature-section .each-feature-row .desc-image img {
+        width: 100%; }
+    .index-page section.feature-section .each-feature-row .desc-box {
+      display: flex;
+      flex-direction: column;
+      padding-left: 60px;
+      padding-right: 60px;
+      justify-content: center;
+      align-items: center; }
+      .index-page section.feature-section .each-feature-row .desc-box h3 {
+        width: 100%;
+        font-size: 2em;
+        color: #303778;
+        margin-bottom: 0;
+        line-height: 1.2em; }
+      .index-page section.feature-section .each-feature-row .desc-box p {
+        width: 100%;
+        color: #303778; }
+
+.index-page section.type-section {
+  background: #FCFDFF;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.index-page section.articles-section {
+  background: #FFE1EC;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.index-page section.start-campaign-section {
+  background: #FCFDFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 200px;
+  padding-left: 30px;
+  padding-right: 30px; }
+  .index-page section.start-campaign-section h3 {
+    font-size: 2.2em;
+    text-align: center; }
+
+@media only screen and (min-width: 768px) {
+  .index-page section.intro-section {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .index-page section.stats-section {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .index-page section.feature-section {
+    padding-left: 60px;
+    padding-right: 60px; }
+    .index-page section.feature-section .each-feature-row {
+      flex-direction: row;
+      padding-left: 60px;
+      padding-right: 60px; }
+      .index-page section.feature-section .each-feature-row.reverse {
+        flex-direction: row-reverse; }
+      .index-page section.feature-section .each-feature-row .desc-image {
+        width: 50%; }
+      .index-page section.feature-section .each-feature-row .desc-box {
+        width: 50%; }
+  .index-page section.type-section {
+    background: #FCFDFF;
+    padding-left: 30px;
+    padding-right: 30px; }
+  .index-page section.articles-section {
+    background: #FFE1EC;
+    padding-left: 30px;
+    padding-right: 30px; }
+  .index-page section.start-campaign-section {
+    background: #FCFDFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    padding-left: 30px;
+    padding-right: 30px; }
+    .index-page section.start-campaign-section h3 {
+      font-size: 2.2em;
+      max-width: 700px; } }

@@ -8,6 +8,11 @@ header{
   background: $redeem-blue;
   color: white;
 
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
   nav{
     display: flex;
     flex-direction: row;

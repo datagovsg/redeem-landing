@@ -2,6 +2,7 @@
 
 $redeem-pink: #FFE1EC;
 $redeem-blue: #303778;
+$redeem-white: #FCFDFF;
 $mobile-horizontal-padding: 30px;
 $desktop-horizontal-padding: 60px;
 $body-text: #2D3138;
@@ -39,6 +40,9 @@ section{
   }
 }
 
+a{
+  // text-decoration: none;
+}
 
 @media only screen and (min-width: 768px) {
   .page-header{
