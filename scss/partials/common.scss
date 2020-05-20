@@ -16,6 +16,7 @@ body{
   margin: 0;
   padding: 0;
   color: $body-text;
+  box-sizing: border-box;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -28,12 +29,14 @@ section{
   padding-top: 50px;
   padding-bottom: 50px;
   margin: 0 auto;
+  box-sizing: border-box;
 
 
   > div{
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
+    box-sizing: border-box;
   }
 }
 
