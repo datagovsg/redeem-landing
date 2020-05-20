@@ -3,36 +3,6 @@
     background: $redeem-pink;
     color: $redeem-blue;
 
-    a{
-      color: $redeem-blue;
-    }
-
-    .logo{
-      height: 40px;
-
-      a{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-        img{
-          margin-right: 10px;
-        }
-
-        .logo-text{
-          font-weight: 500;
-          color: $redeem-blue;
-          //
-          // text-transform: uppercase;
-          letter-spacing: .2px;
-          font-size: 20px;
-          vertical-align: baseline;
-        }
-      }
-
-    }
-
   }
 
   section{

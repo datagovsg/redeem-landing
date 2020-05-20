@@ -6,6 +6,7 @@ footer{
   padding-top: 50px;
   padding-bottom: 50px;
   font-size: 14px;
+  box-sizing: border-box;
 
   a{
     color: white;
@@ -29,10 +30,12 @@ footer{
         }
       }
 
-    p{
-      margin-top: 5px;
+      p{
+        margin-top: 5px;
+      }
     }
   }
+
   .footer-details{
     display: flex;
     flex-direction: column;
@@ -43,7 +46,7 @@ footer{
       margin-bottom: 20px;
 
       nav{
-        // width: 100%;
+        width: 100%;
 
         ul{
           list-style-type: none;
@@ -70,6 +73,7 @@ footer{
     }
   }
 
+
 }
 
 @media only screen and (min-width: 1080px) {
@@ -85,9 +89,11 @@ footer{
       .footer-left{
         margin-bottom: 0px;
         nav{
+
           ul{
             flex-direction: row;
             align-items: center;
+
             li{
               padding-left: 20px;
               padding-right: 20px;
@@ -106,4 +112,3 @@ footer{
     }
   }
 }
-} 
