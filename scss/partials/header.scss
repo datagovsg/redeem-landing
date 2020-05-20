@@ -10,9 +10,10 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 
     .logo{
-
+      height: 100%;
       a{
         display: flex;
         flex-direction: row;
