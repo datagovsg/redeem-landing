@@ -10,9 +10,12 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 
     .logo{
-
+      display: flex;
+      align-items: center;
+      
       a{
         display: flex;
         flex-direction: row;
@@ -74,10 +77,6 @@ header{
       }
     }
   }
-
-
-
-
 }
 
 @media only screen and (min-width: 768px) {
