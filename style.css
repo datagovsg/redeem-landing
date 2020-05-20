@@ -126,7 +126,8 @@ header {
     align-items: center;
     height: 100%; }
     header .header-container .logo {
-      height: 100%; }
+      display: flex;
+      align-items: center; }
       header .header-container .logo a {
         display: flex;
         flex-direction: row;
