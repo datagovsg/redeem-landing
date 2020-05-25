@@ -42,6 +42,18 @@ a {
     margin-top: 50px;
     font-size: 2em;
     color: #303778; }
+  .page-header h2 {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: #303778; }
+
+.doc-version {
+  margin: 0;
+  font-size: .8em;
+  color: #303778;
+  margin-bottom: .5em; }
 
 @media only screen and (min-width: 768px) {
   .page-header {
@@ -178,12 +190,6 @@ header {
       header .header-container nav .login-button {
         margin-left: 40px; } }
 
-.legal-version {
-  margin: 0;
-  font-size: .8em;
-  color: #303778;
-  margin-bottom: .5em; }
-
 .legal-section {
   margin-bottom: 100px;
   padding-left: 30px;
@@ -262,6 +268,36 @@ button {
       color: #FCFDFF; }
       button.login-button:hover a {
         color: #FCFDFF; }
+
+.faq-section {
+  margin-bottom: 100px;
+  padding-left: 30px;
+  padding-right: 30px; }
+  .faq-section .faq-group {
+    max-width: 70ch;
+    margin: 0 auto; }
+    .faq-section .faq-group h3 {
+      font-size: 2em; }
+    .faq-section .faq-group .question-answer-group {
+      padding-top: 10px;
+      padding-bottom: 20px;
+      box-sizing: border-box; }
+      .faq-section .faq-group .question-answer-group .question {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-weight: bold;
+        width: 100%;
+        color: #4B535E; }
+        .faq-section .faq-group .question-answer-group .question i {
+          font-size: 1.2em;
+          margin-right: 8px; }
+      .faq-section .faq-group .question-answer-group .answer {
+        color: #2D3138;
+        padding-left: 20px;
+        padding-right: 20px; }
+        .faq-section .faq-group .question-answer-group .answer.hidden {
+          display: none; }
 
 .index-page header {
   background: #FFE1EC;
