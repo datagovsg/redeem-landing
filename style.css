@@ -42,6 +42,18 @@ a {
     margin-top: 50px;
     font-size: 2em;
     color: #303778; }
+  .page-header h2 {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: #303778; }
+
+.doc-version {
+  margin: 0;
+  font-size: .8em;
+  color: #303778;
+  margin-bottom: .5em; }
 
 @media only screen and (min-width: 768px) {
   .page-header {
@@ -178,12 +190,6 @@ header {
       header .header-container nav .login-button {
         margin-left: 40px; } }
 
-.legal-version {
-  margin: 0;
-  font-size: .8em;
-  color: #303778;
-  margin-bottom: .5em; }
-
 .legal-section {
   margin-bottom: 100px;
   padding-left: 30px;
@@ -262,6 +268,51 @@ button {
       color: #FCFDFF; }
       button.login-button:hover a {
         color: #FCFDFF; }
+
+.faq-section {
+  padding-bottom: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: #FCFDFF; }
+  .faq-section .faq-group {
+    max-width: 80ch;
+    margin: 0 auto;
+    padding-bottom: 40px; }
+    .faq-section .faq-group h3 {
+      font-size: 2em;
+      color: #303778; }
+    .faq-section .faq-group .all-questions {
+      background: white;
+      border-radius: 10px;
+      -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+      -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35); }
+      .faq-section .faq-group .all-questions .question-answer-group {
+        box-sizing: border-box;
+        border-bottom: #E0E4EB 1px solid;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px; }
+        .faq-section .faq-group .all-questions .question-answer-group:last-child {
+          border-bottom: none; }
+        .faq-section .faq-group .all-questions .question-answer-group .question {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          font-weight: bold;
+          width: 100%;
+          color: #4B535E; }
+          .faq-section .faq-group .all-questions .question-answer-group .question i {
+            font-size: 1.2em;
+            margin-right: 8px; }
+        .faq-section .faq-group .all-questions .question-answer-group .answer {
+          color: #2D3138;
+          padding-left: 28px;
+          padding-right: 28px;
+          padding-top: 10px; }
+          .faq-section .faq-group .all-questions .question-answer-group .answer.hidden {
+            display: none; }
 
 .index-page header {
   background: #FFE1EC;
