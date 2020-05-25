@@ -1,5 +1,5 @@
-// $faq-section-bg:  #F4F6F8;
-$faq-section-bg:  $redeem-white;
+
+$faq-section-bg:  #EFF3F6;
 $faq-qn-bg:       #E0E4EB;
 $faq-qn:          #4B535E;
 $faq-anw:         $body-text;
@@ -23,9 +23,9 @@ $faq-anw:         $body-text;
     .all-questions{
       background: white;
       border-radius: 10px;
-      -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.35);
-      -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.35);
-      box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.35);
+      -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35);
+      -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35);
+      box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35);
 
       .question-answer-group{
         box-sizing: border-box;
@@ -46,11 +46,12 @@ $faq-anw:         $body-text;
 
           font-weight: bold;
           width: 100%;
-          color: $faq-qn;
+          color: $redeem-blue;
 
           i{
             font-size: 1.2em;
             margin-right: 8px;
+            color: $redeem-blue;
           }
         }
         .answer{
@@ -64,6 +65,11 @@ $faq-anw:         $body-text;
             display: none;
           }
 
+          img{
+            width: 320px;
+            max-width: 100%;
+            height: auto;
+          }
 
         }
       }

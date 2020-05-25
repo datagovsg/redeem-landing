@@ -273,7 +273,7 @@ button {
   padding-bottom: 100px;
   padding-left: 30px;
   padding-right: 30px;
-  background: #FCFDFF; }
+  background: #EFF3F6; }
   .faq-section .faq-group {
     max-width: 80ch;
     margin: 0 auto;
@@ -284,9 +284,9 @@ button {
     .faq-section .faq-group .all-questions {
       background: white;
       border-radius: 10px;
-      -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
-      -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
-      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35); }
+      -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
+      -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35); }
       .faq-section .faq-group .all-questions .question-answer-group {
         box-sizing: border-box;
         border-bottom: #E0E4EB 1px solid;
@@ -302,10 +302,11 @@ button {
           align-items: flex-start;
           font-weight: bold;
           width: 100%;
-          color: #4B535E; }
+          color: #303778; }
           .faq-section .faq-group .all-questions .question-answer-group .question i {
             font-size: 1.2em;
-            margin-right: 8px; }
+            margin-right: 8px;
+            color: #303778; }
         .faq-section .faq-group .all-questions .question-answer-group .answer {
           color: #2D3138;
           padding-left: 28px;
@@ -313,6 +314,10 @@ button {
           padding-top: 10px; }
           .faq-section .faq-group .all-questions .question-answer-group .answer.hidden {
             display: none; }
+          .faq-section .faq-group .all-questions .question-answer-group .answer img {
+            width: 320px;
+            max-width: 100%;
+            height: auto; }
 
 .index-page header {
   background: #FFE1EC;
