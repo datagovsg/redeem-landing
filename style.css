@@ -314,8 +314,8 @@ button {
           padding-right: 28px;
           padding-top: 10px; }
           .faq-section .faq-group .all-questions .question-answer-group .answer img {
-            width: 320px;
-            max-width: 100%;
+            width: 100%;
+            max-width: 320px;
             height: auto; }
         .faq-section .faq-group .all-questions .question-answer-group.hidden .answer {
           display: none; }
