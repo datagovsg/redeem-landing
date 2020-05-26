@@ -43,27 +43,51 @@ $faq-anw:         $body-text;
           border-bottom: none;
         }
 
+        label{
+          margin: 0;
+          padding: 0;
+        }
+
+        input{
+	        display: none;
+        }
+
         .question{
           display: flex;
           justify-content: flex-start;
           align-items: flex-start;
-
           font-weight: 500;
           width: 100%;
           color: $redeem-blue;
 
-          i{
-            font-size: 1.2em;
-            margin-right: 8px;
-            color: $redeem-blue;
+          // i{
+          //   font-size: 1.2em;
+          //   margin-right: 8px;
+          //   color: $redeem-blue;
+          // }
+
+          &:before{
+              content: "";
+              display: flex;
+              background: url("img/bx-chevron-right.svg") no-repeat center center;
+              width: 15px;
+              height: 15px;
+              margin-right: 11px;
+              margin-top: 2px;
+              transition: all .3s ease-out;
+            }
           }
-        }
+
         .answer{
           color: $faq-anw;
           display: block;
           padding-left: 28px;
           padding-right: 28px;
-          padding-top: 10px;
+          padding-top: 0px;
+          visibility: hidden;
+          max-height: 0px;
+          opacity: 0%;
+          // transition: all .3s ease-out;
 
 
           img{
@@ -75,11 +99,43 @@ $faq-anw:         $body-text;
         }
 
 
-        &.hidden{
-          .answer{
-            display: none;
+        // &.hidden{
+        //   .answer{
+        //     display: none;
+        //   }
+        // }
+
+        // when input is checked
+        input:checked{
+
+          &~.answer{
+            visibility: visible;
+            padding-top: 10px;
+            max-height: 800px;
+            opacity: 100%;
+            transition: all .3s ease-out;
+
+
           }
+
+          ~.question{
+
+           &:before{
+            // display: flex;
+            // background: url("img/bx-chevron-right.svg") no-repeat center center;
+            // width: 15px;
+            // height: 15px;
+            // margin-right: 10px;
+            // margin-top: 2px;
+            transform: rotate(90deg);
+            transition: all .3s ease-out;
+           }
+
+         }
         }
+
+
+
       }
 
     }
