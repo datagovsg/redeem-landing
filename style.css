@@ -310,8 +310,8 @@ button {
           color: #303778; }
           .faq-section .faq-group .all-questions .question-answer-group .question:before {
             content: "";
-            display: flex;
             background: url("img/bx-chevron-right.svg") no-repeat center center;
+            background-size: 15px 15px;
             width: 15px;
             height: 15px;
             margin-right: 13px;
