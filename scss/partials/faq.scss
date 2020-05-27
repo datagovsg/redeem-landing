@@ -60,24 +60,26 @@ $faq-anw:         $body-text;
           width: 100%;
           color: $redeem-blue;
 
-          &:before{
-              content: "";
+          .icon{
+              display: flex;
+              width: 20px;
+              height: 20px;
               background: url("img/bx-chevron-right.svg") no-repeat center center;
               background-size: 15px 15px;
-              display: inline-block;
-              width: 15px;
-              height: 15px;
-              margin-right: 13px;
-              margin-top: 2px;
+              margin-right: 10px;
               transition: all .3s ease-out;
+            }
+            span{
+              width: 95%;
             }
           }
 
         .answer{
           color: $faq-anw;
-          display: block;
-          padding-left: 28px;
-          padding-right: 28px;
+          display: none;
+          margin-left: 30px;
+          margin-right: 20px;
+          box-sizing: border-box;
           padding-top: 0px;
           visibility: hidden;
           max-height: 0px;
@@ -96,6 +98,7 @@ $faq-anw:         $body-text;
         input:checked{
 
           &~.answer{
+            display: block;
             visibility: visible;
             padding-top: 10px;
             max-height: 800px;
@@ -107,11 +110,10 @@ $faq-anw:         $body-text;
 
           ~.question{
 
-           &:before{
-            transform: rotate(90deg);
-            transition: all .3s ease-out;
-           }
-
+            .icon{
+               transform: rotate(90deg);
+               transition: all .3s ease-out;
+            }
          }
         }
 
