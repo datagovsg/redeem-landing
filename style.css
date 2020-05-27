@@ -308,21 +308,22 @@ button {
           font-weight: 500;
           width: 100%;
           color: #303778; }
-          .faq-section .faq-group .all-questions .question-answer-group .question:before {
-            content: "";
+          .faq-section .faq-group .all-questions .question-answer-group .question .icon {
+            display: flex;
+            width: 20px;
+            height: 20px;
             background: url("img/bx-chevron-right.svg") no-repeat center center;
             background-size: 15px 15px;
-            display: inline-block;
-            width: 15px;
-            height: 15px;
-            margin-right: 13px;
-            margin-top: 2px;
+            margin-right: 10px;
             transition: all .3s ease-out; }
+          .faq-section .faq-group .all-questions .question-answer-group .question span {
+            width: 95%; }
         .faq-section .faq-group .all-questions .question-answer-group .answer {
           color: #2D3138;
-          display: block;
-          padding-left: 28px;
-          padding-right: 28px;
+          display: none;
+          margin-left: 30px;
+          margin-right: 10px;
+          box-sizing: border-box;
           padding-top: 0px;
           visibility: hidden;
           max-height: 0px;
@@ -332,12 +333,13 @@ button {
             max-width: 320px;
             height: auto; }
         .faq-section .faq-group .all-questions .question-answer-group input:checked ~ .answer {
+          display: block;
           visibility: visible;
           padding-top: 10px;
           max-height: 800px;
           opacity: 100%;
           transition: all .3s ease-out; }
-        .faq-section .faq-group .all-questions .question-answer-group input:checked ~ .question:before {
+        .faq-section .faq-group .all-questions .question-answer-group input:checked ~ .question .icon {
           transform: rotate(90deg);
           transition: all .3s ease-out; }
 
