@@ -312,6 +312,7 @@ button {
             content: "";
             background: url("img/bx-chevron-right.svg") no-repeat center center;
             background-size: 15px 15px;
+            display: inline-block;
             width: 15px;
             height: 15px;
             margin-right: 13px;
