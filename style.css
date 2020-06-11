@@ -296,10 +296,11 @@ button {
   .faq-section .faq-group {
     max-width: 80ch;
     margin: 0 auto;
-    padding-bottom: 40px; }
+    padding-bottom: 80px; }
     .faq-section .faq-group h3 {
       font-size: 2em;
-      color: #303778; }
+      color: #303778;
+      margin-bottom: 30px; }
     .faq-section .faq-group .all-questions {
       background: white;
       border-radius: 10px;

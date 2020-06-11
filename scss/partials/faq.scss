@@ -13,11 +13,12 @@ $faq-anw:         $body-text;
   .faq-group{
     max-width: 80ch;
     margin: 0 auto;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
 
     h3{
       font-size: 2em;
       color: $redeem-blue;
+      margin-bottom: 30px;
     }
 
     .all-questions{
