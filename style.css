@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 body {
   font-family: 'Rubik', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.4;
+  font-size: 16px !important;
+  font-weight: 400;
   margin: 0;
   padding: 0;
   color: #2D3138;
@@ -13,6 +12,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   letter-spacing: .3px;
   line-height: 140%; }
+
+p, a, li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4 !important; }
 
 section {
   padding-top: 50px;
@@ -55,7 +59,19 @@ a {
   color: #303778;
   margin-bottom: .5em; }
 
+.sgds-masthead {
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 30px; }
+  .sgds-masthead a {
+    color: #484848;
+    font-size: 12px; }
+
 @media only screen and (min-width: 768px) {
+  .sgds-masthead {
+    box-sizing: border-box;
+    padding-left: 60px;
+    padding-right: 60px; }
   .page-header {
     padding-left: 60px;
     padding-right: 60px; }
@@ -75,17 +91,19 @@ footer {
     color: white; }
     footer a:visited, footer a :hover, footer a :active {
       color: white; }
-  footer .footer-brand .logo a {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center; }
-    footer .footer-brand .logo a img {
-      margin-right: 10px;
-      margin-bottom: 5px;
-      height: 20px; }
-  footer .footer-brand .logo p {
-    margin-top: 5px; }
+  footer .footer-brand {
+    margin-bottom: 20px; }
+    footer .footer-brand .logo a {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center; }
+      footer .footer-brand .logo a img {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        height: 20px; }
+    footer .footer-brand .logo p {
+      margin-top: 5px; }
   footer .footer-details {
     display: flex;
     flex-direction: column;
@@ -238,6 +256,7 @@ header {
 
 button {
   font-family: 'Rubik', sans-serif;
+  font-size: 16px;
   font-weight: 500;
   border-radius: 5px;
   border: none;
@@ -416,8 +435,8 @@ button {
         font-size: 1.8em;
         color: #303778;
         margin-top: 50px;
-        margin-bottom: 0;
-        line-height: 1.2em; }
+        margin-bottom: 10px;
+        line-height: 1.1em; }
       .index-page section.feature-section .each-feature-row .desc-box p {
         width: 100%;
         color: #303778;
