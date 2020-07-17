@@ -170,13 +170,13 @@ header {
       height: 24px; }
     header .header-container a {
       text-decoration: none;
-      color: #303778; }
+      color: #FCFDFF; }
       header .header-container a:hover {
-        color: #303778; }
+        color: #FCFDFF; }
       header .header-container a:visited {
-        color: #303778; }
+        color: #FCFDFF; }
       header .header-container a:active {
-        color: #303778; }
+        color: #FCFDFF; }
     header .header-container nav {
       display: flex;
       flex-direction: row;
@@ -286,7 +286,9 @@ button {
       background: #303778;
       color: #FCFDFF; }
       button.login-button:hover a {
-        color: #FCFDFF; }
+        color: #FCFDFF !important; }
+        button.login-button:hover a:visited {
+          color: #FCFDFF !important; }
 
 .faq-section {
   padding-bottom: 100px;
@@ -373,6 +375,15 @@ button {
 .index-page header {
   background: #FFE1EC;
   color: #303778; }
+  .index-page header .header-container a {
+    text-decoration: none;
+    color: #303778; }
+    .index-page header .header-container a:hover {
+      color: #303778; }
+    .index-page header .header-container a:visited {
+      color: #303778; }
+    .index-page header .header-container a:active {
+      color: #303778; }
 
 .index-page section.intro-section {
   background: #FFE1EC;

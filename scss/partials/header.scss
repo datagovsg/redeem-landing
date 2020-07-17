@@ -27,18 +27,18 @@ header{
 
     a{
       text-decoration: none;
-      color: $redeem-blue;
+      color: $redeem-white;
 
       &:hover{
-        color: $redeem-blue;
+        color: $redeem-white;
       }
 
       &:visited{
-        color: $redeem-blue;
+        color:$redeem-white;
       }
 
       &:active{
-        color: $redeem-blue;
+        color: $redeem-white;
       }
 
     }

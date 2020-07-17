@@ -3,6 +3,26 @@
     background: $redeem-pink;
     color: $redeem-blue;
 
+    .header-container{
+      a{
+        text-decoration: none;
+        color: $redeem-blue;
+
+        &:hover{
+          color: $redeem-blue;
+        }
+
+        &:visited{
+          color:$redeem-blue;
+        }
+
+        &:active{
+          color: $redeem-blue;
+        }
+
+      }
+    }
+
   }
 
   section{
