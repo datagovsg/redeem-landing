@@ -348,10 +348,17 @@ button {
           visibility: hidden;
           max-height: 0px;
           opacity: 0%; }
+          .faq-section .faq-group .all-questions .question-answer-group .answer p {
+            padding: 10px 0px; }
           .faq-section .faq-group .all-questions .question-answer-group .answer img {
             width: 100%;
             max-width: 320px;
             height: auto; }
+          .faq-section .faq-group .all-questions .question-answer-group .answer ul {
+            list-style-type: disc;
+            margin: .2em 1.2em; }
+            .faq-section .faq-group .all-questions .question-answer-group .answer ul li {
+              padding: .2em; }
         .faq-section .faq-group .all-questions .question-answer-group input:checked ~ .answer {
           display: block;
           visibility: visible;

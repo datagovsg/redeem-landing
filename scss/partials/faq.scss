@@ -86,11 +86,22 @@ $faq-anw:         $body-text;
           max-height: 0px;
           opacity: 0%;
 
+          p{
+            padding: 10px 0px;
+          }
 
           img{
             width: 100%;
             max-width: 320px;
             height: auto;
+          }
+
+          ul{
+            list-style-type: disc;
+            margin: .2em 1.2em;
+            li{
+              padding: .2em;
+            }
           }
 
         }
