@@ -86,6 +86,9 @@ $faq-anw:         $body-text;
           max-height: 0px;
           opacity: 0%;
 
+          p{
+            padding: 10px 0px;
+          }
 
           img{
             width: 100%;
@@ -95,7 +98,7 @@ $faq-anw:         $body-text;
 
           ul{
             list-style-type: disc;
-            margin: 1em 1.2em;
+            margin: .2em 1.2em;
             li{
               padding: .2em;
             }
