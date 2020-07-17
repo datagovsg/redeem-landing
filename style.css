@@ -238,15 +238,15 @@ header {
   .legal .specialgroup {
     margin-top: 2em; }
 
-.schedule {
+.schedule, .additional-terms {
   max-width: 70ch;
   margin: 0 auto; }
-  .schedule ol li {
+  .schedule ol li, .additional-terms ol li {
     margin-bottom: 1em;
     margin-top: 2em; }
-    .schedule ol li:before {
+    .schedule ol li:before, .additional-terms ol li:before {
       margin: 0 0.5em 0 0; }
-    .schedule ol li ol li {
+    .schedule ol li ol li, .additional-terms ol li ol li {
       margin-top: 1em; }
 
 @media only screen and (min-width: 768px) {
