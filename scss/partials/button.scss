@@ -44,7 +44,11 @@ button{
         background: $redeem-blue;
         color: $redeem-white;
         a{
-          color: $redeem-white;
+          color: $redeem-white !important;;
+
+          &:visited{
+            color: $redeem-white !important;
+          }
         }
       }
   }
