@@ -344,7 +344,8 @@ button {
           align-items: flex-start;
           font-weight: 500;
           width: 100%;
-          color: #303778; }
+          color: #303778;
+          cursor: pointer; }
           .faq-section .faq-group .all-questions .question-answer-group .question .icon {
             display: flex;
             width: 20px;
