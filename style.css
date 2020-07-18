@@ -380,7 +380,7 @@ button {
           display: block;
           visibility: visible;
           padding-top: 10px;
-          max-height: 800px;
+          max-height: 3000px;
           opacity: 100%;
           transition: all .3s ease-out; }
         .faq-section .faq-group .all-questions .question-answer-group input:checked ~ .question .icon {
