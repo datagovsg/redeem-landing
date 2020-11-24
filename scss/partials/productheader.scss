@@ -1,0 +1,55 @@
+.product-header-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  background: $redeem-pink;
+
+  .container {
+    .row {
+      .header-left {
+        .logo {
+          a {
+            img {
+              height: 24px;
+            }
+          }
+        }
+      }
+
+      .header-right {
+        nav {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-end;
+
+          ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+
+            li {
+              padding: 0px 20px;
+
+              &:last-child {
+                padding-right: 0;
+              }
+
+              a {
+                color: $redeem-blue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

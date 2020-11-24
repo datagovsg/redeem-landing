@@ -1,9 +1,17 @@
-@import "partials/common";
-@import "partials/bootstrap-grid";
-@import "partials/footer";
-@import "partials/header";
-@import "partials/legal";
-@import "partials/button";
-@import "partials/faq";
+// base
+@import "base/base";
+@import "base/bootstrap-grid";
+@import "base/variables";
+@import "base/typography";
 
+// partials
+@import "partials/legal";
+@import "partials/masthead";
+@import "partials/ogpfooter";
+@import "partials/productheader";
+@import "partials/productfooter";
+
+// pages
+// base
 @import "pages/index";
+@import "pages/faq";
