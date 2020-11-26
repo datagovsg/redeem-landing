@@ -1,0 +1,21 @@
+.faq-page {
+  .product-header-container {
+    background: $redeem-blue;
+
+    .container {
+      .row {
+        .header-right {
+          nav {
+            ul {
+              li {
+                a {
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
