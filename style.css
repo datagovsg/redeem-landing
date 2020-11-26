@@ -1671,7 +1671,9 @@ h6 {
   margin-bottom: 5em;
 }
 .legal-body-container .legal .legal-section h2,
-.legal-body-container .legal .legal-section h3 {
+.legal-body-container .legal .legal-section h3,
+.legal-body-container .legal .legal-section h4,
+.legal-body-container .legal .legal-section h5 {
   margin-top: 0;
   margin-bottom: 1em;
   text-align: center;
