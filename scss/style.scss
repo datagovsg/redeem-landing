@@ -6,12 +6,13 @@
 
 // partials
 @import "partials/legal";
+@import "partials/faq";
 @import "partials/masthead";
 @import "partials/ogpfooter";
 @import "partials/productheader";
 @import "partials/productfooter";
 
 // pages
-// base
 @import "pages/index";
-@import "pages/faq";
+@import "pages/index-agencies";
+@import "pages/index-merchant";
