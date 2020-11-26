@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 
-$redeem-pink: #FFE1EC;
+$redeem-pink: #ffe1ec;
 $redeem-blue: #303778;
-$redeem-white: #FCFDFF;
-$redeem-lightblue: #198DF5;
+$redeem-white: #fcfdff;
+$redeem-lightblue: #198df5;
 $mobile-horizontal-padding: 30px;
 $desktop-horizontal-padding: 60px;
-$body-text: #2D3138;
+$body-text: #2d3138;
 
-body{
-  font-family: 'Rubik', sans-serif;
+body {
+  font-family: "Rubik", sans-serif;
   font-size: 16px !important;
   font-weight: 400;
   margin: 0;
@@ -18,27 +18,32 @@ body{
   box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 500;
-  letter-spacing: .3px;
+  letter-spacing: 0.3px;
   line-height: 140%;
 }
 
-
-p,a, li{
+p,
+a,
+li {
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.4 !important;
+  line-height: 1.5 !important;
 }
 
-section{
+section {
   padding-top: 50px;
   padding-bottom: 50px;
   margin: 0 auto;
   box-sizing: border-box;
 
-
-  > div{
+  > div {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
@@ -46,32 +51,33 @@ section{
   }
 }
 
-a{
+a {
   text-decoration: none;
   color: $redeem-lightblue;
 
-  &:visited,:active{
+  &:visited,
+  :active {
     color: $redeem-lightblue;
   }
 
-  &:hover{
-    color: lighten($redeem-lightblue,15%);
+  &:hover {
+    color: lighten($redeem-lightblue, 15%);
   }
 }
 
-.page-header{
+.page-header {
   background-color: $redeem-pink;
   padding-left: $mobile-horizontal-padding;
   padding-right: $mobile-horizontal-padding;
 
-  h1{
+  h1 {
     margin: 0 auto;
     margin-top: 50px;
     font-size: 2em;
     color: $redeem-blue;
   }
 
-  h2{
+  h2 {
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 30px;
@@ -80,40 +86,37 @@ a{
   }
 }
 
-.doc-version{
+.doc-version {
   margin: 0;
-  font-size: .8em;
+  font-size: 0.8em;
   color: $redeem-blue;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
-.sgds-masthead{
+.sgds-masthead {
   box-sizing: border-box;
   padding-left: $mobile-horizontal-padding;
   padding-right: $mobile-horizontal-padding;
 
-
-  a{
+  a {
     color: #484848;
     font-size: 12px;
   }
 }
 
-
 @media only screen and (min-width: 768px) {
-  .sgds-masthead{
+  .sgds-masthead {
     box-sizing: border-box;
     padding-left: $desktop-horizontal-padding;
     padding-right: $desktop-horizontal-padding;
   }
 
-  .page-header{
+  .page-header {
     padding-left: $desktop-horizontal-padding;
     padding-right: $desktop-horizontal-padding;
 
-    h1{
+    h1 {
       font-size: 2.6em;
     }
   }
-
 }
