@@ -4,8 +4,8 @@
   <head>
     <meta charset="utf-8">
 
-    <title>RedeemSG - Distribute things to citizens easily</title>
-    <meta name="description" content="RedeemSG - Distribute things to citizens easily">
+    <title>RedeemSG - Track vouchers easily</title>
+    <meta name="description" content="RedeemSG - Track vouchers easily">
     <meta name="author" content="Redeem Landing">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -57,7 +57,7 @@
     <section class="page-header">
       <h1>Frequently Asked Questions (FAQ)</h1>
       <h2>General FAQ</h2>
-      <p class="doc-version">Updated 17 Jul 2020</p>
+      <p class="doc-version">Updated 24 Nov 2020</p>
     </section>
 
     <section class="faq-section">
@@ -70,191 +70,123 @@
             <input id="qn-1" type="checkbox"/>
             <label for="qn-1" class= "question"><div class="icon"></div><span>What is RedeemSG?</span></label>
             <div class="answer">
-              <p>RedeemSG is a solution being used to enable government agencies and affiliate organizations to easily track redemption of goods and vouchers. This comprises of:
+              <p>RedeemSG is a system being used to enable government agencies and charities to easily track redemption of vouchers. This comprises of:
                 <ul>
-                  <li>A mobile app used by agency officers and merchants to update redemption,</li>
-                  <li>An admin portal that allows agencies to manage their campaign and view statistics, and </li>
-                  <li>API that merchants can integrate with to update redemption. </li>
+                  <li>An admin portal that allows agencies to create vouchers, send vouchers and track voucher redemptions. </li>
+                  <li>E-vouchers that get sent to citizens via SMS that open up in a web link, and </li>
+                  <li>an API that merchants can integrate with to instantly invalidate vouchers. </li>
                 </ul>
               </p>
             </div>
           </div>
-
           <div class="question-answer-group">
             <input id="qn-2" type="checkbox"/>
-            <label for="qn-2" class= "question"><div class="icon"></div><span>Who can use RedeemSG?</span></label>
+            <label for="qn-2" class= "question"><div class="icon"></div><span>Where can I use my vouchers?</span></label>
             <div class="answer">
               <p>Any government agency and its affiliate partners can use RedeemSG. We also assess requests from charities on a case by case basis.</p>
-              <p>To gain access to the system, you will need to contact us at <a href="mailto:feedback@redeem.gov.sg">feedback@redeem.gov.sg</a> to set up a campaign.
-                <ul>
-                  <li>We will need to add mobile numbers of Campaign administrators and operations personnel before you and your colleagues can start using the mobile app for a particular campaign. </li>
-                  <li>We will add your mobile numbers such that you will be able to access a campaign on the admin portal. </li>
-                </ul>
-              </p>
+              <p>Any government agency officer can log into RedeemSG using their gov.sg email. To create and gain access to a campaign, please contact us at feedback@redeem.gov.sg <a href="mailto:feedback@redeem.gov.sg">feedback@redeem.gov.sg</a> to set up a campaign.</p>
             </div>
           </div>
-
-          <div class="question-answer-group">
-            <input id="qn-3" type="checkbox"/>
-            <label for="qn-3" class= "question"><div class="icon"></div><span>I tried downloading the mobile app and logged in, and am unable to move beyond the “Add Collection Point” screen. Why is that the case?
-</span></label>
-            <div class="answer">
-              <p>You will need to either be added to a campaign as a campaign/ location administrator or scan the QR code of a collection point before you can start using RedeemSG to update redemption for a particular campaign. </p>
-            </div>
-          </div>
-
+     <div class="question-answer-group">
+        <input id="qn-3" type="checkbox"/>
+        <label for="qn-3" class= "question"><div class="icon"></div><span>How does RedeemSG typically work? 
+        </span></label>
+        <div class="answer">
+        <ul>
+          <li>Government agencies provide us with their campaign specifications to create a campaign.</li>
+          <li>Agencies upload a recipient list to create vouchers.</li>
+          <li>Agencies trigger the sending of vouchers to all recipients via SMS.</li>
+          <li>Recipients open the voucher in a web link and show it to the merchant, who will scan and update redemption using a barcode scanner or mobile app.</li>
+        </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq-group">
+      <h3>For Voucher Recipients: </h3>
+      <div class="all-questions">
+        <!-- each question -->
           <div class="question-answer-group">
             <input id="qn-4" type="checkbox"/>
-            <label for="qn-4" class= "question"><div class="icon"></div><span>I tried logging into “RedeemSG” mobile app and see a blank screen. Why is that the case?</span></label>
+            <label for="qn-4" class= "question"><div class="icon"></div><span>How do I know if my voucher is generated by RedeemSG or a real government/ charity generated voucher?            </span></label>
             <div class="answer">
-              <p>You will need to be added to a campaign as a campaign administrator before you can start using RedeemSG to update redemptions for recipients.</p>
+              <p>Please check if your voucher starts with the following prefix <a href="https://v.redeem.gov.sg">https://v.redeem.gov.sg</a>". The sender name is “RedeemSG”. Please do not trust vouchers starting with other prefixes. 
+              </p>
+              <p>
+                A typical SMS from RedeemSG will look something like this: <br><br>
+                <img src="./img/samplegroceryvouchersms.jpg"> <br>
+                <br>
+                A typical RedeemSG voucher will open up in a web link and look something like this - see below. <br><br>
+                <img src="./img/samplegroceryvoucher.PNG">
+                <br>
+
+                <br> If you are unsure of whether the voucher is from RedeemSG and the Singapore Government, please check with the relevant agency hotline/ online form or email <a href="feedback@redeem.gov.sg">feedback@redeem.gov.sg</a>
+              </p>
             </div>
           </div>
-
           <div class="question-answer-group">
             <input id="qn-5" type="checkbox"/>
-            <label for="qn-5" class= "question"><div class="icon"></div><span>Is there any email I can write to if I have any feedback or questions?</span></label>
+            <label for="qn-5" class= "question"><div class="icon"></div><span>Where can I redeem my voucher? What are the voucher terms and conditions? 
+            </span></label>
             <div class="answer">
-              <p>Please kindly email <a href="mailto:feedback@redeem.gov.sg">feedback@redeem.gov.sg</a> if you have any questions. We would love to hear from you. </p>
+              <p>You can refer to the following pages to find out more on the specific campaign’s merchants and terms and conditions. For the NEA programme - click <a href = 'https://www.climate-friendly-households.gov.sg/faq/'>here</a>  for FAQs. click <a href = "https://www.climate-friendly-households.gov.sg/retailers/list-of-retailers/">here</a> for list of merchants 
+              </p>
             </div>
           </div>
-
           <div class="question-answer-group">
             <input id="qn-6" type="checkbox"/>
-            <label for="qn-6" class= "question"><div class="icon"></div><span>Is there a demonstration or training video for how the app works?
-</span></label>
+            <label for="qn-6" class= "question"><div class="icon"></div>
+              <span>Can my voucher be transferred? How do I transfer my voucher? 
+            </span></label>
             <div class="answer">
-              <p>Yes.</p>
-              <p>Training video for campaigns distributing goods to individuals (we have cited the example of the mask distribution campaign here):
-                <ul>
-                  <li>Watch <a href="https://www.youtube.com/watch?v=_jHyNrQ35u4" target="_blank">https://www.youtube.com/watch?v=_jHyNrQ35u4</a> if you have not submitted your phone number beforehand to be added as a location Point-of-Contact.</li>
-                  <li>Watch <a href="https://www.youtube.com/watch?v=nqX4_PmHdNE&t=77s" target="_blank">https://www.youtube.com/watch?v=nqX4_PmHdNE&t=77s</a> if you are a location Point-of-Contact, in other words you submitted your number to your government agency beforehand to be added. </li>
-                </ul>
+              <p> Vouchers are designed to be transferable. You can share the voucher by copying and pasting the voucher link into a chat message on Whatsapp, Telegram or any other messaging app you use. 
               </p>
-
-              <p>Training video for campaigns distributing goods to households (we have cited the example of the NDP SG Together Pack campaign here):
-                <ul>
-                  <li>Watch <a href="https://youtu.be/d12zzUV35FM" target="_blank">https://youtu.be/d12zzUV35FM</a>  if you have not submitted your phone number beforehand to be added as a location Point-of-Contact.</li>
-                  <li>Watch <a href="https://youtu.be/g2xfM5VUBzQ" target="_blank">https://youtu.be/g2xfM5VUBzQ</a>  if you are a location Point-of-Contact, in other words you submitted your number to your government agency beforehand to be added. </li>
-                </ul>
+              <p>Some programmes restrict the use of the voucher only to the recipient. In these cases, only the person whose name/ NRIC is on the voucher can use it.</p>
+              <p>Other programmes restrict the use of the voucher only to a household in the same registered address. In these cases, only a same member of the household whose address is on the voucher can use it. 
               </p>
             </div>
-          </div>
-
-      </div>
-
-    </div>
-
-    <div class="faq-group">
-      <h3>Updating Redemption of Goods </h3>
-
-      <div class="all-questions">
-        <!-- each question -->
+            </div>
           <div class="question-answer-group">
             <input id="qn-7" type="checkbox"/>
-            <label for="qn-7" class= "question"><div class="icon"></div><span>How many redemptions are allowed?</span></label>
+            <label for="qn-7" class= "question"><div class="icon"> 
+              </div><span>Can I redeem the voucher on behalf of others? </span></label>
             <div class="answer">
-              <p>Each person can only redeem their quota for a particular campaign (E.g. 1 mask pack, or 4 meals a day). Any additional redemption requests should be declined. If a person insists they did not redeem but it is shown in the system that they redeemed, you can still click “redeem anyway” and log this as an appeal case.  </p>
+              <p>Yes, you can redeem the voucher on behalf of others as long as it is allowed by the campaign. Please check the campaign specific FAQs above to ensure that this is allowed.                </p>
             </div>
           </div>
-
           <div class="question-answer-group">
             <input id="qn-8" type="checkbox"/>
-            <label for="qn-8" class= "question"><div class="icon"></div><span>What forms of identification are allowed for goods redemption campaigns?</span></label>
+            <label for="qn-8" class= "question"><div class="icon">  
+              </div><span>Can I use the remaining amount if I do not fully utilize the voucher?  </span></label>
             <div class="answer">
-              <p>For campaigns involving distributions to individuals, the NRIC/FIN will typically be used as the form of identification.</p>
-              <p>
-                RedeemSG app enables users to scan any Singapore identification card that includes the NRIC or FIN number. This includes the NRIC card, student card, passion card, birth certificate and various foreign passes issued by MOM (e.g. work pass, S pass, entrepass, long term visit pass).
-              </p>
-              <p>
-                For campaigns involving distribution to households, the postal code, floor and unit number will be used to identify a household. Any valid Singapore address can be logged by the system.
-              </p>
-              <p>
-                Please check with the campaign owner for the forms of identification that a person would need to bring down to redeem an item for a particular campaign, as this is determined by them.
-              </p>
+              <p>Each voucher or voucher denomination is one time use only. Please refer to the FAQs specific to the programme indicated above for more information.               </p>
             </div>
           </div>
-
           <div class="question-answer-group">
             <input id="qn-9" type="checkbox"/>
-            <label for="qn-9" class= "question"><div class="icon"></div><span>I am unable to scan to scan the bar code and it shows me a dark grey screen. Can you help? </span></label>
+            <label for="qn-9" class= "question"><div class="icon">  
+              </div><span>I clicked on the voucher link and am unable to access it. Can you help? </span></label>
             <div class="answer">
-              <p>Please make sure that you allow RedeemSG to access the phone camera. </p>
-              <p>If you’re using an Apple phone, go to Settings<i class='bx bx-right-arrow-alt'></i> search “RedeemSG” <i class='bx bx-right-arrow-alt'></i> Click on RedeemSG<i class='bx bx-right-arrow-alt'></i> Allow RedeemSG to Access Camera <i class='bx bx-right-arrow-alt'></i>Turn on</p>
-              <p>If you’re using a Samsung phone, go to Settings<i class='bx bx-right-arrow-alt'></i> Apps<i class='bx bx-right-arrow-alt'></i> Search “RedeemSG”<i class='bx bx-right-arrow-alt'></i> App info<i class='bx bx-right-arrow-alt'></i> Under app settings, click on “Permissions Camera” <i class='bx bx-right-arrow-alt'></i> Enable</p>
-              <p>For all other phones, please check settings and go to RedeemSG settings, and ensure that camera is enabled.</p>
+              <p>Please kindly check that you are connected to the internet. If this problem persists, you may contact <a href= "feedback@redeem.gov.sg"> feedback@redeem.gov.sg</a>.</p>
             </div>
           </div>
-
-          <div class="question-answer-group">
-            <input id="qn-10" type="checkbox"/>
-            <label for="qn-10" class= "question"><div class="icon"></div><span>For campaigns that require scanning of work passes: I’m having trouble scanning a foreign work pass. Can you help? </span></label>
-            <div class="answer">
-              <p>You will need to scan the bottom bar code at the back of the foreign work pass - see sample below. Please cover the QR code on the right hand side as this should not be scanned. </p>
-              <img src=" img/foreignWorkerPassScanHere.png"/>
-            </div>
-          </div>
-
-      </div>
-
     </div>
-
-    <div class="faq-group">
-      <h3>Adding and Changing Collection Points </h3>
-
-      <div class="all-questions">
-        <!-- each question -->
-          <div class="question-answer-group">
-            <input id="qn-11" type="checkbox"/>
-            <label for="qn-11" class= "question"><div class="icon"></div><span>I get stuck at the “Add collection point” page. How can I start using the app? </span> </label>
-            <div class="answer">
-              <p>Please find your collection point’s Point-of-Contact (POC) and scan their QR code to add a collection point. </p>
-              <p>Alternatively, have them send the QR code over whatsapp to your fellow volunteers/ staff or print the QR code out for scanning. These QR codes change each day, so you will need to scan the QR code every day to update redemption.
-              </p>
-            </div>
-          </div>
-
-          <div class="question-answer-group">
-            <input id="qn-12" type="checkbox"/>
-            <label for="qn-12" class= "question"><div class="icon"></div><span>I added the collection point yesterday. Why am I no longer added to that collection point today? Do QR codes expire? </span></label>
-            <div class="answer">
-              <p>QR codes are valid each day till 11.59pm, and reset and midnight. This is to ensure that users who only help out only on certain days of the campaign will not be able to update redemption for the other days. </p>
-            </div>
-          </div>
-
-          <div class="question-answer-group">
-            <input id="qn-13" type="checkbox"/>
-            <label for="qn-13" class= "question"><div class="icon"></div><span>I will be moving around to different collection points. How do I add or change collection point on the app? </span></label>
-            <div class="answer">
-              <p>Watch <a href="https://www.youtube.com/watch?v=_jHyNrQ35u4?t=273" target="_blank">this video</a> from 4.33 onwards. Otherwise, the instructions are below as well.
-                <ul>
-                  <li>Click on the menu button on the top left hand corner that looks like 3 lines</li>
-                  <li>Click on your current location, e.g. “Jurong Green CC”</li>
-                  <li>Find the new collection point’s location POC, and scan the QR code of your new collection point. You can skip this step if all you want to do is to switch collection point. </li>
-                  <li>Switch collection point. Save changes. </li>
-                </ul>
-              </p>
-            </div>
-          </div>
-      </div>
-
-    </div>
-
+  </div>
+ 
     <div class="faq-group">
       <h3>Campaign Specific FAQs</h3>
 
       <div class="all-questions">
         <!-- each question -->
           <div class="question-answer-group">
-            <label class= "question"><span><a href="faq/pa-mask-distribution.html">PA Mask Distribution May 2020</a></span></label>
+            <label class= "question"><span><a href="faq/nea-cfhp.html">NEA PUB Climate Change Household Package</a></span></label>
           </div>
           <div class="question-answer-group">
-            <label class= "question"><span><a href="faq/sg-together-pack.html">SG Together Pack July 2020</a></span></label>
+            <label class= "question"><span><a href="faq/pa-mask-distribution.html">PA Mask Distribution Nov 2020: Guidance for CC/RC Staff</a></span></label>
           </div>
       </div>
 
     </div>
-
     </section>
 
     <footer>
@@ -264,7 +196,7 @@
             <img src="img/logo_white.svg"/>
           </a>
         </div>
-        <p>Distribute things to citizens easily</p>
+        <p>Track vouchers easily</p>
       </div>
 
       <div class="footer-details">
