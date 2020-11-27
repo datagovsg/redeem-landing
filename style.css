@@ -1684,6 +1684,10 @@ h6 {
 .legal-body-container .legal .spacing-top {
   margin-top: 3em;
 }
+.legal-body-container .legal .spacing-sm {
+  display: block;
+  height: 1.5em;
+}
 .legal-body-container .legal .clause-set-child-group {
   margin-left: 3em;
   margin-bottom: 3em;
