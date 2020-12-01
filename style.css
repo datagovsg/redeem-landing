@@ -22,7 +22,7 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 1.5;
   background: white;
-  color: black;
+  color: #2d3138;
   display: grid;
   text-align: left;
   margin: 0;
@@ -67,7 +67,7 @@ a {
   cursor: pointer;
   text-align: left;
   text-decoration: none;
-  color: black;
+  color: #303778;
 }
 
 .container,
@@ -1565,7 +1565,8 @@ h6 {
   align-items: center;
   width: 100%;
   height: 80px;
-  padding-top: 20px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   box-sizing: border-box;
   background: #ffe1ec;
 }
@@ -1576,17 +1577,20 @@ h6 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 .product-header-container .container .row .header-right nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .product-header-container .container .row .header-right nav ul li {
-  padding: 0px 20px;
+  padding: 0px;
+}
+.product-header-container .container .row .header-right nav ul li:last-child {
+  padding-right: 0;
 }
 .product-header-container .container .row .header-right nav ul li:last-child {
   padding-right: 0;
@@ -1595,6 +1599,29 @@ h6 {
   color: #303778;
 }
 
+@media screen and (min-width: 768px) {
+  .product-header-container .container .row .header-right nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .product-header-container .container .row .header-right nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .product-header-container .container .row .header-right nav ul li {
+    padding: 0px 20px;
+  }
+  .product-header-container .container .row .header-right nav ul li:last-child {
+    padding-right: 0;
+  }
+  .product-header-container .container .row .header-right nav ul li:last-child {
+    padding-right: 0;
+  }
+  .product-header-container .container .row .header-right nav ul li a {
+    color: #303778;
+  }
+}
 .product-footer-container {
   padding-top: 3em;
   padding-bottom: 3em;
@@ -1875,30 +1902,236 @@ h6 {
   border-radius: 20px;
   box-shadow: -1px 10px 60px 0px rgba(0, 0, 0, 0.2);
 }
-.index-page h1 {
-  font-size: 2.8em;
-  color: #303778;
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.2;
-  padding-bottom: 30px;
-}
 .index-page .wave-container {
   background: #fcfdff;
-  width: 100vw;
+  width: 100%;
   padding: 0;
   margin: 0;
+  margin-top: -25em;
 }
 .index-page .wave-container img {
   width: 100%;
-  margin-top: -5px;
 }
-.index-page .statistics-container {
+.index-page .intro-section {
+  padding-top: 3em;
+}
+.index-page .intro-section .container .row {
+  justify-content: center;
+  align-items: center;
+}
+.index-page .intro-section .container .row h1 {
+  font-size: 2.8em;
+  color: #303778;
+  line-height: 1.2;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+.index-page .intro-section .container .row h2 {
+  font-size: 1.2em;
+  line-height: 1.5;
+  font-weight: 400;
+  max-width: 45ch;
+}
+.index-page .intro-section .container .row .redeem-vouchers {
+  width: 100%;
+}
+.index-page .intro-section .container .row .floating {
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+.index-page .statistics-section {
   background: white;
-  height: 400px;
-  padding-top: 4em;
   padding-bottom: 4em;
+}
+.index-page .statistics-section .stat {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.index-page .statistics-section .stat .stat-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.index-page .statistics-section .stat .stat-icon img {
+  height: 120px;
+  margin: 0 auto;
+}
+.index-page .statistics-section .stat .stat-label {
+  width: 100%;
+}
+.index-page .statistics-section .stat .stat-label .stat-units {
+  color: #303778;
+  width: 100%;
+  text-align: center;
+  font-size: 5em;
+  font-weight: 500;
+  margin-bottom: 2px;
+  line-height: 1;
+}
+.index-page .statistics-section .stat .stat-label .stat-units .sub {
+  color: #303778;
+  margin-left: 5px;
+  font-size: 1.2rem;
+}
+.index-page .statistics-section .stat .stat-label .stat-description {
+  color: #848399;
+  max-width: 30ch;
+  margin: 0 auto;
+  text-align: center;
+}
+.index-page .how-it-works-section {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  background: white;
+}
+.index-page .how-it-works-section h1 {
+  text-align: center;
+}
+.index-page .how-it-works-section .steps {
+  padding-left: 2em;
+  padding-right: 2em;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.index-page .how-it-works-section .steps .each-step {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 2em;
+}
+.index-page .how-it-works-section .steps .each-step .step-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.index-page .how-it-works-section .steps .each-step .step-text .step-number {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  color: white;
+  background: #303778;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0;
+  /* do not grow   - initial value: 0 */
+  flex-shrink: 0;
+  /* do not shrink - initial value: 1 */
+  flex-basis: 30px;
+}
+.index-page .how-it-works-section .steps .each-step .step-text .step-description {
+  font-size: 1.2em;
+  max-width: 20ch;
+}
+.index-page .how-it-works-section .steps .each-step .step-text .step-description h1 {
+  text-align: left;
+  font-size: 1.1em;
+  margin: 0;
+  margin-bottom: 0.2em;
+}
+.index-page .how-it-works-section .steps .each-step:last-child {
+  margin-right: 0;
+}
+.index-page .how-it-works-section .check-faq {
+  padding-left: 3em;
+  padding-right: 3em;
+  margin: 0 auto;
+  margin-top: 2em;
+  max-width: 60 ch;
+}
+.index-page .how-if-legit-section {
+  padding-top: 4em;
+  padding-bottom: 2em;
+  background: white;
+  background: #ffe1ec;
+}
+.index-page .how-if-legit-section h1 {
+  text-align: center;
+  color: #303778;
+}
+.index-page .how-if-legit-section h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #2d3138;
+  max-width: 60ch;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  line-height: 1.5;
+}
+.index-page .how-if-legit-section .legit-check {
+  width: 100%;
+  padding-bottom: 0;
+}
+.index-page .how-if-legit-section .legit-check p {
+  text-align: center;
+  margin: 0 auto;
+  color: #2d3138;
+  margin-top: 2em;
+}
+.index-page .how-if-legit-section .legit-check img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .index-page .wave-container {
+    margin-top: 0em !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .index-page .wave-container {
+    margin-top: -10em !important;
+  }
+  .index-page .intro-section {
+    padding-top: 0em !important;
+  }
+  .index-page .intro-section .container .row h1 {
+    margin-top: -2em !important;
+    text-align: left;
+  }
+  .index-page .intro-section .container .row h2 {
+    text-align: left;
+  }
+  .index-page .statistics-section {
+    margin-top: -3em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .index-page .wave-container {
+    margin-top: -20em !important;
+  }
+  .index-page .intro-section .container .row h1 {
+    margin-top: -5em !important;
+  }
 }
 
 .legal-privacy-page .product-header-container,
