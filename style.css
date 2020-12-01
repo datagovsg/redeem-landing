@@ -1600,6 +1600,9 @@ h6 {
 }
 
 @media screen and (min-width: 768px) {
+  .product-header-container {
+    padding-top: 50px;
+  }
   .product-header-container .container .row .header-right nav {
     flex-direction: row;
     align-items: center;
@@ -1620,6 +1623,11 @@ h6 {
   }
   .product-header-container .container .row .header-right nav ul li a {
     color: #303778;
+  }
+}
+@media screen and (min-width: 992px) {
+  .product-header-container {
+    padding-top: 50px;
   }
 }
 .product-footer-container {
@@ -1973,10 +1981,11 @@ h6 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 1.5em;
   width: 100%;
 }
 .index-page .statistics-section .stat .stat-icon img {
-  height: 120px;
+  height: 80px;
   margin: 0 auto;
 }
 .index-page .statistics-section .stat .stat-label {
@@ -2009,6 +2018,7 @@ h6 {
 }
 .index-page .how-it-works-section h1 {
   text-align: center;
+  margin-bottom: 1em;
 }
 .index-page .how-it-works-section .how-left img {
   width: 100%;
@@ -2018,6 +2028,7 @@ h6 {
 }
 .index-page .how-it-works-section .how-right h1 {
   text-align: left;
+  color: #303778;
 }
 .index-page .how-it-works-section .how-right .steps {
   width: 100%;
@@ -2038,16 +2049,30 @@ h6 {
   margin-top: 1em;
 }
 .index-page .how-it-works-section .how-right .steps .each-step .step-image {
-  margin-right: 1em;
+  margin-right: 0.5em;
+  max-width: 100px;
+}
+.index-page .how-it-works-section .how-right .steps .each-step .step-image img {
+  width: 100%;
 }
 .index-page .how-it-works-section .how-right .steps .each-step .step-text {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-start;
+  margin-top: 0.5em;
 }
-.index-page .how-it-works-section .how-right .steps .each-step .step-text .step-number {
-  margin-right: 10px;
+.index-page .how-it-works-section .how-right .steps .each-step .step-text .step-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.4em;
+  font-weight: 500;
+  color: #303778;
+  margin-bottom: 0.3em;
+}
+.index-page .how-it-works-section .how-right .steps .each-step .step-text .step-header .step-number {
+  margin-left: 0.5em;
   width: 30px;
   height: 30px;
   color: white;
@@ -2062,15 +2087,17 @@ h6 {
   /* do not shrink - initial value: 1 */
   flex-basis: 30px;
 }
+.index-page .how-it-works-section .how-right .steps .each-step .step-text h1 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5em;
+}
 .index-page .how-it-works-section .how-right .steps .each-step .step-text .step-description {
   font-size: 1.2em;
-  margin-top: 1em;
 }
 .index-page .how-it-works-section .how-right .steps .each-step .step-text .step-description h1 {
   text-align: left;
   font-size: 1.1em;
   margin: 0;
-  margin-bottom: 0.2em;
 }
 .index-page .how-it-works-section .how-right .steps .each-step:last-child {
   margin-right: 0;
@@ -2078,11 +2105,10 @@ h6 {
 .index-page .how-it-works-section .how-right .check-faq {
   margin: 0 auto;
   margin-top: 2em;
-  max-width: 60 ch;
 }
 .index-page .how-if-legit-section {
-  padding-top: 4em;
-  padding-bottom: 2em;
+  padding-top: 8em;
+  padding-bottom: 5em;
   background: white;
   background: #ffe1ec;
 }
@@ -2096,18 +2122,18 @@ h6 {
   color: #2d3138;
   max-width: 60ch;
   margin: 0 auto;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   line-height: 1.5;
+}
+.index-page .how-if-legit-section .highlight {
+  background-color: #fff599;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 1.2rem;
 }
 .index-page .how-if-legit-section .legit-check {
   width: 100%;
   padding-bottom: 0;
-}
-.index-page .how-if-legit-section .legit-check p {
-  text-align: center;
-  margin: 0 auto;
-  color: #2d3138;
-  margin-top: 2em;
 }
 .index-page .how-if-legit-section .legit-check img {
   width: 100%;
