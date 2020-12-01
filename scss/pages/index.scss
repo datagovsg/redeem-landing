@@ -123,79 +123,94 @@
   }
 
   .how-it-works-section {
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 4em;
+    padding-bottom: 5em;
     background: white;
     h1 {
       text-align: center;
     }
 
-    .steps {
-      padding-left: 2em;
-      padding-right: 2em;
-      width: 100%;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: flex-start;
-
-      .each-step {
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-right: 2em;
-
-        .step-image {
-        }
-        .step-text {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: flex-start;
-
-          .step-number {
-            margin-right: 10px;
-            width: 30px;
-            height: 30px;
-            color: white;
-            background: $redeem-blue;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            flex-grow: 0; /* do not grow   - initial value: 0 */
-            flex-shrink: 0; /* do not shrink - initial value: 1 */
-            flex-basis: 30px;
-          }
-          .step-description {
-            font-size: 1.2em;
-            max-width: 20ch;
-
-            h1 {
-              text-align: left;
-              font-size: 1.1em;
-              margin: 0;
-              margin-bottom: 0.2em;
-            }
-          }
-        }
-
-        &:last-child {
-          margin-right: 0;
-        }
+    .how-left {
+      img {
+        width: 100%;
       }
     }
 
-    .check-faq {
-      padding-left: 3em;
-      padding-right: 3em;
-      margin: 0 auto;
-      margin-top: 2em;
-      max-width: 60 ch;
+    .how-right {
+      padding-left: 4em;
+      h1 {
+        text-align: left;
+      }
+      .steps {
+        // padding-left: 2em;
+        // padding-right: 2em;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 2em;
+
+        .each-step {
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: flex-start;
+          // margin-right: 2em;
+          margin-bottom: 1em;
+          margin-top: 1em;
+
+          .step-image {
+            margin-right: 1em;
+          }
+          .step-text {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+
+            .step-number {
+              margin-right: 10px;
+              width: 30px;
+              height: 30px;
+              color: white;
+              background: $redeem-blue;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              flex-grow: 0; /* do not grow   - initial value: 0 */
+              flex-shrink: 0; /* do not shrink - initial value: 1 */
+              flex-basis: 30px;
+            }
+            .step-description {
+              font-size: 1.2em;
+              margin-top: 1em;
+              // max-width: 20ch;
+
+              h1 {
+                text-align: left;
+                font-size: 1.1em;
+                margin: 0;
+                margin-bottom: 0.2em;
+              }
+            }
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .check-faq {
+        margin: 0 auto;
+        margin-top: 2em;
+        max-width: 60 ch;
+      }
     }
   }
 

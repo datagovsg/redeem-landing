@@ -2003,38 +2003,50 @@ h6 {
   text-align: center;
 }
 .index-page .how-it-works-section {
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 4em;
+  padding-bottom: 5em;
   background: white;
 }
 .index-page .how-it-works-section h1 {
   text-align: center;
 }
-.index-page .how-it-works-section .steps {
-  padding-left: 2em;
-  padding-right: 2em;
+.index-page .how-it-works-section .how-left img {
+  width: 100%;
+}
+.index-page .how-it-works-section .how-right {
+  padding-left: 4em;
+}
+.index-page .how-it-works-section .how-right h1 {
+  text-align: left;
+}
+.index-page .how-it-works-section .how-right .steps {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  margin-top: 2em;
 }
-.index-page .how-it-works-section .steps .each-step {
+.index-page .how-it-works-section .how-right .steps .each-step {
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-right: 2em;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
-.index-page .how-it-works-section .steps .each-step .step-text {
+.index-page .how-it-works-section .how-right .steps .each-step .step-image {
+  margin-right: 1em;
+}
+.index-page .how-it-works-section .how-right .steps .each-step .step-text {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
 }
-.index-page .how-it-works-section .steps .each-step .step-text .step-number {
+.index-page .how-it-works-section .how-right .steps .each-step .step-text .step-number {
   margin-right: 10px;
   width: 30px;
   height: 30px;
@@ -2050,22 +2062,20 @@ h6 {
   /* do not shrink - initial value: 1 */
   flex-basis: 30px;
 }
-.index-page .how-it-works-section .steps .each-step .step-text .step-description {
+.index-page .how-it-works-section .how-right .steps .each-step .step-text .step-description {
   font-size: 1.2em;
-  max-width: 20ch;
+  margin-top: 1em;
 }
-.index-page .how-it-works-section .steps .each-step .step-text .step-description h1 {
+.index-page .how-it-works-section .how-right .steps .each-step .step-text .step-description h1 {
   text-align: left;
   font-size: 1.1em;
   margin: 0;
   margin-bottom: 0.2em;
 }
-.index-page .how-it-works-section .steps .each-step:last-child {
+.index-page .how-it-works-section .how-right .steps .each-step:last-child {
   margin-right: 0;
 }
-.index-page .how-it-works-section .check-faq {
-  padding-left: 3em;
-  padding-right: 3em;
+.index-page .how-it-works-section .how-right .check-faq {
   margin: 0 auto;
   margin-top: 2em;
   max-width: 60 ch;
