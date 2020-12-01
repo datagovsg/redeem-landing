@@ -1951,6 +1951,12 @@ h6 {
   max-width: 45ch;
 }
 .index-page .intro-section .container .row .redeem-vouchers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+.index-page .intro-section .container .row .redeem-vouchers img {
   width: 100%;
 }
 .index-page .intro-section .container .row .floating {
@@ -1974,6 +1980,7 @@ h6 {
 }
 .index-page .statistics-section {
   background: white;
+  padding-top: 2em;
   padding-bottom: 4em;
 }
 .index-page .statistics-section .stat {
@@ -1983,7 +1990,7 @@ h6 {
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 5em;
 }
 .index-page .statistics-section .stat .stat-icon {
   display: flex;
@@ -1991,7 +1998,7 @@ h6 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 1.5em;
+  margin-bottom: 0.5em;
   width: 100%;
 }
 .index-page .statistics-section .stat .stat-icon img {

@@ -42,7 +42,13 @@
         }
 
         .redeem-vouchers {
-          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 2em;
+          img {
+            width: 100%;
+          }
           // max-width: 400px;
         }
 
@@ -72,6 +78,7 @@
 
   .statistics-section {
     background: white;
+    padding-top: 2em;
     padding-bottom: 4em;
 
     .stat {
@@ -81,14 +88,14 @@
       justify-content: flex-start;
       align-items: center;
       text-align: center;
-      margin-bottom: 2em;
+      margin-bottom: 5em;
       .stat-icon {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-bottom: 1.5em;
+        margin-bottom: 0.5em;
 
         width: 100%;
 
