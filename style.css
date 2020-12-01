@@ -1791,6 +1791,11 @@ h6 {
   padding-bottom: 4em;
   background: #eff3f6;
 }
+.faq-body-container .faq-note {
+  max-width: 80ch;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
 .faq-body-container .faq-group {
   max-width: 80ch;
   margin: 0 auto;
@@ -1881,6 +1886,11 @@ h6 {
 .faq-body-container .faq-group .all-questions .question-answer-group .answer img {
   width: 100%;
   max-width: 320px;
+  height: auto;
+}
+.faq-body-container .faq-group .all-questions .question-answer-group .answer img.img-full {
+  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 .faq-body-container .faq-group .all-questions .question-answer-group .answer ul {
@@ -2027,6 +2037,7 @@ h6 {
   padding-left: 4em;
 }
 .index-page .how-it-works-section .how-right h1 {
+  margin-top: 1em;
   text-align: left;
   color: #303778;
 }

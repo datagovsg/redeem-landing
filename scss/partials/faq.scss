@@ -28,6 +28,12 @@ $faq-anw: $body-text;
   padding-bottom: 4em;
   background: $faq-section-bg;
 
+  .faq-note {
+    max-width: 80ch;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
   .faq-group {
     max-width: 80ch;
     margin: 0 auto;
