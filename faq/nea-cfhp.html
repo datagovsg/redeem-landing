@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="RedeemSG - Track Redemptions Easily" />
+    <meta name="author" content="Redeem Landing" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>RedeemSG - Track Vouchers Easily</title>
+  </head>
+  <body class="faq-page">
+    <header class="masthead-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="masthead-content">
+              <img src="../img/sg-crest.svg" class="sg-crest" />
+              <p>A Singapore Government Website</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header class="product-header-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 header-left">
+            <div class="logo">
+              <a href="../index.html">
+                <img src="../img/logo_white.svg" />
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 header-right">
+            <nav>
+              <ul>
+                <!-- <li>
+                  <a href="../index-agencies.html" target="_blank">Agency</a>
+                </li>
+                <li>
+                  <a href="../index-merchants.html" target="_blank">Merchants</a>
+                </li> -->
+                <li><a href="../faq.html" target="_blank">FAQ</a></li>
+                <li>
+                  <a href="mailto:feedback@redeem.gov.sg" target="_blank"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="faq-header-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Frequently Asked Questions (FAQ)</h1>
+            <h2>General FAQ</h2>
+            <p>Version 2.7, Updated 17 July 2020</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq-body-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="faq-group">
+              <h3>About RedeemSG</h3>
+              <div class="all-questions">
+                <!-- each question -->
+                  <div class="question-answer-group">
+                    <input id="qn-1" type="checkbox"/>
+                    <label for="qn-1" class= "question"><div class="icon"></div><span>What is RedeemSG?</span></label>
+                    <div class="answer">
+                      <p>RedeemSG is a system being used to enable government agencies and charities to easily track redemption of vouchers. This comprises of:
+                        <ul>
+                          <li>An admin portal that allows agencies to create vouchers, send vouchers and track voucher redemptions. </li>
+                          <li>E-vouchers that get sent to citizens via SMS that open up in a web link, and </li>
+                          <li>an API that merchants can integrate with to instantly invalidate vouchers. </li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="question-answer-group">
+                    <input id="qn-2" type="checkbox"/>
+                    <label for="qn-2" class= "question"><div class="icon"></div><span>Who can use RedeemSG?</span></label>
+                    <div class="answer">
+                      <p>Any government agency and its affiliate partners can use RedeemSG to create, send and track vouchers. We also assess requests from charities on a case by case basis.</p>
+                      <p>Government officers can log into RedeemSG using their gov.sg email, whereas charities would need to contact us to gain access to the portal. To create and gain access to a campaign, or to gain access to the portal, please contact us at feedback@redeem.gov.sg.<a href="mailto:feedback@redeem.gov.sg">feedback@redeem.gov.sg</a>.</p>
+                      <p>Beneficiaries of a campaign run by the Government agency/ charity will receive an SMS sent by RedeemSG that opens up a RedeemSG e-voucher link in the browser.</p>
+                    </div>
+                  </div>
+             <div class="question-answer-group">
+                <input id="qn-3" type="checkbox"/>
+                <label for="qn-3" class= "question"><div class="icon"></div><span>How does RedeemSG typically work?
+                </span></label>
+                <div class="answer">
+                <ul>
+                  <li>Government agencies provide us with their campaign specifications to create a campaign.</li>
+                  <li>Agencies upload a recipient list to create vouchers.</li>
+                  <li>Agencies trigger the sending of vouchers to all recipients via SMS.</li>
+                  <li>Recipients open the voucher in a web link and show it to the merchant, who will scan and update redemption using a barcode scanner or mobile app.</li>
+                </ul>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq-group">
+              <h3>For Voucher Recipients: </h3>
+              <div class="all-questions">
+                <!-- each question -->
+                  <div class="question-answer-group">
+                    <input id="qn-4" type="checkbox"/>
+                    <label for="qn-4" class= "question"><div class="icon"></div><span>How do I know if my voucher is generated by RedeemSG or a real government/ charity generated voucher?            </span></label>
+                    <div class="answer">
+                      <p>Please check if your voucher starts with the following prefix <a href="https://v.redeem.gov.sg">https://v.redeem.gov.sg</a>". The sender name is “RedeemSG”. Please do not trust vouchers starting with other prefixes.
+                      </p>
+                      <p>
+                        A typical SMS from RedeemSG will look something like this: <br><br>
+                        <img src="./img/samplegroceryvouchersms.jpg"> <br>
+                        <br>
+                        A typical RedeemSG voucher will open up in a web link and look something like this - see below. <br><br>
+                        <img src="./img/samplegroceryvoucher.PNG">
+                        <br>
+
+                        <br> If you are unsure of whether the voucher is from RedeemSG and the Singapore Government, please check with the relevant agency hotline/ online form or email <a href="feedback@redeem.gov.sg">feedback@redeem.gov.sg</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="question-answer-group">
+                    <input id="qn-5" type="checkbox"/>
+                    <label for="qn-5" class= "question"><div class="icon"></div><span>Where can I redeem my voucher? What are the voucher terms and conditions?
+                    </span></label>
+                    <div class="answer">
+                      <p>You can refer to the following pages to find out more on the specific campaign’s merchants and terms and conditions. For the NEA programme - click <a href = 'https://www.climate-friendly-households.gov.sg/faq/'>here</a>  for FAQs. click <a href = "https://www.climate-friendly-households.gov.sg/retailers/list-of-retailers/">here</a> for list of merchants
+                      </p>
+                    </div>
+                  </div>
+                  <div class="question-answer-group">
+                    <input id="qn-6" type="checkbox"/>
+                    <label for="qn-6" class= "question"><div class="icon"></div>
+                      <span>Can my voucher be transferred? How do I transfer my voucher?
+                    </span></label>
+                    <div class="answer">
+                      <p> Vouchers are designed to be transferable. You can share the voucher by copying and pasting the voucher link into a chat message on Whatsapp, Telegram or any other messaging app you use.
+                      </p>
+                      <p>Some programmes restrict the use of the voucher only to the recipient. In these cases, only the person whose name/ NRIC is on the voucher can use it.</p>
+                      <p>Other programmes restrict the use of the voucher only to a household in the same registered address. In these cases, only a same member of the household whose address is on the voucher can use it.
+                      </p>
+                    </div>
+                    </div>
+                  <div class="question-answer-group">
+                    <input id="qn-7" type="checkbox"/>
+                    <label for="qn-7" class= "question"><div class="icon">
+                      </div><span>Can I redeem the voucher on behalf of others? </span></label>
+                    <div class="answer">
+                      <p>Yes, you can redeem the voucher on behalf of others as long as it is allowed by the campaign. Please check the campaign specific FAQs above to ensure that this is allowed.                </p>
+                    </div>
+                  </div>
+                  <div class="question-answer-group">
+                    <input id="qn-8" type="checkbox"/>
+                    <label for="qn-8" class= "question"><div class="icon">
+                      </div><span>Can I use the remaining amount if I do not fully utilize the voucher?  </span></label>
+                    <div class="answer">
+                      <p>Each voucher or voucher denomination is one time use only. Please refer to the FAQs specific to the programme indicated above for more information.               </p>
+                    </div>
+                  </div>
+                  <div class="question-answer-group">
+                    <input id="qn-9" type="checkbox"/>
+                    <label for="qn-9" class= "question"><div class="icon">
+                      </div><span>I clicked on the voucher link and am unable to access it. Can you help? </span></label>
+                    <div class="answer">
+                      <p>Please kindly check that you are connected to the internet. If this problem persists, you may contact <a href= "feedback@redeem.gov.sg"> feedback@redeem.gov.sg</a>.</p>
+                    </div>
+                  </div>
+            </div>
+          </div>
+
+            <div class="faq-group">
+              <h3>Campaign Specific FAQs</h3>
+
+              <div class="all-questions">
+                <!-- each question -->
+                  <div class="question-answer-group">
+                    <label class= "question"><span><a href="faq/nea-cfhp.html">NEA PUB Climate Change Household Package</a></span></label>
+                  </div>
+                  <div class="question-answer-group">
+                    <label class= "question"><span><a href="faq/pa-mask-distribution.html">PA Mask Distribution Nov 2020: Guidance for CC/RC Staff</a></span></label>
+                  </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-footer-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="redeem-logo">
+              <img src="../img/logo_white.svg" />
+              <p class="tagline">Track vouchers easily</p>
+            </div>
+            <nav>
+              <ul>
+                <!-- <li>
+                  <a href="../index-agencies.html" target="_blank">Agency</a>
+                </li>
+                <li>
+                  <a href="../index-merchants.html" target="_blank">Merchants</a>
+                </li> -->
+                <li>
+                  <a href="../faq.html" target="_blank">FAQ</a>
+                </li>
+                <li>
+                  <a href="../privacy.html" target="_blank"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="../terms-of-use.html" target="_blank"
+                    >Terms of Use</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:feedback@redeem.gov.sg" target="_blank"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="ogp-footer-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 footer-left">
+            <p>Built by</p>
+            <a href="https://www.open.gov.sg">
+              <img src="../img/ogp-logo.svg" />
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-6 footer-right">
+            <div class="social-icons">
+              <div class="icon">
+                <a href="#">
+                  <i class="bx bxl-linkedin"></i>
+                </a>
+              </div>
+
+              <div class="icon">
+                <a href="#">
+                  <i class="bx bxl-facebook"></i>
+                </a>
+              </div>
+
+              <div class="icon">
+                <a href="#">
+                  <img src="../img/ogp-logo-mark-white.svg" />
+                </a>
+              </div>
+            </div>
+
+            <p class="copyright-text">
+              &copy; 2020 Open Government Products, Government Technology Agency
+              of Singapore
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
