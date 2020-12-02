@@ -1998,11 +1998,11 @@ h6 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 0.5em;
-  width: 100%;
+  margin-bottom: 0.8em;
+  width: 80px;
 }
 .index-page .statistics-section .stat .stat-icon img {
-  height: 80px;
+  width: 100%;
   margin: 0 auto;
 }
 .index-page .statistics-section .stat .stat-label {
@@ -2012,7 +2012,7 @@ h6 {
   color: #303778;
   width: 100%;
   text-align: center;
-  font-size: 5em;
+  font-size: 4em;
   font-weight: 500;
   margin-bottom: 2px;
   line-height: 1;
