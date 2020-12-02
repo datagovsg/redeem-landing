@@ -1943,14 +1943,14 @@ h6 {
   align-items: center;
 }
 .index-page .intro-section .container .row h1 {
-  font-size: 2.8em;
+  font-size: 3em;
   color: #303778;
   line-height: 1.2;
   margin: 0 auto;
   margin-bottom: 1em;
 }
 .index-page .intro-section .container .row h2 {
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 1.5;
   font-weight: 400;
   max-width: 45ch;
@@ -1959,7 +1959,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2em;
+  padding: 1em;
 }
 .index-page .intro-section .container .row .redeem-vouchers img {
   width: 100%;
