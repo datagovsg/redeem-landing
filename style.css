@@ -1603,6 +1603,9 @@ h6 {
 .product-header-container .container .row .header-right nav ul li a {
   color: #303778;
 }
+.product-header-container .container .row .header-right nav ul li a.active {
+  text-decoration: underline;
+}
 
 @media screen and (min-width: 768px) {
   .product-header-container {
@@ -1697,6 +1700,7 @@ h6 {
 }
 
 .legal-body-container {
+  background: white;
   margin-top: 3em;
   margin-bottom: 3em;
 }
@@ -1779,7 +1783,7 @@ h6 {
 }
 .faq-header-container h1 {
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 40px;
   font-size: 2.6em;
   color: #303778;
   font-weight: 500;
@@ -2035,7 +2039,7 @@ h6 {
 }
 .index-page .how-it-works-section {
   padding-top: 2em;
-  padding-bottom: 3em;
+  padding-bottom: 8em;
   background: white;
 }
 .index-page .how-it-works-section h1 {
@@ -2211,4 +2215,23 @@ h6 {
 }
 .faq-page .product-header-container .container .row .header-right nav ul li a {
   color: white;
+}
+
+.button-back {
+  background: none;
+}
+.button-back a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  font-weight: 500;
+  color: #303778;
+}
+.button-back a img {
+  width: 20px;
+  margin-right: 0.5em;
+}
+.button-back a:hover {
+  text-decoration: underline;
 }
