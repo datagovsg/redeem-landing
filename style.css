@@ -1805,7 +1805,13 @@ h6 {
 .faq-body-container .faq-group {
   max-width: 80ch;
   margin: 0 auto;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
+}
+
+.faq-body-container .faq-header {
+  max-width: 80ch;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 .faq-body-container .faq-group h3 {
