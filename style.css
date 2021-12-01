@@ -1926,14 +1926,14 @@ h6 {
   border-radius: 20px;
   box-shadow: -1px 10px 60px 0px rgba(0, 0, 0, 0.2);
 }
-.index-page .wave-container {
+.index-page .users-container {
   background: #fcfdff;
   width: 100%;
   padding: 0;
   margin: 0;
   margin-top: -25em;
 }
-.index-page .wave-container img {
+.index-page .users-container img {
   width: 100%;
 }
 .index-page .intro-section {
@@ -1984,12 +1984,12 @@ h6 {
     transform: translate(0, 0px);
   }
 }
-.index-page .statistics-section {
+.index-page .users-section {
   background: white;
   padding-top: 2em;
   padding-bottom: 4em;
 }
-.index-page .statistics-section .stat {
+.index-page .users-section .users {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1998,41 +1998,49 @@ h6 {
   text-align: center;
   margin-bottom: 5em;
 }
-.index-page .statistics-section .stat .stat-icon {
+.index-page .users-section .users .users-icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin-bottom: 0.8em;
-  width: 80px;
+width: 332px;
+height: 344px;
+left: 148px;
+top: 712px;
 }
-.index-page .statistics-section .stat .stat-icon img {
+.index-page .users-section .users .users-icon img {
   width: 100%;
   margin: 0 auto;
 }
-.index-page .statistics-section .stat .stat-label {
+.index-page .users-section .users .users-label {
   width: 100%;
 }
-.index-page .statistics-section .stat .stat-label .stat-units {
-  color: #303778;
+.index-page .users-section .users .users-label .users-units {
+  color:#2F3476;
   width: 100%;
   text-align: center;
-  font-size: 4em;
-  font-weight: 500;
+  font-size: 28px;
+  font-weight: 600;
   margin-bottom: 2px;
-  line-height: 1;
+  line-height: 36px;
 }
-.index-page .statistics-section .stat .stat-label .stat-units .sub {
+.index-page .users-section .users .users-label .users-units .sub {
   color: #303778;
   margin-left: 5px;
   font-size: 1.2rem;
 }
-.index-page .statistics-section .stat .stat-label .stat-description {
-  color: #848399;
+.index-page .users-section .users .users-label .users-description {
+  color:#242425;
   max-width: 30ch;
   margin: 0 auto;
   text-align: center;
+  font-size: 16px;
+line-height: 24px;
+text-align: center;
+letter-spacing: -0.011em;
+font-feature-settings: 'tnum' on, 'lnum' on, 'cv05' on;
 }
 .index-page .how-it-works-section {
   padding-top: 2em;
@@ -2167,12 +2175,12 @@ h6 {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .index-page .wave-container {
+  .index-page .users-container {
     margin-top: 0em !important;
   }
 }
 @media screen and (min-width: 992px) {
-  .index-page .wave-container {
+  .index-page .users-container {
     margin-top: -10em !important;
   }
   .index-page .intro-section {
@@ -2185,12 +2193,12 @@ h6 {
   .index-page .intro-section .container .row h2 {
     text-align: left;
   }
-  .index-page .statistics-section {
+  .index-page .users-section {
     margin-top: -3em;
   }
 }
 @media screen and (min-width: 1200px) {
-  .index-page .wave-container {
+  .index-page .users-container {
     margin-top: -20em !important;
   }
   .index-page .intro-section .container .row h1 {
