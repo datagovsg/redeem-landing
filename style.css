@@ -1939,16 +1939,13 @@ color: #242425;
   
 }
 .index-page .intro-section .container .row .redeem-vouchers img {
-width: 411px;
-height: 429.51px;
+  width: 100%;
 }
 .index-page .intro-section .container .row .floating {
   animation-name: floating;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  margin-left: 50px;
-  margin-top: 5px;
 }
 @keyframes floating {
   0% {
