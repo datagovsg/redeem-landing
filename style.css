@@ -2141,8 +2141,6 @@ font-feature-settings: 'tnum' on, 'lnum' on, 'cv05' on;
 }
 
 .index-page .redeem-stats {
-  width: 1440px;
-  height: 352px;
   background:white;
   padding-top: 3em;
   padding-bottom: 3em;
