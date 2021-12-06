@@ -1970,16 +1970,6 @@ height: 429.51px;
   border-radius: 20px;
   box-shadow: -1px 10px 60px 0px rgba(0, 0, 0, 0.2);
 }
-.index-page .users-container {
-  background: #fcfdff;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  margin-top: -25em;
-}
-.index-page .users-container img {
-  width: 100%;
-}
 
 .index-page .users-section {
   background: white;
@@ -2216,10 +2206,6 @@ background:#505798;
 }
 
 
-@media screen and (min-width: 768px) {
-  .index-page .users-container {
-    margin-top: 0em !important;
-  }
 @media screen and (min-width: 992px) {
   .index-page .users-container {
     margin-top: -10em !important;
@@ -2227,10 +2213,6 @@ background:#505798;
   .index-page .intro-section {
     padding-top: 0em !important;
   }
-  /* .index-page .intro-section .container .row h1 {
-    margin-top: -2em !important;
-    text-align: left;
-  } */
   .index-page .intro-section .container .row h2 {
     text-align: left;
   }
@@ -2238,15 +2220,6 @@ background:#505798;
     margin-top: -3em;
   }
 }
-}
-/* @media screen and (min-width: 1200px) {
-  .index-page .users-container {
-    margin-top: -20em !important;
-  }
-  .index-page .intro-section .container .row h1 {
-    margin-top: -5em !important;
-  }
-} */
 
 .legal-privacy-page .product-header-container,
 .legal-tou-page .product-header-container {
