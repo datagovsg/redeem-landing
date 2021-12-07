@@ -1763,7 +1763,7 @@ color: #505798;
 }
 
 .faq-header-container {
-  background: #ffe1ec;
+  background: #dfe1f2;
   padding-top: 3em;
   padding-bottom: 3em;
 }
@@ -1784,8 +1784,8 @@ color: #505798;
 .faq-body-container {
   padding-top: 4em;
   padding-bottom: 4em;
-  background: #eff3f6;
 }
+
 .faq-body-container .faq-note {
   max-width: 80ch;
   margin: 0 auto;
@@ -1818,24 +1818,6 @@ color: #505798;
   padding: 20px;
   text-align: center;
 }
-.faq-body-container .faq-group .all-questions {
-  background: white;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
-}
-.faq-body-container .faq-group .all-questions .question-answer-group {
-  box-sizing: border-box;
-  border-bottom: #e0e4eb 1px solid;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.faq-body-container .faq-group .all-questions .question-answer-group:last-child {
-  border-bottom: none;
-}
 .faq-body-container .faq-group .all-questions .question-answer-group label {
   margin: 0;
   padding: 0;
@@ -1845,12 +1827,17 @@ color: #505798;
 }
 .faq-body-container .faq-group .all-questions .question-answer-group .question {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   font-weight: 500;
   width: 100%;
   color: #303778;
   cursor: pointer;
+  background: #f6f7fA;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 10px;
+  border-radius: 8px;
 }
 .faq-body-container .faq-group .all-questions .question-answer-group .question .icon {
   display: flex;
@@ -1865,15 +1852,16 @@ color: #505798;
   width: 95%;
 }
 .faq-body-container .faq-group .all-questions .question-answer-group .answer {
+  box-shadow: 0px 0px 10px rgba(216, 222, 235, 0.5);
+  border-radius: 8px;
   color: #2d3138;
   display: none;
-  margin-left: 30px;
-  margin-right: 20px;
-  box-sizing: border-box;
-  padding-top: 0px;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 10px;
   visibility: hidden;
-  max-height: 0px;
-  opacity: 0%;
 }
 .faq-body-container .faq-group .all-questions .question-answer-group .answer p {
   padding: 10px 0px;
@@ -1898,9 +1886,7 @@ color: #505798;
 .faq-body-container .faq-group .all-questions .question-answer-group input:checked ~ .answer {
   display: block;
   visibility: visible;
-  padding-top: 10px;
   max-height: 3000px;
-  opacity: 100%;
   transition: all 0.3s ease-out;
 }
 .faq-body-container .faq-group .all-questions .question-answer-group input:checked ~ .question .icon {
