@@ -1762,6 +1762,10 @@ color: #505798;
   }
 }
 
+.faq-header-container .container .row {
+  justify-content: center;
+  align-items: center;
+}
 .faq-header-container {
   background: #dfe1f2;
   padding-top: 3em;
