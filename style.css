@@ -1052,13 +1052,15 @@ h6 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
-    @media (min-width: 768px) {
-      .product-header-container .container .header .header-left .logo-mobile {
-        display: none; } }
     .product-header-container .container .header .header-left .logo-desktop {
       display: none; }
     .product-header-container .container .header .header-left .logo-mobile {
       display: block; }
+    @media (min-width: 768px) {
+      .product-header-container .container .header .header-left .logo-desktop {
+        display: block; }
+      .product-header-container .container .header .header-left .logo-mobile {
+        display: none; } }
     .product-header-container .container .header .header-right nav {
       display: flex;
       flex-direction: row;

@@ -17,16 +17,19 @@
       justify-content: space-between;
       align-items: center;
       .header-left {
-        @media (min-width: 768px) {
-          .logo-mobile {
-            display: none;
-          }
-        }
         .logo-desktop {
           display: none;
         }
         .logo-mobile {
           display: block;
+        }
+        @media (min-width: 768px) {
+          .logo-desktop {
+            display: block;
+          }
+          .logo-mobile {
+            display: none;
+          }
         }
       }
       .header-right {
