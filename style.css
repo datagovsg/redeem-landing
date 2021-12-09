@@ -1650,6 +1650,11 @@ color: #505798;
   color: #445072;
 }
 
+@media screen and (min-width: 768px) {
+  .product-footer-container .footer-right nav {
+    justify-content: flex-end;
+  }
+}
 @media screen and (min-width: 992px) {
   .product-footer-container nav ul {
     flex-direction: row;
