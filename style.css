@@ -1333,7 +1333,6 @@ h6 {
       animation-duration: 5s;
       animation-iteration-count: infinite;
       animation-timing-function: ease-in-out;
-      margin-left: 30px;
       margin-top: 5px; }
 
 @keyframes floating {
@@ -1367,6 +1366,8 @@ h6 {
       width: 100%;
       text-align: center;
       margin-bottom: 8px; }
+    .index-page .users-section .users .users-label div {
+      text-align: center; }
 
 .index-page .how-it-works-section {
   padding-top: 2em;
