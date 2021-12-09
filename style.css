@@ -2113,7 +2113,15 @@ font-feature-settings: 'tnum' on, 'lnum' on, 'cv05' on;
   padding-bottom: 1em;
 }
 .index-page .redeem-stats .redeem-stats-example {
-  padding-bottom: 1em;
+  margin-bottom: 40px;
+}
+.index-page .redeem-stats .redeem-stats-example:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .index-page .redeem-stats .redeem-stats-example {
+    margin-bottom: 0;
+  }
 }
 .index-page .redeem-stats .redeem-stats-example .redeem-stats-fig-head {
   font-weight: 600;
