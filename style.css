@@ -1599,6 +1599,9 @@ h3 {
   border-bottom:0.5px solid #E1E2E4;
   box-sizing: border-box;
 }
+.product-footer-container .footer-left {
+  margin-bottom: 24px;
+}
 .product-footer-container .redeem-name {
   font-weight: 500;
   font-size: 18px;
