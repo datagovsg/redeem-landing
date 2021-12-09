@@ -1646,7 +1646,7 @@ color: #505798;
     flex-direction: row;
   }
   .product-footer-container nav ul li {
-    padding: 0px 20px;
+    padding-right: 22px;
   }
   .product-footer-container nav ul li:first-child {
     padding-left: 0;
