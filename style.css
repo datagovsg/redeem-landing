@@ -1917,18 +1917,8 @@ color: #505798;
   align-items: center;
 }
 .index-page .intro-section .container .row h1 {
-font-size: 64px;
-line-height: 72px;
-letter-spacing: -0.022em;
-color: #505798;
-
+  color: #505798;
 }
-.index-page .intro-section .container .row h2 {
-font-size: 16px;
-line-height: 24px;
-letter-spacing: -0.011em;
-color: #242425;
-} */
 .index-page .intro-section .container .row .redeem-vouchers {
   display: flex;
   justify-content: center;
