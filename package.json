@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "scss": "node-sass --watch scss/styles.scss style.css"
+    "scss": "node-sass scss/style.scss style.css -w"
   },
   "repository": {
     "type": "git",

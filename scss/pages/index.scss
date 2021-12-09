@@ -206,27 +206,28 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      gap: 32px;
       img {
         width: 100px;
       }
-      .faq-header {
+      .faq-header h2 {
         color: $primary-100;
+        text-align: center;
       }
       .faq-element {
         color: $primary-100;
       }
       .button-blue a {
         color: #ffffff;
-        // position: static;
-        // left: 0%;
-        // right: 0%;
-        // top: 0%;
-        // bottom: 0%;
-        /* Standard/White */
         border: 1px solid #ffffff;
         box-sizing: border-box;
         border-radius: 4px;
         padding: 10px 16px;
+      }
+      .button-blue a:hover {
+        background: #ffffff;
+        color: #505798;
+        border: 1px solid #505798;
       }
     }
   }

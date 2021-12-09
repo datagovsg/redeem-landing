@@ -1458,20 +1458,25 @@ h6 {
   .index-page .faq-section .container {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    gap: 32px; }
     .index-page .faq-section .container img {
       width: 100px; }
-    .index-page .faq-section .container .faq-header {
-      color: #f6f7fa; }
+    .index-page .faq-section .container .faq-header h2 {
+      color: #f6f7fa;
+      text-align: center; }
     .index-page .faq-section .container .faq-element {
       color: #f6f7fa; }
     .index-page .faq-section .container .button-blue a {
       color: #ffffff;
-      /* Standard/White */
       border: 1px solid #ffffff;
       box-sizing: border-box;
       border-radius: 4px;
       padding: 10px 16px; }
+    .index-page .faq-section .container .button-blue a:hover {
+      background: #ffffff;
+      color: #505798;
+      border: 1px solid #505798; }
 
 .legal-privacy-page .product-header-container,
 .legal-tou-page .product-header-container {
