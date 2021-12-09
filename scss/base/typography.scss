@@ -46,3 +46,32 @@ h6 {
   line-height: 1.4em;
   margin-bottom: 1rem;
 }
+
+.display-1 {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -0.022em;
+  text-align: left;
+}
+.display-2 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -0.022em;
+  text-align: left;
+  /* identical to box height, or 120% */
+  letter-spacing: -0.022em;
+  font-feature-settings: "cv05" on;
+}
+.subhead-3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px; /* or 171% */
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-feature-settings: "tnum" on, "lnum" on, "cv05" on;
+}
