@@ -969,7 +969,7 @@ h6 {
       font-size: 12px; }
 
 .ogp-footer-container {
-  background: #041026;
+  background: #f6f7fa;
   width: 100%;
   padding-top: 4em;
   padding-bottom: 4em; }
@@ -977,7 +977,7 @@ h6 {
     margin-bottom: 1em; }
     .ogp-footer-container .footer-left p {
       font-size: 14px;
-      color: #eeeeee;
+      color: #445072;
       margin-bottom: 1em; }
     .ogp-footer-container .footer-left img {
       width: 180px;
@@ -1001,9 +1001,9 @@ h6 {
         justify-content: center;
         align-items: center; }
         .ogp-footer-container .footer-right .social-icons .icon svg {
-          fill: white; }
+          fill: black; }
         .ogp-footer-container .footer-right .social-icons .icon a {
-          color: white;
+          color: black;
           text-decoration: none;
           width: 100%;
           height: 100%;
@@ -1011,7 +1011,7 @@ h6 {
           justify-content: center;
           align-items: center; }
           .ogp-footer-container .footer-right .social-icons .icon a:hover {
-            color: white; }
+            color: #505798; }
           .ogp-footer-container .footer-right .social-icons .icon a i {
             font-size: 2em; }
           .ogp-footer-container .footer-right .social-icons .icon a img {
@@ -1022,7 +1022,7 @@ h6 {
           margin-right: 0; }
     .ogp-footer-container .footer-right .copyright-text {
       font-size: 14px;
-      color: #eeeeee;
+      color: #505798;
       width: 100%; }
 
 @media screen and (min-width: 760px) {
