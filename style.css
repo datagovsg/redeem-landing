@@ -1452,8 +1452,10 @@ h3 {
 .masthead-container .masthead-content p {
   font-size: 12px;
 }
- 
 
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
 
 .ogp-footer-container {
   background: #F6F7FA;
@@ -1999,7 +2001,6 @@ font-feature-settings: 'tnum' on, 'lnum' on, 'cv05' on;
   padding-top: 2em;
   padding-bottom: 8em;
   background: #F6F7FA;
-  
 }
 .index-page .how-it-works-section h1 {
   text-align: center;
@@ -2088,9 +2089,6 @@ font-feature-settings: 'tnum' on, 'lnum' on, 'cv05' on;
   text-align: left;
   font-size: 1.1em;
   margin: 0;
-}
-.index-page .how-it-works-section .how-right .steps .each-step:last-child {
-  margin-right: 0;
 }
 .index-page .how-it-works-section .how-right .check-faq {
   margin: 0 auto;
