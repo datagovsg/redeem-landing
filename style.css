@@ -1079,42 +1079,45 @@ h6 {
 .product-footer-container {
   padding-top: 3em;
   padding-bottom: 3em;
-  background: #303778;
+  background: #f6f7fa;
   width: 100%;
-  bottom: 0; }
-  .product-footer-container .redeem-logo {
-    margin-bottom: 2em; }
-    .product-footer-container .redeem-logo img {
-      width: 140px;
-      margin: 0; }
-    .product-footer-container .redeem-logo .tagline {
-      margin: 0;
-      margin-top: 0.2em;
-      color: white; }
-  .product-footer-container nav {
+  bottom: 0;
+  display: flex; }
+  .product-footer-container * {
+    color: #505798; }
+  .product-footer-container .container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start; }
-    .product-footer-container nav ul {
+    flex-direction: column; }
+    .product-footer-container .container .footer-logo {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      margin-bottom: 2em; }
+      .product-footer-container .container .footer-logo h4 {
+        margin: 0; }
+      .product-footer-container .container .footer-logo .tagline {
+        margin: 0;
+        margin-top: 0.2em; }
+    .product-footer-container .container .footer-nav nav ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
       display: flex;
-      flex-direction: column; }
-      .product-footer-container nav ul li a {
-        font-size: 0.9em;
-        color: white; }
-
-@media screen and (min-width: 992px) {
-  .product-footer-container nav ul {
-    flex-direction: row; }
-    .product-footer-container nav ul li {
-      padding: 0px 20px; }
-      .product-footer-container nav ul li:first-child {
-        padding-left: 0; }
-      .product-footer-container nav ul li:last-child {
-        padding-right: 0; } }
+      flex-direction: column;
+      gap: 16px; }
+      .product-footer-container .container .footer-nav nav ul li a {
+        font-size: 0.9em; }
+  @media (min-width: 768px) {
+    .product-footer-container .container {
+      flex-direction: row; }
+      .product-footer-container .container .footer-nav nav ul {
+        flex-direction: row;
+        gap: 22px; } }
+  @media (min-width: 1200px) {
+    .product-footer-container .container .footer-logo {
+      gap: 16px;
+      align-items: flex-end;
+      flex-direction: row; } }
 
 .legal-header-container {
   background: #ffe1ec;
