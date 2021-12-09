@@ -2055,8 +2055,8 @@ font-feature-settings: 'tnum' on, 'lnum' on, 'cv05' on;
   margin-top: 1em;
 }
 .index-page .how-it-works-section .how-right .steps .each-step .step-image {
-  margin-right: 0.5em;
   max-width: 100px;
+  margin-top: 0.5em;
 }
 .index-page .how-it-works-section .how-right .steps .each-step .step-image img {
   width: 100%;
