@@ -1,9 +1,8 @@
 .faq-page {
   .product-header-container {
-    background: $redeem-blue;
-
+    background: $primary-600;
     .container {
-      .row {
+      .header {
         .header-right {
           nav {
             ul {
@@ -16,28 +15,6 @@
           }
         }
       }
-    }
-  }
-}
-
-.button-back {
-  background: none;
-
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: none;
-    font-weight: 500;
-    color: $redeem-blue;
-
-    img {
-      width: 15px;
-      margin-right: 0.5em;
-    }
-
-    &:hover {
-      text-decoration: underline;
     }
   }
 }
