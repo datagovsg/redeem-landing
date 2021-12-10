@@ -1,0 +1,32 @@
+---
+- head: About RedeemSG
+  groups:
+    - q: What is RedeemSG?
+      a: |
+        RedeemSG is a voucher system for the Singapore Government. It helps to digitize vouchers and redemption tracking, thereby eliminating the manual work of collecting vouchers and digitizing records. This comprises of:
+
+        - An admin portal that allows Government agencies to manage a voucher campaign, from creating vouchers, sending vouchers, to tracking the redemption records. 
+        - A merchant app that allows Merchants to easily accept vouchers by scanning the voucher QR codes 
+        - APIs that merchants can integrate with to accept Government issued vouchers. 
+        E-vouchers that get sent to voucher recipients via SMS that open up in a weblink.
+    
+ 
+    - q: Who can use RedeemSG?
+      a: |
+        Any government agency and its affiliate partners can use RedeemSG to create, send and track vouchers. We also assess requests from charities on a case by case basis. To create and gain access to a campaign, or to gain access to the portal, please contact us at feedback@redeem.gov.sg.
+
+        For Government agencies who wish to onboard, we are currently accepting new use cases launching from May 2022 onwards.
+
+        We are currently also accepting merchants to be onboarded to the CDC Vouchers campaign. Merchants can indicate interest [here](https://www.cdc.gov.sg/cdcvouchers/merchants). 
+
+    - q: I am a voucher applicant/ recipient. How do I apply for vouchers? 
+      a: If you are a voucher applicant/ recipient, you will need to apply for vouchers at the relevant campaign organizer sign up page.  
+
+    - q: I am a merchant. How do I gain access to the app?  
+      a: Currently we are only onboarding merchants for the CDC Vouchers campaign. Please refer to the CDC Vouchers - Merchants page [here](https://www.cdc.gov.sg/cdcvouchers/merchants) for more info. 
+    
+    - q: I am a merchant. Can I integrate with your system to accept Government vouchers? 
+      a: |
+        We will only be able to explore integration with merchants from May 2022 onwards.
+
+        For Recipients and Merchants, please refer to the relevant campaign page that you are participating in below. 
