@@ -1,44 +1,15 @@
 .index-page {
-  background: $redeem-pink;
-
-  .dashboard {
-    border-radius: 20px;
-    box-shadow: -1px 10px 60px 0px rgba(0, 0, 0, 0.2);
-  }
-
-  .wave-container {
-    background: $redeem-white;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    margin-top: -25em;
-    img {
-      width: 100%;
-    }
-  }
-
   .intro-section {
-    padding-top: 3em;
+    padding-bottom: 4em;
+    background-color: $primary-100;
     .container {
       .row {
         justify-content: center;
         align-items: center;
 
         h1 {
-          font-size: 3em;
-          color: $redeem-blue;
-          line-height: 1.2;
-          margin: 0 auto;
-          margin-bottom: 1em;
-          // max-width: 450px;
-        }
-
-        h2 {
-          font-size: 1.4em;
-          line-height: 1.5;
-          font-weight: 400;
-          max-width: 45ch;
-          // margin: 0 auto;
+          color: $primary-500;
+          margin-bottom: 16px;
         }
 
         .redeem-vouchers {
@@ -49,7 +20,6 @@
           img {
             width: 100%;
           }
-          // max-width: 400px;
         }
 
         .floating {
@@ -57,7 +27,6 @@
           animation-duration: 5s;
           animation-iteration-count: infinite;
           animation-timing-function: ease-in-out;
-          margin-left: 30px;
           margin-top: 5px;
         }
 
@@ -76,53 +45,37 @@
     }
   }
 
-  .statistics-section {
-    background: white;
-    padding-top: 2em;
+  .users-section {
     padding-bottom: 4em;
-
-    .stat {
+    padding-top: 4em;
+    .users {
       width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
       text-align: center;
-      margin-bottom: 5em;
-      .stat-icon {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-bottom: 0.8em;
-        width: 80px;
-
+      .users-icon {
+        width: 100%;
+        padding-top: 110%; // hardcoded to be largest ratio of the images
+        position: relative;
+        margin-bottom: 24px;
         img {
+          position: absolute;
           width: 100%;
-          margin: 0 auto;
+          left: 0;
+          bottom: 0;
+          right: 0;
         }
       }
-      .stat-label {
-        width: 100%;
-        .stat-units {
-          color: $redeem-blue;
+      .users-label {
+        h2 {
+          color: $primary-500;
           width: 100%;
           text-align: center;
-          font-size: 4em;
-          font-weight: 500;
-          margin-bottom: 2px;
-          line-height: 1;
-          .sub {
-            color: $redeem-blue;
-            margin-left: 5px;
-            font-size: 1.2rem;
-          }
+          margin-bottom: 8px;
         }
-        .stat-description {
-          color: #848399;
-          max-width: 30ch;
-          margin: 0 auto;
+        div {
           text-align: center;
         }
       }
@@ -132,12 +85,7 @@
   .how-it-works-section {
     padding-top: 2em;
     padding-bottom: 8em;
-    background: white;
-    h1 {
-      text-align: center;
-      margin-bottom: 1em;
-    }
-
+    background: $primary-100;
     .how-left {
       padding: 1em;
       margin-bottom: 3em;
@@ -145,42 +93,33 @@
         width: 100%;
       }
     }
-
     .how-right {
       padding-left: 1em;
       padding-right: 1em;
 
       h1 {
-        // margin-top: 1em;
-        text-align: left;
-        color: $redeem-blue;
+        color: $primary-500;
       }
       .steps {
-        // padding-left: 2em;
-        // padding-right: 2em;
         width: 100%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        gap: 32px;
         margin-top: 2em;
 
         .each-step {
           box-sizing: border-box;
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
           justify-content: flex-start;
           align-items: flex-start;
-          // margin-right: 2em;
-          margin-bottom: 1em;
-          margin-top: 1em;
-
+          gap: 24px;
           .step-image {
-            margin-right: 0.5em;
-            max-width: 100px;
             img {
-              width: 100%;
+              width: 100px;
             }
           }
           .step-text {
@@ -188,15 +127,12 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
-            margin-top: 0.5em;
 
             .step-header {
               display: flex;
               justify-content: flex-start;
               align-items: center;
-              font-size: 1.4em;
-              font-weight: 500;
-              color: $redeem-blue;
+              color: $primary-500;
               margin-bottom: 0.3em;
               .step-number {
                 margin-left: 0.5em;
@@ -231,9 +167,10 @@
               }
             }
           }
-
-          &:last-child {
-            margin-right: 0;
+        }
+        @media (min-width: 768px) {
+          .each-step {
+            flex-direction: row;
           }
         }
       }
@@ -246,82 +183,52 @@
     }
   }
 
-  .how-if-legit-section {
-    padding-top: 8em;
-    padding-bottom: 5em;
-    background: white;
-    background: $redeem-pink;
-    h1 {
-      text-align: center;
-      color: $redeem-blue;
+  .statistics-section {
+    padding-bottom: 4em;
+    padding-top: 4em;
+    .container {
+      .stats-header {
+        margin-bottom: 40px;
+        color: $primary-500;
+      }
+      .stats-item-header {
+        color: $primary-700;
+      }
     }
-    h2 {
-      text-align: center;
-      font-size: 1.2rem;
-      color: $body-text;
-      max-width: 60ch;
-      margin: 0 auto;
-      margin-bottom: 1em;
-      line-height: 1.5;
-    }
-    .highlight {
-      background-color: #fff599;
-      padding: 2px 5px;
-      border-radius: 3px;
-      font-size: 1.2rem;
-    }
+  }
 
-    .legit-check {
-      width: 100%;
-      padding-bottom: 0;
+  .faq-section {
+    padding-bottom: 4em;
+    padding-top: 4em;
+    background-color: $primary-500;
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
       img {
-        width: 100%;
+        width: 100px;
       }
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    .wave-container {
-      margin-top: 0em !important;
-    }
-  }
-
-  @media screen and (min-width: 992px) {
-    .wave-container {
-      margin-top: -10em !important;
-    }
-    .intro-section {
-      padding-top: 0em !important;
-      .container {
-        .row {
-          h1 {
-            margin-top: -2em !important;
-
-            text-align: left;
-          }
-
-          h2 {
-            text-align: left;
-          }
+      .faq-header h2 {
+        color: $primary-100;
+        text-align: center;
+      }
+      .faq-element {
+        color: $primary-100;
+      }
+      .button-blue {
+        a {
+          display: block;
+          color: #ffffff;
+          border: 1px solid #ffffff;
+          box-sizing: border-box;
+          border-radius: 4px;
+          padding: 10px 16px;
         }
-      }
-    }
-
-    .statistics-section {
-      margin-top: -3em;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    .wave-container {
-      margin-top: -20em !important;
-    }
-    .intro-section {
-      .container {
-        .row {
-          h1 {
-            margin-top: -5em !important;
-          }
+        a:hover {
+          background: #ffffff;
+          color: #505798;
+          border: 1px solid #505798;
         }
       }
     }

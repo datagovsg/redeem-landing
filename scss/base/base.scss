@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter");
 
 *,
 *::before,
@@ -21,7 +21,7 @@ body {
   // height: 100vh;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Rubik", sans-serif;
+  font-family: "Inter";
   line-height: 1.5;
   background: white;
   color: $body-text;
@@ -43,7 +43,7 @@ select,
 textarea {
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Rubik", sans-serif;
+  font-family: "Inter";
   color: black;
   text-align: left;
 }
