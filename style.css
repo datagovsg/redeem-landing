@@ -1392,26 +1392,22 @@ h6 {
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
+      gap: 32px;
       margin-top: 2em; }
       .index-page .how-it-works-section .how-right .steps .each-step {
         box-sizing: border-box;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-bottom: 1em;
-        margin-top: 1em; }
-        .index-page .how-it-works-section .how-right .steps .each-step .step-image {
-          margin-right: 0.5em;
-          max-width: 100px; }
-          .index-page .how-it-works-section .how-right .steps .each-step .step-image img {
-            width: 100%; }
+        gap: 24px; }
+        .index-page .how-it-works-section .how-right .steps .each-step .step-image img {
+          width: 100px; }
         .index-page .how-it-works-section .how-right .steps .each-step .step-text {
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
-          align-items: flex-start;
-          margin-top: 0.5em; }
+          align-items: flex-start; }
           .index-page .how-it-works-section .how-right .steps .each-step .step-text .step-header {
             display: flex;
             justify-content: flex-start;
@@ -1442,8 +1438,9 @@ h6 {
               text-align: left;
               font-size: 1.1em;
               margin: 0; }
-        .index-page .how-it-works-section .how-right .steps .each-step:last-child {
-          margin-right: 0; }
+      @media (min-width: 768px) {
+        .index-page .how-it-works-section .how-right .steps .each-step {
+          flex-direction: row; } }
     .index-page .how-it-works-section .how-right .check-faq {
       margin: 0 auto;
       margin-top: 2em; }

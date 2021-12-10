@@ -106,23 +106,19 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        gap: 32px;
         margin-top: 2em;
 
         .each-step {
           box-sizing: border-box;
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
           justify-content: flex-start;
           align-items: flex-start;
-          // margin-right: 2em;
-          margin-bottom: 1em;
-          margin-top: 1em;
-
+          gap: 24px;
           .step-image {
-            margin-right: 0.5em;
-            max-width: 100px;
             img {
-              width: 100%;
+              width: 100px;
             }
           }
           .step-text {
@@ -130,7 +126,6 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
-            margin-top: 0.5em;
 
             .step-header {
               display: flex;
@@ -171,9 +166,10 @@
               }
             }
           }
-
-          &:last-child {
-            margin-right: 0;
+        }
+        @media (min-width: 768px) {
+          .each-step {
+            flex-direction: row;
           }
         }
       }
