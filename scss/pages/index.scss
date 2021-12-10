@@ -55,16 +55,17 @@
       justify-content: flex-start;
       align-items: center;
       text-align: center;
-      margin-bottom: 5em;
       .users-icon {
-        // TODO make all 3 images same size
-        // height: 390px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding-bottom: 24px;
+        width: 100%;
+        padding-top: 110%; // hardcoded to be largest ratio of the images
+        position: relative;
+        margin-bottom: 24px;
         img {
+          position: absolute;
           width: 100%;
+          left: 0;
+          bottom: 0;
+          right: 0;
         }
       }
       .users-label {
