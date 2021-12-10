@@ -4,9 +4,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-feature-settings: "tnum" on, "lnum" on, "cv05" on;
+  font-family: "Rubik", sans-serif;
   margin: 0;
   padding: 0;
+  font-weight: 500;
   text-align: left;
 }
 
@@ -17,11 +18,9 @@ h1 {
 }
 
 h2 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 36px;
-  letter-spacing: -0.02em;
+  font-size: 2.2rem;
+  line-height: 1.2em;
+  margin-bottom: 2rem;
 }
 
 h3 {
@@ -46,33 +45,4 @@ h6 {
   font-size: 1rem;
   line-height: 1.4em;
   margin-bottom: 1rem;
-}
-
-.display-1 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 72px;
-  letter-spacing: -0.022em;
-  font-feature-settings: "cv05" on;
-}
-.display-2 {
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -0.022em;
-  text-align: left;
-  /* identical to box height, or 120% */
-  letter-spacing: -0.022em;
-  font-feature-settings: "cv05" on;
-}
-.subhead-3 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px; /* or 171% */
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-feature-settings: "tnum" on, "lnum" on, "cv05" on;
 }
