@@ -1122,7 +1122,7 @@ h6 {
       flex-direction: row; } }
 
 .legal-header-container {
-  background: #ffe1ec;
+  background: #dfe1f2;
   padding-top: 3em;
   padding-bottom: 3em; }
   .legal-header-container h1 {
@@ -1456,9 +1456,9 @@ h6 {
 
 .legal-privacy-page .product-header-container,
 .legal-tou-page .product-header-container {
-  background: #303778; }
-  .legal-privacy-page .product-header-container .container .row .header-right nav ul li a,
-  .legal-tou-page .product-header-container .container .row .header-right nav ul li a {
+  background: #31377c; }
+  .legal-privacy-page .product-header-container .container .header .header-right nav ul li a,
+  .legal-tou-page .product-header-container .container .header .header-right nav ul li a {
     color: white; }
 
 .faq-page .product-header-container {
