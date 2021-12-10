@@ -216,17 +216,20 @@
       .faq-element {
         color: $primary-100;
       }
-      .button-blue a {
-        color: #ffffff;
-        border: 1px solid #ffffff;
-        box-sizing: border-box;
-        border-radius: 4px;
-        padding: 10px 16px;
-      }
-      .button-blue a:hover {
-        background: #ffffff;
-        color: #505798;
-        border: 1px solid #505798;
+      .button-blue {
+        a {
+          display: block;
+          color: #ffffff;
+          border: 1px solid #ffffff;
+          box-sizing: border-box;
+          border-radius: 4px;
+          padding: 10px 16px;
+        }
+        a:hover {
+          background: #ffffff;
+          color: #505798;
+          border: 1px solid #505798;
+        }
       }
     }
   }
