@@ -1,349 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="RedeemSG - Track Redemptions Easily" />
+    <meta name="author" content="Redeem Landing" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="RedeemSG - Track Redemptions Easily" />
-  <meta name="author" content="Redeem Landing" />
-
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="manifest" href="site.webmanifest" />
-  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <title>RedeemSG - Voucher System for the Singapore Government</title>
-</head>
-
-<body class="index-page">
-  <header class="masthead-container">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="masthead-content">
-            <img src="img/sg-crest.svg" class="sg-crest" />
-            <p>A Singapore Government Website</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <header class="product-header-container">
-    <div class="container">
-      <div class="header">
-        <div class="header-left">
-          <a href="index.html">
-            <img src="img/Logo.svg" class="logo-desktop" />
-            <img src="img/Logo_mobile.svg" class="logo-mobile" />
-          </a>
-        </div>
-        <div class="header-right">
-          <nav>
-            <ul>
-              <li><a href="faq.html">FAQ</a></li>
-              <li>
-                <a href="mailto:feedback@redeem.gov.sg" target="_blank">Contact Us</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <section class="intro-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-sm-12 ">
-          <h1 class="display-1">
-            The trusted voucher system for the Singapore Government
-          </h1>
-          <div>
-            RedeemSG is a voucher system that helps Singapore Government agencies easily create, issue and track the
-            redemption of vouchers. It also enables merchants to easily accept Government issued vouchers.
-
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-12 ">
-          <div class="redeem-vouchers">
-            <img class="floating" src="img/Headerbanner.png" />
-          </div>
-          <!-- <img class="bg-dots" src="img/bg-dots.svg" /> -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="users-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-lg-4 users">
-          <div class="users-icon">
-            <img src="img/recipient_view_better.png" />
-          </div>
-          <div class="users-label">
-            <h2>Recipients</h2>
-            <div>Recipients can sign up and claim a voucher without needing to download a mobile app.</div>
-          </div>
-        </div>
-        <div class="col-md-12 col-lg-4 users">
-          <div class="users-icon">
-            <img src="img/merchant_view_better.png" />
-          </div>
-          <div class="users-label">
-            <h2>Merchants</h2>
-            <div>Merchants can accept vouchers easily using the RedeemSG Merchant App.</div>
-          </div>
-        </div>
-        <div class="col-md-12 col-lg-4 users">
-          <div class="users-icon">
-            <img src="img/Agency_view.png" />
-          </div>
-          <div class="users-label">
-            <h2>Government Agencies</h2>
-            <div>Agencies can manage voucher campaign(s) and track redemptions using the RedeemSG Admin Portal.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="how-it-works-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-6 how-right">
-          <h1 class="display-2">For Recipients</h1>
-          <div class="steps">
-            <div class="each-step">
-              <div class="step-image">
-                <img src="img/recipient_signup.png" />
-              </div>
-              <div class="step-text">
-                <h4 class="step-header">Claim your voucher </h4>
-                <div class="step-description">
-                  Visit the voucher campaign sign up page to claim your voucher.
-                </div>
-              </div>
-            </div>
-
-            <div class="each-step">
-              <div class="step-image">
-                <img src="img/recipient_receivevoucher.png" />
-              </div>
-              <div class="step-text">
-                <h4 class="step-header"> Receive a voucher link sent via SMS</h4>
-                <div class="step-description">
-                  Only trust voucher links from
-                  <ul>
-                    <li> voucher.redeem.gov.sg </li>
-                    <li>v.redeem.gov.sg </li>
-
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="each-step">
-              <div class="step-image">
-                <img src="img/recipient_show.png" />
-              </div>
-              <div class="step-text">
-                <h4 class="step-header">Show QR code to participating merchants to spend your voucher</h4>
-                <div class="step-description">
-                  Spend your voucher at participating merchants. Participating merchants will be provided by the
-                  campaign organiser.
-                </div>
-              </div>
-
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>RedeemSG - Voucher System for the Singapore Government</title>
+  </head>
+  <body class="index-page">
+    <header class="masthead-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="masthead-content">
+              <img src="img/sg-crest.svg" class="sg-crest" />
+              <p>A Singapore Government Website</p>
             </div>
           </div>
-
-          <p class="check-faq">
-            For more info on the programme, visit the link at the bottom of
-            the voucher or email the agency contact. You can also find more
-            info on the specific programme in the FAQ page
-          </p>
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-6 how-left">
-          <img src="img/Recipient_graphic.svg">
         </div>
       </div>
-    </div>
-
-
-  </section>
-
-  <section class="how-it-works-section">
-    <div class="container">
-      <div class="row wrap-reverse">
-        <div class="col-sm-12 col-md-12 col-lg-6 how-left">
-          <img src="img/Merchant_graphic.svg">
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-6 how-right">
-          <h1>For Merchants
-            (CDC Vouchers Scheme)</h1>
-          <div class="steps">
-            <div class="each-step">
-              <div class="step-image">
-                <img src="img/merchants_indicateinterest.png" />
-              </div>
-              <div class="step-text">
-                <h4 class="step-header">Indicate your interest & get registered</h4>
-                <div class="step-description">
-                  Indicate your interest on this form. Sign up with a Digital Ambassador or CDC Ambassador. Receive a
-                  shop code.
-                </div>
-              </div>
-            </div>
-
-            <div class="each-step">
-              <div class="step-image">
-                <img src="img/merchants_downloadapp.png" />
-              </div>
-              <div class="step-text">
-                <h4 class="step-header">Download the app</h4>
-                <div class="step-description">
-                  Download the RedeemSG Merchant app on the App Store or Google Play.
-                </div>
-              </div>
-            </div>
-            <div class="each-step">
-              <div class="step-image">
-                <img src="img/merchants_onboardshop.png" />
-              </div>
-              <div class="step-text">
-                <h4 class="step-header">Onboard your shop onto RedeemSG</h4>
-                <div class="step-description">
-                  Key in the shop code to gain access to your shop account. Other staff can also onboard using this same
-                  shop code.
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <p class="check-faq">
-            For more info on the programme, visit the link at the bottom of
-            the voucher or email the agency contact. You can also find more
-            info on the specific programme in the FAQ page
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="statistics-section">
-    <div class="container">
-      <div class="display-2 stats-header">
-        RedeemSG's impact to date
-      </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-3 redeem-stats-example">
-          <h2 class="stats-item-header">20+ million</h2>
-          <div class="stats-item-text subhead-3">Redemptions enabled</div>
-        </div>
-        <div class="col-sm-12 col-md-3 redeem-stats-example">
-          <h2 class="stats-item-header">14000+</h2>
-          <div class="stats-item-text subhead-3">volunteers enabled</div>
-        </div>
-        <div class="col-sm-12 col-md-3 redeem-stats-example">
-          <h2 class="stats-item-header">&gt;6000</h2>
-          <div class="stats-item-text subhead-3">Merchants and hawkers onboarded</div>
-        </div>
-        <div class="col-sm-12 col-md-3 redeem-stats-example">
-          <h2 class="stats-item-header">8+</h2>
-          <div class="stats-item-text subhead-3">Agencies supported</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="faq-section">
-    <div class="container">
-      <div class="faq-img">
-        <img class="img-responsive" src="img/Merchant_app_graphic.svg" />
-      </div>
-      <div>
-        <div class="faq-header">
-          <h2 class="display-2">Frequently Asked Questions</h2>
-        </div>
-        <div class="faq-element">
-          For help related to how to claim vouchers, how to sign up as a merchant, and more.
-        </div>
-      </div>
-      <div class="button-blue">
-        <a href="faq.html">Explore FAQ</a>
-      </div>
-    </div>
-  </section>
-  <section class="product-footer-container">
-    <div class="container">
-      <div class="footer-logo">
-        <h4>RedeemSG</h4>
-        <div class="redeem-tagline">
-          <p>Trusted voucher system of the Singapore Government</p>
-        </div>
-      </div>
-      <div class="footer-nav">
-        <nav>
-          <ul>
-            <li>
-              <a href="faq.html">FAQ</a>
-            </li>
-            <li>
-              <a href="privacy.html">Privacy</a>
-            </li>
-            <li>
-              <a href="terms-of-use.html">Terms of Use</a>
-            </li>
-            <li>
-              <a href="https://www.tech.gov.sg/report_vulnerability">Report Vulnerability</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </section>
-  <footer class="ogp-footer-container">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-6 footer-left">
-          <p>Built by</p>
-          <a href="https://www.open.gov.sg">
-            <img src="img/OGP Logo for Isomer website.svg" />
-          </a>
-        </div>
-        <div class="col-sm-12 col-md-6 footer-right">
-          <div class="social-icons">
-            <div class="icon">
-              <a href="#">
-                <i class="bx bxl-linkedin"></i>
-              </a>
-            </div>
-
-            <div class="icon">
-              <a href="#">
-                <i class="bx bxl-facebook"></i>
-              </a>
-            </div>
-
-            <div class="icon">
-              <a href="https://open.gov.sg">
-                <img src="img/ogp-logo-mark-black.svg" />
+    </header>
+    <header class="product-header-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 header-left">
+            <div class="logo">
+              <a href="index.html">
+                <img src="img/logo_blue.svg" />
               </a>
             </div>
           </div>
-
-          <p class="copyright-text">
-            &copy; 2021 Open Government Products, Government Technology Agency
-            of Singapore
-          </p>
+          <div class="col-sm-12 col-md-6 header-right">
+            <nav>
+              <ul>
+                <li>
+                  <a class="active" href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="/files/RedeemProductFactsheet.pdf" download>For Campaign Organisers</a>
+                </li>
+                <!-- <li>
+                  <a href="index-merchants.html" target="_blank"
+                    >For Merchants</a
+                  >
+                </li> -->
+                <li><a href="faq.html">FAQ</a></li>
+                <li>
+                  <a href="mailto:feedback@redeem.gov.sg" target="_blank"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-</body>
+    </header>
 
+    <section class="intro-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 ">
+            <h1>
+              The trusted voucher system for the Singapore Government
+            </h1>
+            <h2>
+              RedeemSG is a voucher system that helps Singapore Government agencies easily create, issue and track the redemption of vouchers. It also enables merchants to easily accept Government issued vouchers.
+            </h2>
+          </div>
+          <div class="col-md-6 col-sm-12 ">
+            <div class="redeem-vouchers">
+              <img
+              class="floating"
+              src="img/redeemVouchers.png"
+            />
+            </div>
+
+            <!-- <img class="bg-dots" src="img/bg-dots.svg" /> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wave-container">
+      <img src="img/backgroundWave.svg" />
+    </section>
+
+    <section class="statistics-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 stat">
+            <div class="stat-icon">
+              <img src="img/stat_icon_redemptions.svg" />
+            </div>
+            <div class="stat-label">
+              <div class="stat-units">12<span class="sub">million</span></div>
+              <div class="stat-description">Redemptions enabled</div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 stat">
+            <div class="stat-icon">
+              <img src="img/stat_icon_verifiers.svg" />
+            </div>
+            <div class="stat-label">
+              <div class="stat-units">14<span class="sub">k</span></div>
+              <div class="stat-description">Volunteers empowered</div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 stat">
+            <div class="stat-icon">
+              <img src="img/stat_icon_agency.svg" />
+            </div>
+            <div class="stat-label">
+              <div class="stat-units">8</div>
+              <div class="stat-description">Agencies supported</div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 stat">
+            <div class="stat-icon">
+              <img src="img/stat_icon_merchants.svg" />
+            </div>
+            <div class="stat-label">
+              <div class="stat-units">10</div>
+              <div class="stat-description">Merchants integrated</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="redeem-in-public-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <h1>RedeemSG in Action</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-4">step 1:</div>
+          <div class="col-sm-12 col-md-4">step 2:</div>
+          <div class="col-sm-12 col-md-4">step 3:</div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="how-it-works-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6 how-left">
+            <img src="img/voucher_supermarket.png">
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-6 how-right">
+            <h1>How it works</h1>
+            <div class="steps">
+              <div class="each-step">
+                <div class="step-image">
+                  <img src="img/step1_sms.svg" />
+                </div>
+                <div class="step-text">
+                    <div class="step-header">Step<div class="step-number">1</div></div>
+                    <div class="step-description">
+                      Receive a SMS with a voucher link.
+                    </div>
+                  </div>
+                </div>
+
+              <div class="each-step">
+                <div class="step-image">
+                  <img src="img/step2_barcode.svg" />
+                </div>
+                <div class="step-text">
+                  <div class="step-header">Step<div class="step-number">2</div></div>
+                  <div class="step-description">
+                    Click on the voucher link to view voucher.
+                  </div>
+                </div>
+              </div>
+              <div class="each-step">
+                <div class="step-image">
+                  <img src="img/step3_checkout.svg" />
+                </div>
+                <div class="step-text">
+                  <div class="step-header">Step<div class="step-number">3</div></div>
+                  <div class="step-description">
+                    Present the voucher to participating merchants at check out.
+                  </div>
+                </div>
+
+              </div>
+              </div>
+
+              <p class="check-faq">
+                For more info on the programme, visit the link at the bottom of
+                the voucher or email the agency contact. You can also find more
+                info on the specific programme in the FAQ page
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+    </section>
+
+    <section class="how-if-legit-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Is this a real RedeemSG voucher?</h1>
+            <h2>
+            A valid RedeemSG voucher URL starts with <span class="highlight"> https://v.redeem.gov.sg.</span> <br/> Do not trust vouchers with other prefixes.
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <img class="img-responsive" src="img/legit_samples.png" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="product-footer-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="redeem-logo">
+              <img src="img/logo_white.svg" />
+              <p class="tagline">Voucher System for the Singapore Government</p>
+            </div>
+            <nav>
+              <ul>
+
+                <li>
+                  <a href="/files/RedeemProductFactsheet.pdf" download>For Campaign Organisers</a>
+                </li>
+                <!-- <li>
+                  <a href="index-merchants.html" target="_blank">Merchants</a>
+                </li> -->
+                <li>
+                  <a href="faq.html">FAQ</a>
+                </li>
+                <li>
+                  <a href="privacy.html" >Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="terms-of-use.html" >Terms of Use</a>
+                </li>
+                <li>
+                  <a href="mailto:feedback@redeem.gov.sg" target="_blank"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="ogp-footer-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 footer-left">
+            <p>Built by</p>
+            <a href="https://www.open.gov.sg">
+              <img src="img/ogp-logo.svg" />
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-6 footer-right">
+            <div class="social-icons">
+              <div class="icon">
+                <a href="#">
+                  <i class="bx bxl-linkedin"></i>
+                </a>
+              </div>
+
+              <div class="icon">
+                <a href="#">
+                  <i class="bx bxl-facebook"></i>
+                </a>
+              </div>
+
+              <div class="icon">
+                <a href="#">
+                  <img src="img/ogp-logo-mark-white.svg" />
+                </a>
+              </div>
+            </div>
+
+            <p class="copyright-text">
+              &copy; 2020 Open Government Products, Government Technology Agency
+              of Singapore
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
