@@ -64,7 +64,7 @@ a {
   cursor: pointer;
   text-align: left;
   text-decoration: none;
-  color: #303778; }
+  color: #505798; }
 
 .img-responsive {
   width: 100%;
@@ -1223,6 +1223,11 @@ h6 {
 .faq-body-container {
   padding-top: 4em;
   padding-bottom: 4em; }
+  .faq-body-container a {
+    text-decoration: underline;
+    color: #505798; }
+    .faq-body-container a:hover {
+      color: #31377c; }
   .faq-body-container .faq-note {
     max-width: 80ch;
     margin: 0 auto;

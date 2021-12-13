@@ -16,6 +16,13 @@
 .faq-body-container {
   padding-top: 4em;
   padding-bottom: 4em;
+  a {
+    text-decoration: underline;
+    color: $primary-500;
+    &:hover {
+      color: $primary-600;
+    }
+  }
 
   .faq-note {
     max-width: 80ch;
