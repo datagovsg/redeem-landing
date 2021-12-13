@@ -8,23 +8,11 @@
         align-items: center;
 
         h1 {
+          @include display-2;
           color: $primary-500;
           margin-bottom: 16px;
-        }
-
-        .display-1 {
-          display: none;
-        }
-        .display-2 {
-          display: block;
-        }
-
-        @media (min-width: 768px) {
-          .display-1 {
-            display: block;
-          }
-          .display-2 {
-            display: none;
+          @media (min-width: 768px) {
+            @include display-1;
           }
         }
 
@@ -128,8 +116,11 @@
       padding-left: 1em;
       padding-right: 1em;
 
-      h1 {
+      h2 {
         color: $primary-500;
+        @media (min-width: 768px) {
+          @include display-2;
+        }
       }
       .steps {
         width: 100%;
@@ -221,6 +212,9 @@
       .stats-header {
         margin-bottom: 40px;
         color: $primary-500;
+        @media (min-width: 768px) {
+          @include display-2;
+        }
       }
       .stats-item-header {
         color: $primary-700;

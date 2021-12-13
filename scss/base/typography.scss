@@ -48,7 +48,7 @@ h6 {
   margin-bottom: 1rem;
 }
 
-.display-1 {
+@mixin display-1 {
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
@@ -56,7 +56,10 @@ h6 {
   letter-spacing: -0.022em;
   font-feature-settings: "cv05" on;
 }
-.display-2 {
+.display-1 {
+  @include display-1;
+}
+@mixin display-2 {
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
@@ -66,6 +69,20 @@ h6 {
   /* identical to box height, or 120% */
   letter-spacing: -0.022em;
   font-feature-settings: "cv05" on;
+}
+.display-2 {
+  /* display-2 mobile */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -0.017em;
+  font-feature-settings: "cv05" on;
+  /* on larger screens */
+  @media (min-width: 576px) {
+    @include display-2;
+  }
 }
 .subhead-3 {
   font-style: normal;

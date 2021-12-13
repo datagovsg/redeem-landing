@@ -64,7 +64,7 @@ a {
   cursor: pointer;
   text-align: left;
   text-decoration: none;
-  color: #303778; }
+  color: #505798; }
 
 .img-responsive {
   width: 100%;
@@ -931,15 +931,26 @@ h6 {
   font-feature-settings: "cv05" on; }
 
 .display-2 {
-  font-size: 40px;
+  /* display-2 mobile */
   font-style: normal;
   font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -0.022em;
-  text-align: left;
-  /* identical to box height, or 120% */
-  letter-spacing: -0.022em;
-  font-feature-settings: "cv05" on; }
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -0.017em;
+  font-feature-settings: "cv05" on;
+  /* on larger screens */ }
+  @media (min-width: 576px) {
+    .display-2 {
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 48px;
+      letter-spacing: -0.022em;
+      text-align: left;
+      /* identical to box height, or 120% */
+      letter-spacing: -0.022em;
+      font-feature-settings: "cv05" on; } }
 
 .subhead-3 {
   font-style: normal;
@@ -1212,6 +1223,11 @@ h6 {
 .faq-body-container {
   padding-top: 4em;
   padding-bottom: 4em; }
+  .faq-body-container a {
+    text-decoration: underline;
+    color: #505798; }
+    .faq-body-container a:hover {
+      color: #31377c; }
   .faq-body-container .faq-note {
     max-width: 80ch;
     margin: 0 auto;
@@ -1290,17 +1306,25 @@ h6 {
     justify-content: center;
     align-items: center; }
     .index-page .intro-section .container .row h1 {
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 48px;
+      letter-spacing: -0.022em;
+      text-align: left;
+      /* identical to box height, or 120% */
+      letter-spacing: -0.022em;
+      font-feature-settings: "cv05" on;
       color: #505798;
       margin-bottom: 16px; }
-    .index-page .intro-section .container .row .display-1 {
-      display: none; }
-    .index-page .intro-section .container .row .display-2 {
-      display: block; }
-    @media (min-width: 768px) {
-      .index-page .intro-section .container .row .display-1 {
-        display: block; }
-      .index-page .intro-section .container .row .display-2 {
-        display: none; } }
+      @media (min-width: 768px) {
+        .index-page .intro-section .container .row h1 {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 64px;
+          line-height: 72px;
+          letter-spacing: -0.022em;
+          font-feature-settings: "cv05" on; } }
     .index-page .intro-section .container .row .redeem-vouchers {
       display: flex;
       justify-content: center;
@@ -1375,8 +1399,19 @@ h6 {
   .index-page .how-it-works-section .how-right {
     padding-left: 1em;
     padding-right: 1em; }
-    .index-page .how-it-works-section .how-right h1 {
+    .index-page .how-it-works-section .how-right h2 {
       color: #505798; }
+      @media (min-width: 768px) {
+        .index-page .how-it-works-section .how-right h2 {
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 48px;
+          letter-spacing: -0.022em;
+          text-align: left;
+          /* identical to box height, or 120% */
+          letter-spacing: -0.022em;
+          font-feature-settings: "cv05" on; } }
     .index-page .how-it-works-section .how-right .steps {
       width: 100%;
       margin: 0 auto;
@@ -1443,6 +1478,17 @@ h6 {
   .index-page .statistics-section .container .stats-header {
     margin-bottom: 40px;
     color: #505798; }
+    @media (min-width: 768px) {
+      .index-page .statistics-section .container .stats-header {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 48px;
+        letter-spacing: -0.022em;
+        text-align: left;
+        /* identical to box height, or 120% */
+        letter-spacing: -0.022em;
+        font-feature-settings: "cv05" on; } }
   .index-page .statistics-section .container .stats-item-header {
     color: #2f3476; }
   .index-page .statistics-section .container .redeem-stats-all-examples {
