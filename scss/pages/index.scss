@@ -12,6 +12,22 @@
           margin-bottom: 16px;
         }
 
+        .display-1 {
+          display: none;
+        }
+        .display-2 {
+          display: block;
+        }
+
+        @media (min-width: 768px) {
+          .display-1 {
+            display: block;
+          }
+          .display-2 {
+            display: none;
+          }
+        }
+
         .redeem-vouchers {
           display: flex;
           justify-content: center;
