@@ -12,6 +12,22 @@
           margin-bottom: 16px;
         }
 
+        .display-1 {
+          display: none;
+        }
+        .display-2 {
+          display: block;
+        }
+
+        @media (min-width: 768px) {
+          .display-1 {
+            display: block;
+          }
+          .display-2 {
+            display: none;
+          }
+        }
+
         .redeem-vouchers {
           display: flex;
           justify-content: center;
@@ -48,35 +64,50 @@
   .users-section {
     padding-bottom: 4em;
     padding-top: 4em;
-    .users {
-      width: 100%;
+    .container {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      text-align: center;
-      .users-icon {
-        width: 100%;
-        padding-top: 110%; // hardcoded to be largest ratio of the images
-        position: relative;
-        margin-bottom: 24px;
-        img {
-          position: absolute;
-          width: 100%;
-          left: 0;
-          bottom: 0;
-          right: 0;
-        }
+      gap: 40px;
+      @media (min-width: 992px) {
+        flex-direction: row;
+        gap: 72px;
       }
-      .users-label {
-        h2 {
-          color: $primary-500;
-          width: 100%;
-          text-align: center;
-          margin-bottom: 8px;
+      .users {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        .users-icon {
+          margin-bottom: 24px;
+          img {
+            width: 100%;
+          }
         }
-        div {
-          text-align: center;
+        @media (min-width: 992px) {
+          .users-icon {
+            width: 100%;
+            padding-top: 110%; // hardcoded to be largest ratio of the images
+            position: relative;
+            img {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              right: 0;
+            }
+          }
+        }
+        .users-label {
+          h2 {
+            color: $primary-500;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 8px;
+          }
+          div {
+            text-align: center;
+          }
         }
       }
     }
@@ -193,6 +224,16 @@
       }
       .stats-item-header {
         color: $primary-700;
+      }
+      .redeem-stats-all-examples {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        @media (min-width: 768px) {
+          flex-direction: row;
+          gap: 0;
+          justify-content: space-between;
+        }
       }
     }
   }
