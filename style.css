@@ -56,6 +56,10 @@ li {
   font-weight: 400;
   line-height: 1.5 !important; }
 
+ol,
+ul {
+  padding-left: 40px; }
+
 a {
   cursor: pointer;
   text-align: left;
@@ -1268,11 +1272,6 @@ h6 {
           width: 100%;
           max-width: 100%;
           height: auto; }
-      .faq-body-container .faq-group .all-questions .question-answer-group .answer ul {
-        list-style-type: disc;
-        margin: 0.2em 1.2em; }
-        .faq-body-container .faq-group .all-questions .question-answer-group .answer ul li {
-          padding: 0.2em; }
     .faq-body-container .faq-group .all-questions .question-answer-group input:checked ~ .answer {
       display: block;
       visibility: visible;
