@@ -1327,31 +1327,42 @@ h6 {
 .index-page .users-section {
   padding-bottom: 4em;
   padding-top: 4em; }
-  .index-page .users-section .users {
-    width: 100%;
+  .index-page .users-section .container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center; }
-    .index-page .users-section .users .users-icon {
+    gap: 40px; }
+    @media (min-width: 992px) {
+      .index-page .users-section .container {
+        flex-direction: row;
+        gap: 72px; } }
+    .index-page .users-section .container .users {
       width: 100%;
-      padding-top: 110%;
-      position: relative;
-      margin-bottom: 24px; }
-      .index-page .users-section .users .users-icon img {
-        position: absolute;
-        width: 100%;
-        left: 0;
-        bottom: 0;
-        right: 0; }
-    .index-page .users-section .users .users-label h2 {
-      color: #505798;
-      width: 100%;
-      text-align: center;
-      margin-bottom: 8px; }
-    .index-page .users-section .users .users-label div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
       text-align: center; }
+      .index-page .users-section .container .users .users-icon {
+        margin-bottom: 24px; }
+        .index-page .users-section .container .users .users-icon img {
+          width: 100%; }
+      @media (min-width: 992px) {
+        .index-page .users-section .container .users .users-icon {
+          width: 100%;
+          padding-top: 110%;
+          position: relative; }
+          .index-page .users-section .container .users .users-icon img {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0; } }
+      .index-page .users-section .container .users .users-label h2 {
+        color: #505798;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 8px; }
+      .index-page .users-section .container .users .users-label div {
+        text-align: center; }
 
 .index-page .how-it-works-section {
   padding-top: 2em;
