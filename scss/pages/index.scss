@@ -8,23 +8,13 @@
         align-items: center;
 
         h1 {
+          @include display-2;
           color: $primary-500;
           margin-bottom: 16px;
         }
-
-        .display-1 {
-          display: none;
-        }
-        .display-2 {
-          display: block;
-        }
-
         @media (min-width: 768px) {
-          .display-1 {
-            display: block;
-          }
-          .display-2 {
-            display: none;
+          h1 {
+            @include display-1;
           }
         }
 

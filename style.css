@@ -1290,17 +1290,25 @@ h6 {
     justify-content: center;
     align-items: center; }
     .index-page .intro-section .container .row h1 {
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 48px;
+      letter-spacing: -0.022em;
+      text-align: left;
+      /* identical to box height, or 120% */
+      letter-spacing: -0.022em;
+      font-feature-settings: "cv05" on;
       color: #505798;
       margin-bottom: 16px; }
-    .index-page .intro-section .container .row .display-1 {
-      display: none; }
-    .index-page .intro-section .container .row .display-2 {
-      display: block; }
     @media (min-width: 768px) {
-      .index-page .intro-section .container .row .display-1 {
-        display: block; }
-      .index-page .intro-section .container .row .display-2 {
-        display: none; } }
+      .index-page .intro-section .container .row h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 72px;
+        letter-spacing: -0.022em;
+        font-feature-settings: "cv05" on; } }
     .index-page .intro-section .container .row .redeem-vouchers {
       display: flex;
       justify-content: center;
