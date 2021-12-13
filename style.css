@@ -1446,6 +1446,15 @@ h6 {
     color: #505798; }
   .index-page .statistics-section .container .stats-item-header {
     color: #2f3476; }
+  .index-page .statistics-section .container .redeem-stats-all-examples {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; }
+    @media (min-width: 768px) {
+      .index-page .statistics-section .container .redeem-stats-all-examples {
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between; } }
 
 .index-page .faq-section {
   padding-bottom: 4em;

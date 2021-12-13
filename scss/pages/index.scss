@@ -225,6 +225,16 @@
       .stats-item-header {
         color: $primary-700;
       }
+      .redeem-stats-all-examples {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        @media (min-width: 768px) {
+          flex-direction: row;
+          gap: 0;
+          justify-content: space-between;
+        }
+      }
     }
   }
 
