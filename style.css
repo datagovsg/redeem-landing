@@ -931,15 +931,26 @@ h6 {
   font-feature-settings: "cv05" on; }
 
 .display-2 {
-  font-size: 40px;
+  /* display-2 mobile */
   font-style: normal;
   font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -0.022em;
-  text-align: left;
-  /* identical to box height, or 120% */
-  letter-spacing: -0.022em;
-  font-feature-settings: "cv05" on; }
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -0.017em;
+  font-feature-settings: "cv05" on;
+  /* on larger screens */ }
+  @media (min-width: 576px) {
+    .display-2 {
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 48px;
+      letter-spacing: -0.022em;
+      text-align: left;
+      /* identical to box height, or 120% */
+      letter-spacing: -0.022em;
+      font-feature-settings: "cv05" on; } }
 
 .subhead-3 {
   font-style: normal;
