@@ -1090,7 +1090,9 @@ h6 {
         .product-header-container .container .header .header-right nav ul li {
           padding-left: 40px; }
           .product-header-container .container .header .header-right nav ul li a {
-            color: #2f3476; }
+            color: #2f3476;
+            float: right;
+            max-width: 125px; }
             .product-header-container .container .header .header-right nav ul li a.active {
               text-decoration: underline; }
 
