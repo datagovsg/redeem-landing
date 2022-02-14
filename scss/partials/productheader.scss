@@ -48,6 +48,8 @@
 
               a {
                 color: $primary-700;
+                float: right;
+                max-width: 125px;
 
                 &.active {
                   text-decoration: underline;
