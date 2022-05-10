@@ -2372,6 +2372,11 @@ h6 {
   font-size: 1.2em;
 }
 
+.index-page .how-it-works-section .how-right .steps .each-step .step-text .step-description a {
+  font-size: 1em;
+  text-decoration: underline;
+}
+
 .index-page .how-it-works-section .how-right .steps .each-step .step-text .step-description h1 {
   text-align: left;
   font-size: 1.1em;
