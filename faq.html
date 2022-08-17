@@ -19,24 +19,24 @@
   <title>RedeemSG - Voucher System for the Singapore Government</title>
   <!-- DataDog monitoring script start -->
   <script>
-    (function(h,o,u,n,d) {
-      h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
-      d=o.createElement(u);d.async=1;d.src=n
-      n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
-    })(window,document,'script','https://www.datadoghq-browser-agent.com/datadog-rum-v4.js','DD_RUM')
-    DD_RUM.onReady(function() {
+    (function (h, o, u, n, d) {
+      h = h[d] = h[d] || { q: [], onReady: function (c) { h.q.push(c) } }
+      d = o.createElement(u); d.async = 1; d.src = n
+      n = o.getElementsByTagName(u)[0]; n.parentNode.insertBefore(d, n)
+    })(window, document, 'script', 'https://www.datadoghq-browser-agent.com/datadog-rum-v4.js', 'DD_RUM')
+    DD_RUM.onReady(function () {
       DD_RUM.init({
         clientToken: 'pub7d60f6c91f3e16648383f783bb6506c9',
         applicationId: 'fbd611f5-4a3f-4958-982a-50dae8a4ac9a',
         site: 'datadoghq.com',
-        service:'redeem-landing',
-        env:'production',
+        service: 'redeem-landing',
+        env: 'production',
         version: '1.0.0',
         sampleRate: 1,
         trackInteractions: true,
         defaultPrivacyLevel: 'mask-user-input'
       });
-      
+
       DD_RUM.startSessionReplayRecording();
     })
   </script>
@@ -130,7 +130,7 @@
                     to a campaign, please contact us at <a
                       href="mailto: feedback@redeem.gov.sg">feedback@redeem.gov.sg</a>.</p>
                   <p>For Government agencies who wish to onboard, we are currently accepting new use cases launching
-                    from ogp-footer-container 2022 onwards.</p>
+                    from 2022 onwards.</p>
                   <p>We are currently also accepting merchants to be onboarded to the CDC Vouchers campaign. Merchants
                     can indicate interest <a href="https://vouchers.cdc.gov.sg/merchants/info">here</a>. </p>
                 </div>
