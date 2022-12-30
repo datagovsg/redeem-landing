@@ -2028,7 +2028,7 @@ h6 {
 .faq-body-container .faq-group {
   max-width: 80ch;
   margin: 0 auto;
-  padding-bottom: 80px;
+  /* padding-bottom: 80px; */
 }
 
 .faq-body-container .faq-group h3 {
@@ -2116,6 +2116,51 @@ h6 {
   transform: rotate(90deg);
   transition: all 0.3s ease-out;
 }
+
+.faq-body-container .agency .agency-container {
+  max-width: 80ch;
+  margin: 0 auto;
+  background: #FFFFFF; 
+  border: 1px solid #E9E9E9; 
+  border-radius:4px; 
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.faq-body-container .agency{
+  margin-bottom: 4rem;
+}
+.faq-body-container .agency .agency-container a {
+  text-decoration: none;
+}
+
+
+.faq-body-container .agency .agency-container:hover{
+  background: #F6F7FA;
+}
+.faq-body-container .agency .agency-container .agency-title {
+
+  font-size: 20px;
+  line-height: 28px;
+
+  letter-spacing: -1.4%;
+}
+
+.faq-body-container .agency .agency-container .agency-desc {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+color: #686868;
+
+letter-spacing: -0.006em;
+ }
+ 
 
 .index-page .intro-section {
   padding-bottom: 4em;
@@ -2431,7 +2476,7 @@ h6 {
 @media (min-width: 768px) {
   .index-page .statistics-section .container .redeem-stats-all-examples {
     flex-direction: row;
-    gap: 0;
+   
     justify-content: space-between;
   }
 }
@@ -2494,3 +2539,5 @@ h6 {
 .faq-page .product-header-container .container .header .header-right nav ul li a {
   color: white;
 }
+
+
