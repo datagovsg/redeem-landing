@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Inter");
+@import url("https://fonts.googleapis.com/css?family=Inter:400,600");
 
 *,
 *::before,
@@ -1936,8 +1936,8 @@ h6 {
 }
 
 .legal-body-container .legal .clause-set-child-group {
-  margin-left: 3em;
-  margin-bottom: 3em;
+  margin-left: 4em;
+  margin-bottom: 1em;
 }
 
 .legal-body-container .legal .clause-set {
@@ -1950,7 +1950,7 @@ h6 {
 }
 
 .legal-body-container .legal .clause-set .clause-numbering {
-  flex: 0 0 3em;
+  flex: 0 0 4em;
   display: flex;
   justify-content: flex-start;
   width: 100%;
