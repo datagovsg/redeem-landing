@@ -5,7 +5,7 @@ import { HStack, Text } from '~components/chakra'
 import { RestrictedFooter } from '~components/design-system'
 
 import { Image } from '~components/Image'
-import RedeemLogoWithText from '~images/RedeemLogoWithText.svg'
+import RedeemLogoWithText from '~images/RedeemSGRewards.svg'
 // import { AppName } from './AppName'
 import withNoSSR from './WithNoSSR'
 

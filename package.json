@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "gen:theme-typings": "chakra-cli tokens src/theme",
+    "gen:theme-typings": "chakra-cli tokens src/theme/index.ts",
     "postinstall": "npm run gen:theme-typings",
     "dev": "next dev",
-    "prebuild": "rimraf .next && rimraf .vercel",
+    "prebuild": "rm -rf .next",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -14,6 +14,7 @@
   "dependencies": {
     "@chakra-ui/next-js": "^2.2.0",
     "@chakra-ui/react": "^2.8.2",
+    "@chakra-ui/styled-system": "^2.9.2",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@opengovsg/design-system-react": "^1.14.0",
@@ -33,6 +34,6 @@
     "eslint-config-next": "14.0.4",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-chakra-ui": "^0.10.1",
-    "typescript": "^5"
+    "typescript": "^5.3.3"
   }
 }
