@@ -1,11 +1,12 @@
-import { VStack, Text } from '@chakra-ui/react'
+import { Text, VStack } from '@chakra-ui/react'
 import { Button, useIsMobile } from '@opengovsg/design-system-react'
-import { Image } from '~components/Image'
 import { BiRightArrowAlt } from 'react-icons/bi'
-import CTAToSetUpRSGRewardsImage from '~images/CTAToSetupRSGRewards.svg'
-import { openInNewTab } from '~helper'
-import { RSG_CAMPAIGN_ORGANISER_FORM } from '~constants/links'
+
+import { Image } from '~components/Image'
 import SectionContainer from '~components/SectionContainer'
+import { RSG_CAMPAIGN_ORGANISER_FORM } from '~constants/links'
+import { openInNewTab } from '~helper'
+import CTAToSetUpRSGRewardsImage from '~images/CTAToSetupRSGRewards.svg'
 
 const CTAToSetUpRSGRewards = () => {
   const isMobile = useIsMobile()
@@ -21,7 +22,7 @@ const CTAToSetUpRSGRewards = () => {
     <SectionContainer background="primary.700">
       <VStack
         alignItems="center"
-        padding={{ md: '88px 148px', base: '56px 24px' }}
+        padding={{ base: '56px 24px', md: '88px 148px' }}
         textAlign="center"
         spacing="32px"
       >
@@ -29,9 +30,9 @@ const CTAToSetUpRSGRewards = () => {
           src={CTAToSetUpRSGRewardsImage}
           alt="Ready to set up your own RedeemSG Rewards?"
         />
-        <VStack spacing={{ md: '8px', base: '32px' }}>
+        <VStack spacing={{ base: '32px', md: '8px' }}>
           <Text
-            textStyle={{ md: 'h1', base: 'display-2-mobile' }}
+            textStyle={{ base: 'display-2-mobile', md: 'h1' }}
             color="white"
             whiteSpace="pre-line"
           >

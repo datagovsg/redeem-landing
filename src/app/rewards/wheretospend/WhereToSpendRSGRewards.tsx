@@ -1,10 +1,9 @@
-import { VStack, Text } from '@chakra-ui/react'
-import SectionContainer from '~components/SectionContainer'
+import { Text, VStack } from '@chakra-ui/react'
+import { useIsMobile } from '@opengovsg/design-system-react'
 
 import { Image } from '~components/Image'
-
+import SectionContainer from '~components/SectionContainer'
 import SupermarketImage from '~images/Supermarket.svg'
-import { useIsMobile } from '@opengovsg/design-system-react'
 
 const WhereToSpendRSGRewards = () => {
   const isMobile = useIsMobile()
@@ -15,11 +14,11 @@ const WhereToSpendRSGRewards = () => {
   return (
     <SectionContainer background="primary.100">
       <VStack
-        padding={{ md: '80px 148px', base: '50px 24px' }}
-        spacing={{ md: '48px', base: '32px' }}
+        padding={{ base: '50px 24px', md: '80px 148px' }}
+        spacing={{ base: '32px', md: '48px' }}
       >
         <Text
-          textStyle={{ md: 'display-1', base: 'h1' }}
+          textStyle={{ base: 'h1', md: 'display-1' }}
           color="neutral.900"
           textAlign="center"
           whiteSpace="pre-wrap"

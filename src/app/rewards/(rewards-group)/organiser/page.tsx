@@ -1,9 +1,10 @@
 'use client'
 import { Divider } from '@chakra-ui/react'
-import OrganiserHero from './OrganiserHero'
-import SetUpYourRSGCampaign from './SetUpYourRSGCampaign'
-import QuestionsForSetupCampaign from './QuestionsForSetupCampaign'
+
 import CTAToSetUpRSGRewards from './CTAToSetUpRSGRewards'
+import OrganiserHero from './OrganiserHero'
+import QuestionsForSetupCampaign from './QuestionsForSetupCampaign'
+import SetUpYourRSGCampaign from './SetUpYourRSGCampaign'
 
 export default function Page() {
   return (
@@ -11,8 +12,8 @@ export default function Page() {
       <OrganiserHero />
       <Divider
         width={{
-          md: 'calc(100% - (2 * 148px))',
           base: 'calc(100% - (2 * 24px))',
+          md: 'calc(100% - (2 * 148px))',
         }}
         height="1px"
         margin="0 auto"

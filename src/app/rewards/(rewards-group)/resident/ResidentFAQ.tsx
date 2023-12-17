@@ -1,8 +1,9 @@
-import { VStack, Text, Button } from '@chakra-ui/react'
-import ResidentFAQImage from '~images/ResidentFAQ.svg'
-import { Image } from '~components/Image'
+import { Button, Text, VStack } from '@chakra-ui/react'
 import { useIsMobile } from '@opengovsg/design-system-react'
+
+import { Image } from '~components/Image'
 import SectionContainer from '~components/SectionContainer'
+import ResidentFAQImage from '~images/ResidentFAQ.svg'
 
 const ResidentFAQ = () => {
   const isMobile = useIsMobile()
@@ -14,14 +15,14 @@ const ResidentFAQ = () => {
     <SectionContainer background="primary.500">
       <VStack
         alignItems="center"
-        padding={{ md: '88px 148px', base: '56px 24px' }}
+        padding={{ base: '56px 24px', md: '88px 148px' }}
         textAlign="center"
         spacing="32px"
       >
         <Image src={ResidentFAQImage} alt="Resident FAQ" />
-        <VStack spacing={{ md: '8px', base: '32px' }}>
+        <VStack spacing={{ base: '32px', md: '8px' }}>
           <Text
-            textStyle={{ md: 'h1', base: 'display-2-mobile' }}
+            textStyle={{ base: 'display-2-mobile', md: 'h1' }}
             color="white"
           >
             Frequently asked questions

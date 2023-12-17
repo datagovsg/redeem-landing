@@ -1,4 +1,5 @@
-import { Flex, VStack, Text, Accordion, Link } from '@chakra-ui/react'
+import { Accordion, Flex, Link, Text, VStack } from '@chakra-ui/react'
+
 import { HelpAccordionItem } from '~components/HelpAccordionItem'
 import { Image } from '~components/Image'
 import { InternalLink } from '~components/InternalLink'
@@ -8,7 +9,6 @@ import {
   RSG_REWARDS_WHERE_TO_SPEND,
 } from '~constants/links'
 import { FAQ } from '~constants/links'
-
 import QuestionImage from '~images/Question.svg'
 
 const QuestionsForSetupCampaign = () => {
@@ -16,16 +16,16 @@ const QuestionsForSetupCampaign = () => {
     <SectionContainer background="primary.100">
       <Flex
         alignItems="flex-start"
-        flexDirection={{ md: 'row', base: 'column' }}
+        flexDirection={{ base: 'column', md: 'row' }}
         flexGrow={1}
         // TO confirm
-        gap={{ md: 'auto', base: '40px' }}
-        padding={{ md: '88px 148px', base: '40px 24px' }}
+        gap={{ base: '40px', md: 'auto' }}
+        padding={{ base: '40px 24px', md: '88px 148px' }}
       >
-        <VStack align="start" spacing={{ md: '40px', base: '24px' }}>
+        <VStack align="start" spacing={{ base: '24px', md: '40px' }}>
           <VStack align="start" spacing="16px">
             <Text
-              textStyle={{ md: 'h1', base: 'h3-semibold' }}
+              textStyle={{ base: 'h3-semibold', md: 'h1' }}
               color="neutral.900"
             >
               Have a question?

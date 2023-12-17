@@ -1,9 +1,10 @@
 'use client'
 
 import { Divider } from '@chakra-ui/react'
+
+import DecalInformation from './DecalInformation'
 import ListOfSupermarkets from './ListOfSupermarkets'
 import WhereToSpendRSGRewards from './WhereToSpendRSGRewards'
-import DecalInformation from './DecalInformation'
 
 const Page = () => {
   return (
@@ -12,8 +13,8 @@ const Page = () => {
       <ListOfSupermarkets />
       <Divider
         width={{
-          md: 'calc(100% - (2 * 148px))',
           base: 'calc(100% - (2 * 24px))',
+          md: 'calc(100% - (2 * 148px))',
         }}
         height="1px"
         margin="0 auto"

@@ -1,16 +1,8 @@
-import { VStack, Text, Grid, GridItem, Button, Flex } from '@chakra-ui/react'
-import SectionContainer from '~components/SectionContainer'
+import { Button, Flex, Grid, GridItem, Text, VStack } from '@chakra-ui/react'
+
+import CenterChildWithFixHeightAndWidth from '~components/CenterChildWithFixHeightAndWidth'
 import { Image } from '~components/Image'
-
-// Images
-import WTSFairpriceLogoImage from '~images/WTSFairpriceLogo.svg'
-import WTSGiantLogoImage from '~images/WTSGiantLogo.svg'
-import WTSColdStorageLogoImage from '~images/WTSColdStorageLogo.svg'
-import WTSPrimeLogoImage from '~images/WTSPrimeLogo.svg'
-import WTSHAOMartLogoImage from '~images/WTSHAOMartLogo.svg'
-import WTSUStarsLogoImage from '~images/WTSUStarsLogo.svg'
-import WTSShengSiongLogoImage from '~images/WTSShengSiongLogo.svg'
-
+import SectionContainer from '~components/SectionContainer'
 // Links
 import {
   WTS_COLD_STORAGE,
@@ -21,66 +13,73 @@ import {
   WTS_SHENG_SIONG,
   WTS_USTARS,
 } from '~constants/links'
-import CenterChildWithFixHeightAndWidth from '~components/CenterChildWithFixHeightAndWidth'
 import { openInNewTab } from '~helper'
+import WTSColdStorageLogoImage from '~images/WTSColdStorageLogo.svg'
+// Images
+import WTSFairpriceLogoImage from '~images/WTSFairpriceLogo.svg'
+import WTSGiantLogoImage from '~images/WTSGiantLogo.svg'
+import WTSHAOMartLogoImage from '~images/WTSHAOMartLogo.svg'
+import WTSPrimeLogoImage from '~images/WTSPrimeLogo.svg'
+import WTSShengSiongLogoImage from '~images/WTSShengSiongLogo.svg'
+import WTSUStarsLogoImage from '~images/WTSUStarsLogo.svg'
 
 // ORDERING IS IMPORTANT HERE
 const SUPERMARKETS = [
   {
-    label: 'Fairprice',
-    imageSrc: WTSFairpriceLogoImage,
-    url: WTS_FAIRPRICE,
     backgroundColor: 'blue.100',
+    imageSrc: WTSFairpriceLogoImage,
+    label: 'Fairprice',
+    url: WTS_FAIRPRICE,
   },
   {
-    label: 'Giant',
-    imageSrc: WTSGiantLogoImage,
-    url: WTS_GIANT,
     backgroundColor: 'green.100',
+    imageSrc: WTSGiantLogoImage,
+    label: 'Giant',
+    url: WTS_GIANT,
   },
   {
-    label: 'Cold Storage',
-    imageSrc: WTSColdStorageLogoImage,
-    url: WTS_COLD_STORAGE,
     backgroundColor: 'grey.100',
+    imageSrc: WTSColdStorageLogoImage,
+    label: 'Cold Storage',
+    url: WTS_COLD_STORAGE,
   },
   {
-    label: 'Prime',
-    imageSrc: WTSPrimeLogoImage,
-    url: WTS_PRIME,
     backgroundColor: '#31874F',
+    imageSrc: WTSPrimeLogoImage,
+    label: 'Prime',
+    url: WTS_PRIME,
   },
   {
-    label: 'HAO mart',
-    imageSrc: WTSHAOMartLogoImage,
-    url: WTS_HAO_MART,
     backgroundColor: 'yellow.50',
+    imageSrc: WTSHAOMartLogoImage,
+    label: 'HAO mart',
+    url: WTS_HAO_MART,
   },
   {
-    label: 'Ustars',
-    imageSrc: WTSUStarsLogoImage,
-    url: WTS_USTARS,
     backgroundColor: 'red.100',
+    imageSrc: WTSUStarsLogoImage,
+    label: 'Ustars',
+    url: WTS_USTARS,
   },
   {
-    label: 'Sheng Siong',
-    imageSrc: WTSShengSiongLogoImage,
-    url: WTS_SHENG_SIONG,
     backgroundColor: 'primary.50',
+    imageSrc: WTSShengSiongLogoImage,
+    label: 'Sheng Siong',
+    url: WTS_SHENG_SIONG,
   },
 ] as const
 
 const ListOfSupermarkets = () => {
   return (
-    <SectionContainer padding={{ md: '88px 148px', base: '40px 24px' }}>
-      <VStack align="start" spacing={{ md: '80px', base: '32px' }}>
-        <Text textStyle={{ md: 'h1', base: 'h3-semibold' }} color="neutral.900">
+    <SectionContainer padding={{ base: '40px 24px', md: '88px 148px' }}>
+      <VStack align="start" spacing={{ base: '32px', md: '80px' }}>
+        <Text textStyle={{ base: 'h3-semibold', md: 'h1' }} color="neutral.900">
           RedeemSG Rewards can be spent at any of these participating
           supermarkets:
         </Text>
         <Grid
-          gridRowGap={{ md: '88px', base: '44px' }}
-          gridTemplateColumns={{ md: '1fr 1fr', base: '1fr' }}
+          gridRowGap={{ base: '44px', md: '88px' }}
+          gridTemplateColumns={{ base: '1fr', md: '1fr 1fr' }}
           width="100%"
         >
           {SUPERMARKETS.map(({ label, imageSrc, backgroundColor, url }) => (
@@ -88,7 +87,7 @@ const ListOfSupermarkets = () => {
               <VStack align="start" spacing="16px">
                 <Flex
                   alignItems={{ base: 'center', md: 'start' }}
-                  flexDirection={{ md: 'column', base: 'row' }}
+                  flexDirection={{ base: 'row', md: 'column' }}
                   gap="20px"
                 >
                   <CenterChildWithFixHeightAndWidth

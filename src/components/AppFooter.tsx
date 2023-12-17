@@ -1,4 +1,4 @@
-import { Flex, Text, Box } from '@chakra-ui/react'
+import { Flex, Text } from '@chakra-ui/react'
 import { RestrictedFooter } from '@opengovsg/design-system-react'
 
 import { Image } from '~components/Image'
@@ -9,8 +9,8 @@ const AppName = () => {
   return (
     <Flex
       alignItems="flex-start"
-      flexDirection={{ md: 'row', base: 'column' }}
-      gap={{ md: '16px', base: '8px' }}
+      flexDirection={{ base: 'column', md: 'row' }}
+      gap={{ base: '8px', md: '16px' }}
     >
       <Image
         width="127px"
@@ -32,20 +32,20 @@ const AppFooter = () => {
       appLink="/"
       footerLinks={[
         {
-          label: 'FAQ',
           href: FAQ,
+          label: 'FAQ',
         },
         {
-          label: 'Privacy',
           href: '/privacy',
+          label: 'Privacy',
         },
         {
-          label: 'Terms of Use',
           href: '/terms',
+          label: 'Terms of Use',
         },
         {
-          label: 'Report Vulnerability',
           href: 'https://www.tech.gov.sg/report_vulnerability',
+          label: 'Report Vulnerability',
         },
       ]}
     />

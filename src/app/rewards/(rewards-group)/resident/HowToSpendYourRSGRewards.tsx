@@ -1,16 +1,19 @@
-import { VStack, Text, Flex, Link } from '@chakra-ui/react'
+import { Flex, Link, Text, VStack } from '@chakra-ui/react'
+
+import Instruction from '../Instruction'
+
 import { Image } from '~components/Image'
+import SectionContainer from '~components/SectionContainer'
+import { RSG_REWARDS_WHERE_TO_SPEND } from '~constants/links'
 import HowToSpendYourRSGRewardsImage from '~images/HowToSpendYourRSGRewards.svg'
 import SpendRSGRewardsStep1Image from '~images/SpendRSGRewardsStep1.svg'
 import SpendRSGRewardsStep2Image from '~images/SpendRSGRewardsStep2.svg'
 import SpendRSGRewardsStep3Image from '~images/SpendRSGRewardsStep3.svg'
-import Instruction from '../Instruction'
-import { RSG_REWARDS_WHERE_TO_SPEND } from '~constants/links'
-import SectionContainer from '~components/SectionContainer'
 
 // I could leave out the index, but just adding it in manually
 const INSTRUCTIONS = [
   {
+    imageSrc: SpendRSGRewardsStep1Image,
     stepIndex: 1,
     stepInstruction: (
       <Text textStyle="body-1" color="neutral.700">
@@ -22,9 +25,9 @@ const INSTRUCTIONS = [
         </Text>
       </Text>
     ),
-    imageSrc: SpendRSGRewardsStep1Image,
   },
   {
+    imageSrc: SpendRSGRewardsStep2Image,
     stepIndex: 2,
     stepInstruction: (
       <Text textStyle="body-1" color="neutral.700">
@@ -41,36 +44,35 @@ const INSTRUCTIONS = [
         <Text as="span">{' near you to spend your vouchers.'}</Text>
       </Text>
     ),
-    imageSrc: SpendRSGRewardsStep2Image,
   },
   {
+    imageSrc: SpendRSGRewardsStep3Image,
     stepIndex: 3,
     stepInstruction: (
       <Text textStyle="body-1" color="neutral.700">
         Show your voucher’s QR code to the cashier while you are making payment.
       </Text>
     ),
-    imageSrc: SpendRSGRewardsStep3Image,
   },
 ] as const
 
 const HowToSpendYourRSGRewards = () => {
   return (
-    <SectionContainer padding={{ md: '0 148px 88px', base: '0 24px 40px' }}>
+    <SectionContainer padding={{ base: '0 24px 40px', md: '0 148px 88px' }}>
       <Flex
-        flexDirection={{ md: 'row', base: 'column' }}
+        flexDirection={{ base: 'column', md: 'row' }}
         flexGrow={1}
-        gap={{ md: '132px', base: '40px' }}
-        height={{ md: '440px', base: 'fit-content' }}
+        gap={{ base: '40px', md: '132px' }}
+        height={{ base: 'fit-content', md: '440px' }}
       >
-        <VStack align="start" spacing={{ md: '44px', base: '32px' }}>
+        <VStack align="start" spacing={{ base: '32px', md: '44px' }}>
           <Text
-            textStyle={{ md: 'h1', base: 'h3-semibold' }}
+            textStyle={{ base: 'h3-semibold', md: 'h1' }}
             color="neutral.900"
           >
             How to spend your RedeemSG Rewards
           </Text>
-          <VStack align="start" spacing={{ md: '40px', base: '32px' }}>
+          <VStack align="start" spacing={{ base: '32px', md: '40px' }}>
             {INSTRUCTIONS.map((instruction) => (
               <Instruction {...instruction} key={instruction.stepIndex} />
             ))}

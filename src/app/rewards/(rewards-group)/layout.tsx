@@ -1,14 +1,15 @@
 'use client'
 
-import { usePathname } from 'next/navigation'
-import CustomNavigationTabs from '~components/CustomNavigationTabs'
 import { Box, VStack } from '@chakra-ui/react'
-import { REWARDS_ORGANISER, REWARDS_RESIDENT } from '~constants/links'
+
 import Hero from '../Hero'
 
+import CustomNavigationTabs from '~components/CustomNavigationTabs'
+import { REWARDS_ORGANISER, REWARDS_RESIDENT } from '~constants/links'
+
 const TABS = [
-  { label: 'Spending vouchers', href: REWARDS_RESIDENT },
-  { label: 'Disbursing vouchers', href: REWARDS_ORGANISER },
+  { href: REWARDS_RESIDENT, label: 'Spending vouchers' },
+  { href: REWARDS_ORGANISER, label: 'Disbursing vouchers' },
 ] as const
 
 export default function layout({ children }: { children: React.ReactNode }) {
@@ -18,19 +19,19 @@ export default function layout({ children }: { children: React.ReactNode }) {
       <VStack position="relative" width="100%">
         <Box
           width="100%"
-          height={{ md: '144px', base: '94px' }}
+          height={{ base: '94px', md: '144px' }}
           background="primary.100"
         />
         <Box
           width="100%"
-          height={{ md: '176px', base: '76px' }}
+          height={{ base: '76px', md: '176px' }}
           background="white"
         />
         <Box
           position="absolute"
-          top={{ md: '108px', base: '58px' }}
+          top={{ base: '58px', md: '108px' }}
           width="100%"
-          padding={{ md: '0 148px', base: '0 8px' }}
+          padding={{ base: '0 8px', md: '0 148px' }}
         >
           <CustomNavigationTabs tabs={TABS} />
         </Box>

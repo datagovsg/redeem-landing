@@ -1,4 +1,3 @@
-import React from 'react'
 import {
   AccordionButton,
   AccordionIcon,
@@ -6,6 +5,7 @@ import {
   AccordionPanel,
   Text,
 } from '@chakra-ui/react'
+import React from 'react'
 
 interface HelpAccordionItemProps {
   title: string

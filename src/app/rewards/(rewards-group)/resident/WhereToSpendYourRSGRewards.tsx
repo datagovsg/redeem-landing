@@ -1,16 +1,17 @@
-import { VStack, Box, Text, Button, Flex } from '@chakra-ui/react'
-import { Image } from '~components/Image'
+import { Box, Button, Flex, Text, VStack } from '@chakra-ui/react'
 import { BiRightArrowAlt } from 'react-icons/bi'
-import WhereToSpendYourRSGRewardsImage from '~images/WhereToSpendYourRSGRewards.svg'
+
+import { Image } from '~components/Image'
 import SectionContainer from '~components/SectionContainer'
+import WhereToSpendYourRSGRewardsImage from '~images/WhereToSpendYourRSGRewards.svg'
 
 const WhereToSpendYourRSGRewards = () => {
   return (
     <SectionContainer background="primary.100">
       <Flex
-        flexDirection={{ md: 'row', base: 'column-reverse' }}
-        gap={{ md: '132px', base: '40px' }}
-        padding={{ md: '88px 148px', base: '40px 24px' }}
+        flexDirection={{ base: 'column-reverse', md: 'row' }}
+        gap={{ base: '40px', md: '132px' }}
+        padding={{ base: '40px 24px', md: '88px 148px' }}
       >
         <Box>
           <Image
@@ -19,9 +20,9 @@ const WhereToSpendYourRSGRewards = () => {
           />
         </Box>
         <VStack align="start" spacing="24px">
-          <VStack align="start" spacing={{ md: '16px', base: '24px' }}>
+          <VStack align="start" spacing={{ base: '24px', md: '16px' }}>
             <Text
-              textStyle={{ md: 'h1', base: 'h3-semibold' }}
+              textStyle={{ base: 'h3-semibold', md: 'h1' }}
               color="neutral.900"
             >
               Where to spend your RedeemSG Rewards

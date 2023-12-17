@@ -1,18 +1,19 @@
-import { HStack, VStack, Text } from '@chakra-ui/react'
+import { HStack, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
+
 import CenterChildWithFixHeightAndWidth from '~components/CenterChildWithFixHeightAndWidth'
 import { Image } from '~components/Image'
 
 type HowToSpendYourRSGRewardsInstructionProps = {
+  imageSrc: string
   stepIndex: number
   stepInstruction: string | React.ReactNode
-  imageSrc: string
 }
 
 const Instruction = ({
+  imageSrc,
   stepIndex,
   stepInstruction,
-  imageSrc,
 }: HowToSpendYourRSGRewardsInstructionProps) => {
   return (
     <HStack alignItems="flex-start" spacing="24px">

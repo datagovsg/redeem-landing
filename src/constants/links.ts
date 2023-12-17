@@ -16,6 +16,7 @@ export const RSG_REWARDS_WHERE_TO_SPEND =
   'https://redeem.gov.sg/rewards/wheretospend'
 
 // Internal Link
+export const ROOT = '/'
 export const FAQ = '/faq'
 export const REWARDS_RESIDENT = '/rewards/resident'
 export const REWARDS_ORGANISER = '/rewards/organiser'

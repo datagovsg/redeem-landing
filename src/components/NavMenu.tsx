@@ -1,19 +1,21 @@
 import { HStack } from '@chakra-ui/react'
-import { Image } from '~components/Image'
-
-import RedeemLogoWithTextImage from '~images/RedeemLogoWithText.svg'
-import RedeemLogoImage from '~images/RedeemLogo.svg'
-import { InternalNavMenuLink } from './NavMenuInternalLink'
 import { Link as ExternalNavMenuLink } from '@chakra-ui/react'
 import { useIsMobile } from '@opengovsg/design-system-react'
 
+import { InternalNavMenuLink } from './NavMenuInternalLink'
+
+import { Image } from '~components/Image'
+import { FAQ, ROOT } from '~constants/links'
+import RedeemLogoImage from '~images/RedeemLogo.svg'
+import RedeemLogoWithTextImage from '~images/RedeemLogoWithText.svg'
+
 const NAV_LINKS = [
-  { label: 'Home', href: '/', isExternal: false },
-  { label: 'FAQ', href: 'faq', isExternal: false },
+  { href: ROOT, isExternal: false, label: 'Home' },
+  { href: FAQ, isExternal: false, label: 'FAQ' },
   {
-    label: 'Contact Us',
     href: 'mailto:feedback@redeem.gov.sg',
     isExternal: true,
+    label: 'Contact Us',
   },
 ] as const
 
@@ -23,15 +25,15 @@ const NavMenu = () => {
   return (
     <HStack
       justify="space-between"
-      height={{ md: '104px', base: '64px' }}
-      padding={{ md: '36px 148px', base: '10px 24px' }}
+      height={{ base: '64px', md: '104px' }}
+      padding={{ base: '10px 24px', md: '36px 148px' }}
       background="primary.200"
     >
       <Image
         src={isMobile ? RedeemLogoImage : RedeemLogoWithTextImage}
         alt="RedeemSG"
-        height={{ md: '32px', base: '34px' }}
-        width={{ md: '168px', base: '26px' }}
+        height={{ base: '34px', md: '32px' }}
+        width={{ base: '26px', md: '168px' }}
       />
       <HStack spacing={{ base: '24px', md: '40px' }}>
         {NAV_LINKS.map((linkProps) =>

@@ -1,5 +1,6 @@
-import Lottie from 'lottie-react'
 import { Box } from '@chakra-ui/react'
+import Lottie from 'lottie-react'
+
 import RedeemSGRewardsHeroAnimation from '~animations/RedeemSGRewardsHeroAnimation.json'
 
 const HeroAnimation = () => {

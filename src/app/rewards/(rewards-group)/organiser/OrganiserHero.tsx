@@ -1,32 +1,33 @@
-import { VStack, Text, Link } from '@chakra-ui/react'
-import SupermarketImage from '~images/Supermarket.svg'
+import { Link, Text, VStack } from '@chakra-ui/react'
+
 import { Image } from '~components/Image'
 import SectionContainer from '~components/SectionContainer'
+import SupermarketImage from '~images/Supermarket.svg'
 
 const OrganiserHero = () => {
   return (
     <SectionContainer>
       <VStack
-        padding={{ md: '0 148px 88px', base: '0 24px 40px' }}
-        spacing={{ md: '80px', base: '40px' }}
+        padding={{ base: '0 24px 40px', md: '0 148px 88px' }}
+        spacing={{ base: '40px', md: '80px' }}
       >
-        <VStack textAlign="center" spacing={{ md: '16px', base: '24px' }}>
+        <VStack textAlign="center" spacing={{ base: '24px', md: '16px' }}>
           <Text
-            textStyle={{ md: 'h1', base: 'h3-semibold' }}
+            textStyle={{ base: 'h3-semibold', md: 'h1' }}
             color="neutral.900"
           >
             Simplifying operations needed from agencies to onboard, train, and
             manage merchants.
           </Text>
           <Text
-            textStyle={{ md: 'inter', base: 'text-editor-link' }}
+            textStyle={{ base: 'text-editor-link', md: 'inter' }}
             color="neutral.700"
           >
             Simply decide on the voucher amount and validity period, and issue
             the vouchers to eligible recipients! These vouchers can be spent at{' '}
             <Link
               as="span"
-              textStyle={{ md: 'text-editor-link', base: 'body-1' }}
+              textStyle={{ base: 'body-1', md: 'text-editor-link' }}
               color="primary.500"
             >
               all participating supermarkets ↪

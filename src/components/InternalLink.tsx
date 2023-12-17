@@ -6,13 +6,13 @@ import NextLink from 'next/link'
 export const InternalLink = chakra(NextLink, {
   shouldForwardProp: (prop) =>
     [
-      'textStyles',
-      'href',
       'color',
       'children',
+      'href',
       'key',
-      'width',
+      'textStyles',
       'variants',
+      'width',
       '_hover',
     ].includes(prop),
 })

@@ -1,11 +1,13 @@
-import { GovtMasthead } from '~components/GovtMasthead'
 import type { Metadata } from 'next'
-import AppThemeProvider from '~components/AppThemeProvider'
+
 import { fonts } from './fonts'
 
+import AppThemeProvider from '~components/AppThemeProvider'
+import { GovtMasthead } from '~components/GovtMasthead'
+
 export const metadata: Metadata = {
-  title: 'RedeemSG - Voucher System',
   description: 'Trusted voucher system of the Singapore Government',
+  title: 'RedeemSG - Voucher System',
 }
 
 export default function RootLayout({

@@ -1,26 +1,28 @@
-import { VStack, Text, Flex } from '@chakra-ui/react'
-import { Image } from '~components/Image'
-import RedeemSGRewards from '~images/RedeemSGRewards.svg'
+import { Flex, Text, VStack } from '@chakra-ui/react'
+
 import HeroAnimation from './HeroAnimation'
+
+import { Image } from '~components/Image'
 import SectionContainer from '~components/SectionContainer'
+import RedeemSGRewards from '~images/RedeemSGRewards.svg'
 
 const Hero = () => {
   return (
     <SectionContainer background="primary.100">
       <Flex
-        flexDirection={{ md: 'row', base: 'column-reverse' }}
-        gap={{ md: '120px', base: '40px' }}
-        padding={{ md: '88px 148px 0', base: '32px 24px 0' }}
+        flexDirection={{ base: 'column-reverse', md: 'row' }}
+        gap={{ base: '40px', md: '120px' }}
+        padding={{ base: '32px 24px 0', md: '88px 148px 0' }}
       >
         <VStack
           align="start"
           justifyContent="center"
-          spacing={{ md: '32px', base: '16px' }}
+          spacing={{ base: '16px', md: '32px' }}
         >
           <Image src={RedeemSGRewards} alt="RedeemSG Rewards" />
           <VStack align="start" spacing="16px">
             <Text
-              textStyle={{ md: 'h1', base: 'h3-semibold' }}
+              textStyle={{ base: 'h3-semibold', md: 'h1' }}
               color="neutral.900"
             >
               The simplified digital voucher experience for all

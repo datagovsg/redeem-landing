@@ -1,8 +1,9 @@
 'use client'
 
+import { VStack } from '@chakra-ui/react'
+
 import AppFooter from '~components/AppFooter'
 import NavMenu from '~components/NavMenu'
-import { VStack } from '@chakra-ui/react'
 
 export default function layout({ children }: { children: React.ReactNode }) {
   return (
