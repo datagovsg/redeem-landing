@@ -2,22 +2,21 @@ import { VStack, Text, Flex } from '@chakra-ui/react'
 import { Image } from '~components/Image'
 import RedeemSGRewards from '~images/RedeemSGRewards.svg'
 import HeroAnimation from './HeroAnimation'
+import SectionContainer from '~components/SectionContainer'
 
 const Hero = () => {
   return (
-    <VStack
-      as="main"
-      align="stretch"
-      flexGrow={1}
-      background="primary.100"
-      spacing={0}
-    >
+    <SectionContainer background="primary.100">
       <Flex
         flexDirection={{ md: 'row', base: 'column-reverse' }}
         gap={{ md: '120px', base: '40px' }}
         padding={{ md: '88px 148px 0', base: '32px 24px 0' }}
       >
-        <VStack align="start" spacing={{ md: '32px', base: '16px' }}>
+        <VStack
+          align="start"
+          justifyContent="center"
+          spacing={{ md: '32px', base: '16px' }}
+        >
           <Image src={RedeemSGRewards} alt="RedeemSG Rewards" />
           <VStack align="start" spacing="16px">
             <Text
@@ -35,7 +34,7 @@ const Hero = () => {
         </VStack>
         <HeroAnimation />
       </Flex>
-    </VStack>
+    </SectionContainer>
   )
 }
 

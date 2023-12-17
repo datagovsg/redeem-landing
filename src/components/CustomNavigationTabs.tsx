@@ -1,4 +1,4 @@
-import { HStack, Box, Flex, Text } from '@chakra-ui/react'
+import { HStack, Box } from '@chakra-ui/react'
 
 import { usePathname } from 'next/navigation'
 import { InternalLink } from './InternalLink'
@@ -35,23 +35,24 @@ const CustomNavigationTabs = ({ tabs }: CustomNavigationTabsProps) => {
         const isSelected = href === pathname
 
         return (
-          <Flex key={label} flex={1}>
-            <InternalLink
-              zIndex={1}
-              href={href}
-              color={isSelected ? 'white' : 'primary.600'}
-              transition="color 0.2s linear"
-              width="100%"
-              textAlign="center"
-            >
-              <Text
-                textStyle={{ md: 'h6', base: 'subhead-2' }}
-                letterSpacing="-0.006em"
-              >
-                {label}
-              </Text>
-            </InternalLink>
-          </Flex>
+          <InternalLink
+            key={label}
+            zIndex={1}
+            href={href}
+            color={isSelected ? 'white' : 'primary.600'}
+            transition="color 0.2s linear"
+            width="100%"
+            height="100%"
+            textAlign="center"
+            textStyle={{ md: 'h6', base: 'subhead-2' }}
+            letterSpacing="-0.006em"
+            verticalAlign="middle"
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+          >
+            {label}
+          </InternalLink>
         )
       })}
       <Box

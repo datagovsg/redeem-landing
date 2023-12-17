@@ -3,15 +3,18 @@
 import { usePathname } from 'next/navigation'
 import CustomNavigationTabs from '~components/CustomNavigationTabs'
 import { Box, VStack } from '@chakra-ui/react'
+import { REWARDS_ORGANISER, REWARDS_RESIDENT } from '~constants/links'
+import Hero from '../Hero'
 
 const TABS = [
-  { label: 'Spending vouchers', href: '/rewards/resident' },
-  { label: 'Disbursing vouchers', href: '/rewards/organiser' },
+  { label: 'Spending vouchers', href: REWARDS_RESIDENT },
+  { label: 'Disbursing vouchers', href: REWARDS_ORGANISER },
 ] as const
 
 export default function layout({ children }: { children: React.ReactNode }) {
   return (
     <VStack align="stretch" flexGrow={1} width="100%" spacing={0}>
+      <Hero />
       <VStack position="relative" width="100%">
         <Box
           width="100%"

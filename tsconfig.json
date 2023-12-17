@@ -28,11 +28,11 @@
       "~utils/*": ["./src/utils/*"],
       "~hooks/*": ["./src/hooks/*"],
       "~pages/*": ["./src/pages/*"],
-      "~shared/*": ["../shared/src/*"],
-      "~modules/*": ["./src/modules/*"],
       "~theme/*": ["./src/theme/*"],
       "~theme": ["./src/theme"],
       "~types/*": ["./src/types/*"],
+      "~helper": ["./src/helper"],
+      "~constants": ["./src/constants/*"],
       "~/*": ["./src/*"]
     }
   },

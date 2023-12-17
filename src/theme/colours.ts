@@ -5,9 +5,15 @@ type ThemeColorScheme =
   | 'success'
   | 'warning'
   | 'danger'
+  | 'blue'
+  | 'green'
+  | 'grey'
+  | 'yellow'
+  | 'red'
 
 export const colors: { [key in ThemeColorScheme]: Record<string, string> } = {
   primary: {
+    50: '#F7F9FE',
     100: '#F6F7FA',
     200: '#DFE1F2',
     300: '#BCBFE3',
@@ -18,16 +24,10 @@ export const colors: { [key in ThemeColorScheme]: Record<string, string> } = {
     800: '#222757',
     900: '#1B1E44',
   },
+  // TODO: Design pallet is off for this part here
   secondary: {
-    100: '#FEF5F5',
-    200: '#F7CACA',
-    300: '#F2A7A7',
-    400: '#ED8585',
-    500: '#EB6363',
-    600: '#BF5151',
-    700: '#994141',
-    800: '#6F2F2F',
-    900: '#451D1D',
+    100: '#F6F7FC',
+    500: '#445072',
   },
   success: {
     100: '#F0F8F3',
@@ -72,5 +72,20 @@ export const colors: { [key in ThemeColorScheme]: Record<string, string> } = {
     700: '#636467',
     800: '#48494B',
     900: '#242425',
+  },
+  blue: {
+    100: '#E7EFFC',
+  },
+  green: {
+    100: '#E2EEED',
+  },
+  grey: {
+    100: '#EDEDED',
+  },
+  yellow: {
+    50: '#FFFAE1',
+  },
+  red: {
+    100: '#FBE9E9',
   },
 }

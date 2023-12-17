@@ -1,17 +1,12 @@
-import { HStack, VStack, Box, Text, Button, Flex } from '@chakra-ui/react'
+import { VStack, Box, Text, Button, Flex } from '@chakra-ui/react'
 import { Image } from '~components/Image'
 import { BiRightArrowAlt } from 'react-icons/bi'
 import WhereToSpendYourRSGRewardsImage from '~images/WhereToSpendYourRSGRewards.svg'
+import SectionContainer from '~components/SectionContainer'
 
 const WhereToSpendYourRSGRewards = () => {
   return (
-    <HStack
-      as="main"
-      align="stretch"
-      flexGrow={1}
-      background="primary.100"
-      spacing={0}
-    >
+    <SectionContainer background="primary.100">
       <Flex
         flexDirection={{ md: 'row', base: 'column-reverse' }}
         gap={{ md: '132px', base: '40px' }}
@@ -41,7 +36,7 @@ const WhereToSpendYourRSGRewards = () => {
           </Button>
         </VStack>
       </Flex>
-    </HStack>
+    </SectionContainer>
   )
 }
 

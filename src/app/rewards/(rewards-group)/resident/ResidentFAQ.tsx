@@ -1,7 +1,8 @@
-import { Box, HStack, VStack, Text, Button } from '@chakra-ui/react'
+import { VStack, Text, Button } from '@chakra-ui/react'
 import ResidentFAQImage from '~images/ResidentFAQ.svg'
 import { Image } from '~components/Image'
 import { useIsMobile } from '@opengovsg/design-system-react'
+import SectionContainer from '~components/SectionContainer'
 
 const ResidentFAQ = () => {
   const isMobile = useIsMobile()
@@ -10,14 +11,7 @@ const ResidentFAQ = () => {
     : 'If you have more questions, please read our full FAQ,\n or contact the agency that issued your vouchers.'
 
   return (
-    <VStack
-      as="main"
-      align="stretch"
-      flexGrow={1}
-      minHeight="440px"
-      background="primary.500"
-      spacing={0}
-    >
+    <SectionContainer background="primary.500">
       <VStack
         alignItems="center"
         padding={{ md: '88px 148px', base: '56px 24px' }}
@@ -32,13 +26,17 @@ const ResidentFAQ = () => {
           >
             Frequently asked questions
           </Text>
+          {/* Have to do manual break for both mobile and desktop because 
+              desktop already have the manual break of \n, which implicates 
+              that the mobile also have to do it
+          */}
           <Text textStyle="body-1" color="white" whiteSpace="pre-line">
             {faqPromptTextWithBreaklines}
           </Text>
         </VStack>
         <Button variant="outline">Explore FAQ</Button>
       </VStack>
-    </VStack>
+    </SectionContainer>
   )
 }
 

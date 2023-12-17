@@ -17,17 +17,15 @@ const AppThemeProvider = ({ children }: AppThemeProviderProps) => {
   const toastContainerRef = useRef<HTMLDivElement | null>(null)
 
   return (
-    <CacheProvider>
-      <ThemeProvider
-        theme={theme}
-        toastOptions={{
-          portalProps: { containerRef: toastContainerRef },
-        }}
-      >
-        {children}
-        <Box ref={toastContainerRef} id="toast-container" />
-      </ThemeProvider>
-    </CacheProvider>
+    <ThemeProvider
+      theme={theme}
+      toastOptions={{
+        portalProps: { containerRef: toastContainerRef },
+      }}
+    >
+      {children}
+      <Box ref={toastContainerRef} id="toast-container" />
+    </ThemeProvider>
   )
 }
 

@@ -1,4 +1,4 @@
-import { HStack, VStack, Text, Box, Flex } from '@chakra-ui/react'
+import { HStack, VStack, Text } from '@chakra-ui/react'
 import React from 'react'
 import CenterChildWithFixHeightAndWidth from '~components/CenterChildWithFixHeightAndWidth'
 import { Image } from '~components/Image'
@@ -9,7 +9,7 @@ type HowToSpendYourRSGRewardsInstructionProps = {
   imageSrc: string
 }
 
-const HowToSpendYourRSGRewardsInstruction = ({
+const Instruction = ({
   stepIndex,
   stepInstruction,
   imageSrc,
@@ -44,10 +44,16 @@ const HowToSpendYourRSGRewardsInstruction = ({
             {stepIndex}
           </Text>
         </CenterChildWithFixHeightAndWidth>
-        {stepInstruction}
+        {typeof stepInstruction === 'string' ? (
+          <Text textStyle="body-1" color="neutral.700">
+            {stepInstruction}
+          </Text>
+        ) : (
+          stepInstruction
+        )}
       </VStack>
     </HStack>
   )
 }
 
-export default HowToSpendYourRSGRewardsInstruction
+export default Instruction

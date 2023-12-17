@@ -4,7 +4,9 @@ import HowToSpendYourRSGRewardsImage from '~images/HowToSpendYourRSGRewards.svg'
 import SpendRSGRewardsStep1Image from '~images/SpendRSGRewardsStep1.svg'
 import SpendRSGRewardsStep2Image from '~images/SpendRSGRewardsStep2.svg'
 import SpendRSGRewardsStep3Image from '~images/SpendRSGRewardsStep3.svg'
-import HowToSpendYourRSGRewardsInstruction from './HowToSpendYourRSGRewardsInstruction'
+import Instruction from '../Instruction'
+import { RSG_REWARDS_WHERE_TO_SPEND } from '~constants/links'
+import SectionContainer from '~components/SectionContainer'
 
 // I could leave out the index, but just adding it in manually
 const INSTRUCTIONS = [
@@ -29,9 +31,9 @@ const INSTRUCTIONS = [
         <Text as="span">{'Go to '}</Text>
         <Link
           as="a"
+          textStyle="text-editor-link"
           color="primary.500"
-          fontWeight={500}
-          href="https://redeem.gov.sg/rewards/wheretospend"
+          href={RSG_REWARDS_WHERE_TO_SPEND}
           isExternal
         >
           {'any participating supermarket ↪'}
@@ -54,32 +56,23 @@ const INSTRUCTIONS = [
 
 const HowToSpendYourRSGRewards = () => {
   return (
-    <VStack
-      as="main"
-      align="stretch"
-      flexGrow={1}
-      padding={{ md: '0 148px 88px', base: '0 24px 40px' }}
-      spacing={0}
-    >
+    <SectionContainer padding={{ md: '0 148px 88px', base: '0 24px 40px' }}>
       <Flex
         flexDirection={{ md: 'row', base: 'column' }}
         flexGrow={1}
         gap={{ md: '132px', base: '40px' }}
         height={{ md: '440px', base: 'fit-content' }}
       >
-        <VStack align="start" flex="1" spacing="44px">
+        <VStack align="start" spacing={{ md: '44px', base: '32px' }}>
           <Text
             textStyle={{ md: 'h1', base: 'h3-semibold' }}
             color="neutral.900"
           >
             How to spend your RedeemSG Rewards
           </Text>
-          <VStack align="start" spacing="40px">
+          <VStack align="start" spacing={{ md: '40px', base: '32px' }}>
             {INSTRUCTIONS.map((instruction) => (
-              <HowToSpendYourRSGRewardsInstruction
-                {...instruction}
-                key={instruction.stepIndex}
-              />
+              <Instruction {...instruction} key={instruction.stepIndex} />
             ))}
           </VStack>
         </VStack>
@@ -88,7 +81,7 @@ const HowToSpendYourRSGRewards = () => {
           alt="How to spend your RedeemSG Rewards Image"
         />
       </Flex>
-    </VStack>
+    </SectionContainer>
   )
 }
 

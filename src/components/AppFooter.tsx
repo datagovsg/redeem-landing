@@ -2,6 +2,7 @@ import { Flex, Text, Box } from '@chakra-ui/react'
 import { RestrictedFooter } from '@opengovsg/design-system-react'
 
 import { Image } from '~components/Image'
+import { FAQ } from '~constants/links'
 import RedeemLogoWithText from '~images/RedeemLogoWithText.svg'
 
 const AppName = () => {
@@ -32,7 +33,7 @@ const AppFooter = () => {
       footerLinks={[
         {
           label: 'FAQ',
-          href: '/faq',
+          href: FAQ,
         },
         {
           label: 'Privacy',
