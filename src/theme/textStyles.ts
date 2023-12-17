@@ -261,4 +261,11 @@ export const textStyles = {
     letterSpacing: '-0.022em',
     fontFamily: 'body',
   },
+  'display-2': {
+    fontWeight: 600,
+    lineHeight: '3rem',
+    fontSize: '2.5rem',
+    letterSpacing: '-0.022em',
+    fontFamily: 'body',
+  },
 }

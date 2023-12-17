@@ -4,7 +4,7 @@ import { BiRightArrowAlt } from 'react-icons/bi'
 
 import { Image } from '~components/Image'
 import SectionContainer from '~components/SectionContainer'
-import { RSG_CAMPAIGN_ORGANISER_FORM } from '~constants/links'
+import { RSG_CDC_CAMPAIGN_ORGANISER_FORM } from '~constants/links'
 import { openInNewTab } from '~helper'
 import CTAToSetUpRSGRewardsImage from '~images/CTAToSetupRSGRewards.svg'
 
@@ -49,7 +49,7 @@ const CTAToSetUpRSGRewards = () => {
         <Button
           variant="outline"
           rightIcon={<BiRightArrowAlt />}
-          onClick={() => openInNewTab(RSG_CAMPAIGN_ORGANISER_FORM)}
+          onClick={() => openInNewTab(RSG_CDC_CAMPAIGN_ORGANISER_FORM)}
         >
           Talk to us
         </Button>

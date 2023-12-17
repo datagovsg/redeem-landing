@@ -50,7 +50,8 @@ const INSTRUCTIONS = [
     stepIndex: 3,
     stepInstruction: (
       <Text textStyle="body-1" color="neutral.700">
-        Show your voucher’s QR code to the cashier while you are making payment.
+        Show your voucher&apos;s QR code to the cashier while you are making
+        payment.
       </Text>
     ),
   },

@@ -38,6 +38,5 @@ module.exports = {
       },
     ],
     'simple-import-sort/exports': 'error',
-    'sort-keys': ['error', 'asc', { caseSensitive: true, natural: true }],
   },
 }

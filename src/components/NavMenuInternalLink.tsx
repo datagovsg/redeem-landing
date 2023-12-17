@@ -4,12 +4,17 @@ type NavLinkProps = {
   isExternal: boolean
   href: string
   label: string
+  textColor: string
 }
 
-export const InternalNavMenuLink = ({ href, label }: NavLinkProps) => {
+export const InternalNavMenuLink = ({
+  href,
+  label,
+  textColor,
+}: NavLinkProps) => {
   return (
     <InternalLink
-      color="primary.700"
+      color={textColor}
       textStyle="subhead-1"
       width="fit-content"
       // @ts-ignore. Seems like a ts bug that doesnt recognise variant after forwarding props

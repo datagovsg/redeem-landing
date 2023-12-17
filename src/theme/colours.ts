@@ -10,6 +10,8 @@ type ThemeColorScheme =
   | 'grey'
   | 'yellow'
   | 'red'
+  | 'divider'
+  | 'content'
 
 export const colors: { [key in ThemeColorScheme]: Record<string, string> } = {
   primary: {
@@ -87,5 +89,13 @@ export const colors: { [key in ThemeColorScheme]: Record<string, string> } = {
   },
   red: {
     100: '#FBE9E9',
+  },
+  divider: {
+    medium: '#E9E9E9',
+  },
+  content: {
+    default: '#454953',
+    strong: '#2C2E34',
+    medium: '#666C7A',
   },
 }

@@ -6,8 +6,6 @@ import { InternalNavMenuLink } from './NavMenuInternalLink'
 
 import { Image } from '~components/Image'
 import { FAQ, ROOT } from '~constants/links'
-import RedeemLogoImage from '~images/RedeemLogo.svg'
-import RedeemLogoWithTextImage from '~images/RedeemLogoWithText.svg'
 
 const NAV_LINKS = [
   { href: ROOT, isExternal: false, label: 'Home' },
@@ -19,7 +17,19 @@ const NAV_LINKS = [
   },
 ] as const
 
-const NavMenu = () => {
+type NavMenuProps = {
+  mobileLogo: string
+  desktopLogo: string
+  backgroundColor: string
+  textColor: string
+}
+
+const NavMenu = ({
+  mobileLogo,
+  desktopLogo,
+  backgroundColor,
+  textColor,
+}: NavMenuProps) => {
   const isMobile = useIsMobile()
 
   return (
@@ -27,10 +37,10 @@ const NavMenu = () => {
       justify="space-between"
       height={{ base: '64px', md: '104px' }}
       padding={{ base: '10px 24px', md: '36px 148px' }}
-      background="primary.200"
+      background={backgroundColor}
     >
       <Image
-        src={isMobile ? RedeemLogoImage : RedeemLogoWithTextImage}
+        src={isMobile ? mobileLogo : desktopLogo}
         alt="RedeemSG"
         height={{ base: '34px', md: '32px' }}
         width={{ base: '26px', md: '168px' }}
@@ -43,7 +53,7 @@ const NavMenu = () => {
               key={linkProps.label}
               textStyle="subhead-1"
               width="fit-content"
-              color="primary.700"
+              color={textColor}
               _hover={{
                 textDecoration: 'underline',
               }}
@@ -52,7 +62,11 @@ const NavMenu = () => {
               {linkProps.label}
             </ExternalNavMenuLink>
           ) : (
-            <InternalNavMenuLink {...linkProps} key={linkProps.label} />
+            <InternalNavMenuLink
+              {...linkProps}
+              key={linkProps.label}
+              textColor={textColor}
+            />
           ),
         )}
       </HStack>
