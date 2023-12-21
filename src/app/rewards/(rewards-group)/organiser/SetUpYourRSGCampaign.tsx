@@ -1,4 +1,4 @@
-import { Box, Flex, Text, VStack } from '@chakra-ui/react'
+import { Flex, Text, VStack } from '@chakra-ui/react'
 
 import Instruction from '../Instruction'
 

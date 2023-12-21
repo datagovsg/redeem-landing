@@ -21,11 +21,6 @@ import { BiDownArrowAlt, BiUpArrowAlt } from 'react-icons/bi'
 
 export interface DataTableProps<D> extends TableProps {
   instance: ReactTable<D>
-  /**
-   * If provided, this number will be used for pagination instead of retrieving
-   * from react-table's filtered row count.
-   */
-  totalRowCount?: number
   isFetching?: boolean
   tablePropOverrides?: {
     [key: string]: {
@@ -42,7 +37,6 @@ export interface DataTableProps<D> extends TableProps {
 export const DataTable = <T extends object>({
   instance,
   isFetching,
-  totalRowCount,
   tablePropOverrides,
   emptyPlaceholder,
   onClickRow,

@@ -1,5 +1,9 @@
 module.exports = {
-  extends: ['next/core-web-vitals', 'prettier'],
+  extends: [
+    'next/core-web-vitals',
+    'prettier',
+    'plugin:@typescript-eslint/recommended',
+  ],
   parser: '@typescript-eslint/parser',
   plugins: ['chakra-ui', 'simple-import-sort'],
   parserOptions: {
@@ -38,5 +42,8 @@ module.exports = {
       },
     ],
     'simple-import-sort/exports': 'error',
+    // Note: you must disable the base rule as it can report incorrect errors. https://typescript-eslint.io/rules/no-unused-vars/#how-to-use
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
   },
 }

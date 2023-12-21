@@ -9,7 +9,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "local:production:build:test": "pnpm run build && npx serve ./out"
+    "local:production:build:test": "pnpm run build && npx serve ./out",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@chakra-ui/anatomy": "^2.2.2",
@@ -30,15 +31,26 @@
   },
   "devDependencies": {
     "@chakra-ui/cli": "^2.4.1",
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
     "@typescript-eslint/parser": "^6.14.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-chakra-ui": "^0.10.1",
     "eslint-plugin-simple-import-sort": "^10.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.0",
     "typescript": "^5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

@@ -1,6 +1,5 @@
 'use client'
 
-import { CacheProvider } from '@chakra-ui/next-js'
 import { Box } from '@chakra-ui/react'
 import { ThemeProvider } from '@opengovsg/design-system-react'
 import { useRef } from 'react'

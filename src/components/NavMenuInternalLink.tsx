@@ -17,7 +17,7 @@ export const InternalNavMenuLink = ({
       color={textColor}
       textStyle="subhead-1"
       width="fit-content"
-      // @ts-ignore. Seems like a ts bug that doesnt recognise variant after forwarding props
+      // @ts-expect-error. Seems like a ts bug that doesnt recognise variant after forwarding props
       variant="standalone"
       _hover={{
         textDecoration: 'underline',
