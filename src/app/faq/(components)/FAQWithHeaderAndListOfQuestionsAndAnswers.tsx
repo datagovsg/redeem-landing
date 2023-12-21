@@ -30,14 +30,14 @@ const FAQWithHeaderAndListOfQuestionsAndAnswers = ({
   answerTextColor = 'content.default',
 }: FAQWithHeaderAndListOfQuestionsAndAnswersProps) => {
   return (
-    <VStack align="start" width="100%" spacing={{ base: '16px', lg: '24px' }}>
+    <VStack align="start" width="100%" spacing={{ base: '16px', md: '24px' }}>
       <Text
-        textStyle={{ base: 'h4', lg: 'h3-semibold' }}
+        textStyle={{ base: 'h4', md: 'h3-semibold' }}
         color={headerTextColor}
       >
         {header}
       </Text>
-      <VStack align="start" width="100%" spacing={{ base: '48px', lg: '72px' }}>
+      <VStack align="start" width="100%" spacing={{ base: '48px', md: '72px' }}>
         {sectionTitleAndQuestionAndAnswers.map(
           ({ sectionTitle, questionsAndAnswerResponses }) => (
             <VStack

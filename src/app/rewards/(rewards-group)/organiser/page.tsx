@@ -13,6 +13,7 @@ export default function Page() {
       <Divider
         width={{
           base: 'calc(100% - (2 * 24px))',
+          md: 'calc(100% - (2 * 128px))',
           lg: 'calc(100% - (2 * 148px))',
         }}
         height="1px"

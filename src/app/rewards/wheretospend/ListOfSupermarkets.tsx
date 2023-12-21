@@ -71,23 +71,28 @@ const SUPERMARKETS = [
 
 const ListOfSupermarkets = () => {
   return (
-    <SectionContainer padding={{ base: '40px 24px', lg: '88px 148px' }}>
-      <VStack align="start" spacing={{ base: '32px', lg: '80px' }}>
-        <Text textStyle={{ base: 'h3-semibold', lg: 'h1' }} color="neutral.900">
+    <SectionContainer
+      padding={{ base: '40px 24px', md: '88px 128px', lg: '88px 148px' }}
+    >
+      <VStack align="start" spacing={{ base: '32px', md: '64px', lg: '80px' }}>
+        <Text
+          textStyle={{ base: 'h3-semibold', md: 'h2', lg: 'h1' }}
+          color="neutral.900"
+        >
           RedeemSG Rewards can be spent at any of these participating
           supermarkets:
         </Text>
         <Grid
-          gridRowGap={{ base: '44px', lg: '88px' }}
-          gridTemplateColumns={{ base: '1fr', lg: '1fr 1fr' }}
+          gridRowGap={{ base: '44px', md: '64px', lg: '88px' }}
+          gridTemplateColumns={{ base: '1fr', md: '1fr 1fr', lg: '1fr 1fr' }}
           width="100%"
         >
           {SUPERMARKETS.map(({ label, imageSrc, backgroundColor, url }) => (
             <GridItem key={label}>
               <VStack align="start" spacing="16px">
                 <Flex
-                  alignItems={{ base: 'center', lg: 'start' }}
-                  flexDirection={{ base: 'row', lg: 'column' }}
+                  alignItems={{ base: 'center', md: 'start', lg: 'start' }}
+                  flexDirection={{ base: 'row', md: 'column', lg: 'column' }}
                   gap="20px"
                 >
                   <CenterChildWithFixHeightAndWidth
