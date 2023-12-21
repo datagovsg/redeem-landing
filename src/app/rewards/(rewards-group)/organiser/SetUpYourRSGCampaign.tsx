@@ -1,4 +1,4 @@
-import { Flex, Text, VStack } from '@chakra-ui/react'
+import { Box, Flex, Text, VStack } from '@chakra-ui/react'
 
 import Instruction from '../Instruction'
 
@@ -32,20 +32,29 @@ const INSTRUCTIONS = [
 
 const SetUpYourRSGCampaign = () => {
   return (
-    <SectionContainer padding={{ base: '40px 24px', lg: '88px 148px' }}>
+    <SectionContainer
+      padding={{ base: '40px 24px', md: '88px 128px', lg: '88px 148px' }}
+    >
       <Flex
-        flexDirection={{ base: 'column', lg: 'row' }}
+        alignItems={{ base: 'center' }}
+        flexDirection={{ base: 'column', md: 'row', lg: 'row' }}
         flexGrow={1}
-        gap={{ base: '40px', lg: '132px' }}
+        gap={{ base: '40px', md: '72px', lg: '132px' }}
       >
-        <VStack align="start" spacing={{ base: '32px', lg: '44px' }}>
+        <VStack
+          alignItems="start"
+          spacing={{ base: '32px', md: '44px', lg: '44px' }}
+        >
           <Text
-            textStyle={{ base: 'h3-semibold', lg: 'h1' }}
+            textStyle={{ base: 'h3-semibold', md: 'h2', lg: 'h1' }}
             color="neutral.900"
           >
             Setting up your RedeemSG Rewards campaign
           </Text>
-          <VStack align="start" spacing={{ base: '32px', lg: '40px' }}>
+          <VStack
+            align="start"
+            spacing={{ base: '32px', md: '32px', lg: '40px' }}
+          >
             {INSTRUCTIONS.map((instruction) => (
               <Instruction {...instruction} key={instruction.stepIndex} />
             ))}
@@ -54,6 +63,7 @@ const SetUpYourRSGCampaign = () => {
         <Image
           src={SetUpYourRSGCampaignImage}
           alt="Setting up your RedeemSG Rewards campaign"
+          width={{ base: '280px', md: '300px', lg: '411px' }}
         />
       </Flex>
     </SectionContainer>

@@ -1,9 +1,8 @@
-import { Accordion, Flex, Link, Text, VStack } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/react'
 
 import FAQWithHeaderAndListOfQuestionsAndAnswers from '~/app/faq/(components)/FAQWithHeaderAndListOfQuestionsAndAnswers'
 import SimpleAnswerContainer from '~/app/faq/(components)/SimpleAnswerContainer'
 
-import { HelpAccordionItem } from '~components/HelpAccordionItem'
 import { Image } from '~components/Image'
 import { InternalLink } from '~components/InternalLink'
 import SectionContainer from '~components/SectionContainer'
@@ -73,18 +72,18 @@ const QuestionsForSetupCampaign = () => {
   return (
     <SectionContainer background="primary.100">
       <Flex
-        alignItems="flex-start"
-        flexDirection={{ base: 'column', lg: 'row' }}
-        flexGrow={1}
+        alignItems={{ base: 'center', md: 'flex-start' }}
+        flexDirection={{ base: 'column', md: 'row', lg: 'row' }}
         // TO confirm
-        gap={{ base: '40px', lg: 'auto' }}
-        padding={{ base: '40px 24px', lg: '88px 148px' }}
+        flexGrow={1}
+        gap={{ base: '40px', md: 'auto', lg: 'auto' }}
+        padding={{ base: '40px 24px', md: '88px 128px', lg: '88px 148px' }}
       >
         <Flex
           alignItems="start"
           flexDirection="column"
           flex={1}
-          gap={{ base: '24px', lg: '40px' }}
+          gap={{ base: '24px', md: '32px', lg: '40px' }}
         >
           <FAQWithHeaderAndListOfQuestionsAndAnswers
             header="Have a question?"
@@ -98,9 +97,11 @@ const QuestionsForSetupCampaign = () => {
             View more FAQs
           </InternalLink>
         </Flex>
-        <Flex flex={1}>
-          <Image src={QuestionImage} alt="Have a question?" />
-        </Flex>
+        <Image
+          src={QuestionImage}
+          alt="Have a question?"
+          maxWidth={{ base: '280px', md: '340px', lg: '380px' }}
+        />
       </Flex>
     </SectionContainer>
   )
