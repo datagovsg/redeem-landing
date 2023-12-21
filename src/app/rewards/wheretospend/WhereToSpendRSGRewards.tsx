@@ -14,11 +14,11 @@ const WhereToSpendRSGRewards = () => {
   return (
     <SectionContainer background="primary.100">
       <VStack
-        padding={{ base: '50px 24px', md: '80px 148px' }}
-        spacing={{ base: '32px', md: '48px' }}
+        padding={{ base: '50px 24px', lg: '80px 148px' }}
+        spacing={{ base: '32px', lg: '48px' }}
       >
         <Text
-          textStyle={{ base: 'h1', md: 'display-1' }}
+          textStyle={{ base: 'h1', lg: 'display-1' }}
           color="neutral.900"
           textAlign="center"
           whiteSpace="pre-wrap"

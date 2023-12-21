@@ -14,7 +14,7 @@ const Page = () => {
       <Divider
         width={{
           base: 'calc(100% - (2 * 24px))',
-          md: 'calc(100% - (2 * 148px))',
+          lg: 'calc(100% - (2 * 148px))',
         }}
         height="1px"
         margin="0 auto"

@@ -34,7 +34,11 @@ const INSTRUCTIONS = [
         <Text as="span">{'Go to '}</Text>
         <Link
           as="a"
-          textStyle="text-editor-link"
+          textStyle={{
+            base: 'text-editor-link',
+            md: 'text-editor-link-small',
+            lg: 'text-editor-link',
+          }}
           color="primary.500"
           href={RSG_REWARDS_WHERE_TO_SPEND}
           isExternal
@@ -59,21 +63,25 @@ const INSTRUCTIONS = [
 
 const HowToSpendYourRSGRewards = () => {
   return (
-    <SectionContainer padding={{ base: '0 24px 40px', md: '0 148px 88px' }}>
+    <SectionContainer padding={{ base: '0 24px 40px', lg: '0 148px 88px' }}>
       <Flex
-        flexDirection={{ base: 'column', md: 'row' }}
+        alignItems={{ base: 'center' }}
+        flexDirection={{ base: 'column', lg: 'row' }}
         flexGrow={1}
-        gap={{ base: '40px', md: '132px' }}
-        height={{ base: 'fit-content', md: '440px' }}
+        gap={{ base: '40px', lg: '132px' }}
+        height="fit-content"
       >
-        <VStack align="start" spacing={{ base: '32px', md: '44px' }}>
+        <VStack align="start" spacing={{ base: '32px', lg: '44px' }}>
           <Text
-            textStyle={{ base: 'h3-semibold', md: 'h1' }}
+            textStyle={{ base: 'h3-semibold', md: 'h2', lg: 'h1' }}
             color="neutral.900"
           >
             How to spend your RedeemSG Rewards
           </Text>
-          <VStack align="start" spacing={{ base: '32px', md: '40px' }}>
+          <VStack
+            align="start"
+            spacing={{ base: '32px', md: '32px', lg: '40px' }}
+          >
             {INSTRUCTIONS.map((instruction) => (
               <Instruction {...instruction} key={instruction.stepIndex} />
             ))}

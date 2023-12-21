@@ -22,7 +22,7 @@ const CTAToSetUpRSGRewards = () => {
     <SectionContainer background="primary.700">
       <VStack
         alignItems="center"
-        padding={{ base: '56px 24px', md: '88px 148px' }}
+        padding={{ base: '56px 24px', lg: '88px 148px' }}
         textAlign="center"
         spacing="32px"
       >
@@ -30,9 +30,9 @@ const CTAToSetUpRSGRewards = () => {
           src={CTAToSetUpRSGRewardsImage}
           alt="Ready to set up your own RedeemSG Rewards?"
         />
-        <VStack spacing={{ base: '32px', md: '8px' }}>
+        <VStack spacing={{ base: '32px', lg: '8px' }}>
           <Text
-            textStyle={{ base: 'display-2-mobile', md: 'h1' }}
+            textStyle={{ base: 'display-2-mobile', lg: 'h1' }}
             color="white"
             whiteSpace="pre-line"
           >

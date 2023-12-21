@@ -1,3 +1,5 @@
+import { getBaseUrl } from '~/helper/getBaseUrl'
+
 // Supermarkets Links
 export const WTS_FAIRPRICE = 'https://www.fairprice.com.sg/store-locator'
 export const WTS_GIANT = 'https://giant.sg/store-locator'
@@ -14,8 +16,7 @@ export const RSG_CDC_CAMPAIGN_ORGANISER_FORM =
   'https://form.gov.sg/621876e1f620bd00130757a6'
 export const RSG_CDC_MERCHANT_FORM =
   'https://form.gov.sg/63ae6b40f03e1f00121e924e'
-export const RSG_REWARDS_WHERE_TO_SPEND =
-  'https://redeem.gov.sg/rewards/wheretospend'
+export const RSG_REWARDS_WHERE_TO_SPEND = `${getBaseUrl()}/rewards/wheretospend`
 export const RSG_CDC_DONATE_FAQ = 'https://vouchers.cdc.gov.sg/donate/faq/'
 
 // Internal Link

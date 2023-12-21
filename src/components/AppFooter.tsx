@@ -9,8 +9,8 @@ const AppName = () => {
   return (
     <Flex
       alignItems="flex-start"
-      flexDirection={{ base: 'column', md: 'row' }}
-      gap={{ base: '8px', md: '16px' }}
+      flexDirection={{ base: 'column', lg: 'row' }}
+      gap={{ base: '8px', lg: '16px' }}
     >
       <Image
         width="127px"

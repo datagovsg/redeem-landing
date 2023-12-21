@@ -25,13 +25,13 @@ const CustomNavigationTabs = ({ tabs }: CustomNavigationTabsProps) => {
   return (
     <HStack
       position="relative"
-      height="72px"
+      height={{ base: '76px', md: '64px', lg: '72px' }}
       padding={`${PADDING}px`}
       background="primary.200"
-      borderRadius={{ base: '8px', md: '16px' }}
+      borderRadius={{ base: '8px', md: '8px', lg: '16px' }}
       spacing={0}
     >
-      {tabs.map(({ label, href }, i) => {
+      {tabs.map(({ label, href }) => {
         const isSelected = href === pathname
 
         return (
@@ -44,7 +44,7 @@ const CustomNavigationTabs = ({ tabs }: CustomNavigationTabsProps) => {
             width="100%"
             height="100%"
             textAlign="center"
-            textStyle={{ base: 'subhead-2', md: 'h6' }}
+            textStyle={{ base: 'subhead-2', lg: 'h6' }}
             letterSpacing="-0.006em"
             verticalAlign="middle"
             display="flex"
@@ -65,7 +65,7 @@ const CustomNavigationTabs = ({ tabs }: CustomNavigationTabsProps) => {
         width={`calc((100% - ${2 * PADDING}px) / ${tabs.length})`}
         height={`calc(100% - ${2 * PADDING}px)`}
         background="primary.500"
-        borderRadius={{ base: '4px', md: '12px' }}
+        borderRadius={{ base: '4px', md: '8px', lg: '12px' }}
         transition="left 0.2s linear"
       />
     </HStack>

@@ -26,11 +26,11 @@ const OnGoingCampaignFAQ = () => {
   return (
     // Require to add width because of the addition VStack outside which changes the flex direction for flex grow!
     <SectionContainer
-      spacing={{ base: '16px', md: '24px' }}
+      spacing={{ base: '16px', lg: '24px' }}
       align="stretch"
       width="100%"
     >
-      <Text textStyle={{ base: 'h4', md: 'h3-semibold' }} color="primary.500">
+      <Text textStyle={{ base: 'h4', lg: 'h3-semibold' }} color="primary.500">
         For FAQs related to ongoing campaigns, please refer below
       </Text>
       <VStack spacing="16px">

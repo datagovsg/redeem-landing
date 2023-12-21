@@ -74,17 +74,17 @@ const QuestionsForSetupCampaign = () => {
     <SectionContainer background="primary.100">
       <Flex
         alignItems="flex-start"
-        flexDirection={{ base: 'column', md: 'row' }}
+        flexDirection={{ base: 'column', lg: 'row' }}
         flexGrow={1}
         // TO confirm
-        gap={{ base: '40px', md: 'auto' }}
-        padding={{ base: '40px 24px', md: '88px 148px' }}
+        gap={{ base: '40px', lg: 'auto' }}
+        padding={{ base: '40px 24px', lg: '88px 148px' }}
       >
         <Flex
           alignItems="start"
           flexDirection="column"
           flex={1}
-          gap={{ base: '24px', md: '40px' }}
+          gap={{ base: '24px', lg: '40px' }}
         >
           <FAQWithHeaderAndListOfQuestionsAndAnswers
             header="Have a question?"

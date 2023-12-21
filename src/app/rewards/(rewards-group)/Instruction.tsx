@@ -18,8 +18,8 @@ const Instruction = ({
   return (
     <HStack alignItems="flex-start" spacing="24px">
       <CenterChildWithFixHeightAndWidth
-        width="72px"
-        height="72px"
+        width={{ lg: '72px', md: '60px', base: '76px' }}
+        height={{ lg: '72px', md: '60px', base: '76px' }}
         background="primary.100"
         borderRadius="50%"
       >

@@ -19,19 +19,19 @@ export default function layout({ children }: { children: React.ReactNode }) {
       <VStack position="relative" width="100%">
         <Box
           width="100%"
-          height={{ base: '94px', md: '144px' }}
+          height={{ base: '94px', md: '124px', lg: '144px' }}
           background="primary.100"
         />
         <Box
           width="100%"
-          height={{ base: '76px', md: '176px' }}
+          height={{ base: '76px', md: '124px', lg: '176px' }}
           background="white"
         />
         <Box
           position="absolute"
-          top={{ base: '58px', md: '108px' }}
+          top={{ base: '58px', md: '88px', lg: '108px' }}
           width="100%"
-          padding={{ base: '0 8px', md: '0 148px' }}
+          padding={{ base: '0 8px', md: '0 128px', lg: '0 148px' }}
         >
           <CustomNavigationTabs tabs={TABS} />
         </Box>

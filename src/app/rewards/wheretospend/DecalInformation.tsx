@@ -6,10 +6,10 @@ import WTSDecalImage from '~images/WTSDecal.svg'
 
 const DecalInformation = () => {
   return (
-    <SectionContainer padding={{ base: '40px 24px', md: '88px 148px' }}>
-      <VStack spacing={{ base: '40px', md: '48px' }}>
-        <VStack textAlign="center" spacing={{ base: '24px', md: '16px' }}>
-          <Text textStyle={{ base: 'h3-semibold', md: 'h1' }}>
+    <SectionContainer padding={{ base: '40px 24px', lg: '88px 148px' }}>
+      <VStack spacing={{ base: '40px', lg: '48px' }}>
+        <VStack textAlign="center" spacing={{ base: '24px', lg: '16px' }}>
+          <Text textStyle={{ base: 'h3-semibold', lg: 'h1' }}>
             Look out for this decal at the cashier counter
           </Text>
           <Text textStyle="body-1" color="neutral.700">

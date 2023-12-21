@@ -22,9 +22,9 @@ export const HelpAccordionItem = ({
 }: HelpAccordionItemProps) => {
   return (
     <AccordionItem>
-      <AccordionButton padding={{ base: '12px 16px', md: '20px 16px' }}>
+      <AccordionButton padding={{ base: '12px 16px', lg: '20px 16px' }}>
         <Text
-          textStyle={{ base: 'subhead-2', md: 'subhead-1' }}
+          textStyle={{ base: 'subhead-2', lg: 'subhead-1' }}
           flex="1"
           color={questionTitleColor}
           textAlign="left"

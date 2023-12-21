@@ -13,8 +13,8 @@ const Page = () => {
       <FAQHeader />
       <VStack
         flexGrow={1}
-        padding={{ base: '48px 24px', md: '64px 264px' }}
-        spacing={{ base: '48px', md: '72px' }}
+        padding={{ base: '48px 24px', lg: '64px 264px' }}
+        spacing={{ base: '48px', lg: '72px' }}
       >
         <OnGoingCampaignFAQ />
         <Divider
@@ -27,7 +27,7 @@ const Page = () => {
           align="start"
           flexGrow={1}
           width="100%"
-          spacing={{ md: '144px', base: '48px' }}
+          spacing={{ lg: '144px', base: '48px' }}
         >
           <AboutRedeemSG />
           <AboutRedeemSGRewards />

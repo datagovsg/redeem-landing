@@ -1,11 +1,11 @@
-import { Flex } from '@chakra-ui/react'
+import { Flex, FlexProps } from '@chakra-ui/react'
 
 type CenterChildWithFixHeightAndWidthProps = {
   background: string
   borderRadius: string
   children: React.ReactNode
-  height: string
-  width: string
+  height: FlexProps['height']
+  width: FlexProps['width']
 }
 
 const CenterChildWithFixHeightAndWidth = ({

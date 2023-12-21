@@ -91,7 +91,7 @@ export const colors: { [key in ThemeColorScheme]: Record<string, string> } = {
     100: '#FBE9E9',
   },
   divider: {
-    medium: '#E9E9E9',
+    medium: '#EDEDED',
   },
   content: {
     default: '#454953',

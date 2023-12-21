@@ -35,17 +35,17 @@ const NavMenu = ({
   return (
     <HStack
       justify="space-between"
-      height={{ base: '64px', md: '104px' }}
-      padding={{ base: '10px 24px', md: '36px 148px' }}
+      height={{ base: '64px', md: '72px', lg: '104px' }}
+      padding={{ base: '10px 24px', md: '24px 80px', lg: '36px 148px' }}
       background={backgroundColor}
     >
       <Image
         src={isMobile ? mobileLogo : desktopLogo}
         alt="RedeemSG"
-        height={{ base: '34px', md: '32px' }}
-        width={{ base: '26px', md: '168px' }}
+        height={{ base: '34px', md: '24px', lg: '32px' }}
+        width={{ base: '26px', md: '126px', lg: '168px' }}
       />
-      <HStack spacing={{ base: '24px', md: '40px' }}>
+      <HStack spacing={{ base: '24px', md: '40px', lg: '40px' }}>
         {NAV_LINKS.map((linkProps) =>
           linkProps.isExternal ? (
             <ExternalNavMenuLink

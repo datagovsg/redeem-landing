@@ -32,20 +32,20 @@ const INSTRUCTIONS = [
 
 const SetUpYourRSGCampaign = () => {
   return (
-    <SectionContainer padding={{ base: '40px 24px', md: '88px 148px' }}>
+    <SectionContainer padding={{ base: '40px 24px', lg: '88px 148px' }}>
       <Flex
-        flexDirection={{ base: 'column', md: 'row' }}
+        flexDirection={{ base: 'column', lg: 'row' }}
         flexGrow={1}
-        gap={{ base: '40px', md: '132px' }}
+        gap={{ base: '40px', lg: '132px' }}
       >
-        <VStack align="start" spacing={{ base: '32px', md: '44px' }}>
+        <VStack align="start" spacing={{ base: '32px', lg: '44px' }}>
           <Text
-            textStyle={{ base: 'h3-semibold', md: 'h1' }}
+            textStyle={{ base: 'h3-semibold', lg: 'h1' }}
             color="neutral.900"
           >
             Setting up your RedeemSG Rewards campaign
           </Text>
-          <VStack align="start" spacing={{ base: '32px', md: '40px' }}>
+          <VStack align="start" spacing={{ base: '32px', lg: '40px' }}>
             {INSTRUCTIONS.map((instruction) => (
               <Instruction {...instruction} key={instruction.stepIndex} />
             ))}

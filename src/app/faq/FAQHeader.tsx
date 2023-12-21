@@ -9,11 +9,11 @@ const FAQHeader = () => {
     <SectionContainer backgroundColor="primary.200">
       <Flex
         alignItems="center"
-        justifyContent={{ base: 'initial', md: 'space-between' }}
-        flexDirection={{ base: 'column', md: 'row' }}
+        justifyContent={{ base: 'initial', lg: 'space-between' }}
+        flexDirection={{ base: 'column', lg: 'row' }}
         flexGrow={1}
-        gap={{ base: '24px', md: '0px' }}
-        padding={{ base: '32px 24px 40px', md: '44px 148px' }}
+        gap={{ base: '24px', lg: '0px' }}
+        padding={{ base: '32px 24px 40px', lg: '44px 148px' }}
       >
         <VStack align="start" spacing="16px">
           <Text textStyle="display-2" color="primary.700">

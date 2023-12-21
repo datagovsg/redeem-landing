@@ -98,6 +98,7 @@ export const textStyles = {
     fontSize: '2.5rem',
     letterSpacing: '-0.022em',
     fontFamily: 'body',
+    fontFeatureSettings: `'tnum' on, 'lnum' on, 'cv05' on`,
   },
   h2: {
     fontWeight: 600,
@@ -105,6 +106,7 @@ export const textStyles = {
     fontSize: '2.25rem',
     letterSpacing: '-0.022em',
     fontFamily: 'body',
+    fontFeatureSettings: `'tnum' on, 'lnum' on, 'cv05' on`,
   },
   h3: {
     fontWeight: 700,
@@ -112,6 +114,7 @@ export const textStyles = {
     fontSize: '1.75rem',
     letterSpacing: '-0.019em',
     fontFamily: 'body',
+    fontFeatureSettings: `'tnum' on, 'lnum' on, 'cv05' on`,
   },
   h4: {
     fontWeight: 600,
@@ -119,6 +122,7 @@ export const textStyles = {
     fontSize: '1.5rem',
     letterSpacing: '-0.019em',
     fontFamily: 'body',
+    fontFeatureSettings: `'tnum' on, 'lnum' on, 'cv05' on`,
   },
   h5: {
     fontWeight: 600,
@@ -126,6 +130,7 @@ export const textStyles = {
     fontSize: '1.25rem',
     letterSpacing: '-0.014em',
     fontFamily: 'body',
+    fontFeatureSettings: `'tnum' on, 'lnum' on, 'cv05' on`,
   },
   h6: {
     fontWeight: 500,
@@ -133,6 +138,7 @@ export const textStyles = {
     fontSize: '1.125rem',
     letterSpacing: '-0.014em',
     fontFamily: 'body',
+    fontFeatureSettings: `'tnum' on, 'lnum' on, 'cv05' on`,
   },
   'subhead-1': {
     fontWeight: 500,
@@ -140,6 +146,7 @@ export const textStyles = {
     fontSize: '1rem',
     letterSpacing: '-0.006em',
     fontFamily: 'body',
+    fontFeatureSettings: `'tnum' on, 'lnum' on, 'cv05' on`,
   },
   'subhead-2': {
     fontWeight: 500,
@@ -147,6 +154,7 @@ export const textStyles = {
     fontSize: '0.875rem',
     letterSpacing: 0,
     fontFamily: 'body',
+    fontFeatureSettings: `'tnum' on, 'lnum' on, 'cv05' on`,
   },
   'subhead-3': {
     fontWeight: 600,
@@ -155,6 +163,7 @@ export const textStyles = {
     letterSpacing: '0.080em',
     fontFamily: 'body',
     textTransform: 'uppercase',
+    fontFeatureSettings: `'tnum' on, 'lnum' on, 'cv05' on`,
   },
   'body-1': {
     fontWeight: 400,
@@ -162,6 +171,7 @@ export const textStyles = {
     fontSize: '1rem',
     letterSpacing: '-0.006em',
     fontFamily: 'body',
+    fontFeatureSettings: `'tnum' on, 'lnum' on, 'cv05' on`,
   },
   'body-2': {
     fontWeight: 400,
@@ -169,6 +179,7 @@ export const textStyles = {
     fontSize: '0.875rem',
     letterSpacing: 0,
     fontFamily: 'body',
+    fontFeatureSettings: `'tnum' on, 'lnum' on, 'cv05' on`,
   },
   'body-3': {
     fontWeight: 400,
@@ -176,6 +187,7 @@ export const textStyles = {
     fontSize: '1rem',
     letterSpacing: '-0.006em',
     fontFamily: 'body',
+    fontFeatureSettings: `'tnum' on, 'lnum' on, 'cv05' on`,
   },
   'caption-1': {
     fontWeight: 500,
@@ -260,6 +272,7 @@ export const textStyles = {
     fontSize: '4rem',
     letterSpacing: '-0.022em',
     fontFamily: 'body',
+    fontFeatureSettings: `'cv05' on`,
   },
   'display-2': {
     fontWeight: 600,
@@ -267,5 +280,6 @@ export const textStyles = {
     fontSize: '2.5rem',
     letterSpacing: '-0.022em',
     fontFamily: 'body',
+    fontFeatureSettings: `'cv05' on`,
   },
 }
