@@ -20,7 +20,7 @@
     "@chakra-ui/theme-tools": "^2.1.2",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@opengovsg/design-system-react": "/Users/seanlum/Desktop/ogp/redeem-landing/opengovsg-design-system-react-1.14.0.tgz",
+    "@opengovsg/design-system-react": "1.15.0",
     "@tanstack/react-table": "^8.10.7",
     "framer-motion": "^10.16.16",
     "lottie-react": "^2.4.0",
