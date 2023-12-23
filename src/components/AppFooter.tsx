@@ -28,6 +28,7 @@ const AppName = () => {
 const AppFooter = () => {
   return (
     <RestrictedFooter
+      // @ts-expect-error This is probably a bug from design system
       appName={<AppName />}
       appLink="/"
       footerLinks={[
