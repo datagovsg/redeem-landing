@@ -23,9 +23,6 @@ const variantMedium: PartsStyleFunction<typeof parts> = ({
       _active: {
         color: `${c}.700`,
       },
-      _focus: {
-        boxShadow: `0 0 0 2px var(--chakra-colors-${c}-500)`,
-      },
     },
   }
 }
