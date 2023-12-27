@@ -28,6 +28,8 @@ const CustomNavigationTabs = ({ tabs }: CustomNavigationTabsProps) => {
       height={{ base: '76px', md: '64px', lg: '72px' }}
       padding={`${PADDING}px`}
       background="primary.200"
+      border="1px solid"
+      borderColor="white"
       borderRadius={{ base: '8px', md: '8px', lg: '16px' }}
       spacing={0}
     >

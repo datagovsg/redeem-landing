@@ -28,7 +28,7 @@ const ResidentFAQ = () => {
             textStyle={{ base: 'display-2-mobile', md: 'h2', lg: 'h1' }}
             color="white"
           >
-            Frequently asked questions
+            Frequently Asked Questions
           </Text>
           {/* Have to do manual break for both mobile and desktop because 
               desktop already have the manual break of \n, which implicates 

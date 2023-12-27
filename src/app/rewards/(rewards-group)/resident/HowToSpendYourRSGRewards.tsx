@@ -18,7 +18,7 @@ const INSTRUCTIONS = [
     stepInstruction: (
       <Text textStyle="body-1" color="neutral.700">
         {
-          'Receive vouchers from government agencies. Only trust voucher links starting with '
+          'Receive vouchers from government agencies. Always only trust voucher links starting with '
         }
         <Text as="span" textStyle="text-editor-bold">
           voucher.redeem.gov.sg.
