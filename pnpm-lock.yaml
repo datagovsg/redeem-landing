@@ -27,7 +27,7 @@ dependencies:
     specifier: ^11.11.0
     version: 11.11.0(@emotion/react@11.11.1)(@types/react@18.2.45)(react@18.2.0)
   '@opengovsg/design-system-react':
-    specifier: ^1.15.0
+    specifier: 1.15.0
     version: 1.15.0(@chakra-ui/react@2.8.2)(@types/react@18.2.45)(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
   '@tanstack/react-table':
     specifier: ^8.10.7
@@ -2002,7 +2002,7 @@ packages:
       downshift: 7.6.2(react@18.2.0)
       fuzzysort: 2.0.4
       inter-ui: 3.19.3
-      libphonenumber-js: 1.10.52
+      libphonenumber-js: 1.10.53
       lodash: 4.17.21
       nanoid: 3.3.7
       react: 18.2.0
@@ -2015,7 +2015,7 @@ packages:
       rooks: 7.14.1(react-dom@18.2.0)(react@18.2.0)
       use-draggable-scroll: 0.1.0(react@18.2.0)
     optionalDependencies:
-      '@swc/core-linux-x64-gnu': 1.3.101
+      '@swc/core-linux-x64-gnu': 1.3.102
     transitivePeerDependencies:
       - '@types/react'
       - prop-types
@@ -2029,8 +2029,8 @@ packages:
     resolution: {integrity: sha512-UY+FGM/2jjMkzQLn8pxcHGMaVLh9aEitG3zY2CiY7XHdLiz3bZOwa6oDxNqEMv7zZkV+cj5DOdz0cQ1BP5Hjgw==}
     dev: true
 
-  /@swc/core-linux-x64-gnu@1.3.101:
-    resolution: {integrity: sha512-/kBMcoF12PRO/lwa8Z7w4YyiKDcXQEiLvM+S3G9EvkoKYGgkkz4Q6PSNhF5rwg/E3+Hq5/9D2R+6nrkF287ihg==}
+  /@swc/core-linux-x64-gnu@1.3.102:
+    resolution: {integrity: sha512-dFvnhpI478svQSxqISMt00MKTDS0e4YtIr+ioZDG/uJ/q+RpcNy3QI2KMm05Fsc8Y0d4krVtvCKWgfUMsJZXAg==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
@@ -4535,8 +4535,8 @@ packages:
       type-check: 0.4.0
     dev: true
 
-  /libphonenumber-js@1.10.52:
-    resolution: {integrity: sha512-6vCuCHgem+OW1/VCAKgkasfegItCea8zIT7s9/CG/QxdCMIM7GfzbEBG5d7lGO3rzipjt5woOQL3DiHa8Fy78Q==}
+  /libphonenumber-js@1.10.53:
+    resolution: {integrity: sha512-sDTnnqlWK4vH4AlDQuswz3n4Hx7bIQWTpIcScJX+Sp7St3LXHmfiax/ZFfyYxHmkdCvydOLSuvtAO/XpXiSySw==}
     dev: false
 
   /lilconfig@3.0.0:
