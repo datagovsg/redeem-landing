@@ -40,6 +40,8 @@ const SetUpYourRSGCampaign = () => {
         flexDirection={{ base: 'column', md: 'row', lg: 'row' }}
         flexGrow={1}
         gap={{ base: '40px', md: '72px', lg: '132px' }}
+        maxWidth="1440px"
+        boxSizing="content-box"
       >
         <VStack
           alignItems="start"

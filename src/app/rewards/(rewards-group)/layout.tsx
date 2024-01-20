@@ -2,7 +2,7 @@
 
 import { Box, VStack } from '@chakra-ui/react'
 
-import Hero from '../Hero'
+import Hero from './Hero'
 
 import CustomNavigationTabs from '~components/CustomNavigationTabs'
 import { REWARDS_ORGANISER, REWARDS_RESIDENT } from '~constants/links'

@@ -1,4 +1,4 @@
-import { StackProps, VStack } from '@chakra-ui/react'
+import { HStack, StackProps } from '@chakra-ui/react'
 
 type SectionContainerProps = {
   children: React.ReactNode
@@ -6,9 +6,17 @@ type SectionContainerProps = {
 
 const SectionContainer = ({ children, ...props }: SectionContainerProps) => {
   return (
-    <VStack as="section" align="stretch" flexGrow={1} spacing={0} {...props}>
+    <HStack
+      as="section"
+      align="stretch"
+      flexGrow={1}
+      spacing={0}
+      {...props}
+      alignItems="center"
+      justifyContent="center"
+    >
       {children}
-    </VStack>
+    </HStack>
   )
 }
 

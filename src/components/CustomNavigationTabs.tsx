@@ -25,12 +25,15 @@ const CustomNavigationTabs = ({ tabs }: CustomNavigationTabsProps) => {
   return (
     <HStack
       position="relative"
+      maxWidth="1440px"
       height={{ base: '76px', md: '64px', lg: '72px' }}
+      margin="0 auto"
       padding={`${PADDING}px`}
       background="primary.200"
       border="1px solid"
       borderColor="white"
       borderRadius={{ base: '8px', md: '8px', lg: '16px' }}
+      boxSizing="content-box"
       spacing={0}
     >
       {tabs.map(({ label, href }) => {

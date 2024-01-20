@@ -74,10 +74,11 @@ const QuestionsForSetupCampaign = () => {
       <Flex
         alignItems={{ base: 'center', md: 'flex-start' }}
         flexDirection={{ base: 'column', md: 'row', lg: 'row' }}
-        // TO confirm
         flexGrow={1}
-        gap={{ base: '40px', md: 'auto', lg: 'auto' }}
+        gap={{ base: '40px' }}
+        maxWidth="1440px"
         padding={{ base: '40px 24px', md: '88px 128px', lg: '88px 148px' }}
+        boxSizing="content-box"
       >
         <Flex
           alignItems="start"

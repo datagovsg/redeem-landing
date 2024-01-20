@@ -13,7 +13,9 @@ const WhereToSpendYourRSGRewards = () => {
       <Flex
         flexDirection={{ base: 'column-reverse', md: 'row', lg: 'row' }}
         gap={{ base: '40px', md: '72px', lg: '132px' }}
+        maxWidth="1440px"
         padding={{ base: '40px 24px', md: '88px 128px', lg: '88px 148px' }}
+        boxSizing="content-box"
       >
         <Box>
           <Image

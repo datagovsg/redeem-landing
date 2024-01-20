@@ -22,8 +22,10 @@ const CTAToSetUpRSGRewards = () => {
     <SectionContainer background="primary.700">
       <VStack
         alignItems="center"
+        maxWidth="1440px"
         padding={{ base: '56px 24px', md: '88px 128px', lg: '88px 148px' }}
         textAlign="center"
+        boxSizing="content-box"
         spacing="32px"
       >
         <Image

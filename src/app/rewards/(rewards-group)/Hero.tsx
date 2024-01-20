@@ -12,11 +12,13 @@ const Hero = () => {
       <Flex
         flexDirection={{ base: 'column-reverse', md: 'row', lg: 'row' }}
         gap={{ base: '40px', md: '72px', lg: '120px' }}
+        maxWidth="1440px"
         padding={{
           base: '32px 24px 0',
           md: '88px 128px 0',
           lg: '88px 148px 0',
         }}
+        boxSizing="content-box"
       >
         <VStack
           align="start"
