@@ -92,6 +92,23 @@ export const textStyles = {
       fontFamily: 'body',
     },
   },
+  // Custom styles
+  'title-h1': {
+    fontWeight: 700,
+    lineHeight: '3.25rem',
+    fontSize: '3rem',
+    letterSpacing: '-0.022em',
+    fontFamily: 'body',
+    fontFeatureSettings: `'tnum' on, 'lnum' on, 'cv05' on`,
+  },
+  'title-h2': {
+    fontWeight: 700,
+    lineHeight: '2.25rem',
+    fontSize: '2rem',
+    letterSpacing: '-0.022em',
+    fontFamily: 'body',
+    fontFeatureSettings: `'tnum' on, 'lnum' on, 'cv05' on`,
+  },
   h1: {
     fontWeight: 600,
     lineHeight: '3rem',
@@ -281,5 +298,29 @@ export const textStyles = {
     letterSpacing: '-0.022em',
     fontFamily: 'body',
     fontFeatureSettings: `'cv05' on`,
+  },
+  'rsg-instruction-text': {
+    fontWeight: 700,
+    lineHeight: '1.0625rem',
+    fontSize: '0.6875rem',
+    letterSpacing: '-0.008em',
+    fontFamily: 'body',
+    fontFeatureSettings: `'tnum' on, 'lnum' on, 'cv05' on`,
+  },
+  'custom-tab-big': {
+    fontWeight: 500,
+    lineHeight: '0.875rem',
+    fontSize: '0.8125rem',
+    letterSpacing: '-0.006em',
+    fontFamily: 'body',
+    fontFeatureSettings: `'tnum' on, 'lnum' on, 'cv05' on`,
+  },
+  'custom-tab-small': {
+    fontWeight: 400,
+    lineHeight: '0.875rem',
+    fontSize: '0.625rem',
+    letterSpacing: '-0.006em',
+    fontFamily: 'body',
+    fontFeatureSettings: `'tnum' on, 'lnum' on, 'cv05' on`,
   },
 }

@@ -1,16 +1,10 @@
 import { Text, VStack } from '@chakra-ui/react'
-import { useIsMobile } from '@opengovsg/design-system-react'
 
 import { Image } from '~components/Image'
 import SectionContainer from '~components/SectionContainer'
 import SupermarketImage from '~images/Supermarket.svg'
 
 const WhereToSpendRSGRewards = () => {
-  const isMobile = useIsMobile()
-  const primaryTextWithBreaklines = isMobile
-    ? 'Where to spend\n your RedeemSG\n Rewards'
-    : 'Where to spend your\n RedeemSG Rewards'
-
   return (
     <SectionContainer background="primary.100">
       <VStack
@@ -27,7 +21,7 @@ const WhereToSpendRSGRewards = () => {
           textAlign="center"
           whiteSpace="pre-wrap"
         >
-          {primaryTextWithBreaklines}
+          Where to spend your RedeemSG Rewards
         </Text>
         <Image
           src={SupermarketImage}

@@ -16,8 +16,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={fonts.inter.className}>
+    <html lang="en" style={{ maxWidth: '100%', overflowX: 'hidden' }}>
+      <body
+        className={fonts.inter.className}
+        style={{ maxWidth: '100%', overflowX: 'hidden' }}
+      >
         <AppThemeProvider>
           <GovtMasthead color="primary.900" zIndex="docked" />
           {children}

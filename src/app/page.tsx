@@ -1,7 +1,10 @@
-'use client'
+import { redirect } from 'next/navigation'
 
-import { VStack } from '@chakra-ui/react'
+import { SPENDING } from '~constants/links'
 
-export default function Home() {
-  return <VStack as="main" align="stretch" flexGrow={1} spacing={0} />
+// Dummy page that does redirect only
+const page = () => {
+  redirect(SPENDING)
 }
+
+export default page

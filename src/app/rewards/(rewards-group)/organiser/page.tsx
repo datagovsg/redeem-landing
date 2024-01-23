@@ -16,9 +16,8 @@ export default function Page() {
           md: 'calc(100% - (2 * 128px))',
           lg: 'calc(100% - (2 * 148px))',
         }}
-        height="1px"
         margin="0 auto"
-        background="primary.200"
+        borderColor="primary.200"
       />
       <SetUpYourRSGCampaign />
       <QuestionsForSetupCampaign />

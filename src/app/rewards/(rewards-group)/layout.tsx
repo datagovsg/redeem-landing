@@ -33,7 +33,10 @@ export default function layout({ children }: { children: React.ReactNode }) {
           width="100%"
           padding={{ base: '0 8px', md: '0 128px', lg: '0 148px' }}
         >
-          <CustomNavigationTabs tabs={TABS} />
+          <CustomNavigationTabs
+            tabs={TABS}
+            height={{ base: '76px', md: '64px', lg: '72px' }}
+          />
         </Box>
       </VStack>
       {children}

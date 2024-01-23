@@ -1,4 +1,4 @@
-import { Box, HStack } from '@chakra-ui/react'
+import { Box, HStack, StackProps } from '@chakra-ui/react'
 import { usePathname } from 'next/navigation'
 
 import { InternalLink } from './InternalLink'
@@ -10,11 +10,17 @@ type TabProps = {
 
 type CustomNavigationTabsProps = {
   tabs: Readonly<TabProps[]>
+  height: StackProps['height']
+  renderText?: (label: string) => React.ReactNode
 }
 
 const PADDING = 8
 
-const CustomNavigationTabs = ({ tabs }: CustomNavigationTabsProps) => {
+const CustomNavigationTabs = ({
+  tabs,
+  height,
+  renderText = (label) => label,
+}: CustomNavigationTabsProps) => {
   const pathname = usePathname()
   if (tabs.length === 0) {
     return <Box />
@@ -26,14 +32,14 @@ const CustomNavigationTabs = ({ tabs }: CustomNavigationTabsProps) => {
     <HStack
       position="relative"
       maxWidth="1440px"
-      height={{ base: '76px', md: '64px', lg: '72px' }}
+      height={height}
       margin="0 auto"
       padding={`${PADDING}px`}
       background="primary.200"
       border="1px solid"
       borderColor="white"
       borderRadius={{ base: '8px', md: '8px', lg: '16px' }}
-      boxSizing="content-box"
+      boxSizing="border-box"
       spacing={0}
     >
       {tabs.map(({ label, href }) => {
@@ -56,7 +62,7 @@ const CustomNavigationTabs = ({ tabs }: CustomNavigationTabsProps) => {
             alignItems="center"
             justifyContent="center"
           >
-            {label}
+            {renderText(label)}
           </InternalLink>
         )
       })}

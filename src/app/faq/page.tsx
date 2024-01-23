@@ -13,16 +13,11 @@ const Page = () => {
       <FAQHeader />
       <VStack
         flexGrow={1}
-        padding={{ base: '48px 24px', md: '64px 264px' }}
+        padding={{ base: '48px 24px', sm: '64px 80px', lg: '64px 264px' }}
         spacing={{ base: '48px', md: '72px' }}
       >
         <OnGoingCampaignFAQ />
-        <Divider
-          width="100%"
-          height="1px"
-          margin="0 auto"
-          background="primary.200"
-        />
+        <Divider width="100%" margin="0 auto" borderColor="primary.200" />
         <VStack
           align="start"
           flexGrow={1}

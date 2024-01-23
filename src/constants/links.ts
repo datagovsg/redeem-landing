@@ -19,8 +19,19 @@ export const RSG_CDC_MERCHANT_FORM =
 export const RSG_REWARDS_WHERE_TO_SPEND = `${getBaseUrl()}/rewards/wheretospend`
 export const RSG_CDC_DONATE_FAQ = 'https://vouchers.cdc.gov.sg/donate/faq/'
 
+export const CDC_RESIDENTS_FAQ = 'https://vouchers.cdc.gov.sg/residents/faq/'
+export const CFHP_FAQ = 'https://www.climate-friendly-households.gov.sg/faq/'
+
 // Internal Link
 export const ROOT = '/'
 export const FAQ = '/faq'
+
+// REDEEMSG
+export const SPENDING = '/spending'
+export const ACCEPTING = '/accepting'
+export const DISBURSING = '/disbursing'
+
+// REDEEMSG REWARDS
+export const REWARDS = '/rewards'
 export const REWARDS_RESIDENT = '/rewards/resident'
 export const REWARDS_ORGANISER = '/rewards/organiser'

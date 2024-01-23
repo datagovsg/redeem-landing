@@ -13,7 +13,7 @@ const FAQHeader = () => {
         flexDirection={{ base: 'column', md: 'row' }}
         flexGrow={1}
         gap={{ base: '24px', md: '0px' }}
-        padding={{ base: '32px 24px 40px', md: '44px 148px' }}
+        padding={{ base: '32px 24px 40px', sm: '44px 80px', lg: '44px 264px' }}
       >
         <VStack align="start" spacing="16px">
           <Text textStyle="display-2" color="primary.700">

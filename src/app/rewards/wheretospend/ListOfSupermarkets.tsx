@@ -14,8 +14,8 @@ import {
   WTS_USTARS,
 } from '~constants/links'
 import { openInNewTab } from '~helper'
-import WTSColdStorageLogoImage from '~images/WTSColdStorageLogo.svg'
 // Images
+import WTSColdStorageLogoImage from '~images/WTSColdStorageLogo.svg'
 import WTSFairpriceLogoImage from '~images/WTSFairpriceLogo.svg'
 import WTSGiantLogoImage from '~images/WTSGiantLogo.svg'
 import WTSHAOMartLogoImage from '~images/WTSHAOMartLogo.svg'

@@ -3,7 +3,7 @@ import { TEnv } from './types'
 
 export const baseUrl: Record<TEnv, string> = {
   development: 'http://localhost:3000',
-  staging: 'https://landing-staging-redeem.gov.sg',
+  staging: 'https://staging.redeem.gov.sg',
   production: 'https://redeem.gov.sg',
 }
 

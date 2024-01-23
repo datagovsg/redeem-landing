@@ -4,17 +4,17 @@ import React from 'react'
 import CenterChildWithFixHeightAndWidth from '~components/CenterChildWithFixHeightAndWidth'
 import { Image } from '~components/Image'
 
-type HowToSpendYourRSGRewardsInstructionProps = {
+type RSGRewardsInstructionProps = {
   imageSrc: string
   stepIndex: number
-  stepInstruction: string | React.ReactNode
+  stepInstruction: React.ReactNode
 }
 
-const Instruction = ({
+const RSGRewardsInstruction = ({
   imageSrc,
   stepIndex,
   stepInstruction,
-}: HowToSpendYourRSGRewardsInstructionProps) => {
+}: RSGRewardsInstructionProps) => {
   return (
     <HStack alignItems="flex-start" spacing="24px">
       <CenterChildWithFixHeightAndWidth
@@ -57,4 +57,4 @@ const Instruction = ({
   )
 }
 
-export default Instruction
+export default RSGRewardsInstruction

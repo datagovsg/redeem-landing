@@ -26,6 +26,8 @@ export const theme = extendTheme(ogpTheme, {
   breakpoints: {
     base: '0em', // 0px
     sm: '30em', // ~480px. em is a relative unit and is dependant on the font size.
+    // Special breakpoint. Do not use unless there is a need
+    smd: '43em', // ~688px
     md: '48em', // ~768px
     lg: '62em', // ~992px
     xl: '80em', // ~1280px

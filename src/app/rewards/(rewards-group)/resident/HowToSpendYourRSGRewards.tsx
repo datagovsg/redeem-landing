@@ -1,20 +1,20 @@
 import { Flex, Link, Text, VStack } from '@chakra-ui/react'
 
-import Instruction from '../Instruction'
+import RSGRewardsInstruction from '../RSGRewardsInstruction'
 
 import { Image } from '~components/Image'
 import SectionContainer from '~components/SectionContainer'
 import { RSG_REWARDS_WHERE_TO_SPEND } from '~constants/links'
+import { genStepIndexForInstructions } from '~helper'
 import HowToSpendYourRSGRewardsImage from '~images/HowToSpendYourRSGRewards.svg'
 import SpendRSGRewardsStep1Image from '~images/SpendRSGRewardsStep1.svg'
 import SpendRSGRewardsStep2Image from '~images/SpendRSGRewardsStep2.svg'
 import SpendRSGRewardsStep3Image from '~images/SpendRSGRewardsStep3.svg'
 
 // I could leave out the index, but just adding it in manually
-const INSTRUCTIONS = [
+const INSTRUCTIONS = genStepIndexForInstructions([
   {
     imageSrc: SpendRSGRewardsStep1Image,
-    stepIndex: 1,
     stepInstruction: (
       <Text textStyle="body-1" color="neutral.700">
         {
@@ -28,7 +28,6 @@ const INSTRUCTIONS = [
   },
   {
     imageSrc: SpendRSGRewardsStep2Image,
-    stepIndex: 2,
     stepInstruction: (
       <Text textStyle="body-1" color="neutral.700">
         <Text as="span">{'Go to '}</Text>
@@ -51,7 +50,6 @@ const INSTRUCTIONS = [
   },
   {
     imageSrc: SpendRSGRewardsStep3Image,
-    stepIndex: 3,
     stepInstruction: (
       <Text textStyle="body-1" color="neutral.700">
         Show your voucher&apos;s QR code to the cashier while you are making
@@ -59,7 +57,7 @@ const INSTRUCTIONS = [
       </Text>
     ),
   },
-] as const
+])
 
 const HowToSpendYourRSGRewards = () => {
   return (
@@ -86,7 +84,10 @@ const HowToSpendYourRSGRewards = () => {
             spacing={{ base: '32px', md: '32px', lg: '40px' }}
           >
             {INSTRUCTIONS.map((instruction) => (
-              <Instruction {...instruction} key={instruction.stepIndex} />
+              <RSGRewardsInstruction
+                {...instruction}
+                key={instruction.stepIndex}
+              />
             ))}
           </VStack>
         </VStack>

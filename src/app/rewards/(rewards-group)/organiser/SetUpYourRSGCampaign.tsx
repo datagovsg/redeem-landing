@@ -1,34 +1,32 @@
 import { Flex, Text, VStack } from '@chakra-ui/react'
 
-import Instruction from '../Instruction'
+import RSGRewardsInstruction from '../RSGRewardsInstruction'
 
 import { Image } from '~components/Image'
 import SectionContainer from '~components/SectionContainer'
+import { genStepIndexForInstructions } from '~helper'
 import SetUpRSGCampaignStep1Image from '~images/SetUpRSGCampaignStep1.svg'
 import SetUpRSGCampaignStep2Image from '~images/SetUpRSGCampaignStep2.svg'
 import SetUpRSGCampaignStep3Image from '~images/SetUpRSGCampaignStep3.svg'
 import SetUpYourRSGCampaignImage from '~images/SetUpYourRSGCampaign.svg'
 
-const INSTRUCTIONS = [
+const INSTRUCTIONS = genStepIndexForInstructions([
   {
     imageSrc: SetUpRSGCampaignStep1Image,
-    stepIndex: 1,
     stepInstruction:
       'Set up the campaign on RedeemSG. Decide the voucher amount and validity period.',
   },
   {
     imageSrc: SetUpRSGCampaignStep2Image,
-    stepIndex: 2,
     stepInstruction:
       'Vouchers can be directly sent to eligible recipients, or recipients can claim vouchers after logging in with Singpass to verify their details.',
   },
   {
     imageSrc: SetUpRSGCampaignStep3Image,
-    stepIndex: 3,
     stepInstruction:
       "Track campaign performance. Easily monitor your campaigns' performance on the dashboard or reports provided.",
   },
-] as const
+])
 
 const SetUpYourRSGCampaign = () => {
   return (
@@ -58,7 +56,10 @@ const SetUpYourRSGCampaign = () => {
             spacing={{ base: '32px', md: '32px', lg: '40px' }}
           >
             {INSTRUCTIONS.map((instruction) => (
-              <Instruction {...instruction} key={instruction.stepIndex} />
+              <RSGRewardsInstruction
+                {...instruction}
+                key={instruction.stepIndex}
+              />
             ))}
           </VStack>
         </VStack>

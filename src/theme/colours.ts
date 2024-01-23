@@ -12,6 +12,7 @@ type ThemeColorScheme =
   | 'red'
   | 'divider'
   | 'content'
+  | 'rsgInstructionColors'
 
 export const colors: { [key in ThemeColorScheme]: Record<string, string> } = {
   primary: {
@@ -26,10 +27,11 @@ export const colors: { [key in ThemeColorScheme]: Record<string, string> } = {
     800: '#222757',
     900: '#1B1E44',
   },
-  // TODO: Design pallet is off for this part here
+  // TODO: Design palette is off for this part here
   secondary: {
     100: '#F6F7FC',
     500: '#445072',
+    700: '#293044',
   },
   success: {
     100: '#F0F8F3',
@@ -97,5 +99,9 @@ export const colors: { [key in ThemeColorScheme]: Record<string, string> } = {
     default: '#454953',
     strong: '#2C2E34',
     medium: '#666C7A',
+  },
+  rsgInstructionColors: {
+    background: '#DADDFD',
+    text: '#515BB2',
   },
 }
