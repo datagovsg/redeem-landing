@@ -10,6 +10,7 @@ import {
   Text,
   VStack,
 } from '@chakra-ui/react'
+import { useState } from 'react'
 import { BiRightArrowAlt } from 'react-icons/bi'
 
 import CenterChildWithFixHeightAndWidth from '~components/CenterChildWithFixHeightAndWidth'
@@ -17,6 +18,7 @@ import { Image } from '~components/Image'
 import Infobox from '~components/Infobox'
 import SectionContainer from '~components/SectionContainer'
 // Images
+import SelectSuitableMErchantsCustomImage from '~images/SelectSuitableMerchantsCustom.svg'
 import SelectSuitableMerchantsRSGRewardsImage from '~images/SelectSuitableMerchantsRSGRewards.svg'
 import WTSColdStorageLogoImage from '~images/WTSColdStorageLogo.svg'
 import WTSFairpriceLogoImage from '~images/WTSFairpriceLogo.svg'
@@ -106,6 +108,7 @@ const RedeemSGRewardsTab = () => {
             borderRadius="50%"
             background={backgroundColor}
             key={label}
+            padding="4px"
           >
             <Image src={imageSrc} alt={label} />
           </CenterChildWithFixHeightAndWidth>
@@ -163,7 +166,15 @@ const CustomisedMerchantTab = () => {
   )
 }
 
+const MERCHANT_IMAGES = [
+  SelectSuitableMerchantsRSGRewardsImage,
+  SelectSuitableMErchantsCustomImage,
+]
+
 const SelectMerchants = () => {
+  const [tabIndex, setTabIndex] = useState(0)
+  const merchantImage = MERCHANT_IMAGES[tabIndex]
+
   return (
     <SectionContainer>
       <Flex
@@ -199,7 +210,7 @@ const SelectMerchants = () => {
             Select suitable merchants, tailored to your goals
           </Text>
 
-          <Tabs width="100%">
+          <Tabs width="100%" onChange={(index) => setTabIndex(index)}>
             <Box overflow="auto">
               <TabList overflowX="scroll" width="max-content">
                 <Tab>
@@ -240,7 +251,7 @@ const SelectMerchants = () => {
           <Image
             // layout="responsive"
             width={{ lg: '404px', sm: '288px', base: '280px' }}
-            src={SelectSuitableMerchantsRSGRewardsImage}
+            src={merchantImage}
             alt="select suitable merchants"
           />
         </Flex>

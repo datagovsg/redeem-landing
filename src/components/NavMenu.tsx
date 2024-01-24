@@ -1,3 +1,5 @@
+'use client'
+
 import { HStack } from '@chakra-ui/react'
 import { Link as ExternalNavMenuLink } from '@chakra-ui/react'
 import { useIsMobile } from '@opengovsg/design-system-react'

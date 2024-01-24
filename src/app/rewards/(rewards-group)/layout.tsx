@@ -35,6 +35,8 @@ export default function layout({ children }: { children: React.ReactNode }) {
         >
           <CustomNavigationTabs
             tabs={TABS}
+            paddingObject={{ base: 8, smd: 8 }}
+            borderRadius={{ base: '4px', md: '8px', lg: '12px' }}
             height={{ base: '76px', md: '64px', lg: '72px' }}
           />
         </Box>

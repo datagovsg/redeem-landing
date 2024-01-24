@@ -1,3 +1,5 @@
+'use client'
+
 import { Flex, Text } from '@chakra-ui/react'
 import { RestrictedFooter } from '@opengovsg/design-system-react'
 
@@ -41,7 +43,7 @@ const AppFooter = () => {
           label: 'Privacy',
         },
         {
-          href: '/terms',
+          href: '/terms-of-use',
           label: 'Terms of Use',
         },
         {

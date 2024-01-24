@@ -17,3 +17,7 @@ run
 ```bash
 pnpm run dev
 ```
+
+## Note
+
+- I am just anyhow doing useclient since i just want this to SSG

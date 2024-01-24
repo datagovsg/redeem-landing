@@ -6,7 +6,7 @@ type CenterChildWithFixHeightAndWidthProps = {
   children: React.ReactNode
   height: FlexProps['height']
   width: FlexProps['width']
-}
+} & FlexProps
 
 const CenterChildWithFixHeightAndWidth = ({
   background,
@@ -14,6 +14,7 @@ const CenterChildWithFixHeightAndWidth = ({
   children,
   height,
   width,
+  ...props
 }: CenterChildWithFixHeightAndWidthProps) => {
   return (
     <Flex
@@ -26,6 +27,7 @@ const CenterChildWithFixHeightAndWidth = ({
       maxHeight={height}
       background={background}
       borderRadius={borderRadius}
+      {...props}
     >
       {children}
     </Flex>
