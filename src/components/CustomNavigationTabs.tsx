@@ -33,10 +33,11 @@ const CustomNavigationTabs = ({
   paddingObject,
 }: CustomNavigationTabsProps) => {
   const pathname = usePathname()
-  const padding = useBreakpointValue(
-    { base: paddingObject.base, smd: paddingObject.smd },
-    { ssr: false },
-  )
+  const padding =
+    useBreakpointValue(
+      { base: paddingObject.base, smd: paddingObject.smd },
+      { ssr: false },
+    ) ?? 8 // defaults to 8px
 
   if (tabs.length === 0) {
     return <Box />
