@@ -1,3 +1,5 @@
+'use client'
+
 import {
   Box,
   BoxProps,
@@ -36,7 +38,7 @@ const CustomNavigationTabs = ({
   const padding =
     useBreakpointValue(
       { base: paddingObject.base, smd: paddingObject.smd },
-      { ssr: false },
+      { ssr: true, fallback: 'smd' },
     ) ?? 8 // defaults to 8px
 
   if (tabs.length === 0) {
