@@ -1,6 +1,7 @@
 'use client'
 
 import { Box, Button, Text, VStack } from '@chakra-ui/react'
+import NextLink from 'next/link'
 import { BiRightArrowAlt } from 'react-icons/bi'
 
 import { Image } from '~components/Image'
@@ -49,14 +50,21 @@ const Hero = ({ imgSrc, imgAlt }: HeroProps) => {
             Singapore&apos;s governmental agencies easily create, issue, and
             track digital vouchers.
           </Text>
-          <Button
-            colorScheme="primary"
-            onClick={() => {}}
-            rightIcon={<BiRightArrowAlt />}
-            variant="solid"
+
+          <NextLink
+            href="https://signup.redeem.gov.sg/"
+            passHref
+            legacyBehavior
           >
-            View available vouchers
-          </Button>
+            <Button
+              as="a"
+              colorScheme="primary"
+              rightIcon={<BiRightArrowAlt />}
+              variant="solid"
+            >
+              View available vouchers
+            </Button>
+          </NextLink>
         </VStack>
         <Box width="100%">
           <Image src={imgSrc} alt={imgAlt} width="100%" />

@@ -10,6 +10,7 @@ import {
   Text,
   VStack,
 } from '@chakra-ui/react'
+import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { BiRightArrowAlt } from 'react-icons/bi'
 
@@ -17,6 +18,8 @@ import CenterChildWithFixHeightAndWidth from '~components/CenterChildWithFixHeig
 import { Image } from '~components/Image'
 import Infobox from '~components/Infobox'
 import SectionContainer from '~components/SectionContainer'
+import { REWARDS, RSG_CDC_CAMPAIGN_ORGANISER_FORM } from '~constants/links'
+import { openInNewTab } from '~helper'
 // Images
 import SelectSuitableMErchantsCustomImage from '~images/SelectSuitableMerchantsCustom.svg'
 import SelectSuitableMerchantsRSGRewardsImage from '~images/SelectSuitableMerchantsRSGRewards.svg'
@@ -69,6 +72,8 @@ const MERCHANT_LOGO_LIST = [
 ] as const
 
 const RedeemSGRewardsTab = () => {
+  const router = useRouter()
+
   return (
     <VStack
       align="start"
@@ -116,7 +121,7 @@ const RedeemSGRewardsTab = () => {
       </Flex>
       <Button
         colorScheme="primary"
-        onClick={() => {}}
+        onClick={() => router.push(REWARDS)}
         rightIcon={<BiRightArrowAlt />}
         variant="solid"
       >
@@ -156,7 +161,7 @@ const CustomisedMerchantTab = () => {
       />
       <Button
         colorScheme="primary"
-        onClick={() => {}}
+        onClick={() => openInNewTab(RSG_CDC_CAMPAIGN_ORGANISER_FORM)}
         rightIcon={<BiRightArrowAlt />}
         variant="solid"
       >
