@@ -35,7 +35,7 @@ const INSTRUCTIONS = genStepIndexForInstructions([
           as="a"
           textStyle={{
             base: 'text-editor-link',
-            md: 'text-editor-link-small',
+            sm: 'text-editor-link-small',
             lg: 'text-editor-link',
           }}
           color="primary.500"
@@ -64,15 +64,19 @@ const HowToSpendYourRSGRewards = () => {
     <SectionContainer>
       <Flex
         alignItems={{ base: 'center' }}
+        justifyContent="space-between"
         flexDirection={{ base: 'column', lg: 'row' }}
         flexGrow={1}
         gap={{ base: '40px', lg: '132px' }}
         maxWidth="1440px"
         height="fit-content"
-        padding={{ base: '0 24px 40px', lg: '0 148px 88px' }}
+        padding={{ base: '0 24px 40px', md: '88px 128px', lg: '0 148px 88px' }}
         boxSizing="content-box"
       >
-        <VStack align="start" spacing={{ base: '32px', lg: '44px' }}>
+        <VStack
+          align="start"
+          spacing={{ base: '32px', md: '44px', lg: '44px' }}
+        >
           <Text
             textStyle={{ base: 'h3-semibold', md: 'h2', lg: 'h1' }}
             color="neutral.900"

@@ -1,14 +1,9 @@
-import { Box } from '@chakra-ui/react'
 import Lottie from 'lottie-react'
 
 import RedeemSGRewardsHeroAnimation from '~animations/RedeemSGRewardsHeroAnimation.json'
 
 const HeroAnimation = () => {
-  return (
-    <Box>
-      <Lottie animationData={RedeemSGRewardsHeroAnimation} loop={true} />
-    </Box>
-  )
+  return <Lottie animationData={RedeemSGRewardsHeroAnimation} loop={true} />
 }
 
 export default HeroAnimation

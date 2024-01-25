@@ -10,8 +10,12 @@ const Hero = () => {
   return (
     <SectionContainer background="primary.100">
       <Flex
-        flexDirection={{ base: 'column-reverse', md: 'row', lg: 'row' }}
-        gap={{ base: '40px', md: '72px', lg: '120px' }}
+        flexDirection={{
+          base: 'column-reverse',
+          md: 'row',
+          lg: 'row',
+        }}
+        gap={{ base: '40px', sm: '4px', lg: '120px' }}
         maxWidth="1440px"
         padding={{
           base: '32px 24px 0',
