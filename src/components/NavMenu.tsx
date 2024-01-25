@@ -3,6 +3,7 @@
 import { HStack } from '@chakra-ui/react'
 import { Link as ExternalNavMenuLink } from '@chakra-ui/react'
 import { useIsMobile } from '@opengovsg/design-system-react'
+import { useRouter } from 'next/navigation'
 
 import { InternalNavMenuLink } from './NavMenuInternalLink'
 
@@ -32,6 +33,7 @@ const NavMenu = ({
   backgroundColor,
   textColor,
 }: NavMenuProps) => {
+  const router = useRouter()
   const isMobile = useIsMobile()
 
   return (
@@ -42,6 +44,8 @@ const NavMenu = ({
       background={backgroundColor}
     >
       <Image
+        cursor="pointer"
+        onClick={() => router.push(ROOT)}
         src={isMobile ? mobileLogo : desktopLogo}
         alt="RedeemSG"
         height={{ base: '34px', md: '24px', lg: '32px' }}

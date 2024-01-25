@@ -1,13 +1,21 @@
 import { Box, Button, Flex, Text, VStack } from '@chakra-ui/react'
+import { useRouter } from 'next/navigation'
+import { useEffect } from 'react'
 import { BiRightArrowAlt } from 'react-icons/bi'
 
 import { Image } from '~components/Image'
 import SectionContainer from '~components/SectionContainer'
-import { RSG_REWARDS_WHERE_TO_SPEND } from '~constants/links'
+import { REWARDS, RSG_REWARDS_WHERE_TO_SPEND } from '~constants/links'
 import { openInNewTab } from '~helper'
 import WhereToSpendYourRSGRewardsImage from '~images/WhereToSpendYourRSGRewards.svg'
 
 const WhereToSpendYourRSGRewards = () => {
+  const router = useRouter()
+
+  useEffect(() => {
+    router.prefetch(REWARDS)
+  }, [router])
+
   return (
     <SectionContainer background="primary.100">
       <Flex

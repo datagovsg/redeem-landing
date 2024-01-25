@@ -8,6 +8,7 @@ import {
   VStack,
 } from '@chakra-ui/react'
 import { useRouter } from 'next/navigation'
+import { useEffect } from 'react'
 
 import CenterChildWithFixHeightAndWidth from '~components/CenterChildWithFixHeightAndWidth'
 import { Image } from '~components/Image'
@@ -20,6 +21,10 @@ import VouchersRSGRewardsLogoImage from '~images/VouchersRSGRewardsLogo.svg'
 
 const SearchingForSpecificVoucher = () => {
   const router = useRouter()
+
+  useEffect(() => {
+    router.prefetch(REWARDS)
+  }, [router])
 
   const VOUCHERS_INFORMATION = [
     {

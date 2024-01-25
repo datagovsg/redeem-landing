@@ -11,7 +11,7 @@ import {
   VStack,
 } from '@chakra-ui/react'
 import { useRouter } from 'next/navigation'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { BiRightArrowAlt } from 'react-icons/bi'
 
 import CenterChildWithFixHeightAndWidth from '~components/CenterChildWithFixHeightAndWidth'
@@ -73,6 +73,10 @@ const MERCHANT_LOGO_LIST = [
 
 const RedeemSGRewardsTab = () => {
   const router = useRouter()
+
+  useEffect(() => {
+    router.prefetch(REWARDS)
+  }, [router])
 
   return (
     <VStack
