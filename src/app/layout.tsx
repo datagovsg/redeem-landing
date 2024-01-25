@@ -32,7 +32,7 @@ export default function RootLayout({
             applicationId: 'fbd611f5-4a3f-4958-982a-50dae8a4ac9a',
             site: 'datadoghq.com',
             service: 'next-app-router-rum',
-            env: ${process.env.NEXT_PUBLIC_APP_ENV},
+            env: '${process.env.NEXT_PUBLIC_APP_ENV}',
             // Specify a version number to identify the deployed version of your application in Datadog
             version: '1.0.0',
             sampleRate: 1,
