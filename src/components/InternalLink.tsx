@@ -14,5 +14,6 @@ export const InternalLink = chakra(NextLink, {
       'variants',
       'width',
       '_hover',
+      'scroll',
     ].includes(prop),
 })

@@ -78,6 +78,7 @@ const CustomNavigationTabs = ({
             display="flex"
             alignItems="center"
             justifyContent="center"
+            scroll={false}
           >
             {renderText(label)}
           </InternalLink>
