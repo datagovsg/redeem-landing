@@ -1,3 +1,4 @@
+import { Link } from '@chakra-ui/next-js'
 import {
   Box,
   BoxProps,
@@ -6,8 +7,6 @@ import {
   useBreakpointValue,
 } from '@chakra-ui/react'
 import { usePathname } from 'next/navigation'
-
-import { InternalLink } from './InternalLink'
 
 type TabProps = {
   href: string
@@ -63,7 +62,7 @@ const CustomNavigationTabs = ({
         const isSelected = href === pathname
 
         return (
-          <InternalLink
+          <Link
             key={label}
             zIndex={1}
             href={href}
@@ -78,10 +77,14 @@ const CustomNavigationTabs = ({
             display="flex"
             alignItems="center"
             justifyContent="center"
+            textDecoration="none"
+            _hover={{
+              textDecoration: 'none',
+            }}
             scroll={false}
           >
             {renderText(label)}
-          </InternalLink>
+          </Link>
         )
       })}
       <Box

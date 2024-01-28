@@ -11,7 +11,7 @@ const AppName = () => {
   return (
     <Flex
       alignItems="flex-start"
-      flexDirection={{ base: 'column', lg: 'row' }}
+      flexDirection={{ base: 'column', '2xl': 'row' }}
       gap={{ base: '8px', lg: '16px' }}
     >
       <Image

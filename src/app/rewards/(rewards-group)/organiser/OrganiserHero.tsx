@@ -1,7 +1,6 @@
-import { Text, VStack } from '@chakra-ui/react'
+import { Link, Text, VStack } from '@chakra-ui/react'
 
 import { Image } from '~components/Image'
-import { InternalLink } from '~components/InternalLink'
 import SectionContainer from '~components/SectionContainer'
 import { RSG_REWARDS_WHERE_TO_SPEND } from '~constants/links'
 import SupermarketImage from '~images/Supermarket.svg'
@@ -10,7 +9,9 @@ const OrganiserHero = () => {
   return (
     <SectionContainer>
       <VStack
+        maxWidth="1440px"
         padding={{ base: '0 24px 40px', md: '88px 128px', lg: '0 148px 88px' }}
+        boxSizing="content-box"
         spacing={{ base: '40px', md: '44px', lg: '80px' }}
       >
         <VStack
@@ -35,16 +36,15 @@ const OrganiserHero = () => {
             {
               'Simply decide on the voucher amount and validity period, and issue the vouchers to eligible recipients! These vouchers can be spent at '
             }
-            <InternalLink
-              textStyle={{ base: 'body-1', lg: 'text-editor-link' }}
+            <Link
+              // textStyle={{ base: 'body-1', lg: 'text-editor-link' }}
               color="primary.500"
+              textDecoration="underline"
               href={RSG_REWARDS_WHERE_TO_SPEND}
-              _hover={{
-                textDecoration: 'underline',
-              }}
+              isExternal
             >
               all participating supermarkets ↪
-            </InternalLink>
+            </Link>
           </Text>
         </VStack>
         <Image src={SupermarketImage} alt="RedeemSG Organiser Page" />

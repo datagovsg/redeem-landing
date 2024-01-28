@@ -57,7 +57,7 @@ export default function layout({
             tabs={TABS}
             paddingObject={{ base: 4, smd: 8 }}
             borderRadius={{ base: '4px', sm: '8px', smd: '12px' }}
-            height={{ lg: '72px', md: '72px', sm: '64px', base: '54px' }}
+            height={{ lg: '72px', md: '72px', sm: '56px', base: '54px' }}
             renderText={(label) => {
               // Since this is something we can control, we will split by space
               const individualWord = label.split(' ')

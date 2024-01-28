@@ -1,10 +1,10 @@
+import { Link } from '@chakra-ui/next-js'
 import { Flex } from '@chakra-ui/react'
 
 import FAQWithHeaderAndListOfQuestionsAndAnswers from '~/app/faq/(components)/FAQWithHeaderAndListOfQuestionsAndAnswers'
 import SimpleAnswerContainer from '~/app/faq/(components)/SimpleAnswerContainer'
 
 import { Image } from '~components/Image'
-import { InternalLink } from '~components/InternalLink'
 import SectionContainer from '~components/SectionContainer'
 import {
   RSG_CDC_CAMPAIGN_ORGANISER_FORM,
@@ -94,9 +94,14 @@ const QuestionsForSetupCampaign = () => {
             questionTitleColor="secondary.500"
             answerTextColor="secondary.500"
           />
-          <InternalLink href={FAQ} textStyle="subhead-1" color="primary.500">
+          <Link
+            href={FAQ}
+            textStyle="subhead-1"
+            color="primary.500"
+            textDecoration="none"
+          >
             View more FAQs
-          </InternalLink>
+          </Link>
         </Flex>
         <Image
           src={QuestionImage}

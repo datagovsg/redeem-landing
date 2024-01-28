@@ -32,13 +32,13 @@ const INSTRUCTIONS = genStepIndexForInstructions([
       <Text textStyle="body-1" color="neutral.700">
         <Text as="span">{'Go to '}</Text>
         <Link
-          as="a"
-          textStyle={{
-            base: 'text-editor-link',
-            sm: 'text-editor-link-small',
-            lg: 'text-editor-link',
-          }}
+          // textStyle={{
+          //   base: 'text-editor-link',
+          //   sm: 'text-editor-link-small',
+          //   lg: 'text-editor-link',
+          // }}
           color="primary.500"
+          textDecoration="underline"
           href={RSG_REWARDS_WHERE_TO_SPEND}
           isExternal
         >
@@ -63,7 +63,7 @@ const HowToSpendYourRSGRewards = () => {
   return (
     <SectionContainer>
       <Flex
-        alignItems={{ base: 'center' }}
+        alignItems={{ base: 'center', lg: 'flex-start' }}
         justifyContent="space-between"
         flexDirection={{ base: 'column', lg: 'row' }}
         flexGrow={1}

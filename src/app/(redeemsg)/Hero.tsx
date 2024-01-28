@@ -67,7 +67,7 @@ const Hero = ({ imgSrc, imgAlt }: HeroProps) => {
           </NextLink>
         </VStack>
         <Box width="100%">
-          <Image src={imgSrc} alt={imgAlt} width="100%" />
+          <Image src={imgSrc} alt={imgAlt} width="100%" priority={true} />
         </Box>
       </VStack>
     </SectionContainer>

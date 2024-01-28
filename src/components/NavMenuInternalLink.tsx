@@ -1,4 +1,4 @@
-import { InternalLink } from '~components/InternalLink'
+import { Link } from '@chakra-ui/next-js'
 
 type NavLinkProps = {
   isExternal: boolean
@@ -13,11 +13,10 @@ export const InternalNavMenuLink = ({
   textColor,
 }: NavLinkProps) => {
   return (
-    <InternalLink
+    <Link
       color={textColor}
       textStyle="subhead-1"
       width="fit-content"
-      // @ts-expect-error. Seems like a ts bug that doesnt recognise variant after forwarding props
       variant="standalone"
       _hover={{
         textDecoration: 'underline',
@@ -25,6 +24,6 @@ export const InternalNavMenuLink = ({
       href={href}
     >
       {label}
-    </InternalLink>
+    </Link>
   )
 }

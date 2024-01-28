@@ -98,11 +98,14 @@ const RSGStaticStatistics = ({ backgroundColor }: RSGStaticStatisticsProps) => {
             ))}
           </Grid>
         </VStack>
-        <Image
-          src={StaticStatisticHeroImage}
-          alt="statistics hero image"
-          width="100%"
-        />
+        {/* Attempt fix to prevent extra pixels by next/image at times: https://github.com/vercel/next.js/issues/18911 */}
+        <Box width="100%" fontSize={0} letterSpacing={0}>
+          <Image
+            src={StaticStatisticHeroImage}
+            alt="statistics hero image"
+            width="100%"
+          />
+        </Box>
       </VStack>
     </SectionContainer>
   )

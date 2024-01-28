@@ -18,7 +18,11 @@ import CenterChildWithFixHeightAndWidth from '~components/CenterChildWithFixHeig
 import { Image } from '~components/Image'
 import Infobox from '~components/Infobox'
 import SectionContainer from '~components/SectionContainer'
-import { REWARDS, RSG_CDC_CAMPAIGN_ORGANISER_FORM } from '~constants/links'
+import {
+  REWARDS,
+  REWARDS_RESIDENT,
+  RSG_CDC_CAMPAIGN_ORGANISER_FORM,
+} from '~constants/links'
 import { openInNewTab } from '~helper'
 // Images
 import SelectSuitableMErchantsCustomImage from '~images/SelectSuitableMerchantsCustom.svg'
@@ -76,6 +80,7 @@ const RedeemSGRewardsTab = () => {
 
   useEffect(() => {
     router.prefetch(REWARDS)
+    router.prefetch(REWARDS_RESIDENT)
   }, [router])
 
   return (
@@ -125,7 +130,7 @@ const RedeemSGRewardsTab = () => {
       </Flex>
       <Button
         colorScheme="primary"
-        onClick={() => router.push(REWARDS)}
+        onClick={() => router.push(REWARDS_RESIDENT)}
         rightIcon={<BiRightArrowAlt />}
         variant="solid"
       >

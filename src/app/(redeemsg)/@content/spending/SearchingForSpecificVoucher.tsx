@@ -13,7 +13,12 @@ import { useEffect } from 'react'
 import CenterChildWithFixHeightAndWidth from '~components/CenterChildWithFixHeightAndWidth'
 import { Image } from '~components/Image'
 import SectionContainer from '~components/SectionContainer'
-import { CDC_RESIDENTS_FAQ, CFHP_FAQ, REWARDS } from '~constants/links'
+import {
+  CDC_RESIDENTS_FAQ,
+  CFHP_FAQ,
+  REWARDS,
+  REWARDS_RESIDENT,
+} from '~constants/links'
 import { openInNewTab } from '~helper'
 import VouchersCDCLogoImage from '~images/VouchersCDCLogo.svg'
 import VouchersNEACFHPLogoImage from '~images/VouchersNEACFHPLogo.svg'
@@ -24,6 +29,7 @@ const SearchingForSpecificVoucher = () => {
 
   useEffect(() => {
     router.prefetch(REWARDS)
+    router.prefetch(REWARDS_RESIDENT)
   }, [router])
 
   const VOUCHERS_INFORMATION = [
@@ -46,7 +52,7 @@ const SearchingForSpecificVoucher = () => {
       imageSrc: VouchersRSGRewardsLogoImage,
       buttonText: 'Go to RedeemSG Rewards',
       backgroundColor: '#E9EBFF',
-      onClick: () => router.push(REWARDS),
+      onClick: () => router.push(REWARDS_RESIDENT),
     },
   ]
 
@@ -102,7 +108,12 @@ const SearchingForSpecificVoucher = () => {
                       {label}
                     </Text>
                   </Flex>
-                  <Button onClick={onClick} variant="outline">
+                  <Button
+                    height="fit-content"
+                    textAlign="left"
+                    onClick={onClick}
+                    variant="outline"
+                  >
                     {buttonText}
                   </Button>
                 </VStack>

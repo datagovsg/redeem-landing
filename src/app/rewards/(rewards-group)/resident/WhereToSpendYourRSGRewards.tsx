@@ -5,7 +5,11 @@ import { BiRightArrowAlt } from 'react-icons/bi'
 
 import { Image } from '~components/Image'
 import SectionContainer from '~components/SectionContainer'
-import { REWARDS, RSG_REWARDS_WHERE_TO_SPEND } from '~constants/links'
+import {
+  REWARDS,
+  REWARDS_RESIDENT,
+  RSG_REWARDS_WHERE_TO_SPEND,
+} from '~constants/links'
 import { openInNewTab } from '~helper'
 import WhereToSpendYourRSGRewardsImage from '~images/WhereToSpendYourRSGRewards.svg'
 
@@ -14,6 +18,7 @@ const WhereToSpendYourRSGRewards = () => {
 
   useEffect(() => {
     router.prefetch(REWARDS)
+    router.prefetch(REWARDS_RESIDENT)
   }, [router])
 
   return (
