@@ -263,7 +263,7 @@ const SelectMerchants = () => {
         </VStack>
         <Flex minWidth="156px">
           <Image
-            // layout="responsive"
+            quality={100}
             width={{ lg: '404px', sm: '288px', base: '280px' }}
             src={merchantImage}
             alt="select suitable merchants"

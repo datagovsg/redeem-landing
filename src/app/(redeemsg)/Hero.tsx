@@ -66,7 +66,7 @@ const Hero = ({ imgSrc, imgAlt }: HeroProps) => {
             </Button>
           </NextLink>
         </VStack>
-        <Box width="100%">
+        <Box position="relative" width="100%">
           <Image src={imgSrc} alt={imgAlt} width="100%" priority={true} />
         </Box>
       </VStack>
