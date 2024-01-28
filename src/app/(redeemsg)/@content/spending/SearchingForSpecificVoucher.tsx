@@ -79,9 +79,10 @@ const SearchingForSpecificVoucher = () => {
           </Text>
         </Box>
         <Grid
-          gridGap={{ lg: '128px', base: '56px' }}
+          gridGap={{ '2xl': '128px', lg: '96px', base: '56px' }}
           gridTemplateColumns={{
-            lg: '1fr 1fr 1fr',
+            xl: '1fr 1fr 1fr',
+            lg: '1fr 1fr',
             md: '1fr 1fr',
             base: '1fr',
           }}
