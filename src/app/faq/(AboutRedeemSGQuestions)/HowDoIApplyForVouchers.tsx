@@ -24,6 +24,9 @@ const HowDoIApplyForVouchers = () => {
             <Link
               textStyle="text-editor-link-small"
               color="primary.500"
+              _hover={{
+                color: 'primary.600',
+              }}
               href={href}
               isExternal
             >

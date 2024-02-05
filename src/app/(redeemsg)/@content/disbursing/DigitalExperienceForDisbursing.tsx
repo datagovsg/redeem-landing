@@ -13,21 +13,21 @@ const DIGITAL_BENEFITS = [
     badgeText: 'Scheme organiser benefits',
     title: 'Easy tracking and financial reconciliation',
     description:
-      'View campaign transactions in real-time, and download reports for financial reconcillation.',
+      'Effortlessly track redemptions and reconcile finances using the admin portal or by downloading reports.',
   },
   {
     imgSrc: DigitalMerchantBenefitsImage,
     badgeText: 'Merchant benefits',
-    title: 'Automated next day payouts to merchants',
+    title: 'Next day payouts to merchants',
     description:
-      'Better cashflow for local, small-scale merchants with daily automated payouts.',
+      'Support local merchants and their cashflow through automated next-day payouts.',
   },
   {
     imgSrc: DigitalRecipientBenefitsImage,
     badgeText: 'Recipient benefits',
-    title: 'Designed to be quick, easy and usable for all',
+    title: 'Inclusive voucher redemption for all ',
     description:
-      'Easy claiming of vouchers, with a single unique link. Paper vouchers available for the less tech-savvy or aged.',
+      'Easily spend vouchers without a mobile app or opt for paper for the less digitally savvy.',
   },
 ] as const
 

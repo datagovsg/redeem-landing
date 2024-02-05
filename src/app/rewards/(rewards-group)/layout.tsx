@@ -8,8 +8,8 @@ import CustomNavigationTabs from '~components/CustomNavigationTabs'
 import { REWARDS_ORGANISER, REWARDS_RESIDENT } from '~constants/links'
 
 const TABS = [
-  { href: REWARDS_RESIDENT, label: 'Spending vouchers' },
   { href: REWARDS_ORGANISER, label: 'Disbursing vouchers' },
+  { href: REWARDS_RESIDENT, label: 'Spending vouchers' },
 ] as const
 
 export default function layout({ children }: { children: React.ReactNode }) {

@@ -4,7 +4,6 @@ import SimpleAnswerContainer from './(components)/SimpleAnswerContainer'
 import SectionContainer from '~components/SectionContainer'
 import {
   RSG_CDC_CAMPAIGN_ORGANISER_FORM,
-  RSG_CDC_DONATE_FAQ,
   RSG_REWARDS_WHERE_TO_SPEND,
 } from '~constants/links'
 
@@ -17,8 +16,8 @@ export const AboutRedeemSGRewardsQuestions = [
         AnswerResponse: () => (
           <SimpleAnswerContainer
             answers={[
-              'RedeemSG Rewards is a government-initiated voucher program designed to benefit both citizens and government agencies. These can be campaigns that are aimed at providing incentives or rewards to their recipients.',
-              'Please reach out to your relevant government agency or campaign organiser, for any further questions related to why you have received RedeemSG Rewards vouchers.',
+              'Government agencies can onboard and issue RedeemSG Rewards vouchers to recipients. These typically may be incentive or reward vouchers as RedeemSG Rewards can be spent at any participating supermarkets.',
+              'You may reach out to your relevant government agency or campaign organiser, for any further questions related to why you have received RedeemSG Rewards vouchers.',
             ]}
           />
         ),
@@ -29,8 +28,8 @@ export const AboutRedeemSGRewardsQuestions = [
         AnswerResponse: () => (
           <SimpleAnswerContainer
             answers={[
-              'Unlike nationwide campaigns such as CDC Vouchers, RedeemSG Rewards is catered towards smaller, specific campaigns that target a certain group of beneficiaries. For citizens or residents of Singapore, you are unable to apply for RedeemSG Rewards, unless you have been notified by a government agency that you are eligible for a RedeemSG Rewards campaign.',
-              'Please reach out to your relevant government agency or campaign organiser, for any further questions related to eligibility and applying for vouchers.',
+              'Eligibility for RedeemSG Rewards will be determined by the respective government agency or campaign organiser issuing them.',
+              'Please reach out to your relevant government agency or campaign organiser, for any further questions related to why you have received RedeemSG Rewards vouchers.',
             ]}
           />
         ),
@@ -41,26 +40,7 @@ export const AboutRedeemSGRewardsQuestions = [
     sectionTitle: 'Spending your RedeemSG Rewards vouchers',
     questionsAndAnswerResponses: [
       {
-        questionTitle:
-          "Can I gift or donate my vouchers, if I don't want to use them?",
-        AnswerResponse: () => (
-          <SimpleAnswerContainer
-            answers={[
-              {
-                beforeLinkText:
-                  'Unfortunately, we are unable to support donations for RedeemSG Rewards vouchers. Please note that every voucher type has different policies. For instance, please refer to the ',
-                afterLinkText: ' for CDC vouchers donation guidelines.',
-                linkText: 'CDC FAQ',
-                href: RSG_CDC_DONATE_FAQ,
-              },
-              'However, you can share your vouchers with people you know. once a voucher link has been generated and sent to you, you can choose to share it with anyone whom you allow to spend the vouchers on your behalf. These include friends, or family members. Do note that anyone with the live voucher link will be able to spend the vouchers, at any point of time. Please do not share your voucher link with anyone else that is not meant to use the vouchers.',
-            ]}
-          />
-        ),
-      },
-      {
-        questionTitle:
-          'Am I able to use my RedeemSG Rewards vouchers at all supermarkets?',
+        questionTitle: 'Where can I spend my RedeemSG Rewards vouchers?',
         AnswerResponse: () => (
           <SimpleAnswerContainer
             answers={[
@@ -69,6 +49,17 @@ export const AboutRedeemSGRewardsQuestions = [
                 linkText: 'list of participating supermarkets.',
                 href: RSG_REWARDS_WHERE_TO_SPEND,
               },
+            ]}
+          />
+        ),
+      },
+      {
+        questionTitle: 'Can I gift or donate my vouchers?',
+        AnswerResponse: () => (
+          <SimpleAnswerContainer
+            answers={[
+              'You may share the voucher link received with people you know, including family and friends. Anyone with the voucher link will be able to access and spend the vouchers. Please do not share your voucher link with anyone else that is not meant to use the vouchers.',
+              'RedeemSG does not currently support donations for RedeemSG Rewards. Please reach out to your relevant government agency or campaign organiser, for any further questions on whether they have a donation guideline.',
             ]}
           />
         ),
@@ -101,16 +92,19 @@ export const AboutRedeemSGRewardsQuestions = [
         AnswerResponse: () => (
           <SimpleAnswerContainer
             answers={[
+              'RedeemSG Rewards is ideal for campaigns without a preference for specific merchants where vouchers can be spent.',
               {
                 beforeLinkText:
-                  'RedeemSG Rewards is ideal for campaigns without a preference for specific merchant types where vouchers can be redeemed. These can be particularly suitable for initiatives focused on providing incentives or rewards to recipients. With RedeemSG Rewards, we offer a selection of onboarded supermarket merchants, streamlining the operations required for agencies to onboard, train, and manage merchants. Simply determine the voucher amount and validity period, then issue the vouchers to eligible recipients. These vouchers can be redeemed at all participating supermarkets.You can view the ',
-                linkText: 'list of participating supermarket chains here.',
+                  'With RedeemSG Rewards, we offer a selection of onboarded supermarket merchants, streamlining the operations required for agencies to onboard, train, and manage merchants. You can view the ',
+                linkText: 'ist of participating supermarket chains here.',
+                afterLinkText:
+                  ' These can be suitable for initiatives focused on providing incentives or rewards.',
                 href: RSG_REWARDS_WHERE_TO_SPEND,
               },
               {
                 beforeLinkText:
-                  "For other campaign types, you are able to tailor your campaign to specific goals, by ensuring the expenditure of vouchers towards specific merchants. You can also select the voucher validity period, and amount. Please note that you'll have to onboard and manage merchants out of our system. To find out more, ",
-                linkText: 'reach out to us.',
+                  'For other campaigns in RedeemSG, you may tailor through onboarding your own list of merchants. This may help to cater to specific campaign objectives. However, please note that this would mean your team will require to onboard and manage the merchants to RedeemSG. To find out more, ',
+                linkText: 'speak to us.',
                 href: RSG_CDC_CAMPAIGN_ORGANISER_FORM,
               },
             ]}

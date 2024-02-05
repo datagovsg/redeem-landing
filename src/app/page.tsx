@@ -1,10 +1,10 @@
 import { redirect } from 'next/navigation'
 
-import { SPENDING } from '~constants/links'
+import { DISBURSING } from '~constants/links'
 
 // Dummy page that does redirect only
 const page = () => {
-  redirect(SPENDING)
+  redirect(DISBURSING)
 }
 
 export default page

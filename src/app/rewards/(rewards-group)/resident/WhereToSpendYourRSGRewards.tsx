@@ -49,8 +49,9 @@ const WhereToSpendYourRSGRewards = () => {
               textStyle={{ lg: 'body-1', md: 'body-2', base: 'body-1' }}
               color="neutral.700"
             >
-              Unsure where you can spend your vouchers? Look for decals at the
-              cashier, or view our list of participating chains:
+              Look for the RedeemSG Rewards decal featured prominently at
+              participating cashiers, or view our list of participating
+              merchants:
             </Text>
           </VStack>
           <Button

@@ -6,6 +6,7 @@ import { BiRightArrowAlt } from 'react-icons/bi'
 
 import { Image } from '~components/Image'
 import SectionContainer from '~components/SectionContainer'
+import { REDEEMSG_SIGNUP } from '~constants/links'
 
 type HeroProps = {
   imgSrc: string
@@ -40,22 +41,25 @@ const Hero = ({ imgSrc, imgAlt }: HeroProps) => {
               The trusted voucher system for Singapore
             </Text>
           </Box>
-          <Text
-            textStyle="body-2"
-            marginBottom={{ lg: '16px', md: '16px', sm: '24px', base: '24px' }}
-            color="neutral.700"
-            textAlign="center"
-          >
-            The voucher system that works for everyone. RedeemSG helps
-            Singapore&apos;s governmental agencies easily create, issue, and
-            track digital vouchers.
-          </Text>
+          <Box maxWidth="600px" marginBottom="16px">
+            <Text
+              textStyle="body-2"
+              marginBottom={{
+                lg: '16px',
+                md: '16px',
+                sm: '24px',
+                base: '24px',
+              }}
+              color="neutral.700"
+              textAlign="center"
+            >
+              The voucher system for everyone. RedeemSG helps Singapore
+              government agencies easily create, issue, and track digital
+              vouchers.
+            </Text>
+          </Box>
 
-          <NextLink
-            href="https://signup.redeem.gov.sg/"
-            passHref
-            legacyBehavior
-          >
+          <NextLink href={REDEEMSG_SIGNUP} passHref legacyBehavior>
             <Button
               as="a"
               colorScheme="primary"

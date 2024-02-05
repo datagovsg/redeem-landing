@@ -1,10 +1,11 @@
-import { Flex, Text, VStack } from '@chakra-ui/react'
+import { Flex, Link, Text, VStack } from '@chakra-ui/react'
 
 import RSGInstruction from '../../RSGInstruction'
 
 import Badge from '~components/Badge'
 import { Image } from '~components/Image'
 import SectionContainer from '~components/SectionContainer'
+import { RSG_CDC_MERCHANT_FORM } from '~constants/links'
 import { genStepIndexForInstructions } from '~helper'
 import HowToSignUpAsMerchantImage from '~images/HowToSignUpAsMerchant.svg'
 import SetUpAsMerchantStep1Image from '~images/SetUpAsMerchantStep1.svg'
@@ -14,25 +15,42 @@ import SetUpAsMerchantStep3Image from '~images/SetUpAsMerchantStep3.svg'
 const INSTRUCTIONS = genStepIndexForInstructions([
   {
     imageSrc: SetUpAsMerchantStep1Image,
-    stepInstruction:
-      "Find your scheme's sign-up page to receive your vouchers.",
+    stepInstruction: (
+      <Text textStyle={{ lg: 'body-1' }} color="neutral.700">
+        {'Indicate your interest on '}
+        <Link
+          textStyle={{
+            base: 'text-editor-link',
+            md: 'text-editor-link-small',
+            lg: 'text-editor-link',
+          }}
+          color="primary.500"
+          textDecoration="underline"
+          _hover={{
+            color: 'primary.600',
+          }}
+          href={RSG_CDC_MERCHANT_FORM}
+          isExternal
+        >
+          this form
+        </Link>
+        {
+          '. Sign up with a Digital Ambassador or CDC Ambassador. Receive a shop code.'
+        }
+      </Text>
+    ),
     stepTitle: 'Indicate your interest',
   },
   {
     imageSrc: SetUpAsMerchantStep2Image,
-    stepInstruction: (
-      <Text textStyle={{ lg: 'body-1' }} color="neutral.700">
-        {'Only trust voucher links from '}
-        <Text as="span" textStyle={{ lg: 'text-editor-bold' }}>
-          voucher.redeem.gov.sg.
-        </Text>
-      </Text>
-    ),
+    stepInstruction:
+      'Download the RedeemSG Merchant app on the App Store or Google Play.',
     stepTitle: 'Download the app',
   },
   {
     imageSrc: SetUpAsMerchantStep3Image,
-    stepInstruction: 'Use the vouchers at participating merchants.',
+    stepInstruction:
+      'Key in the shop code to gain access to your shop account. Other staff can also onboard using this same shop code.',
     stepTitle: 'Onboard your shop onto the RedeemSG app',
   },
 ])
@@ -57,7 +75,7 @@ const HowToSignUpAsMerchant = () => {
       >
         <VStack align="start" spacing={{ md: '24px', base: '16px' }}>
           <Badge text="For CDC Vouchers Scheme 2024" />
-          <VStack spacing={{ md: '40px', base: '32px' }}>
+          <VStack align="start" spacing={{ md: '40px', base: '32px' }}>
             <Text
               textStyle={{ lg: 'h1', sm: 'h2', base: 'h3-semibold' }}
               color="neutral.900"

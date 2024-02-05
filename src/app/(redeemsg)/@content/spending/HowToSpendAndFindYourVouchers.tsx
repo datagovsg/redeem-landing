@@ -1,9 +1,10 @@
-import { Flex, Text, VStack } from '@chakra-ui/react'
+import { Flex, Link, Text, VStack } from '@chakra-ui/react'
 
 import RSGInstruction from '../../RSGInstruction'
 
 import { Image } from '~components/Image'
 import SectionContainer from '~components/SectionContainer'
+import { REDEEMSG_SIGNUP } from '~constants/links'
 import { genStepIndexForInstructions } from '~helper'
 import HowToFindAndSpendYourVouchersImage from '~images/HowToFindAndSpendYourVouchers.svg'
 import RSGFindAndSpendVoucherStep1Image from '~images/RSGFindAndSpendVoucherStep1.svg'
@@ -13,26 +14,46 @@ import RSGFindAndSpendVoucherStep3Image from '~images/RSGFindAndSpendVoucherStep
 const INSTRUCTIONS = genStepIndexForInstructions([
   {
     imageSrc: RSGFindAndSpendVoucherStep1Image,
-    stepInstruction:
-      "Find your scheme's sign-up page to receive your vouchers.",
-    stepTitle: 'Sign up',
+    stepInstruction: (
+      <Text textStyle={{ lg: 'body-1' }} color="neutral.700">
+        {'Head to the '}
+        <Link
+          textStyle={{
+            base: 'text-editor-link',
+            md: 'text-editor-link-small',
+            lg: 'text-editor-link',
+          }}
+          color="primary.500"
+          textDecoration="underline"
+          _hover={{
+            color: 'primary.600',
+          }}
+          href={REDEEMSG_SIGNUP}
+          isExternal
+        >
+          voucher campaign page
+        </Link>
+        {" or the scheme's claim page to claim your vouchers."}
+      </Text>
+    ),
+    stepTitle: 'Find and claim vouchers',
   },
   {
     imageSrc: RSGFindAndSpendVoucherStep2Image,
     stepInstruction: (
       <Text textStyle={{ lg: 'body-1' }} color="neutral.700">
-        {'Only trust voucher links from '}
+        {'Only trust voucher links starting with '}
         <Text as="span" textStyle={{ lg: 'text-editor-bold' }}>
           voucher.redeem.gov.sg.
         </Text>
       </Text>
     ),
-    stepTitle: 'Receive your unique voucher link',
+    stepTitle: 'Receive your unique voucher link via SMS',
   },
   {
     imageSrc: RSGFindAndSpendVoucherStep3Image,
-    stepInstruction: 'Use the vouchers at participating merchants.',
-    stepTitle: 'Show your QR code for payment',
+    stepInstruction: 'Spend your vouchers at participating merchants.',
+    stepTitle: 'Show voucher QR code for payment',
   },
 ])
 

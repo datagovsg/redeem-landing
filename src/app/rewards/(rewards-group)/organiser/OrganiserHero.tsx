@@ -10,7 +10,11 @@ const OrganiserHero = () => {
     <SectionContainer>
       <VStack
         maxWidth="1440px"
-        padding={{ base: '0 24px 40px', md: '88px 128px', lg: '0 148px 88px' }}
+        padding={{
+          base: '0 24px 40px',
+          md: '0 88px 128px',
+          lg: '0 148px 88px',
+        }}
         boxSizing="content-box"
         spacing={{ base: '40px', md: '44px', lg: '80px' }}
       >
@@ -37,9 +41,11 @@ const OrganiserHero = () => {
               'Simply decide on the voucher amount and validity period, and issue the vouchers to eligible recipients! These vouchers can be spent at '
             }
             <Link
-              // textStyle={{ base: 'body-1', lg: 'text-editor-link' }}
               color="primary.500"
               textDecoration="underline"
+              _hover={{
+                color: 'primary.600',
+              }}
               href={RSG_REWARDS_WHERE_TO_SPEND}
               isExternal
             >

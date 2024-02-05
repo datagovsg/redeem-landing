@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Flex,
+  Link,
   Tab,
   TabList,
   TabPanel,
@@ -22,10 +23,11 @@ import {
   REWARDS,
   REWARDS_RESIDENT,
   RSG_CDC_CAMPAIGN_ORGANISER_FORM,
+  RSG_REWARDS_WHERE_TO_SPEND,
 } from '~constants/links'
 import { openInNewTab } from '~helper'
 // Images
-import SelectSuitableMErchantsCustomImage from '~images/SelectSuitableMerchantsCustom.svg'
+import SelectSuitableMerchantsCustomImage from '~images/SelectSuitableMerchantsCustom.svg'
 import SelectSuitableMerchantsRSGRewardsImage from '~images/SelectSuitableMerchantsRSGRewards.svg'
 import WTSColdStorageLogoImage from '~images/WTSColdStorageLogo.svg'
 import WTSFairpriceLogoImage from '~images/WTSFairpriceLogo.svg'
@@ -95,19 +97,24 @@ const RedeemSGRewardsTab = () => {
         whiteSpace="pre-line"
       >
         {
-          'Suitable for schemes that simply need to provide vouchers as rewards. With RedeemSG Rewards, cut down on operational efforts with onboarded supermarkets — no need for merchant training.\n\nSpendable '
+          'Suitable for schemes that provide vouchers as rewards. With RedeemSG Rewards, cut down on operational efforts to onboard and train merchants.\n\nSpendable '
         }
-        <Text
-          as="span"
+        <Link
           textStyle={{
             base: 'text-editor-link',
             md: 'text-editor-link-small',
             lg: 'text-editor-link',
           }}
           color="primary.500"
+          textDecoration="underline"
+          _hover={{
+            color: 'primary.600',
+          }}
+          href={RSG_REWARDS_WHERE_TO_SPEND}
+          isExternal
         >
-          at all participating chains:
-        </Text>
+          all participating chains ↪
+        </Link>
       </Text>
       <Flex
         flexWrap="wrap"
@@ -134,7 +141,7 @@ const RedeemSGRewardsTab = () => {
         rightIcon={<BiRightArrowAlt />}
         variant="solid"
       >
-        Read more
+        Find out more
       </Button>
     </VStack>
   )
@@ -153,7 +160,7 @@ const CustomisedMerchantTab = () => {
         whiteSpace="pre-line"
       >
         {
-          'Suitable for schemes that require a customised set of merchants.\n\nTailor your campaign to specific goals, by ensuring that vouchers can only be spent only at specific merchants. You can also customise the validity period and denomination.'
+          'Suitable for schemes that require a customised set of merchants.\n\nTailor your campaign to specific goals, by ensuring that vouchers can only be spent only at specific merchants.'
         }
       </Text>
       <Infobox
@@ -162,8 +169,8 @@ const CustomisedMerchantTab = () => {
             textStyle={{ base: 'body-2', lg: 'body-1' }}
             color="neutral.900"
           >
-            Please note that you&apos;ll have to onboard and manage merchants
-            out of our system. To find out more, talk to us.
+            Please note that you&apos;ll have to handle the onboarding and
+            management of merchants to RedeemSG. To find out more, talk to us.
           </Text>
         }
         background="primary.200"
@@ -182,7 +189,7 @@ const CustomisedMerchantTab = () => {
 
 const MERCHANT_IMAGES = [
   SelectSuitableMerchantsRSGRewardsImage,
-  SelectSuitableMErchantsCustomImage,
+  SelectSuitableMerchantsCustomImage,
 ]
 
 const SelectMerchants = () => {
@@ -221,7 +228,7 @@ const SelectMerchants = () => {
             }}
             color="neutral.900"
           >
-            Select suitable merchants, tailored to your goals
+            Select voucher type based on your campaign goals
           </Text>
 
           <Tabs width="100%" onChange={(index) => setTabIndex(index)}>
@@ -240,13 +247,13 @@ const SelectMerchants = () => {
                 </Tab>
                 <Tab>
                   <Text display={{ base: 'block', md: 'none', lg: 'block' }}>
-                    CUSTOMISED MERCHANTS
+                    CUSTOMISED CAMPAIGN
                   </Text>
                   <Text
                     display={{ base: 'none', md: 'block', lg: 'none' }}
                     whiteSpace="pre-line"
                   >
-                    {'CUSTOMISED\nMERCHANTS'}
+                    {'CUSTOMISED\nCAMPAIGN'}
                   </Text>
                 </Tab>
               </TabList>

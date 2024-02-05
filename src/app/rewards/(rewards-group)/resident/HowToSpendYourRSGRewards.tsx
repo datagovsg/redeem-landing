@@ -18,7 +18,7 @@ const INSTRUCTIONS = genStepIndexForInstructions([
     stepInstruction: (
       <Text textStyle="body-1" color="neutral.700">
         {
-          'Receive vouchers from government agencies. Always only trust voucher links starting with '
+          'Receive vouchers from agencies onboarded to RedeemSG. Only trust voucher links starting with '
         }
         <Text as="span" textStyle="text-editor-bold">
           voucher.redeem.gov.sg.
@@ -32,13 +32,11 @@ const INSTRUCTIONS = genStepIndexForInstructions([
       <Text textStyle="body-1" color="neutral.700">
         <Text as="span">{'Go to '}</Text>
         <Link
-          // textStyle={{
-          //   base: 'text-editor-link',
-          //   sm: 'text-editor-link-small',
-          //   lg: 'text-editor-link',
-          // }}
           color="primary.500"
           textDecoration="underline"
+          _hover={{
+            color: 'primary.600',
+          }}
           href={RSG_REWARDS_WHERE_TO_SPEND}
           isExternal
         >

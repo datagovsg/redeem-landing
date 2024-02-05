@@ -96,6 +96,9 @@ const QuestionsForSetupCampaign = () => {
           />
           <Link
             href={FAQ}
+            _hover={{
+              color: 'primary.600',
+            }}
             textStyle="subhead-1"
             color="primary.500"
             textDecoration="none"

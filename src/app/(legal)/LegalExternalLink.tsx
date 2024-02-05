@@ -5,8 +5,11 @@ const LegalExternalLink = ({ children, ...props }: LinkProps) => {
     <Link
       textStyle={{ lg: 'subhead-1', base: 'body-2' }}
       width="fit-content"
-      color="primary.700"
+      color="primary.500"
       textDecoration="underline"
+      _hover={{
+        color: 'primary.600',
+      }}
       {...props}
     >
       {children}

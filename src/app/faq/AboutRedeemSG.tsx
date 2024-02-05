@@ -16,7 +16,7 @@ export const AboutRedeemSGQuestions = [
   {
     sectionTitle: 'General questions',
     questionsAndAnswerResponses: [
-      { questionTitle: 'What is Redeem SG?', AnswerResponse: WhatIsRedeemSG },
+      { questionTitle: 'What is RedeemSG?', AnswerResponse: WhatIsRedeemSG },
       {
         questionTitle: 'Who can use RedeemSG?',
         AnswerResponse: () => (

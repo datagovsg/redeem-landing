@@ -5,6 +5,7 @@ export type TextWithLinkProps = {
   linkText: string
   afterLinkText?: string
   linkColor?: string
+  hoverColor?: string
   linkTextStyle?: string
   textStyle?: string
   href: string
@@ -20,6 +21,7 @@ const TextWithLink = ({
   linkText,
   afterLinkText,
   linkColor = 'primary.500',
+  hoverColor = 'primary.600',
   linkTextStyle = 'text-editor-link-small',
   textStyle,
   href,
@@ -31,6 +33,9 @@ const TextWithLink = ({
         as="a"
         textStyle={linkTextStyle}
         color={linkColor}
+        _hover={{
+          color: hoverColor,
+        }}
         href={href}
         isExternal
       >
