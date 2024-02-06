@@ -17,7 +17,7 @@ import {
   CDC_RESIDENTS_FAQ,
   CFHP_FAQ,
   REWARDS,
-  REWARDS_RESIDENT,
+  REWARDS_ROOT,
 } from '~constants/links'
 import { openInNewTab } from '~helper'
 import VouchersCDCLogoImage from '~images/VouchersCDCLogo.svg'
@@ -29,7 +29,7 @@ const SearchingForSpecificVoucher = () => {
 
   useEffect(() => {
     router.prefetch(REWARDS)
-    router.prefetch(REWARDS_RESIDENT)
+    router.prefetch(REWARDS_ROOT)
   }, [router])
 
   const VOUCHERS_INFORMATION = [
@@ -52,7 +52,7 @@ const SearchingForSpecificVoucher = () => {
       imageSrc: VouchersRSGRewardsLogoImage,
       buttonText: 'Go to RedeemSG Rewards',
       backgroundColor: '#E9EBFF',
-      onClick: () => router.push(REWARDS_RESIDENT),
+      onClick: () => router.push(REWARDS_ROOT),
     },
   ]
 

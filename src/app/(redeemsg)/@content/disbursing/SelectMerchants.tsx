@@ -21,7 +21,7 @@ import Infobox from '~components/Infobox'
 import SectionContainer from '~components/SectionContainer'
 import {
   REWARDS,
-  REWARDS_RESIDENT,
+  REWARDS_ROOT,
   RSG_CDC_CAMPAIGN_ORGANISER_FORM,
   RSG_REWARDS_WHERE_TO_SPEND,
 } from '~constants/links'
@@ -82,7 +82,7 @@ const RedeemSGRewardsTab = () => {
 
   useEffect(() => {
     router.prefetch(REWARDS)
-    router.prefetch(REWARDS_RESIDENT)
+    router.prefetch(REWARDS_ROOT)
   }, [router])
 
   return (
@@ -137,7 +137,7 @@ const RedeemSGRewardsTab = () => {
       </Flex>
       <Button
         colorScheme="primary"
-        onClick={() => router.push(REWARDS_RESIDENT)}
+        onClick={() => router.push(REWARDS_ROOT)}
         rightIcon={<BiRightArrowAlt />}
         variant="solid"
       >
