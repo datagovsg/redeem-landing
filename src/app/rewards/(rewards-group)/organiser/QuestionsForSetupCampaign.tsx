@@ -24,7 +24,7 @@ export const SetUpCampaignQuestions = [
             answers={[
               {
                 beforeLinkText: 'Please refer to this list of ',
-                linkText: 'participating supermarkets ↪',
+                linkText: <>{'participating supermarkets '}↪&#xFE0E;</>, //https://css-tricks.com/text-that-sometimes-turns-to-emojis/
                 href: RSG_REWARDS_WHERE_TO_SPEND,
               },
             ]}
@@ -57,7 +57,7 @@ export const SetUpCampaignQuestions = [
               {
                 beforeLinkText:
                   "For other campaign types, you are able to tailor your campaign to specific goals, by ensuring the expenditure of vouchers towards specific merchants. You can also select the voucher validity period, and amount. Please note that you'll have to onboard and manage merchants out of our system. To find out more, ",
-                linkText: 'reach out to us ↪',
+                linkText: <>{'reach out to us '}↪&#xFE0E;</>, //https://css-tricks.com/text-that-sometimes-turns-to-emojis/
                 href: RSG_CDC_CAMPAIGN_ORGANISER_FORM,
               },
             ]}

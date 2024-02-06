@@ -51,7 +51,7 @@ const INSTRUCTIONS = genStepIndexForInstructions([
           href={RSG_REWARDS_WHERE_TO_SPEND}
           isExternal
         >
-          {'any participating supermarket ↪'}
+          {'any participating supermarket ↪&#xFE0E;'}
         </Link>
         <Text as="span">{' near you to spend your vouchers.'}</Text>
       </Text>

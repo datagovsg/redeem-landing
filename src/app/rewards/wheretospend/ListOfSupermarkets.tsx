@@ -15,13 +15,13 @@ import {
 } from '~constants/links'
 import { openInNewTab } from '~helper'
 // Images
-import WTSColdStorageLogoImage from '~images/WTSColdStorageLogo.svg'
+import WTSColdStorageLogoImage from '~images/WTSColdStorageLogo.jpg'
 import WTSFairpriceLogoImage from '~images/WTSFairpriceLogo.svg'
-import WTSGiantLogoImage from '~images/WTSGiantLogo.svg'
+import WTSGiantLogoImage from '~images/WTSGiantLogo.jpg'
 import WTSHAOMartLogoImage from '~images/WTSHAOMartLogo.svg'
-import WTSPrimeLogoImage from '~images/WTSPrimeLogo.svg'
+import WTSPrimeLogoImage from '~images/WTSPrimeLogo.jpg'
 import WTSShengSiongLogoImage from '~images/WTSShengSiongLogo.svg'
-import WTSUStarsLogoImage from '~images/WTSUStarsLogo.svg'
+import WTSUStarsLogoImage from '~images/WTSUStarsLogo.jpg'
 
 // ORDERING IS IMPORTANT HERE
 const SUPERMARKETS = [
@@ -44,7 +44,7 @@ const SUPERMARKETS = [
     url: WTS_COLD_STORAGE,
   },
   {
-    backgroundColor: '#31874F',
+    backgroundColor: '#E2EEED',
     imageSrc: WTSPrimeLogoImage,
     label: 'Prime',
     url: WTS_PRIME,

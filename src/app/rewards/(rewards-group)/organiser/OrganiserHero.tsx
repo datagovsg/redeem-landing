@@ -63,7 +63,8 @@ const OrganiserHero = () => {
               href={RSG_REWARDS_WHERE_TO_SPEND}
               isExternal
             >
-              all participating supermarkets ↪
+              {/* https://css-tricks.com/text-that-sometimes-turns-to-emojis/ */}
+              all participating supermarkets ↪&#xFE0E;
             </Link>
           </Text>
         </VStack>

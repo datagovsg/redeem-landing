@@ -2,7 +2,7 @@ import { Link, Text } from '@chakra-ui/react'
 
 export type TextWithLinkProps = {
   beforeLinkText?: string
-  linkText: string
+  linkText: React.ReactNode
   afterLinkText?: string
   linkColor?: string
   hoverColor?: string

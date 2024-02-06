@@ -29,13 +29,13 @@ import { openInNewTab } from '~helper'
 // Images
 import SelectSuitableMerchantsCustomImage from '~images/SelectSuitableMerchantsCustom.svg'
 import SelectSuitableMerchantsRSGRewardsImage from '~images/SelectSuitableMerchantsRSGRewards.svg'
-import WTSColdStorageLogoImage from '~images/WTSColdStorageLogo.svg'
+import WTSColdStorageLogoImage from '~images/WTSColdStorageLogo.jpg'
 import WTSFairpriceLogoImage from '~images/WTSFairpriceLogo.svg'
-import WTSGiantLogoImage from '~images/WTSGiantLogo.svg'
+import WTSGiantLogoImage from '~images/WTSGiantLogo.jpg'
 import WTSHAOMartLogoImage from '~images/WTSHAOMartLogo.svg'
-import WTSPrimeLogoImage from '~images/WTSPrimeLogo.svg'
+import WTSPrimeLogoImage from '~images/WTSPrimeLogo.jpg'
 import WTSShengSiongLogoImage from '~images/WTSShengSiongLogo.svg'
-import WTSUStarsLogoImage from '~images/WTSUStarsLogo.svg'
+import WTSUStarsLogoImage from '~images/WTSUStarsLogo.jpg'
 
 const MERCHANT_LOGO_LIST = [
   {
@@ -66,7 +66,7 @@ const MERCHANT_LOGO_LIST = [
   },
 
   {
-    backgroundColor: '#31874F',
+    backgroundColor: '#E2EEED',
     imageSrc: WTSPrimeLogoImage,
     label: 'Prime',
   },
@@ -97,7 +97,7 @@ const RedeemSGRewardsTab = () => {
         whiteSpace="pre-line"
       >
         {
-          'Suitable for schemes that provide vouchers as rewards. With RedeemSG Rewards, cut down on operational efforts to onboard and train merchants.\n\nSpendable '
+          'Suitable for campaigns that provide vouchers as rewards. With RedeemSG Rewards, cut down on operational efforts to onboard and train merchants.\n\nSpendable at'
         }
         <Link
           textStyle={{
@@ -113,7 +113,8 @@ const RedeemSGRewardsTab = () => {
           href={RSG_REWARDS_WHERE_TO_SPEND}
           isExternal
         >
-          all participating chains ↪
+          {/* https://css-tricks.com/text-that-sometimes-turns-to-emojis/ */}
+          all participating chains ↪&#xFE0E;
         </Link>
       </Text>
       <Flex
@@ -228,7 +229,7 @@ const SelectMerchants = () => {
             }}
             color="neutral.900"
           >
-            Select voucher type based on your campaign goals
+            Select a voucher type, based on your campaign goals
           </Text>
 
           <Tabs width="100%" onChange={(index) => setTabIndex(index)}>
