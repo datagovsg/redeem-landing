@@ -36,6 +36,7 @@ const TextWithLink = ({
         _hover={{
           color: hoverColor,
         }}
+        whiteSpace="nowrap"
         href={href}
         isExternal
       >

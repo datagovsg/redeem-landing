@@ -10,40 +10,47 @@ const Hero = () => {
   return (
     <SectionContainer background="primary.100">
       <Flex
-        flexDirection={{
-          base: 'column-reverse',
-          md: 'row',
-          lg: 'row',
-        }}
+        flexDirection={{ base: 'column', md: 'row' }}
         gap={{ base: '40px', sm: '4px', lg: '120px' }}
         maxWidth="1440px"
         padding={{
           base: '32px 24px 0',
-          md: '88px 128px 0',
-          lg: '88px 148px 0',
+          md: '72px 88px 0',
+          lg: '88px 128px 0',
+          xl: '88px 148px 0',
         }}
         boxSizing="content-box"
       >
         <VStack
           align="start"
           justifyContent="center"
-          spacing={{ base: '16px', md: '24px', lg: '32px' }}
+          spacing={{ base: '16px', md: '24px', lg: '24px', xl: '32px' }}
         >
           <Image
             src={RedeemSGRewards}
             alt="RedeemSG Rewards"
-            height={{ lg: '40px', md: '32px', base: '38px' }}
-            width={{ lg: '132px', md: '106px', base: '120px' }}
+            height={{ xl: '40px', md: '26px', lg: '32px', base: '38px' }}
+            width={{ xl: '132px', md: '88px', lg: '106px', base: '120px' }}
           />
           <VStack align="start" spacing="16px">
             <Text
-              textStyle={{ base: 'h3-semibold', md: 'h3-semibold', lg: 'h1' }}
+              textStyle={{
+                base: 'h3-semibold',
+                md: 'h4',
+                lg: 'h3-semibold',
+                xl: 'h1',
+              }}
               color="neutral.900"
             >
               The simplified digital voucher experience for all
             </Text>
             <Text
-              textStyle={{ base: 'body-1', md: 'body-2', lg: 'body-1' }}
+              textStyle={{
+                base: 'body-1',
+                md: 'body-2',
+                lg: 'body-2',
+                xl: 'body-1',
+              }}
               color="neutral.700"
             >
               With RedeemSG Rewards, recipients can conveniently spend vouchers

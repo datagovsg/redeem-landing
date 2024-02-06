@@ -18,8 +18,8 @@ const RSGRewardsInstruction = ({
   return (
     <HStack alignItems="flex-start" spacing="24px">
       <CenterChildWithFixHeightAndWidth
-        width={{ lg: '72px', md: '60px', base: '76px' }}
-        height={{ lg: '72px', md: '60px', base: '76px' }}
+        width={{ xl: '72px', lg: '60px', md: '56px', base: '76px' }}
+        height={{ xl: '72px', lg: '60px', md: '56px', base: '76px' }}
         background="primary.100"
         borderRadius="50%"
       >

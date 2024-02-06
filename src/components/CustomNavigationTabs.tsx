@@ -54,7 +54,7 @@ const CustomNavigationTabs = ({
       background="primary.200"
       border="1px solid"
       borderColor="white"
-      borderRadius={{ base: '8px', md: '8px', lg: '16px' }}
+      borderRadius={{ base: '8px', md: '16px', lg: '8px', xl: '16px' }}
       boxSizing="border-box"
       spacing={0}
     >

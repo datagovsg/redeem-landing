@@ -19,25 +19,30 @@ export default function layout({ children }: { children: React.ReactNode }) {
       <VStack position="relative" width="100%">
         <Box
           width="100%"
-          height={{ base: '94px', md: '124px', lg: '144px' }}
+          height={{ base: '94px', md: '102px', lg: '124px', xl: '144px' }}
           background="primary.100"
         />
         <Box
           width="100%"
-          height={{ base: '76px', md: '124px', lg: '176px' }}
+          height={{ base: '76px', md: '120px', lg: '124px', xl: '176px' }}
           background="white"
         />
         <Box
           position="absolute"
-          top={{ base: '58px', md: '88px', lg: '108px' }}
+          top={{ base: '58px', md: '70px', lg: '88px', xl: '108px' }}
           width="100%"
-          padding={{ base: '0 8px', md: '0 128px', lg: '0 148px' }}
+          padding={{
+            base: '0 8px',
+            md: '0 28px',
+            lg: '0 128px',
+            xl: '0 148px',
+          }}
         >
           <CustomNavigationTabs
             tabs={TABS}
             paddingObject={{ base: 8, smd: 8 }}
-            borderRadius={{ base: '4px', md: '8px', lg: '12px' }}
-            height={{ base: '76px', md: '56px', lg: '72px' }}
+            borderRadius={{ base: '4px', md: '12px', lg: '8px', xl: '12px' }}
+            height={{ base: '76px', md: '64px', lg: '56px', xl: '72px' }}
           />
         </Box>
       </VStack>

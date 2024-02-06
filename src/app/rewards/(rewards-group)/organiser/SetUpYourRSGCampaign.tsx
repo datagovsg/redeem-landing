@@ -31,7 +31,12 @@ const INSTRUCTIONS = genStepIndexForInstructions([
 const SetUpYourRSGCampaign = () => {
   return (
     <SectionContainer
-      padding={{ base: '40px 24px', md: '88px 128px', lg: '88px 148px' }}
+      padding={{
+        base: '40px 24px',
+        md: '88px',
+        lg: '88px 128px',
+        xl: '88px 148px',
+      }}
     >
       <VStack
         alignItems={{ base: 'center', sm: 'flex-start' }}
@@ -41,21 +46,18 @@ const SetUpYourRSGCampaign = () => {
         boxSizing="content-box"
       >
         <Text
-          textStyle={{ base: 'h3-semibold', md: 'h2', lg: 'h1' }}
+          textStyle={{ base: 'h3-semibold', md: 'h2', lg: 'h2', xl: 'h1' }}
           color="neutral.900"
-          textAlign={{ base: 'left', sm: 'center', lg: 'left' }}
+          textAlign={{ base: 'left', sm: 'center', xl: 'left' }}
         >
           Setting up your RedeemSG Rewards campaign
         </Text>
         <Flex
           alignItems="start"
           flexDirection={{ base: 'column', md: 'row' }}
-          gap={{ base: '32px', md: '44px', lg: '44px' }}
+          gap={{ base: '40px', md: '68px', lg: '72px', xl: '132px' }}
         >
-          <VStack
-            align="start"
-            spacing={{ base: '32px', md: '32px', lg: '40px' }}
-          >
+          <VStack align="start" spacing={{ base: '32px', xl: '40px' }}>
             {INSTRUCTIONS.map((instruction) => (
               <RSGRewardsInstruction
                 {...instruction}
@@ -66,7 +68,13 @@ const SetUpYourRSGCampaign = () => {
           <Image
             src={SetUpYourRSGCampaignImage}
             alt="Setting up your RedeemSG Rewards campaign"
-            width={{ base: '280px', sm: '220px', lg: '302px', '2xl': '411px' }}
+            width={{
+              base: '280px',
+              sm: '220px',
+              md: '232px',
+              lg: '302px',
+              '2xl': '411px',
+            }}
           />
         </Flex>
       </VStack>

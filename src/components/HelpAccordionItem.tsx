@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionPanel,
   Text,
+  TextProps,
 } from '@chakra-ui/react'
 import React from 'react'
 
@@ -12,6 +13,8 @@ interface HelpAccordionItemProps {
   questionTitleColor?: string
   answerTextColor?: string
   children: React.ReactNode
+  questionTextStyle?: TextProps['textStyle']
+  answerTextStyle?: TextProps['textStyle']
 }
 
 export const HelpAccordionItem = ({
@@ -19,12 +22,14 @@ export const HelpAccordionItem = ({
   children,
   questionTitleColor = 'content.strong',
   answerTextColor = 'content.default',
+  questionTextStyle,
+  answerTextStyle,
 }: HelpAccordionItemProps) => {
   return (
     <AccordionItem>
       <AccordionButton padding={{ base: '12px 16px', lg: '20px 16px' }}>
         <Text
-          textStyle={{ base: 'subhead-2', lg: 'subhead-1' }}
+          textStyle={questionTextStyle}
           flex="1"
           color={questionTitleColor}
           textAlign="left"
@@ -33,7 +38,11 @@ export const HelpAccordionItem = ({
         </Text>
         <AccordionIcon />
       </AccordionButton>
-      <AccordionPanel paddingBottom={{ base: '24px' }} color={answerTextColor}>
+      <AccordionPanel
+        textStyle={answerTextStyle}
+        paddingBottom={{ base: '24px' }}
+        color={answerTextColor}
+      >
         {children}
       </AccordionPanel>
     </AccordionItem>

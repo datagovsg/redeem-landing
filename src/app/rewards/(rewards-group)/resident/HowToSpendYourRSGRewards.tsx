@@ -38,6 +38,11 @@ const INSTRUCTIONS = genStepIndexForInstructions([
       >
         <Text as="span">{'Go to '}</Text>
         <Link
+          textStyle={{
+            base: 'text-editor-link',
+            md: 'text-editor-link-small',
+            lg: 'text-editor-link',
+          }}
           color="primary.500"
           textDecoration="underline"
           _hover={{
@@ -70,7 +75,7 @@ const HowToSpendYourRSGRewards = () => {
   return (
     <SectionContainer>
       <VStack
-        alignItems={{ base: 'center', lg: 'flex-start' }}
+        alignItems={{ base: 'center', sm: 'flex-start', lg: 'flex-start' }}
         justifyContent="space-between"
         flexGrow={1}
         gap={{ base: '32px', sm: '24px', md: '44px' }}
@@ -78,26 +83,27 @@ const HowToSpendYourRSGRewards = () => {
         height="fit-content"
         padding={{
           base: '0 24px 40px',
-          md: '0 88px 128px',
-          lg: '0 148px 88px',
+          md: '0 88px 88px',
+          lg: '0 128px 88px',
+          xl: '0 148px 88px',
         }}
         boxSizing="content-box"
       >
         <Text
-          textStyle={{ base: 'h3-semibold', md: 'h2', lg: 'h1' }}
+          textStyle={{ base: 'h3-semibold', md: 'h2', lg: 'h2', xl: 'h1' }}
           color="neutral.900"
-          textAlign={{ base: 'left', sm: 'center', lg: 'left' }}
+          textAlign={{ base: 'left', md: 'center', lg: 'left' }}
         >
           How to spend your RedeemSG Rewards
         </Text>
         <Flex
           alignItems="start"
           flexDirection={{ base: 'column', md: 'row' }}
-          gap={{ base: '32px', md: '44px', lg: '44px' }}
+          gap={{ base: '32px', md: '68px', lg: '44px', xl: '44px' }}
         >
           <VStack
             align="start"
-            spacing={{ base: '32px', md: '32px', lg: '40px' }}
+            spacing={{ base: '32px', md: '32px', lg: '32px', xl: '40px' }}
           >
             {INSTRUCTIONS.map((instruction) => (
               <RSGRewardsInstruction
@@ -109,7 +115,7 @@ const HowToSpendYourRSGRewards = () => {
           <Image
             src={HowToSpendYourRSGRewardsImage}
             alt="How to spend your RedeemSG Rewards Image"
-            width={{ base: '280px', sm: '302px' }}
+            width={{ base: '280px', sm: '232px', md: '302px' }}
           />
         </Flex>
       </VStack>

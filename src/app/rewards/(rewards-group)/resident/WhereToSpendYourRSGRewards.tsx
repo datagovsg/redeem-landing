@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Text, VStack } from '@chakra-ui/react'
+import { Button, Flex, Text, VStack } from '@chakra-ui/react'
 import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 import { BiRightArrowAlt } from 'react-icons/bi'
@@ -24,23 +24,36 @@ const WhereToSpendYourRSGRewards = () => {
   return (
     <SectionContainer background="primary.100">
       <Flex
-        flexDirection={{ base: 'column-reverse', md: 'row', lg: 'row' }}
-        gap={{ base: '40px', md: '72px', lg: '132px' }}
+        alignItems={{ base: 'flex-start', md: 'center' }}
+        flexDirection={{ base: 'column-reverse', md: 'row' }}
+        gap={{ base: '40px', md: '68px', lg: '72px', xl: '132px' }}
         maxWidth="1440px"
-        padding={{ base: '40px 24px', md: '88px 128px', lg: '88px 148px' }}
+        padding={{
+          base: '40px 24px',
+          md: '88px',
+          lg: '88px 128px',
+          xl: '88px 148px',
+        }}
         boxSizing="content-box"
       >
-        <Box>
-          <Image
-            src={WhereToSpendYourRSGRewardsImage}
-            alt="Where to spend your RedeemSG Rewards"
-            height="100%"
-          />
-        </Box>
+        <Image
+          src={WhereToSpendYourRSGRewardsImage}
+          alt="Where to spend your RedeemSG Rewards"
+          height="100%"
+          width={{ base: '280px', md: '232px', lg: '302px', xl: '560px' }}
+        />
         <VStack align="start" spacing="24px">
-          <VStack align="start" spacing={{ base: '24px', lg: '16px' }}>
+          <VStack
+            align="start"
+            spacing={{ base: '24px', md: '16px', lg: '16px' }}
+          >
             <Text
-              textStyle={{ base: 'h3-semibold', md: 'h2', lg: 'h1' }}
+              textStyle={{
+                base: 'h3-semibold',
+                md: 'h3-semibold',
+                lg: 'h2',
+                xl: 'h1',
+              }}
               color="neutral.900"
             >
               Where to spend your RedeemSG Rewards

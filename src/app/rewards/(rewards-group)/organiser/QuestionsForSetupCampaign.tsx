@@ -75,16 +75,21 @@ const QuestionsForSetupCampaign = () => {
         alignItems={{ base: 'center', md: 'flex-start' }}
         flexDirection={{ base: 'column', md: 'row', lg: 'row' }}
         flexGrow={1}
-        gap={{ base: '40px' }}
+        gap={{ base: '40px', md: '68px', lg: '34px', xl: '134px' }}
         maxWidth="1440px"
-        padding={{ base: '40px 24px', md: '88px 128px', lg: '88px 148px' }}
+        padding={{
+          base: '40px 24px',
+          md: '88px',
+          lg: '88px 128px',
+          xl: '88px 148px',
+        }}
         boxSizing="content-box"
       >
         <Flex
           alignItems="start"
           flexDirection="column"
           flex={1}
-          gap={{ base: '24px', md: '32px', lg: '40px' }}
+          gap={{ base: '24px', md: '32px', lg: '32px', xl: '40px' }}
         >
           <FAQWithHeaderAndListOfQuestionsAndAnswers
             header="Have a question?"
@@ -93,6 +98,25 @@ const QuestionsForSetupCampaign = () => {
             sectionTitleColor="secondary.500"
             questionTitleColor="secondary.500"
             answerTextColor="secondary.500"
+            headerTextStyle={{
+              base: 'h3-semibold',
+              md: 'h3-semibold',
+              lg: 'h2',
+              xl: 'h1',
+            }}
+            sectionTitleTextStyle={{
+              base: 'body-1',
+              md: 'body-2',
+              lg: 'body-1',
+              xl: 'body-1',
+            }}
+            questionTextStyle="subhead-1"
+            answerTextStyle={{
+              base: 'text-editor-link-small',
+              md: 'text-editor-link-small',
+              lg: 'body-2',
+              xl: 'body-2',
+            }}
           />
           <Link
             href={FAQ}
@@ -109,7 +133,7 @@ const QuestionsForSetupCampaign = () => {
         <Image
           src={QuestionImage}
           alt="Have a question?"
-          maxWidth={{ base: '280px', md: '340px', lg: '380px' }}
+          maxWidth={{ base: '280px', md: '232px', lg: '340px', xl: '380px' }}
         />
       </Flex>
     </SectionContainer>

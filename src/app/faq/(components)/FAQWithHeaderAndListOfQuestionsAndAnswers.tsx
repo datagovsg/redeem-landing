@@ -1,4 +1,4 @@
-import { Accordion, Text, VStack } from '@chakra-ui/react'
+import { Accordion, Text, TextProps, VStack } from '@chakra-ui/react'
 
 import { HelpAccordionItem } from '~components/HelpAccordionItem'
 
@@ -19,6 +19,11 @@ type FAQWithHeaderAndListOfQuestionsAndAnswersProps = {
   sectionTitleColor?: string
   questionTitleColor?: string
   answerTextColor?: string
+
+  headerTextStyle?: TextProps['textStyle']
+  sectionTitleTextStyle?: TextProps['textStyle']
+  questionTextStyle?: TextProps['textStyle']
+  answerTextStyle?: TextProps['textStyle']
 }
 
 const FAQWithHeaderAndListOfQuestionsAndAnswers = ({
@@ -28,13 +33,14 @@ const FAQWithHeaderAndListOfQuestionsAndAnswers = ({
   sectionTitleColor = 'primary.500',
   questionTitleColor = 'content.strong',
   answerTextColor = 'content.default',
+  headerTextStyle = { base: 'h4', md: 'h3-semibold' },
+  sectionTitleTextStyle = 'h6',
+  questionTextStyle = { base: 'subhead-2', lg: 'subhead-1' },
+  answerTextStyle = 'body-2',
 }: FAQWithHeaderAndListOfQuestionsAndAnswersProps) => {
   return (
     <VStack align="start" width="100%" spacing={{ base: '16px', md: '24px' }}>
-      <Text
-        textStyle={{ base: 'h4', md: 'h3-semibold' }}
-        color={headerTextColor}
-      >
+      <Text textStyle={headerTextStyle} color={headerTextColor}>
         {header}
       </Text>
       <VStack align="start" width="100%" spacing={{ base: '48px', md: '72px' }}>
@@ -46,7 +52,7 @@ const FAQWithHeaderAndListOfQuestionsAndAnswers = ({
               width="100%"
               spacing="24px"
             >
-              <Text textStyle="h6" color={sectionTitleColor}>
+              <Text textStyle={sectionTitleTextStyle} color={sectionTitleColor}>
                 {sectionTitle}
               </Text>
               <Accordion
@@ -62,6 +68,8 @@ const FAQWithHeaderAndListOfQuestionsAndAnswers = ({
                       title={questionTitle}
                       questionTitleColor={questionTitleColor}
                       answerTextColor={answerTextColor}
+                      questionTextStyle={questionTextStyle}
+                      answerTextStyle={answerTextStyle}
                     >
                       <AnswerResponse />
                     </HelpAccordionItem>
