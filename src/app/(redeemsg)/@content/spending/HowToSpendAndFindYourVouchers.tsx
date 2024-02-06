@@ -20,7 +20,7 @@ const INSTRUCTIONS = genStepIndexForInstructions([
         <Link
           textStyle={{
             base: 'text-editor-link',
-            md: 'text-editor-link-small',
+            'md-lg': 'text-editor-link-small',
             lg: 'text-editor-link',
           }}
           color="primary.500"
@@ -63,13 +63,18 @@ const HowToSpendAndFindYourVouchers = () => {
       <Flex
         alignItems={{ base: 'center' }}
         justifyContent="space-between"
-        flexDirection={{ base: 'column', sm: 'column', md: 'row', lg: 'row' }}
+        flexDirection={{
+          base: 'column',
+          sm: 'column',
+          'md-lg': 'row',
+          lg: 'row',
+        }}
         flexGrow={1}
         gap={{ base: '40px' }}
         maxWidth="1440px"
         padding={{
           lg: '0 148px 88px',
-          md: '0 128px 80px',
+          'md-lg': '0 128px 80px',
           sm: '0 88px 64px',
           base: '0 24px 40px',
         }}
@@ -77,17 +82,22 @@ const HowToSpendAndFindYourVouchers = () => {
       >
         <VStack
           alignItems="start"
-          spacing={{ lg: '40px', md: '40px', sm: '32px', base: '32px' }}
+          spacing={{ lg: '40px', 'md-lg': '40px', sm: '32px', base: '32px' }}
         >
           <Text
-            textStyle={{ lg: 'h1', md: 'h2', sm: 'h2', base: 'h3-semibold' }}
+            textStyle={{
+              lg: 'h1',
+              'md-lg': 'h2',
+              sm: 'h2',
+              base: 'h3-semibold',
+            }}
             color="neutral.900"
           >
             How to find and spend your vouchers
           </Text>
           <VStack
             align="start"
-            spacing={{ lg: '40px', md: '32px', sm: '32px', base: '32px' }}
+            spacing={{ lg: '40px', 'md-lg': '32px', sm: '32px', base: '32px' }}
           >
             {INSTRUCTIONS.map((instruction) => (
               <RSGInstruction {...instruction} key={instruction.stepIndex} />

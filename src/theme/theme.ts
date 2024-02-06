@@ -28,8 +28,9 @@ export const theme = extendTheme(ogpTheme, {
     sm: '30em', // ~480px. em is a relative unit and is dependant on the font size.
     // Special breakpoint. Do not use unless there is a need
     smd: '43em', // ~688px
+    // This is use as md for redeem rewards
     md: '48em', // ~768px
-    // Special breakpoint. Do not use unless there is a need
+    // Special breakpoint. This is use as md for redeem landing
     'md-lg': '51.25em', // ~820px
     lg: '62em', // ~992px
     xl: '80em', // ~1280px

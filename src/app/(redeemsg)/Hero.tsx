@@ -21,18 +21,18 @@ const Hero = ({ imgSrc, imgAlt }: HeroProps) => {
         maxWidth="1440px"
         padding={{
           lg: '48px 148px 0',
-          md: '48px 156px 0',
+          'md-lg': '48px 156px 0',
           base: '24px 24px 0',
         }}
         boxSizing="content-box"
-        spacing={{ lg: '48px', md: '48px', sm: '32px', base: '24px' }}
+        spacing={{ lg: '48px', 'md-lg': '48px', sm: '32px', base: '24px' }}
       >
         <VStack spacing={0}>
           <Box maxWidth="680px" marginBottom="16px" textAlign="center">
             <Text
               textStyle={{
                 lg: 'title-h1',
-                md: 'title-h1',
+                'md-lg': 'title-h1',
                 sm: 'title-h2',
                 base: 'title-h2',
               }}
@@ -46,7 +46,7 @@ const Hero = ({ imgSrc, imgAlt }: HeroProps) => {
               textStyle="body-2"
               marginBottom={{
                 lg: '16px',
-                md: '16px',
+                'md-lg': '16px',
                 sm: '24px',
                 base: '24px',
               }}

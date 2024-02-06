@@ -33,24 +33,25 @@ const SetUpYourRSGCampaign = () => {
     <SectionContainer
       padding={{ base: '40px 24px', md: '88px 128px', lg: '88px 148px' }}
     >
-      <Flex
-        alignItems={{ base: 'center' }}
-        flexDirection={{ base: 'column', md: 'row', lg: 'row' }}
+      <VStack
+        alignItems={{ base: 'center', sm: 'flex-start' }}
         flexGrow={1}
-        gap={{ base: '40px', md: '72px', lg: '132px' }}
+        gap={{ base: '32px', sm: '24px', md: '44px' }}
         maxWidth="1440px"
         boxSizing="content-box"
       >
-        <VStack
-          alignItems="start"
-          spacing={{ base: '32px', md: '44px', lg: '44px' }}
+        <Text
+          textStyle={{ base: 'h3-semibold', md: 'h2', lg: 'h1' }}
+          color="neutral.900"
+          textAlign={{ base: 'left', sm: 'center', lg: 'left' }}
         >
-          <Text
-            textStyle={{ base: 'h3-semibold', md: 'h2', lg: 'h1' }}
-            color="neutral.900"
-          >
-            Setting up your RedeemSG Rewards campaign
-          </Text>
+          Setting up your RedeemSG Rewards campaign
+        </Text>
+        <Flex
+          alignItems="start"
+          flexDirection={{ base: 'column', md: 'row' }}
+          gap={{ base: '32px', md: '44px', lg: '44px' }}
+        >
           <VStack
             align="start"
             spacing={{ base: '32px', md: '32px', lg: '40px' }}
@@ -62,13 +63,13 @@ const SetUpYourRSGCampaign = () => {
               />
             ))}
           </VStack>
-        </VStack>
-        <Image
-          src={SetUpYourRSGCampaignImage}
-          alt="Setting up your RedeemSG Rewards campaign"
-          width={{ base: '280px', md: '300px', lg: '411px' }}
-        />
-      </Flex>
+          <Image
+            src={SetUpYourRSGCampaignImage}
+            alt="Setting up your RedeemSG Rewards campaign"
+            width={{ base: '280px', sm: '220px', lg: '302px', '2xl': '411px' }}
+          />
+        </Flex>
+      </VStack>
     </SectionContainer>
   )
 }

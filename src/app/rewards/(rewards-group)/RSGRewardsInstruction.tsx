@@ -46,7 +46,10 @@ const RSGRewardsInstruction = ({
           </Text>
         </CenterChildWithFixHeightAndWidth>
         {typeof stepInstruction === 'string' ? (
-          <Text textStyle="body-1" color="neutral.700">
+          <Text
+            textStyle={{ base: 'body-1', sm: 'body-2', lg: 'body-1' }}
+            color="neutral.700"
+          >
             {stepInstruction}
           </Text>
         ) : (

@@ -20,11 +20,11 @@ const RSGInstruction = ({
     <HStack
       alignItems={{
         lg: 'center',
-        md: 'flex-start',
+        'md-lg': 'flex-start',
         sm: 'center',
         base: 'flex-start',
       }}
-      spacing={{ lg: '28px', md: '24px', sm: '20px', base: '20px' }}
+      spacing={{ lg: '28px', 'md-lg': '24px', sm: '20px', base: '20px' }}
     >
       <CenterChildWithFixHeightAndWidth
         width="72px"
@@ -41,11 +41,16 @@ const RSGInstruction = ({
         <Flex
           alignItems={{
             lg: 'center',
-            md: 'flex-start',
+            'md-lg': 'flex-start',
             sm: 'center',
             base: 'flex-start',
           }}
-          flexDirection={{ lg: 'row', md: 'column', sm: 'row', base: 'column' }}
+          flexDirection={{
+            lg: 'row',
+            'md-lg': 'column',
+            sm: 'row',
+            base: 'column',
+          }}
           gap="10px"
         >
           <CenterChildWithFixHeightAndWidth

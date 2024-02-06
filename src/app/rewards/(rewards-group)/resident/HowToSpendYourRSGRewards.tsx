@@ -16,7 +16,10 @@ const INSTRUCTIONS = genStepIndexForInstructions([
   {
     imageSrc: SpendRSGRewardsStep1Image,
     stepInstruction: (
-      <Text textStyle="body-1" color="neutral.700">
+      <Text
+        textStyle={{ base: 'body-1', sm: 'body-2', lg: 'body-1' }}
+        color="neutral.700"
+      >
         {
           'Receive vouchers from agencies onboarded to RedeemSG. Only trust voucher links starting with '
         }
@@ -29,7 +32,10 @@ const INSTRUCTIONS = genStepIndexForInstructions([
   {
     imageSrc: SpendRSGRewardsStep2Image,
     stepInstruction: (
-      <Text textStyle="body-1" color="neutral.700">
+      <Text
+        textStyle={{ base: 'body-1', sm: 'body-2', lg: 'body-1' }}
+        color="neutral.700"
+      >
         <Text as="span">{'Go to '}</Text>
         <Link
           color="primary.500"
@@ -49,7 +55,10 @@ const INSTRUCTIONS = genStepIndexForInstructions([
   {
     imageSrc: SpendRSGRewardsStep3Image,
     stepInstruction: (
-      <Text textStyle="body-1" color="neutral.700">
+      <Text
+        textStyle={{ base: 'body-1', sm: 'body-2', lg: 'body-1' }}
+        color="neutral.700"
+      >
         Show your voucher&apos;s QR code to the cashier while you are making
         payment.
       </Text>
@@ -60,27 +69,32 @@ const INSTRUCTIONS = genStepIndexForInstructions([
 const HowToSpendYourRSGRewards = () => {
   return (
     <SectionContainer>
-      <Flex
+      <VStack
         alignItems={{ base: 'center', lg: 'flex-start' }}
         justifyContent="space-between"
-        flexDirection={{ base: 'column', lg: 'row' }}
         flexGrow={1}
-        gap={{ base: '40px', lg: '132px' }}
+        gap={{ base: '32px', sm: '24px', md: '44px' }}
         maxWidth="1440px"
         height="fit-content"
-        padding={{ base: '0 24px 40px', md: '88px 128px', lg: '0 148px 88px' }}
+        padding={{
+          base: '0 24px 40px',
+          md: '0 88px 128px',
+          lg: '0 148px 88px',
+        }}
         boxSizing="content-box"
       >
-        <VStack
-          align="start"
-          spacing={{ base: '32px', md: '44px', lg: '44px' }}
+        <Text
+          textStyle={{ base: 'h3-semibold', md: 'h2', lg: 'h1' }}
+          color="neutral.900"
+          textAlign={{ base: 'left', sm: 'center', lg: 'left' }}
         >
-          <Text
-            textStyle={{ base: 'h3-semibold', md: 'h2', lg: 'h1' }}
-            color="neutral.900"
-          >
-            How to spend your RedeemSG Rewards
-          </Text>
+          How to spend your RedeemSG Rewards
+        </Text>
+        <Flex
+          alignItems="start"
+          flexDirection={{ base: 'column', md: 'row' }}
+          gap={{ base: '32px', md: '44px', lg: '44px' }}
+        >
           <VStack
             align="start"
             spacing={{ base: '32px', md: '32px', lg: '40px' }}
@@ -92,12 +106,13 @@ const HowToSpendYourRSGRewards = () => {
               />
             ))}
           </VStack>
-        </VStack>
-        <Image
-          src={HowToSpendYourRSGRewardsImage}
-          alt="How to spend your RedeemSG Rewards Image"
-        />
-      </Flex>
+          <Image
+            src={HowToSpendYourRSGRewardsImage}
+            alt="How to spend your RedeemSG Rewards Image"
+            width={{ base: '280px', sm: '302px' }}
+          />
+        </Flex>
+      </VStack>
     </SectionContainer>
   )
 }

@@ -53,16 +53,21 @@ const RSGStaticStatistics = ({ backgroundColor }: RSGStaticStatisticsProps) => {
         maxWidth="1440px"
         padding={{
           lg: '88px 148px 0',
-          md: '64px 88px 0',
+          'md-lg': '64px 88px 0',
           sm: '64px 88px 0',
           base: '40px 24px 0',
         }}
         boxSizing="content-box"
         spacing={{ lg: '72px', base: '40px' }}
       >
-        <VStack spacing={{ base: '40px', sm: '48px', md: '40px', lg: '72px' }}>
+        <VStack
+          spacing={{ base: '40px', sm: '48px', 'md-lg': '40px', lg: '72px' }}
+        >
           <VStack spacing="16px">
-            <Box maxWidth="716px" textAlign={{ md: 'center', base: 'start' }}>
+            <Box
+              maxWidth="716px"
+              textAlign={{ 'md-lg': 'center', base: 'start' }}
+            >
               <Text
                 textStyle={{ lg: 'h1', sm: 'h2', base: 'h3-semibold' }}
                 color="neutral.900"
@@ -78,7 +83,7 @@ const RSGStaticStatistics = ({ backgroundColor }: RSGStaticStatisticsProps) => {
           <Grid
             gridGap={{ lg: '88px', base: '40px' }}
             gridTemplateColumns={{
-              md: '1fr 1fr 1fr 1fr',
+              'md-lg': '1fr 1fr 1fr 1fr',
               base: '1fr 1fr',
             }}
             width="100%"

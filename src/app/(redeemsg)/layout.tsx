@@ -34,12 +34,12 @@ export default function layout({
       <VStack position="relative" width="100%">
         <Box
           width="100%"
-          height={{ lg: '36px', md: '36px', sm: '32px', base: '27px' }}
+          height={{ lg: '36px', 'md-lg': '36px', sm: '32px', base: '27px' }}
           background="primary.100"
         />
         <Box
           width="100%"
-          height={{ lg: '124px', md: '116px', sm: '96px', base: '67px' }}
+          height={{ lg: '124px', 'md-lg': '116px', sm: '96px', base: '67px' }}
           background="white"
         />
         <Box
@@ -48,7 +48,7 @@ export default function layout({
           width="100%"
           padding={{
             lg: '0 148px',
-            md: '0 128px',
+            'md-lg': '0 128px',
             sm: '0 28px',
             base: '0 14px',
           }}
@@ -57,7 +57,7 @@ export default function layout({
             tabs={TABS}
             paddingObject={{ base: 4, smd: 8 }}
             borderRadius={{ base: '4px', sm: '8px', smd: '12px' }}
-            height={{ lg: '72px', md: '72px', sm: '56px', base: '54px' }}
+            height={{ lg: '72px', 'md-lg': '72px', sm: '56px', base: '54px' }}
             renderText={(label) => {
               // Since this is something we can control, we will split by space
               const individualWord = label.split(' ')
@@ -65,8 +65,8 @@ export default function layout({
                 <>
                   <Text
                     as="span"
-                    textStyle={{ lg: 'h6', md: 'subhead-1' }}
-                    display={{ md: 'block', base: 'none' }}
+                    textStyle={{ lg: 'h6', 'md-lg': 'subhead-1' }}
+                    display={{ 'md-lg': 'block', base: 'none' }}
                   >
                     {label}
                   </Text>
@@ -74,14 +74,14 @@ export default function layout({
                     <Text
                       as="span"
                       textStyle={{ base: 'custom-tab-big' }}
-                      display={{ base: 'block', md: 'none' }}
+                      display={{ base: 'block', 'md-lg': 'none' }}
                     >
                       {individualWord[0]}
                     </Text>
                     <Text
                       as="span"
                       textStyle={{ base: 'custom-tab-small' }}
-                      display={{ base: 'block', md: 'none' }}
+                      display={{ base: 'block', 'md-lg': 'none' }}
                     >
                       {individualWord[1]}
                     </Text>

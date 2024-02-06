@@ -63,7 +63,7 @@ const SearchingForSpecificVoucher = () => {
         maxWidth="1440px"
         padding={{
           lg: '88px 148px',
-          md: '80px 128px',
+          'md-lg': '80px 128px',
           sm: '64px 88px',
           base: '40px 24px',
         }}
@@ -83,7 +83,7 @@ const SearchingForSpecificVoucher = () => {
           gridTemplateColumns={{
             xl: '1fr 1fr 1fr',
             lg: '1fr 1fr',
-            md: '1fr 1fr',
+            'md-lg': '1fr 1fr',
             base: '1fr',
           }}
           width="100%"
@@ -93,8 +93,12 @@ const SearchingForSpecificVoucher = () => {
               <GridItem key={label}>
                 <VStack align="start" spacing="16px">
                   <Flex
-                    alignItems={{ base: 'start', sm: 'center', md: 'start' }}
-                    flexDirection={{ md: 'column', base: 'row' }}
+                    alignItems={{
+                      base: 'start',
+                      sm: 'center',
+                      'md-lg': 'start',
+                    }}
+                    flexDirection={{ 'md-lg': 'column', base: 'row' }}
                     gap="20px"
                   >
                     <CenterChildWithFixHeightAndWidth

@@ -21,7 +21,7 @@ const INSTRUCTIONS = genStepIndexForInstructions([
         <Link
           textStyle={{
             base: 'text-editor-link',
-            md: 'text-editor-link-small',
+            'md-lg': 'text-editor-link-small',
             lg: 'text-editor-link',
           }}
           color="primary.500"
@@ -67,15 +67,15 @@ const HowToSignUpAsMerchant = () => {
         maxWidth="1440px"
         padding={{
           lg: '0 148px 88px',
-          md: '0 128px 80px',
+          'md-lg': '0 128px 80px',
           sm: '0 88px 64px',
           base: '0 24px 40px',
         }}
         boxSizing="content-box"
       >
-        <VStack align="start" spacing={{ md: '24px', base: '16px' }}>
+        <VStack align="start" spacing={{ 'md-lg': '24px', base: '16px' }}>
           <Badge text="For CDC Vouchers Scheme 2024" />
-          <VStack align="start" spacing={{ md: '40px', base: '32px' }}>
+          <VStack align="start" spacing={{ 'md-lg': '40px', base: '32px' }}>
             <Text
               textStyle={{ lg: 'h1', sm: 'h2', base: 'h3-semibold' }}
               color="neutral.900"

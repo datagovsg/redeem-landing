@@ -88,11 +88,11 @@ const RedeemSGRewardsTab = () => {
   return (
     <VStack
       align="start"
-      marginTop={{ lg: '24px', md: '16px', base: '24px' }}
-      spacing={{ lg: '32px', md: '24px', base: '32px' }}
+      marginTop={{ lg: '24px', 'md-lg': '16px', base: '24px' }}
+      spacing={{ lg: '32px', 'md-lg': '24px', base: '32px' }}
     >
       <Text
-        textStyle={{ base: 'body-1', md: 'body-2', lg: 'body-1' }}
+        textStyle={{ base: 'body-1', 'md-lg': 'body-2', lg: 'body-1' }}
         color="neutral.700"
         whiteSpace="pre-line"
       >
@@ -102,7 +102,7 @@ const RedeemSGRewardsTab = () => {
         <Link
           textStyle={{
             base: 'text-editor-link',
-            md: 'text-editor-link-small',
+            'md-lg': 'text-editor-link-small',
             lg: 'text-editor-link',
           }}
           color="primary.500"
@@ -119,13 +119,13 @@ const RedeemSGRewardsTab = () => {
       <Flex
         flexWrap="wrap"
         flexDirection="row"
-        gap={{ base: '24px', md: '12px', lg: '24px' }}
+        gap={{ base: '24px', 'md-lg': '12px', lg: '24px' }}
         width="100%"
       >
         {MERCHANT_LOGO_LIST.map(({ backgroundColor, imageSrc, label }) => (
           <CenterChildWithFixHeightAndWidth
-            width={{ base: '44px', md: '40px', lg: '44px' }}
-            height={{ base: '44px', md: '40px', lg: '44px' }}
+            width={{ base: '44px', 'md-lg': '40px', lg: '44px' }}
+            height={{ base: '44px', 'md-lg': '40px', lg: '44px' }}
             borderRadius="50%"
             background={backgroundColor}
             key={label}
@@ -151,11 +151,11 @@ const CustomisedMerchantTab = () => {
   return (
     <VStack
       align="start"
-      marginTop={{ lg: '24px', md: '16px', base: '24px' }}
+      marginTop={{ lg: '24px', 'md-lg': '16px', base: '24px' }}
       spacing="24px"
     >
       <Text
-        textStyle={{ base: 'body-1', md: 'body-2', lg: 'body-1' }}
+        textStyle={{ base: 'body-1', 'md-lg': 'body-2', lg: 'body-1' }}
         color="neutral.700"
         whiteSpace="pre-line"
       >
@@ -199,16 +199,16 @@ const SelectMerchants = () => {
   return (
     <SectionContainer>
       <Flex
-        alignItems={{ base: 'left', md: 'center' }}
+        alignItems={{ base: 'left', 'md-lg': 'center' }}
         justifyContent="space-between"
-        flexDirection={{ base: 'column-reverse', md: 'row' }}
+        flexDirection={{ base: 'column-reverse', 'md-lg': 'row' }}
         flexGrow={1}
-        gap={{ base: '40px', md: '24px' }}
+        gap={{ base: '40px', 'md-lg': '24px' }}
         width="100%"
         maxWidth="calc(1440px + 296px)"
         padding={{
           lg: '88px 148px',
-          md: '80px 128px',
+          'md-lg': '80px 128px',
           sm: '64px 88px',
           base: '40px 24px',
         }}
@@ -216,13 +216,13 @@ const SelectMerchants = () => {
         <VStack
           align="start"
           width="100%"
-          maxWidth={{ lg: '540px', md: '300px' }}
-          spacing={{ base: '32px', md: '16px', lg: '24px' }}
+          maxWidth={{ lg: '540px', 'md-lg': '300px' }}
+          spacing={{ base: '32px', 'md-lg': '16px', lg: '24px' }}
         >
           <Text
             textStyle={{
               lg: 'h1',
-              md: 'h3-semibold',
+              'md-lg': 'h3-semibold',
               sm: 'h2',
               base: 'h3-semibold',
             }}
@@ -235,22 +235,26 @@ const SelectMerchants = () => {
             <Box overflow="auto">
               <TabList overflowX="scroll" width="max-content">
                 <Tab>
-                  <Text display={{ base: 'block', md: 'none', lg: 'block' }}>
+                  <Text
+                    display={{ base: 'block', 'md-lg': 'none', lg: 'block' }}
+                  >
                     REDEEMSG REWARDS
                   </Text>
                   <Text
-                    display={{ base: 'none', md: 'block', lg: 'none' }}
+                    display={{ base: 'none', 'md-lg': 'block', lg: 'none' }}
                     whiteSpace="pre-line"
                   >
                     {'REDEEMSG\nREWARDS'}
                   </Text>
                 </Tab>
                 <Tab>
-                  <Text display={{ base: 'block', md: 'none', lg: 'block' }}>
+                  <Text
+                    display={{ base: 'block', 'md-lg': 'none', lg: 'block' }}
+                  >
                     CUSTOMISED CAMPAIGN
                   </Text>
                   <Text
-                    display={{ base: 'none', md: 'block', lg: 'none' }}
+                    display={{ base: 'none', 'md-lg': 'block', lg: 'none' }}
                     whiteSpace="pre-line"
                   >
                     {'CUSTOMISED\nCAMPAIGN'}

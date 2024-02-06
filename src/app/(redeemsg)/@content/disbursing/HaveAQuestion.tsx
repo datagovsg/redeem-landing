@@ -12,13 +12,13 @@ const HaveAQuestion = () => {
     <SectionContainer backgroundColor="primary.100" width="100%">
       <Flex
         justifyContent="space-between"
-        flexDirection={{ base: 'column', md: 'row', lg: 'row' }}
+        flexDirection={{ base: 'column', 'md-lg': 'row', lg: 'row' }}
         gap={{ base: '24px' }}
         width="100%"
-        padding={{ base: '40px 24px', md: '88px 128px', lg: '88px 148px' }}
+        padding={{ base: '40px 24px', 'md-lg': '88px 128px', lg: '88px 148px' }}
       >
         <Text
-          textStyle={{ base: 'h3-semibold', md: 'h2', lg: 'h1' }}
+          textStyle={{ base: 'h3-semibold', 'md-lg': 'h2', lg: 'h1' }}
           color="neutral.900"
         >
           Have a question?

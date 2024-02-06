@@ -38,23 +38,23 @@ const DigitalExperienceForDisbursing = () => {
         maxWidth="1440px"
         padding={{
           lg: '0 88px 148px',
-          md: '0 128px 80px',
+          'md-lg': '0 128px 80px',
           sm: '0 88px 64px',
           base: '0 24px 40px',
         }}
         boxSizing="content-box"
-        spacing={{ md: '64px', sm: '40px', base: '32px' }}
+        spacing={{ 'md-lg': '64px', sm: '40px', base: '32px' }}
       >
-        <Box maxWidth="716px" textAlign={{ base: 'start', md: 'center' }}>
+        <Box maxWidth="716px" textAlign={{ base: 'start', 'md-lg': 'center' }}>
           <Text
-            textStyle={{ md: 'h1', sm: 'h2', base: 'h3-semibold' }}
+            textStyle={{ 'md-lg': 'h1', sm: 'h2', base: 'h3-semibold' }}
             color="neutral.900"
           >
             We&apos;ve made digital vouchers a better experience for all
           </Text>
         </Box>
         <Grid
-          gridGap={{ md: '72px', sm: '40px', base: '32px' }}
+          gridGap={{ 'md-lg': '72px', sm: '40px', base: '32px' }}
           gridTemplateColumns={{ md: '1fr 1fr 1fr', base: '1fr' }}
           width="100%"
         >
@@ -71,8 +71,12 @@ const DigitalExperienceForDisbursing = () => {
                   {title}
                 </Text>
                 <Text
-                  textStyle={{ base: 'body-1', md: 'body-2', lg: 'body-1' }}
-                  marginTop={{ md: '16px', base: '8px' }}
+                  textStyle={{
+                    base: 'body-1',
+                    'md-lg': 'body-2',
+                    lg: 'body-1',
+                  }}
+                  marginTop={{ 'md-lg': '16px', base: '8px' }}
                   color="neutral.700"
                 >
                   {description}
