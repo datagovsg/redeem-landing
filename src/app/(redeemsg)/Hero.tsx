@@ -53,9 +53,8 @@ const Hero = ({ imgSrc, imgAlt }: HeroProps) => {
               color="neutral.700"
               textAlign="center"
             >
-              The voucher system for everyone. RedeemSG helps Singapore
-              government agencies easily create, issue, and track digital
-              vouchers.
+              RedeemSG helps Singapore government agencies easily create, issue,
+              and track digital vouchers.
             </Text>
           </Box>
 

@@ -8,6 +8,7 @@
     "dev": "next dev -p 3000",
     "build": "next build",
     "build:staging": "cp .env.staging .env.production && next build",
+    "build:production": "cp .env.production .env.production && next build",
     "start": "next start",
     "lint": "next lint",
     "local:production:build:test": "pnpm run build && npx serve ./out",

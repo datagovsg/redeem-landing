@@ -18,7 +18,7 @@ const DIGITAL_BENEFITS = [
   {
     imgSrc: DigitalMerchantBenefitsImage,
     badgeText: 'Merchant benefits',
-    title: 'Next day payouts to merchants',
+    title: 'Next-day payouts to merchants',
     description:
       'Support local merchants and their cashflow through automated next-day payouts.',
   },
