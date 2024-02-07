@@ -100,6 +100,7 @@ const ListOfSupermarkets = () => {
                     height="60px"
                     borderRadius="50%"
                     background={backgroundColor}
+                    padding="4px"
                   >
                     <Image src={imageSrc} alt={label} />
                   </CenterChildWithFixHeightAndWidth>
