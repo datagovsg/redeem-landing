@@ -28,6 +28,7 @@ const INSTRUCTIONS = genStepIndexForInstructions([
           textStyle={{
             base: 'text-editor-bold',
             ssmd: 'text-editor-bold-non-mobile',
+            xl: 'text-editor-bold',
           }}
         >
           voucher.redeem.gov.sg.

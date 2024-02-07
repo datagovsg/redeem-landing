@@ -16,7 +16,7 @@ const INSTRUCTIONS = genStepIndexForInstructions([
   {
     imageSrc: SetUpAsMerchantStep1Image,
     stepInstruction: (
-      <Text textStyle={{ lg: 'body-1' }} color="neutral.700">
+      <Text textStyle={{ base: 'body-1' }} color="neutral.700">
         {'Indicate your interest on '}
         <Link
           textStyle={{

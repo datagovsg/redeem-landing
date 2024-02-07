@@ -15,7 +15,7 @@ const INSTRUCTIONS = genStepIndexForInstructions([
   {
     imageSrc: RSGFindAndSpendVoucherStep1Image,
     stepInstruction: (
-      <Text textStyle={{ lg: 'body-1' }} color="neutral.700">
+      <Text textStyle={{ base: 'body-1' }} color="neutral.700">
         {'Head to the '}
         <Link
           textStyle={{
@@ -41,15 +41,9 @@ const INSTRUCTIONS = genStepIndexForInstructions([
   {
     imageSrc: RSGFindAndSpendVoucherStep2Image,
     stepInstruction: (
-      <Text textStyle={{ lg: 'body-1' }} color="neutral.700">
+      <Text textStyle={{ base: 'body-1' }} color="neutral.700">
         {'Only trust voucher links starting with '}
-        <Text
-          as="span"
-          textStyle={{
-            base: 'text-editor-bold',
-            ssmd: 'text-editor-bold-non-mobile',
-          }}
-        >
+        <Text as="span" textStyle={{ base: 'text-editor-bold' }}>
           voucher.redeem.gov.sg.
         </Text>
       </Text>
