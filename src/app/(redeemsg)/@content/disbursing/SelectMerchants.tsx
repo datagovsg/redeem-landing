@@ -97,7 +97,7 @@ const RedeemSGRewardsTab = () => {
         whiteSpace="pre-line"
       >
         {
-          'Suitable for campaigns that provide vouchers as rewards. With RedeemSG Rewards, cut down on operational efforts to onboard and train merchants.\n\nSpendable at'
+          'Suitable for campaigns that provide vouchers as rewards. With RedeemSG Rewards, cut down on operational efforts to onboard and train merchants.\n\nSpendable at '
         }
         <Link
           textStyle={{
