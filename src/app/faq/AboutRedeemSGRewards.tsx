@@ -96,7 +96,7 @@ export const AboutRedeemSGRewardsQuestions = [
               {
                 beforeLinkText:
                   'With RedeemSG Rewards, we offer a selection of onboarded supermarket merchants, streamlining the operations required for agencies to onboard, train, and manage merchants. You can view the ',
-                linkText: 'ist of participating supermarket chains here.',
+                linkText: 'list of participating supermarket chains here.',
                 afterLinkText:
                   ' These can be suitable for initiatives focused on providing incentives or rewards.',
                 href: RSG_REWARDS_WHERE_TO_SPEND,

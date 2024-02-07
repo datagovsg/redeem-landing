@@ -76,8 +76,9 @@ const RSGStaticStatistics = ({ backgroundColor }: RSGStaticStatisticsProps) => {
               </Text>
             </Box>
             <Text textStyle="body-1" color="neutral.700">
-              Supporting Singapore on it&apos;s journey towards a fair and
-              progressive fiscal system. Powered by thoughtful digitalisation.
+              Supporting the Singapore government in providing digital vouchers
+              to citizens who need them, easily. Powered by thoughtful
+              digitalisation.
             </Text>
           </VStack>
           <Grid

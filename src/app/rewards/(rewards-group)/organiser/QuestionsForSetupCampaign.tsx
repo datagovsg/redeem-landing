@@ -53,7 +53,7 @@ export const SetUpCampaignQuestions = [
         AnswerResponse: () => (
           <SimpleAnswerContainer
             answers={[
-              'RedeemSG Rewards is ideal for campaigns without a preference for specific merchant types. These can be suitable for initiatives focused on providing incentives or rewards to recipients.',
+              'RedeemSG Rewards is ideal for agencies who want to issue vouchers quickly, without having to onboard their own merchants. This allows your campaign set-up to go from months, to weeks. RedeemSG Rewards are suitable as incentive or reward vouchers, as recipients get to spend them at any participating major supermarkets, with groceries being a common daily necessity.',
               {
                 beforeLinkText:
                   "For other campaign types, you are able to tailor your campaign to specific goals, by ensuring the expenditure of vouchers towards specific merchants. You can also select the voucher validity period, and amount. Please note that you'll have to onboard and manage merchants out of our system. To find out more, ",

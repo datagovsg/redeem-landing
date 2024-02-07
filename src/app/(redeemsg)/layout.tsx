@@ -11,8 +11,8 @@ import RedeemLogoWithTextImage from '~images/RedeemLogoWithText.svg'
 
 const TABS = [
   { href: DISBURSING, label: 'Disbursing vouchers' },
-  { href: ACCEPTING, label: 'Accepting vouchers' },
   { href: SPENDING, label: 'Spending vouchers' },
+  { href: ACCEPTING, label: 'Accepting vouchers' },
 ] as const
 
 export default function layout({

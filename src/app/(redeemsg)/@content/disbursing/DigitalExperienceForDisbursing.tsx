@@ -10,7 +10,7 @@ import DigitalSchemeOrganiserBenefitsImage from '~images/DigitalSchemeOrganiserB
 const DIGITAL_BENEFITS = [
   {
     imgSrc: DigitalSchemeOrganiserBenefitsImage,
-    badgeText: 'Scheme organiser benefits',
+    badgeText: 'Campaign organiser benefits',
     title: 'Easy tracking and financial reconciliation',
     description:
       'Effortlessly track redemptions and reconcile finances using the admin portal or by downloading reports.',
