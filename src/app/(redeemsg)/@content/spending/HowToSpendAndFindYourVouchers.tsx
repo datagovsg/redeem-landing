@@ -43,7 +43,13 @@ const INSTRUCTIONS = genStepIndexForInstructions([
     stepInstruction: (
       <Text textStyle={{ lg: 'body-1' }} color="neutral.700">
         {'Only trust voucher links starting with '}
-        <Text as="span" textStyle={{ lg: 'text-editor-bold' }}>
+        <Text
+          as="span"
+          textStyle={{
+            base: 'text-editor-bold',
+            ssmd: 'text-editor-bold-non-mobile',
+          }}
+        >
           voucher.redeem.gov.sg.
         </Text>
       </Text>

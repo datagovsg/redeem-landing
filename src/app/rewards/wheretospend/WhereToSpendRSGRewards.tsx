@@ -26,6 +26,13 @@ const WhereToSpendRSGRewards = () => {
         <Image
           src={SupermarketImage}
           alt="Where to spend your RedeemSG Rewards"
+          width={{
+            base: '280px',
+            ssmd: '278px',
+            md: '232px',
+            lg: '302px',
+            xl: '476px',
+          }}
         />
       </VStack>
     </SectionContainer>

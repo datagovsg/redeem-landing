@@ -73,7 +73,13 @@ const CustomNavigationTabs = ({
             width="100%"
             height="100%"
             textAlign="center"
-            textStyle={{ base: 'subhead-2', ssmd: 'subhead-2', lg: 'h6' }}
+            textStyle={{
+              base: 'subhead-2',
+              ssmd: 'custom-tab-ssmd',
+              md: 'subhead-1',
+              lg: 'subhead-2',
+              xl: 'h6',
+            }}
             letterSpacing="-0.006em"
             verticalAlign="middle"
             display="flex"

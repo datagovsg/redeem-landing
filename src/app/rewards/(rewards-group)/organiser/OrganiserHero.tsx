@@ -39,7 +39,7 @@ const OrganiserHero = () => {
           <Text
             textStyle={{
               base: 'h3-semibold',
-              ssmd: 'h3-semibold',
+              ssmd: 'header-text-ssmd',
               md: 'h3-semibold',
               lg: 'h2',
               xl: 'h1',

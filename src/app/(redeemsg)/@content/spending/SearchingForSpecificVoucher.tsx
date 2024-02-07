@@ -48,7 +48,7 @@ const SearchingForSpecificVoucher = () => {
       onClick: () => openInNewTab(CFHP_FAQ),
     },
     {
-      label: 'RedeemSG Rewards Schemes',
+      label: 'RedeemSG Rewards Campaigns',
       imageSrc: VouchersRSGRewardsLogoImage,
       buttonText: 'Go to RedeemSG Rewards',
       backgroundColor: '#E9EBFF',

@@ -60,8 +60,8 @@ export default function layout({ children }: { children: React.ReactNode }) {
               base: '76px',
               ssmd: '52px',
               md: '64px',
-              lg: '56px',
-              xl: '72px',
+              lg: '60px',
+              xl: '76px',
             }}
           />
         </Box>

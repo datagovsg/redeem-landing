@@ -161,7 +161,7 @@ const CustomisedMerchantTab = () => {
         whiteSpace="pre-line"
       >
         {
-          'Suitable for schemes that require a customised set of merchants.\n\nTailor your campaign to specific goals, by ensuring that vouchers can only be spent only at specific merchants.'
+          'Suitable for campaigns that require a customised set of merchants.\n\nTailor your campaign to specific goals, by ensuring that vouchers can only be spent only at specific merchants.'
         }
       </Text>
       <Infobox

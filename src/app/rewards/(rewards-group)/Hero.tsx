@@ -55,14 +55,14 @@ const Hero = () => {
             <Text
               textStyle={{
                 base: 'h3-semibold',
-                ssmd: 'h5',
+                ssmd: 'header-text-ssmd',
                 md: 'h4',
                 lg: 'h3-semibold',
                 xl: 'h1',
               }}
               color="neutral.900"
             >
-              The simplified digital voucher experience for all
+              The simplified voucher experience for all
             </Text>
             <Text
               textStyle={{
@@ -74,9 +74,9 @@ const Hero = () => {
               }}
               color="neutral.700"
             >
-              With RedeemSG Rewards, recipients can conveniently spend vouchers
-              at all participating supermarkets, while agencies enjoy swift
-              campaign set-up without the need to onboard merchants.
+              With RedeemSG Rewards, conveniently spend at participating
+              supermarkets, while agencies enjoy swift campaign set-up, without
+              needing to onboard merchants.
             </Text>
           </VStack>
         </VStack>

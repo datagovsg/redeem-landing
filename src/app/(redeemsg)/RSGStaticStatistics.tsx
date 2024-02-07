@@ -32,7 +32,7 @@ const STATIC_STATISTICS = [
     ),
   },
   {
-    title: 'schemes launched',
+    title: 'campaigns launched',
     description: (
       <Text textStyle={{ lg: 'h1', base: 'h3-semibold' }} color="primary.500">
         21

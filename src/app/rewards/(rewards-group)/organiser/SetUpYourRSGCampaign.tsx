@@ -47,7 +47,13 @@ const SetUpYourRSGCampaign = () => {
         boxSizing="content-box"
       >
         <Text
-          textStyle={{ base: 'h3-semibold', md: 'h2', lg: 'h2', xl: 'h1' }}
+          textStyle={{
+            base: 'h3-semibold',
+            ssmd: 'header-text-ssmd',
+            md: 'h2',
+            lg: 'h2',
+            xl: 'h1',
+          }}
           color="neutral.900"
           textAlign={{ base: 'left', md: 'center', xl: 'left' }}
         >

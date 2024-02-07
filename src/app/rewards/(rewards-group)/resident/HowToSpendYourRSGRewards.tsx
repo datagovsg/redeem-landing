@@ -23,7 +23,13 @@ const INSTRUCTIONS = genStepIndexForInstructions([
         {
           'Receive vouchers from agencies onboarded to RedeemSG. Only trust voucher links starting with '
         }
-        <Text as="span" textStyle="text-editor-bold">
+        <Text
+          as="span"
+          textStyle={{
+            base: 'text-editor-bold',
+            ssmd: 'text-editor-bold-non-mobile',
+          }}
+        >
           voucher.redeem.gov.sg.
         </Text>
       </Text>
@@ -93,7 +99,7 @@ const HowToSpendYourRSGRewards = () => {
         <Text
           textStyle={{
             base: 'h3-semibold',
-            ssmd: 'h3-semibold',
+            ssmd: 'header-text-ssmd',
             md: 'h2',
             lg: 'h2',
             xl: 'h1',
