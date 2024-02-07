@@ -44,7 +44,7 @@ export const AboutRedeemSGQuestions = [
           <SimpleAnswerContainer
             answers={[
               'RedeemSG is used for the CDC Voucher Scheme and previously $24.8M NEA/PUB Climate Change Household Package. We are also in the process of working with several other agencies on enabling their campaigns.',
-              "A previous version of RedeemSG was also used for to track >20 million redemption of items across PA/MTI's mask distribution campaigns, NDP ticketing, MINDEF's SG together pack distribution campaigns and SGUnited Buka Puasa Meals Initiative with the Roses of Peace/ MUIS/PA.",
+              "A previous version of RedeemSG was also used for to track >20 million redemption of items across PA/MTI's mask distribution campaigns, NDP ticketing, MINDEF's SG together pack distribution campaigns and SGUnited Buka Puasa Meals Initiative with the Roses of Peace/MUIS/PA.",
             ]}
           />
         ),
@@ -56,14 +56,14 @@ export const AboutRedeemSGQuestions = [
           <SimpleAnswerContainer
             answers={[
               'Firstly, RedeemSG makes it very easy for agencies to easily start a government voucher campaign - this includes specifying an eligibility list for social assistance (e.g. only 1-3 room HDB households) and specifying the merchants that they want to participate in their campaign (e.g. spectacle shops only).',
-              'Secondly, RedeemSG provides the agencies with the ability to automate the payout process and improve financial reconciliation as all the records are provided through the system. Thirdly, RedeemSG ensures inclusivity by providing agencies with the ability to cater to both digital and paper vouchers concurrently, which ensures the digitally less savvy are still able to access the same vouchers',
+              'Secondly, RedeemSG provides the agencies with the ability to automate the payout process and improve financial reconciliation as all the records are provided through the system. Thirdly, RedeemSG ensures inclusivity by providing agencies with the ability to cater to both digital and paper vouchers concurrently, which ensures the digitally less savvy are still able to access the same vouchers.',
             ]}
           />
         ),
       },
       {
         questionTitle:
-          'I am a voucher applicant/ recipient. How do I apply for vouchers? ',
+          'I am a voucher applicant/recipient. How do I apply for vouchers? ',
         AnswerResponse: HowDoIApplyForVouchers,
       },
       {
