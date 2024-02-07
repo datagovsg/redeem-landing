@@ -19,20 +19,30 @@ const FAQ = ({ headerText, bodyText, buttonText, buttonURL }: FAQProps) => {
     <SectionContainer background="primary.500">
       <VStack
         alignItems="center"
-        padding={{ base: '56px 24px', lg: '88px 148px' }}
+        padding={{ base: '56px 24px', ssmd: '64px 58px', lg: '88px 148px' }}
         textAlign="center"
         spacing="32px"
       >
         <Image src={ResidentFAQImage} alt="Resident FAQ" />
-        <VStack spacing={{ base: '32px', lg: '8px' }}>
+        <VStack spacing={{ base: '32px', ssmd: '16px', lg: '8px' }}>
           <Text
-            textStyle={{ base: 'responsive-heading.heavy', md: 'h2', lg: 'h1' }}
+            textStyle={{
+              base: 'responsive-heading.heavy',
+              ssmd: 'responsive-heading.heavy',
+              md: 'h2',
+              lg: 'h1',
+            }}
             color="white"
           >
             {headerText}
           </Text>
           <Text
-            textStyle={{ lg: 'body-1', md: 'body-2', base: 'body-1' }}
+            textStyle={{
+              lg: 'body-1',
+              ssmd: 'body-1',
+              md: 'body-2',
+              base: 'body-1',
+            }}
             color="white"
           >
             {bodyText}

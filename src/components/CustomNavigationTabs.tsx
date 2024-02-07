@@ -18,6 +18,7 @@ type CustomNavigationTabsProps = {
   height: StackProps['height']
   renderText?: (label: string) => React.ReactNode
   borderRadius: BoxProps['borderRadius']
+  outerBorderRadius: BoxProps['borderRadius']
   paddingObject: {
     base: number
     smd: number
@@ -29,6 +30,7 @@ const CustomNavigationTabs = ({
   height,
   renderText = (label) => label,
   borderRadius,
+  outerBorderRadius,
   paddingObject,
 }: CustomNavigationTabsProps) => {
   const pathname = usePathname()
@@ -54,7 +56,7 @@ const CustomNavigationTabs = ({
       background="primary.200"
       border="1px solid"
       borderColor="white"
-      borderRadius={{ base: '8px', md: '16px', lg: '8px', xl: '16px' }}
+      borderRadius={outerBorderRadius}
       boxSizing="border-box"
       spacing={0}
     >
@@ -71,7 +73,7 @@ const CustomNavigationTabs = ({
             width="100%"
             height="100%"
             textAlign="center"
-            textStyle={{ base: 'subhead-2', lg: 'h6' }}
+            textStyle={{ base: 'subhead-2', ssmd: 'subhead-2', lg: 'h6' }}
             letterSpacing="-0.006em"
             verticalAlign="middle"
             display="flex"

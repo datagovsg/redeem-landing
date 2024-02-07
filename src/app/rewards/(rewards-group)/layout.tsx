@@ -33,6 +33,7 @@ export default function layout({ children }: { children: React.ReactNode }) {
           width="100%"
           padding={{
             base: '0 8px',
+            ssmd: '0 58px',
             md: '0 28px',
             lg: '0 128px',
             xl: '0 148px',
@@ -41,8 +42,27 @@ export default function layout({ children }: { children: React.ReactNode }) {
           <CustomNavigationTabs
             tabs={TABS}
             paddingObject={{ base: 8, smd: 8 }}
-            borderRadius={{ base: '4px', md: '12px', lg: '8px', xl: '12px' }}
-            height={{ base: '76px', md: '64px', lg: '56px', xl: '72px' }}
+            outerBorderRadius={{
+              base: '8px',
+              ssmd: '16px',
+              md: '16px',
+              lg: '8px',
+              xl: '16px',
+            }}
+            borderRadius={{
+              base: '4px',
+              ssmd: '12px',
+              md: '12px',
+              lg: '8px',
+              xl: '12px',
+            }}
+            height={{
+              base: '76px',
+              ssmd: '52px',
+              md: '64px',
+              lg: '56px',
+              xl: '72px',
+            }}
           />
         </Box>
       </VStack>

@@ -12,20 +12,34 @@ const OrganiserHero = () => {
         maxWidth="1440px"
         padding={{
           base: '0 24px 40px',
+          ssmd: '0 58px 52px',
           md: '0 88px 88px',
           lg: '0 128px 88px',
           xl: '0 148px 88px',
         }}
         boxSizing="content-box"
-        spacing={{ base: '40px', md: '44px', lg: '44px', xl: '80px' }}
+        spacing={{
+          base: '40px',
+          ssmd: '44px',
+          md: '44px',
+          lg: '44px',
+          xl: '80px',
+        }}
       >
         <VStack
           textAlign="center"
-          spacing={{ base: '24px', md: '16px', lg: '16px', xl: '16px' }}
+          spacing={{
+            base: '24px',
+            ssmd: '16px',
+            md: '16px',
+            lg: '16px',
+            xl: '16px',
+          }}
         >
           <Text
             textStyle={{
               base: 'h3-semibold',
+              ssmd: 'h3-semibold',
               md: 'h3-semibold',
               lg: 'h2',
               xl: 'h1',
@@ -38,6 +52,7 @@ const OrganiserHero = () => {
           <Text
             textStyle={{
               base: 'text-editor-link',
+              ssmd: 'body-2',
               md: 'body-2',
               lg: 'text-editor-link-small',
               xl: 'inter',
@@ -50,6 +65,7 @@ const OrganiserHero = () => {
             <Link
               textStyle={{
                 base: 'text-editor-link',
+                ssmd: 'text-editor-link-small',
                 md: 'text-editor-link-small',
                 lg: 'text-editor-link-small',
                 xl: 'text-editor-link',
@@ -68,7 +84,17 @@ const OrganiserHero = () => {
             </Link>
           </Text>
         </VStack>
-        <Image src={SupermarketImage} alt="RedeemSG Organiser Page" />
+        <Image
+          src={SupermarketImage}
+          alt="RedeemSG Organiser Page"
+          width={{
+            base: '280px',
+            ssmd: '352px',
+            md: '472px',
+            lg: '606px',
+            xl: '800px',
+          }}
+        />
       </VStack>
     </SectionContainer>
   )

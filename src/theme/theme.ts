@@ -23,9 +23,14 @@ export const theme = extendTheme(ogpTheme, {
   letterSpacings: typography.letterSpacing,
   textStyles,
   components,
+  // Note for breakpoint in general, pls use only base, sm, md, lg, xl, 2xl as the standard sizing
+  // Though chakra is based on minWidth concept (i.e mobile first), there are some implementations in this codebase that is not so
+  // accurate to that pattern when matching the figma
   breakpoints: {
     base: '0em', // 0px
     sm: '30em', // ~480px. em is a relative unit and is dependant on the font size.
+    // Special breakpoint. Do not use unless there is a need (this is used only in rewards/organiser)
+    ssmd: '33.75em', // ~540px
     // Special breakpoint. Do not use unless there is a need
     smd: '43em', // ~688px
     // This is use as md for redeem rewards

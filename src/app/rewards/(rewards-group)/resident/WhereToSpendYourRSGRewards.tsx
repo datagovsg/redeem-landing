@@ -30,6 +30,7 @@ const WhereToSpendYourRSGRewards = () => {
         maxWidth="1440px"
         padding={{
           base: '40px 24px',
+          ssmd: '52px 58px',
           md: '88px',
           lg: '88px 128px',
           xl: '88px 148px',

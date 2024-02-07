@@ -51,7 +51,7 @@ const INSTRUCTIONS = genStepIndexForInstructions([
           href={RSG_REWARDS_WHERE_TO_SPEND}
           isExternal
         >
-          {'any participating supermarket ↪&#xFE0E;'}
+          any participating supermarket ↪&#xFE0E;
         </Link>
         <Text as="span">{' near you to spend your vouchers.'}</Text>
       </Text>
@@ -78,11 +78,12 @@ const HowToSpendYourRSGRewards = () => {
         alignItems={{ base: 'center', sm: 'flex-start', lg: 'flex-start' }}
         justifyContent="space-between"
         flexGrow={1}
-        gap={{ base: '32px', sm: '24px', md: '44px' }}
+        gap={{ base: '32px', sm: '24px', ssmd: '24px', md: '44px' }}
         maxWidth="1440px"
         height="fit-content"
         padding={{
           base: '0 24px 40px',
+          ssmd: '0 58px 52px',
           md: '0 88px 88px',
           lg: '0 128px 88px',
           xl: '0 148px 88px',
@@ -90,7 +91,13 @@ const HowToSpendYourRSGRewards = () => {
         boxSizing="content-box"
       >
         <Text
-          textStyle={{ base: 'h3-semibold', md: 'h2', lg: 'h2', xl: 'h1' }}
+          textStyle={{
+            base: 'h3-semibold',
+            ssmd: 'h3-semibold',
+            md: 'h2',
+            lg: 'h2',
+            xl: 'h1',
+          }}
           color="neutral.900"
           textAlign={{ base: 'left', md: 'center', lg: 'left' }}
         >
@@ -99,7 +106,13 @@ const HowToSpendYourRSGRewards = () => {
         <Flex
           alignItems="start"
           flexDirection={{ base: 'column', md: 'row' }}
-          gap={{ base: '32px', md: '68px', lg: '44px', xl: '44px' }}
+          gap={{
+            base: '32px',
+            ssmd: '44px',
+            md: '68px',
+            lg: '44px',
+            xl: '44px',
+          }}
         >
           <VStack
             align="start"

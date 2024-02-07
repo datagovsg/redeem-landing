@@ -56,6 +56,12 @@ export default function layout({
           <CustomNavigationTabs
             tabs={TABS}
             paddingObject={{ base: 4, smd: 8 }}
+            outerBorderRadius={{
+              base: '8px',
+              md: '16px',
+              lg: '8px',
+              xl: '16px',
+            }}
             borderRadius={{ base: '4px', sm: '8px', smd: '12px' }}
             height={{ lg: '72px', 'md-lg': '72px', sm: '56px', base: '54px' }}
             renderText={(label) => {
