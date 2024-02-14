@@ -4,8 +4,8 @@ import LegalText from '../LegalText'
 import { Line } from '../types'
 
 import {
-  RSG_REWARDS_TERM_OF_USE as RSG_REWARDS_TERM_OF_USE_LINK,
   RSG_REWARDS_WHERE_TO_SPEND,
+  TERM_OF_USE as TERM_OF_USE_LINK,
 } from '~constants/links'
 
 export const TERM_OF_USE: Line[] = [
@@ -1171,7 +1171,7 @@ export const RSG_REWARDS_TERM_OF_USE: Line[] = [
             {
               'reserves the right to amend these terms and conditions at any time. Any updates to these terms and conditions may be found at '
             }
-            <LegalExternalLink href={RSG_REWARDS_TERM_OF_USE_LINK}>
+            <LegalExternalLink href={TERM_OF_USE_LINK}>
               term of use
             </LegalExternalLink>
           </LegalText>
