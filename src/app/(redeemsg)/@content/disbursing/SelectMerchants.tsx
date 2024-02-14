@@ -132,7 +132,7 @@ const RedeemSGRewardsTab = () => {
             key={label}
             padding="4px"
           >
-            <Image src={imageSrc} alt={label} />
+            <Image src={imageSrc} alt={label} width="100%" />
           </CenterChildWithFixHeightAndWidth>
         ))}
       </Flex>

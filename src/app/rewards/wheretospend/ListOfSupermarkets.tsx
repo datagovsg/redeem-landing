@@ -102,7 +102,7 @@ const ListOfSupermarkets = () => {
                     background={backgroundColor}
                     padding="4px"
                   >
-                    <Image src={imageSrc} alt={label} />
+                    <Image src={imageSrc} alt={label} width="100%" />
                   </CenterChildWithFixHeightAndWidth>
                   <Text textStyle="h4" color="neutral.900">
                     {label}
