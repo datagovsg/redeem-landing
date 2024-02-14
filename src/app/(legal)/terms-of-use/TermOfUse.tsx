@@ -1,7 +1,7 @@
 import { Center, Text, VStack } from '@chakra-ui/react'
 
-import { markdownLikeRender } from '../helper'
-import LegalText from '../LegalText'
+import { markdownLikeRender } from '../../helper'
+import LegalText from '../../LegalText'
 
 import { SCHEDULE, TERM_OF_USE } from './constants'
 

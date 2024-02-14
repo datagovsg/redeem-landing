@@ -5,14 +5,16 @@ import SectionContainer from '~components/SectionContainer'
 type CommonLegalHeaderProps = {
   header: string
   versionAndUpdatedAt: string
+  backgroundColor?: string
 }
 
 const CommonLegalHeader = ({
   header,
   versionAndUpdatedAt,
+  backgroundColor = 'primary.200',
 }: CommonLegalHeaderProps) => {
   return (
-    <SectionContainer backgroundColor="primary.200">
+    <SectionContainer backgroundColor={backgroundColor}>
       <Flex
         alignItems="center"
         justifyContent={{ base: 'initial', md: 'space-between' }}

@@ -3,8 +3,9 @@ import CommonLegalHeader from '../../CommonLegalHeader'
 const TermOfUseHeader = () => {
   return (
     <CommonLegalHeader
-      header="Terms of Use"
-      versionAndUpdatedAt="Version 4.1.1, Updated 29 August 2023"
+      header="RedeemSG Rewards Terms of Use"
+      versionAndUpdatedAt="Version 0.0.1, Updated 14 February 2023"
+      backgroundColor="primary.100"
     />
   )
 }

@@ -1,7 +1,7 @@
-import LegalExternalLink from '../LegalExternalLink'
-import LegalHeading from '../LegalHeading'
-import LegalText from '../LegalText'
-import { Line } from '../types'
+import LegalExternalLink from '../../LegalExternalLink'
+import LegalHeading from '../../LegalHeading'
+import LegalText from '../../LegalText'
+import { Line } from '../../types'
 
 export const TERM_OF_USE: Line[] = [
   {
