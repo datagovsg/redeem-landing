@@ -17,6 +17,7 @@ export const RSG_CDC_CAMPAIGN_ORGANISER_FORM =
 export const RSG_CDC_MERCHANT_FORM =
   'https://form.gov.sg/63ae6b40f03e1f00121e924e'
 export const RSG_REWARDS_WHERE_TO_SPEND = `${getBaseUrl()}/rewards/wheretospend`
+export const TERM_OF_USE = `${getBaseUrl()}/terms-of-use`
 export const RSG_CDC_DONATE_FAQ = 'https://vouchers.cdc.gov.sg/donate/faq/'
 
 export const CDC_RESIDENTS_FAQ = 'https://vouchers.cdc.gov.sg/residents/faq/'

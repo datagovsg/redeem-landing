@@ -31,7 +31,7 @@ export default function RootLayout({
             clientToken: 'pub7d60f6c91f3e16648383f783bb6506c9',
             applicationId: 'fbd611f5-4a3f-4958-982a-50dae8a4ac9a',
             site: 'datadoghq.com',
-            service: 'next-app-router-rum',
+            service: 'redeem-landing',
             env: '${process.env.NEXT_PUBLIC_APP_ENV}',
             // Specify a version number to identify the deployed version of your application in Datadog
             version: '1.0.0',

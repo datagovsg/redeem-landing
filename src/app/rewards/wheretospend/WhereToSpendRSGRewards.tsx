@@ -28,10 +28,10 @@ const WhereToSpendRSGRewards = () => {
           alt="Where to spend your RedeemSG Rewards"
           width={{
             base: '280px',
-            ssmd: '278px',
-            md: '232px',
-            lg: '302px',
-            xl: '476px',
+            ssmd: '352px',
+            md: '472px',
+            lg: '606px',
+            xl: '800px',
           }}
         />
       </VStack>

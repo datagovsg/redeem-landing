@@ -16,6 +16,7 @@ const DecalInformation = () => {
         >
           <Text
             textStyle={{ base: 'h3-semibold', md: 'h3-semibold', lg: 'h1' }}
+            color="neutral.900"
           >
             Look out for this decal at the cashier counter
           </Text>
