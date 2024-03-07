@@ -35,7 +35,8 @@ export default function RootLayout({
             env: '${process.env.NEXT_PUBLIC_APP_ENV}',
             // Specify a version number to identify the deployed version of your application in Datadog
             version: '1.0.0',
-            sampleRate: 1,
+            sessionSampleRate: 1,
+            sessionReplaySampleRate: 100,
             trackUserInteractions: true,
             defaultPrivacyLevel: 'mask-user-input'
           });
