@@ -33,7 +33,7 @@ const TermOfUse = () => {
           marginBottom={{ lg: '20px', base: '10px' }}
           color="primary.500"
         >
-          SCHEDULE
+          Schedule
         </Text>
         {markdownLikeRender(SCHEDULE)}
       </VStack>
