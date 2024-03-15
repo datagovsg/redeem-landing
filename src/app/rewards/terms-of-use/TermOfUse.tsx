@@ -3,7 +3,7 @@ import { Center, Text, VStack } from '@chakra-ui/react'
 import { markdownLikeRender } from '../../../common/helper'
 import LegalText from '../../../common/LegalText'
 
-import { SCHEDULE, TERM_OF_USE } from './constants'
+import { RSG_REWARDS_TERM_OF_USE } from './constants'
 
 const TermOfUse = () => {
   return (
@@ -19,23 +19,15 @@ const TermOfUse = () => {
           marginBottom={{ lg: '20px', base: '10px' }}
           color="primary.500"
         >
-          RedeemSG
+          RedeemSG Rewards
         </Text>
-        {markdownLikeRender(TERM_OF_USE)}
+        {markdownLikeRender(RSG_REWARDS_TERM_OF_USE)}
         <LegalText
           margin={{ base: '20px auto', lg: '48px auto' }}
           textAlign="center"
         >
-          These Terms of Use are dated 29 Aug 2023.
+          These Terms of Use are dated 14 February 2024.
         </LegalText>
-        <Text
-          textStyle={{ base: 'h4', md: 'h3-semibold' }}
-          marginBottom={{ lg: '20px', base: '10px' }}
-          color="primary.500"
-        >
-          Schedule
-        </Text>
-        {markdownLikeRender(SCHEDULE)}
       </VStack>
     </Center>
   )
