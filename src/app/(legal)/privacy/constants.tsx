@@ -1,9 +1,9 @@
 import { Text } from '@chakra-ui/react'
 
-import LegalExternalLink from '../LegalExternalLink'
-import LegalHeading from '../LegalHeading'
-import LegalText from '../LegalText'
-import { Line } from '../types'
+import LegalExternalLink from '../../../common/LegalExternalLink'
+import LegalHeading from '../../../common/LegalHeading'
+import LegalText from '../../../common/LegalText'
+import { Line } from '../../../common/types'
 
 export const PRIVACY: Line[] = [
   { type: 'header', value: 'General' },

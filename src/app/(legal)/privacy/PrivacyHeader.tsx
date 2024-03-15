@@ -1,4 +1,4 @@
-import CommonLegalHeader from '../../CommonLegalHeader'
+import CommonLegalHeader from '../../../common/CommonLegalHeader'
 
 const PrivacyHeader = () => {
   return (
