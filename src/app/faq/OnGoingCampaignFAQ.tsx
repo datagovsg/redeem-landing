@@ -18,7 +18,7 @@ const ON_GOING_CAMPAIGNS = [
   {
     description: 'National Environment Agency',
     title: 'NEA Climate Change Household Package FAQ',
-    url: 'https://www.climate-friendly-households.gov.sg/faq/ ',
+    url: 'https://www.climate-friendly-households.gov.sg/cv-faqs/',
   },
 ] as const
 

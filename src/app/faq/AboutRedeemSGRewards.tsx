@@ -79,7 +79,7 @@ export const AboutRedeemSGRewardsQuestions = [
                 beforeLinkText: 'To issue your own RedeemSG Rewards, please ',
                 afterLinkText:
                   ". Here is what the process would look like: 1. Reach out to us to share your use case. If suitable, you can set up your own campaign on RedeemSG's admin portal. 2. Set up the campaign on RedeemSG. Decide the voucher amount and validity period. 3. Issue vouchers to recipients. Vouchers can be directly sent to eligible recipients or through an extra verification using Singpass.",
-                linkText: 'reach out so us',
+                linkText: 'reach out to us',
                 href: RSG_CDC_CAMPAIGN_ORGANISER_FORM,
               },
             ]}
