@@ -9,7 +9,7 @@ const STATIC_STATISTICS = [
     title: 'vouchers claimed',
     description: (
       <HStack textStyle={{ lg: 'h1', base: 'h3-semibold' }} color="primary.500">
-        <Text>1.25</Text>
+        <Text>7.01</Text>
         <Text>M+</Text>
       </HStack>
     ),
@@ -18,8 +18,8 @@ const STATIC_STATISTICS = [
     title: 'vouchers spent',
     description: (
       <HStack textStyle={{ lg: 'h1', base: 'h3-semibold' }} color="primary.500">
-        <Text>$360</Text>
-        <Text>M+</Text>
+        <Text>$1.49</Text>
+        <Text>B+</Text>
       </HStack>
     ),
   },
@@ -27,7 +27,7 @@ const STATIC_STATISTICS = [
     title: 'merchants onboarded',
     description: (
       <Text textStyle={{ lg: 'h1', base: 'h3-semibold' }} color="primary.500">
-        24,293
+        28,656
       </Text>
     ),
   },
@@ -35,7 +35,7 @@ const STATIC_STATISTICS = [
     title: 'campaigns launched',
     description: (
       <Text textStyle={{ lg: 'h1', base: 'h3-semibold' }} color="primary.500">
-        21
+        63
       </Text>
     ),
   },
