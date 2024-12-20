@@ -26,7 +26,7 @@
     "@tanstack/react-table": "^8.10.7",
     "framer-motion": "^10.16.16",
     "lottie-react": "^2.4.0",
-    "next": "14.0.4",
+    "next": "14.2.21",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0"
@@ -54,5 +54,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "packageManager": "pnpm@7.33.7+sha512.7afe2410642b39c698df46da4ce5c7231a5cce360698d69f8cf8f42257d40b3e43f231053b07b8de849fd4ffbf4a71ff57b835137777a352388f3d3da747200e"
 }
